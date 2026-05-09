@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  9 MAY 2026 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  9 MAY 2026 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -592,24 +592,24 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -671,192 +671,187 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 23.
+Package hyperref Info: Link coloring ON on input line 24.
  (manuscript.out) (manuscript.out)
 \@outlinefile=\write4
 \openout4 = `manuscript.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 25.
+(Font)              <12> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 25.
+(Font)              <8> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 25.
- [1
+(Font)              <6> on input line 26.
 
-{C:/Users/20427/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (1.3228pt too wide) in paragraph at lines 42--43
-[]\OT1/cmr/m/n/10.95 GrapeTong was de-vel-oped to ad-dress this gap through a c
-rop-season-centered mo-bile decision-
+Overfull \hbox (0.73386pt too wide) in paragraph at lines 31--32
+[]\OT1/cmr/bx/n/10.95 Keywords: \OT1/cmr/m/n/10.95 pre-ci-sion viti-cul-ture; g
+rapevine dis-ease warn-ing; de-ci-sion sup-port; phe-nol-ogy model;
  []
 
-[2]
-<fig/fig1_system_architecture.png, id=301, 1699.34875pt x 932.48375pt>
-File: fig/fig1_system_architecture.png Graphic file (type png)
-<use fig/fig1_system_architecture.png>
-Package pdftex.def Info: fig/fig1_system_architecture.png  used on input line 6
-0.
-(pdftex.def)             Requested size: 455.24411pt x 249.7962pt.
- [3]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 73.
+[1
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+{C:/Users/20427/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+<fig/fig1_system_architecture_v2.png, id=301, 1695.33376pt x 934.49126pt>
+File: fig/fig1_system_architecture_v2.png Graphic file (type png)
+<use fig/fig1_system_architecture_v2.png>
+Package pdftex.def Info: fig/fig1_system_architecture_v2.png  used on input lin
+e 61.
+(pdftex.def)             Requested size: 455.24411pt x 250.93288pt.
+
+[3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 74.
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 []|\OT1/cmr/m/n/10.95 Dart/Flutter mod-ules for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \OT1/cmr/m/n/10.95 fields, tasks, recog-ni-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \OT1/cmr/m/n/10.95 fo-rum, maps, notes, au-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \OT1/cmr/m/n/10.95 then-ti-ca-tion, weather, and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \OT1/cmr/m/n/10.95 no-ti-fi-ca-tions; Kotlin/Gradle
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 77--77
+Underfull \hbox (badness 1308) in paragraph at lines 78--78
 \OT1/cmr/m/n/10.95 and Java-compatible An-droid
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 \OT1/cmr/m/n/10.95 work, Post-greSQL, Django
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 78--78
+Underfull \hbox (badness 4686) in paragraph at lines 79--79
 \OT1/cmr/m/n/10.95 Chan-nels, Django AP-Sched-
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 78--79
+Underfull \hbox (badness 1028) in paragraph at lines 79--80
 []|\OT1/cmr/m/n/10.95 API rout-ing, au-then-ti-ca-tion,
  []
 
 
-Underfull \hbox (badness 5787) in paragraph at lines 78--79
+Underfull \hbox (badness 5787) in paragraph at lines 79--80
 \OT1/cmr/m/n/10.95 data per-sis-tence, sched-uled
  []
 
 
-Underfull \hbox (badness 2521) in paragraph at lines 79--79
+Underfull \hbox (badness 2521) in paragraph at lines 80--80
 []|\OT1/cmr/m/n/10.95 Phenology and dis-ease
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
 []|\OT1/cmr/m/n/10.95 Python weather pro-cess-ing,
  []
 
 
-Underfull \hbox (badness 3029) in paragraph at lines 79--79
+Underfull \hbox (badness 3029) in paragraph at lines 80--80
 \OT1/cmr/m/n/10.95 Pan-das, NumPy, GDD and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
 \OT1/cmr/m/n/10.95 spraying-suitability work-flow,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 []|\OT1/cmr/m/n/10.95 Weather trans-for-ma-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 \OT1/cmr/m/n/10.95 growth-stage sim-u-la-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 \OT1/cmr/m/n/10.95 disease-risk sim-u-la-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 \OT1/cmr/m/n/10.95 treatment-window gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
 []|\OT1/cmr/m/n/10.95 Image-based di-ag-no-sis
  []
 
 
-Underfull \hbox (badness 6944) in paragraph at lines 80--80
+Underfull \hbox (badness 6944) in paragraph at lines 81--81
 []|\OT1/cmr/m/n/10.95 Python, Py-Torch, TorchVi-
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 80--80
+Underfull \hbox (badness 1226) in paragraph at lines 81--81
 \OT1/cmr/m/n/10.95 UNet, seg-men-ta-tion, recog-ni-
  []
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 80--81
+Underfull \hbox (badness 2134) in paragraph at lines 81--82
 \OT1/cmr/m/n/10.95 tion, recog-ni-tion, seg-men-ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
 []|\OT1/cmr/m/n/10.95 Task rec-om-men-da-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
 \OT1/cmr/m/n/10.95 fungicide-history con-ver-sion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 \OT1/cmr/m/n/10.95 men-da-tion, plant-protection
  []
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 81--82
+Underfull \hbox (badness 3189) in paragraph at lines 82--83
 \OT1/cmr/m/n/10.95 feed-back, over-due han-dling,
  []
 
 
-Overfull \hbox (5.38641pt too wide) in paragraph at lines 90--91
-\OT1/cmr/m/n/10.95 model ser-vice re-ceives weather, growth stage, cul-ti-var s
-us-cep-ti-bil-ity, dis-ease tar-gets, and fungicide-
- []
-
-
-Overfull \hbox (8.53964pt too wide) in paragraph at lines 92--93
+Overfull \hbox (8.53964pt too wide) in paragraph at lines 93--94
 \OT1/cmr/m/n/10.95 related out-puts. This layer com-ple-ments weather-driven di
 sease-risk an-a-lyt-ics by adding symptom-
  []
 
-[4 <./fig/fig1_system_architecture.png (PNG copy)>] [5]
+[4 <./fig/fig1_system_architecture_v2.png (PNG copy)>] [5]
 <fig/fig2_interaction_flow.png, id=321, 1780.6525pt x 890.32625pt>
 File: fig/fig2_interaction_flow.png Graphic file (type png)
 <use fig/fig2_interaction_flow.png>
-Package pdftex.def Info: fig/fig2_interaction_flow.png  used on input line 100.
+Package pdftex.def Info: fig/fig2_interaction_flow.png  used on input line 101.
 
 (pdftex.def)             Requested size: 455.24411pt x 227.62114pt.
- [6 <./fig/fig2_interaction_flow.png (PNG copy)>] [7] [8]
-Overfull \hbox (4.09586pt too wide) in paragraph at lines 155--156
-[]\OT1/cmr/m/n/10.95 The plat-form also in-cludes a segmentation-based sever-it
-y pipeline. The pipeline uses OpenCV,
+ [6 <./fig/fig2_interaction_flow.png (PNG copy)>]
+Overfull \hbox (10.91096pt too wide) in paragraph at lines 122--123
+[]\OT1/cmr/m/n/10.95 The im-ple-men-ta-tion stores both nor-mal-ized re-la-tion
+al records and JSON model pay-loads. Weather,
  []
 
-[9] [10] [11] [12] [13] [14] [15] [16] (manuscript.bbl [17] [18] [19] [20])
-[21] (manuscript.aux)
+[7] [8] [9] [10] [11] [12] [13] [14] [15] [16] (manuscript.bbl [17] [18]
+[19]) [20] (manuscript.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -865,13 +860,13 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 4F739FE3BB1A1B806DD8BD62265DEFA6;6593.
  ) 
 Here is how much of TeX's memory you used:
- 20968 strings out of 467871
- 402777 string characters out of 5418376
- 814081 words of memory out of 5000000
+ 20967 strings out of 467871
+ 402791 string characters out of 5418376
+ 814089 words of memory out of 5000000
  49433 multiletter control sequences out of 15000+600000
  633714 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,94p,2111b,633s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,94p,2489b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/20427/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/20427/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/20427/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -884,9 +879,9 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
 20427/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><
 C:/Users/20427/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb>
-Output written on manuscript.pdf (21 pages, 2598349 bytes).
+Output written on manuscript.pdf (20 pages, 2719858 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
+ 615 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
  263 words of extra memory for PDF output out of 10000 (max. 10000000)
 
