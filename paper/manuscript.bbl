@@ -1,0 +1,390 @@
+\begin{thebibliography}{43}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ara et~al.(2021)Ara, Turner, Harrison, Monjardino, DeVoil, and
+  Rodr{\'i}guez]{Ara2021IrrigatedDSSReview}
+Iffat Ara, L.~R. Turner, Matthew~T. Harrison, Marta Monjardino, Philip DeVoil,
+  and Daniel Rodr{\'i}guez.
+\newblock Application, adoption and opportunities for improving decision
+  support systems in irrigated agriculture: A review.
+\newblock \emph{Agricultural Water Management}, 257:\penalty0 107161, 2021.
+\newblock \doi{10.1016/j.agwat.2021.107161}.
+
+\bibitem[Bakir et~al.(2026)Bakir, Perea, Funk, Rahman, Spetter, Macon, Cox,
+  Estell, Cao, Cibils, Spiegal, Bestelmeyer, and
+  Utsumi]{Bakir2026PrecisionRanchingPlatform}
+Mehmet~E. Bakir, Andres~R. Perea, Micah Funk, Sajidur Rahman, Maximiliano~J.
+  Spetter, Lara Macon, Andrew Cox, Richard~E. Estell, Huiping Cao, Andres~F.
+  Cibils, Sheri~A. Spiegal, Brandon~T. Bestelmeyer, and Santiago~A. Utsumi.
+\newblock A scalable, end-to-end iot and remote sensing platform for precision
+  rangeland and livestock management.
+\newblock \emph{Computers and Electronics in Agriculture}, 247:\penalty0
+  111615, 2026.
+\newblock \doi{10.1016/j.compag.2026.111615}.
+
+\bibitem[Caffarra et~al.(2014)Caffarra, Rinaldi, Eccel, Rossi, and
+  Pertot]{Caffarra2014PhenologyComparison}
+Amelia Caffarra, Massimo Rinaldi, Emanuele Eccel, Vittorio Rossi, and Ilaria
+  Pertot.
+\newblock A comparison of different modelling solutions for studying grapevine
+  phenology under present and future climate scenarios.
+\newblock \emph{Agricultural and Forest Meteorology}, 195--196:\penalty0
+  192--205, 2014.
+\newblock \doi{10.1016/j.agrformet.2014.05.011}.
+
+\bibitem[Coombe(1995)]{Coombe1995ModifiedEL}
+B.~G. Coombe.
+\newblock Growth stages of the grapevine: Adoption of a system for identifying
+  grapevine growth stages.
+\newblock \emph{Australian Journal of Grape and Wine Research}, 1\penalty0
+  (2):\penalty0 104--110, 1995.
+\newblock \doi{10.1111/j.1755-0238.1995.tb00086.x}.
+
+\bibitem[Fountas et~al.(2015)Fountas, Carli, S{\o}rensen, Tsiropoulos,
+  Cavalaris, Vatsanidou, Liakos, Canavari, Wiebensohn, and
+  Tisserye]{Fountas2015FMIS}
+Spyros Fountas, Giacomo Carli, Claus Aage~Gr{\o}n S{\o}rensen, Zisis
+  Tsiropoulos, Christos Cavalaris, Anna Vatsanidou, Basil Liakos, Maurizio
+  Canavari, Jens Wiebensohn, and Bruno Tisserye.
+\newblock Farm management information systems: Current situation and future
+  perspectives.
+\newblock \emph{Computers and Electronics in Agriculture}, 115:\penalty0
+  40--50, 2015.
+\newblock \doi{10.1016/j.compag.2015.05.011}.
+
+\bibitem[Gent et~al.(2011)Gent, De~Wolf, and
+  Pethybridge]{Gent2011AdoptionBarriers}
+David~H. Gent, Erick De~Wolf, and Sarah~J. Pethybridge.
+\newblock Perceptions of risk, risk aversion, and barriers to adoption of
+  decision support systems and integrated pest management: an introduction.
+\newblock \emph{Phytopathology}, 101\penalty0 (6):\penalty0 640--643, 2011.
+\newblock \doi{10.1094/PHYTO-04-10-0124}.
+
+\bibitem[Gil et~al.(2011)Gil, Llorens, Landers, Llop, and
+  Giralt]{Gil2011Dosavina}
+Emilio Gil, Jordi Llorens, Andrew~J. Landers, Jordi Llop, and Lloren{\c c}
+  Giralt.
+\newblock Field validation of dosavi{\~n}a, a decision support system to
+  determine the optimal volume rate for pesticide application in vineyards.
+\newblock \emph{European Journal of Agronomy}, 35\penalty0 (1):\penalty0
+  33--46, 2011.
+\newblock \doi{10.1016/j.eja.2011.03.005}.
+
+\bibitem[Grant et~al.(2026)Grant, Scharpenberg, and
+  Manning]{Grant2026AlgorithmAversion}
+Jack~H. Grant, Dorothee Scharpenberg, and Louise Manning.
+\newblock Algorithm aversion in agricultural decision-making: Trust dynamics,
+  barriers, and fertiliser-related decision support.
+\newblock \emph{Agricultural Systems}, 233:\penalty0 104630, 2026.
+\newblock \doi{10.1016/j.agsy.2025.104630}.
+
+\bibitem[Guti{\'e}rrez et~al.(2019)Guti{\'e}rrez, Htun, Schlenz, Kasimati, and
+  Verbert]{Gutierrez2019VisualizationReview}
+Francisco Guti{\'e}rrez, Nyi~Nyi Htun, Florian Schlenz, Aikaterini Kasimati,
+  and Katrien Verbert.
+\newblock A review of visualisations in agricultural decision support systems:
+  An {HCI} perspective.
+\newblock \emph{Computers and Electronics in Agriculture}, 163:\penalty0
+  104844, 2019.
+\newblock \doi{10.1016/j.compag.2019.05.053}.
+
+\bibitem[Helps et~al.(2024)Helps, van~den Bosch, Paveley, J{\o}rgensen, Holst,
+  and Milne]{Helps2024DSSValue}
+Joseph~C. Helps, Frank van~den Bosch, Neil Paveley, Lise~Nistrup J{\o}rgensen,
+  Niels Holst, and Alice~E. Milne.
+\newblock A framework for evaluating the value of agricultural pest management
+  decision support systems.
+\newblock \emph{European Journal of Plant Pathology}, 169:\penalty0 887--902,
+  2024.
+\newblock \doi{10.1007/s10658-024-02878-1}.
+
+\bibitem[Kang et~al.(2023)Kang, Diverres, Karkee, Zhang, and
+  Keller]{Kang2023IrrigationDSS}
+Chenchen Kang, Geraldine Diverres, Manoj Karkee, Qin Zhang, and Markus Keller.
+\newblock Decision-support system for precision regulated deficit irrigation
+  management for wine grapes.
+\newblock \emph{Computers and Electronics in Agriculture}, 208:\penalty0
+  107777, 2023.
+\newblock \doi{10.1016/j.compag.2023.107777}.
+
+\bibitem[Knowling et~al.(2021)Knowling, Bennett, Ostendorf, Westra, Walker,
+  Pellegrino, Edwards, Collins, Pagay, and
+  Grigg]{Knowling2021ViticultureModels}
+Matthew~J. Knowling, Bree Bennett, Bertram Ostendorf, Seth Westra, Rob~R.
+  Walker, Anne Pellegrino, Everard~J. Edwards, Cassandra Collins, Vinay Pagay,
+  and Dylan Grigg.
+\newblock Bridging the gap between data and decisions: A review of
+  process-based models for viticulture.
+\newblock \emph{Agricultural Systems}, 193:\penalty0 103209, 2021.
+\newblock \doi{10.1016/j.agsy.2021.103209}.
+
+\bibitem[Kunduracioglu and Pacal(2024)]{Kunduracioglu2024GrapeDeepLearning}
+Ismail Kunduracioglu and Ishak Pacal.
+\newblock Advancements in deep learning for accurate classification of grape
+  leaves and diagnosis of grape diseases.
+\newblock \emph{Journal of Plant Diseases and Protection}, 131:\penalty0
+  1061--1080, 2024.
+\newblock \doi{10.1007/s41348-024-00896-z}.
+
+\bibitem[Kunova et~al.(2021)Kunova, Pizzatti, Saracchi, Pasquali, and
+  Cortesi]{Kunova2021PowderyMildew}
+Andrea Kunova, Cristina Pizzatti, Marco Saracchi, Matias Pasquali, and Paolo
+  Cortesi.
+\newblock Grapevine powdery mildew: Fungicides for its management and advances
+  in molecular detection of markers associated with resistance.
+\newblock \emph{Microorganisms}, 9\penalty0 (7):\penalty0 1541, 2021.
+\newblock \doi{10.3390/microorganisms9071541}.
+
+\bibitem[Liu et~al.(2020)Liu, Ding, Tian, He, Li, and
+  Wang]{Liu2020GrapeLeafIdentification}
+Bin Liu, Zhaoyang Ding, Li~Tian, Dongjian He, Shuqin Li, and Hongyan Wang.
+\newblock Grape leaf disease identification using improved deep convolutional
+  neural networks.
+\newblock \emph{Frontiers in Plant Science}, 11:\penalty0 1082, 2020.
+\newblock \doi{10.3389/fpls.2020.01082}.
+
+\bibitem[Liu et~al.(2024)Liu, Yu, and Geng]{Liu2024FusionTransformerYOLO}
+Yifan Liu, Qiudong Yu, and Shuze Geng.
+\newblock Real-time and lightweight detection of grape diseases based on fusion
+  transformer {YOLO}.
+\newblock \emph{Frontiers in Plant Science}, 15:\penalty0 1269423, 2024.
+\newblock \doi{10.3389/fpls.2024.1269423}.
+
+\bibitem[Lorenz et~al.(1995)Lorenz, Eichhorn, Bleiholder, Klose, Meier, and
+  Weber]{Lorenz1995BBCH}
+D.~H. Lorenz, K.~W. Eichhorn, H.~Bleiholder, R.~Klose, U.~Meier, and E.~Weber.
+\newblock Growth stages of the grapevine: Phenological growth stages of the
+  grapevine ({Vitis vinifera} l. ssp. vinifera)--codes and descriptions
+  according to the extended {BBCH} scale.
+\newblock \emph{Australian Journal of Grape and Wine Research}, 1\penalty0
+  (2):\penalty0 100--103, 1995.
+\newblock \doi{10.1111/j.1755-0238.1995.tb00085.x}.
+
+\bibitem[Marinko et~al.(2024)Marinko, Bla{\v z}ica, J{\o}rgensen, Matzen,
+  Ramsden, and Debeljak]{Marinko2024IPMTypology}
+Jurij Marinko, Bojan Bla{\v z}ica, Lise~Nistrup J{\o}rgensen, Niels Matzen,
+  Mark Ramsden, and Marko Debeljak.
+\newblock Typology for decision support systems in integrated pest management
+  and its implementation as a web application.
+\newblock \emph{Agronomy}, 14\penalty0 (3):\penalty0 485, 2024.
+\newblock \doi{10.3390/agronomy14030485}.
+
+\bibitem[McCown(2002)]{McCown2002DSSComplexity}
+R.~L. McCown.
+\newblock Locating agricultural decision support systems in the troubled past
+  and socio-technical complexity of `models for management'.
+\newblock \emph{Agricultural Systems}, 74\penalty0 (1):\penalty0 11--25, 2002.
+\newblock \doi{10.1016/S0308-521X(02)00020-3}.
+
+\bibitem[Mian et~al.(2021)Mian, Buso, and Tonon]{Mian2021DownyMildewDSS}
+Giovanni Mian, Edoardo Buso, and Matteo Tonon.
+\newblock Decision support systems for downy mildew ({Plasmopara viticola})
+  control in grapevine: Short comparison review.
+\newblock \emph{Asian Research Journal of Agriculture}, 14\penalty0
+  (2):\penalty0 12--20, 2021.
+\newblock \doi{10.9734/arja/2021/v14i230120}.
+
+\bibitem[Molitor et~al.(2014)Molitor, Junk, Evers, Hoffmann, and
+  Beyer]{Molitor2014HighResolutionPhenology}
+Daniel Molitor, J{\"u}rgen Junk, Dani{\`e}le Evers, Lucien Hoffmann, and Marco
+  Beyer.
+\newblock A high-resolution cumulative degree day-based model to simulate
+  phenological development of grapevine.
+\newblock \emph{American Journal of Enology and Viticulture}, 65\penalty0
+  (1):\penalty0 72--80, 2014.
+\newblock \doi{10.5344/ajev.2013.13066}.
+
+\bibitem[Molitor et~al.(2020)Molitor, Caffarra, Sinigoj, Pertot, Hoffmann, and
+  Junk]{Molitor2020UniPhen}
+Daniel Molitor, Amelia Caffarra, Peter Sinigoj, Ilaria Pertot, Lucien Hoffmann,
+  and J{\"u}rgen Junk.
+\newblock {UniPhen}: a unified high resolution model approach to simulate the
+  phenological development of a broad range of grape cultivars as well as a
+  potential new bioclimatic indicator.
+\newblock \emph{Agricultural and Forest Meteorology}, 291:\penalty0 108024,
+  2020.
+\newblock \doi{10.1016/j.agrformet.2020.108024}.
+
+\bibitem[Orlandini et~al.(1995)Orlandini, Gozzini, Rosa, Egger, Storchi, and
+  Maracchi]{Orlandini1995DownyMildewProgram}
+Simone Orlandini, Bruno Gozzini, Matteo Rosa, Elisabeth Egger, Paolo Storchi,
+  and Giampiero Maracchi.
+\newblock A computer program to improve the control of grapevine downy mildew.
+\newblock \emph{Computers and Electronics in Agriculture}, 12\penalty0
+  (4):\penalty0 311--322, 1995.
+\newblock \doi{10.1016/0168-1699(95)00007-Q}.
+
+\bibitem[Ortega-Farias and Riveros-Burgos(2019)]{OrtegaFarias2019Phenology}
+Samuel Ortega-Farias and Camilo Riveros-Burgos.
+\newblock Modeling phenology of four grapevine cultivars ({Vitis vinifera} l.)
+  in mediterranean climate conditions.
+\newblock \emph{Scientia Horticulturae}, 250:\penalty0 38--44, 2019.
+\newblock \doi{10.1016/j.scienta.2019.02.025}.
+
+\bibitem[Peng et~al.(2024)Peng, Wang, and Wang]{Peng2024DownyMildew}
+Junbo Peng, Xuncheng Wang, and Hui Wang.
+\newblock Advances in understanding grapevine downy mildew: From pathogen
+  infection to disease management.
+\newblock \emph{Molecular Plant Pathology}, 25\penalty0 (1):\penalty0 e13401,
+  2024.
+\newblock \doi{10.1111/mpp.13401}.
+
+\bibitem[Portela et~al.(2024)Portela, Sousa, Ara{\'u}jo-Paredes, Peres, Morais,
+  and P{\'a}dua]{Portela2024GrapevineSensingReview}
+Fernando Portela, Joaquim~J. Sousa, Cl{\'a}udio Ara{\'u}jo-Paredes, Emanuel
+  Peres, Raul Morais, and Lu{\'i}s P{\'a}dua.
+\newblock A systematic review on the advancements in remote sensing and
+  proximity tools for grapevine disease detection.
+\newblock \emph{Sensors}, 24\penalty0 (24):\penalty0 8172, 2024.
+\newblock \doi{10.3390/s24248172}.
+
+\bibitem[Puelles et~al.(2024)Puelles, Arbizu-Milagro, Castillo-Ruiz, and
+  Pe{\~n}a]{Puelles2024DownyMildewModels}
+Miguel Puelles, Julia Arbizu-Milagro, Francisco~J. Castillo-Ruiz, and J.~M.
+  Pe{\~n}a.
+\newblock Predictive models for grape downy mildew ({Plasmopara viticola}) as a
+  decision support system in mediterranean conditions.
+\newblock \emph{Crop Protection}, 175:\penalty0 106450, 2024.
+\newblock \doi{10.1016/j.cropro.2023.106450}.
+
+\bibitem[Rahman et~al.(2024)Rahman, Liu, Wang, and Fan]{Rahman2024GrayMold}
+Mati~Ur Rahman, Xia Liu, Xiping Wang, and Ben Fan.
+\newblock Grapevine gray mold disease: infection, defense and management.
+\newblock \emph{Horticulture Research}, 11\penalty0 (9):\penalty0 uhae182,
+  2024.
+\newblock \doi{10.1093/hr/uhae182}.
+
+\bibitem[Rosa et~al.(1993)Rosa, Genesio, Gozzini, Maracchi, and
+  Orlandini]{Orlandini1993PLASMO}
+Matteo Rosa, Roberto Genesio, Bruno Gozzini, Giampiero Maracchi, and Simone
+  Orlandini.
+\newblock {PLASMO}: a computer program for grapevine downy mildew development
+  forecasting.
+\newblock \emph{Computers and Electronics in Agriculture}, 9\penalty0
+  (3):\penalty0 205--215, 1993.
+\newblock \doi{10.1016/0168-1699(93)90039-4}.
+
+\bibitem[Rose et~al.(2016)Rose, Sutherland, Parker, Lobley, Winter, Morris,
+  Twining, Ffoulkes, Amano, and Dicks]{Rose2016DecisionSupportTools}
+David~C. Rose, William~J. Sutherland, Caroline Parker, Matt Lobley, Michael
+  Winter, Carol Morris, Susanne Twining, Claire Ffoulkes, Tatsuya Amano, and
+  Lynn~V. Dicks.
+\newblock Decision support tools for agriculture: Towards effective design and
+  delivery.
+\newblock \emph{Agricultural Systems}, 149:\penalty0 165--174, 2016.
+\newblock \doi{10.1016/j.agsy.2016.09.009}.
+
+\bibitem[Rose et~al.(2018)Rose, Parker, Fodey, Park, Sutherland, and
+  Dicks]{Rose2018UserCentredDSS}
+David~C. Rose, Caroline Parker, Joe Fodey, Caroline Park, William Sutherland,
+  and Lynn~V. Dicks.
+\newblock Involving stakeholders in agricultural decision support systems:
+  Improving user-centred design.
+\newblock \emph{International Journal of Agricultural Management}, 6\penalty0
+  (3-4):\penalty0 80--89, 2018.
+\newblock \doi{10.5836/ijam/2017-06-80}.
+
+\bibitem[Rossi et~al.(2014)Rossi, Salinari, Poni, Caffi, and
+  Bettati]{Rossi2014ViteNet}
+Vittorio Rossi, Fabio Salinari, Stefano Poni, Tito Caffi, and Teresa Bettati.
+\newblock Addressing the implementation problem in agricultural decision
+  support systems: the example of vite.net.
+\newblock \emph{Computers and Electronics in Agriculture}, 100:\penalty0
+  88--99, 2014.
+\newblock \doi{10.1016/j.compag.2013.10.011}.
+
+\bibitem[Savary et~al.(2019)Savary, Willocquet, Pethybridge, Esker, McRoberts,
+  and Nelson]{Savary2019GlobalBurden}
+Serge Savary, Laetitia Willocquet, Sarah~Jane Pethybridge, Paul Esker, Neil
+  McRoberts, and Andy Nelson.
+\newblock The global burden of pathogens and pests on major food crops.
+\newblock \emph{Nature Ecology \& Evolution}, 3:\penalty0 430--439, 2019.
+\newblock \doi{10.1038/s41559-018-0793-y}.
+
+\bibitem[Shi et~al.(2023)Shi, Liu, Zheng, Hu, Huang, Liu, and
+  Huang]{Shi2023SeverityAssessment}
+Tingting Shi, Yongmin Liu, Xinying Zheng, Kui Hu, Hao Huang, Hanlin Liu, and
+  Hongxu Huang.
+\newblock Recent advances in plant disease severity assessment using
+  convolutional neural networks.
+\newblock \emph{Scientific Reports}, 13:\penalty0 2336, 2023.
+\newblock \doi{10.1038/s41598-023-29230-7}.
+
+\bibitem[Steel et~al.(2013)Steel, Blackman, and Schmidtke]{Steel2013BunchRots}
+Christopher~C. Steel, John~W. Blackman, and Leigh~M. Schmidtke.
+\newblock Grapevine bunch rots: Impacts on wine composition, quality, and
+  potential procedures for the removal of wine faults.
+\newblock \emph{Journal of Agricultural and Food Chemistry}, 61\penalty0
+  (22):\penalty0 5189--5206, 2013.
+\newblock \doi{10.1021/jf400641r}.
+
+\bibitem[Szab{\'o} et~al.(2023)Szab{\'o}, Csik{\'a}sz-Krizsics, Dula, Farkas,
+  Roznik, Kozma, and De{\'a}k]{Szabo2023BlackRot}
+M{\'a}rton Szab{\'o}, Anna Csik{\'a}sz-Krizsics, Ter{\'e}zia Dula, Eszter
+  Farkas, D{\'o}ra Roznik, P{\'a}l Kozma, and Tam{\'a}s De{\'a}k.
+\newblock Black rot of grapes ({Guignardia bidwellii})--a comprehensive
+  overview.
+\newblock \emph{Horticulturae}, 9\penalty0 (2):\penalty0 130, 2023.
+\newblock \doi{10.3390/horticulturae9020130}.
+
+\bibitem[Tummers et~al.(2021)Tummers, Kassahun, and
+  Tekinerdogan]{Tummers2021ReferenceArchitecture}
+J.~Tummers, A.~Kassahun, and B.~Tekinerdogan.
+\newblock Reference architecture design for farm management information
+  systems: a multi-case study approach.
+\newblock \emph{Precision Agriculture}, 22:\penalty0 22--50, 2021.
+\newblock \doi{10.1007/s11119-020-09728-0}.
+
+\bibitem[Tummers et~al.(2019)Tummers, Kassahun, and
+  Tekinerdogan]{Tummers2019FMISReview}
+Joep Tummers, Ayalew Kassahun, and Bedir Tekinerdogan.
+\newblock Obstacles and features of farm management information systems: A
+  systematic literature review.
+\newblock \emph{Computers and Electronics in Agriculture}, 157:\penalty0
+  189--204, 2019.
+\newblock \doi{10.1016/j.compag.2018.12.044}.
+
+\bibitem[Uyar et~al.(2024)Uyar, Karvelas, Rizou, and
+  Fountas]{Uyar2024DataValue}
+Havva Uyar, Ioannis Karvelas, Stamatia Rizou, and Spyros Fountas.
+\newblock Data value creation in agriculture: A review.
+\newblock \emph{Computers and Electronics in Agriculture}, 227\penalty0 (Part
+  2):\penalty0 109602, 2024.
+\newblock \doi{10.1016/j.compag.2024.109602}.
+
+\bibitem[Walling and Vaneeckhaute(2020)]{Walling2020EDSS}
+Eric Walling and C{\'e}line Vaneeckhaute.
+\newblock Developing successful environmental decision support systems:
+  Challenges and best practices.
+\newblock \emph{Journal of Environmental Management}, 264:\penalty0 110513,
+  2020.
+\newblock \doi{10.1016/j.jenvman.2020.110513}.
+
+\bibitem[Xie et~al.(2020)Xie, Ma, Liu, He, Li, and Wang]{Xie2020GrapeDetector}
+Xiaoyue Xie, Yuan Ma, Bin Liu, Jinrong He, Shuqin Li, and Hongyan Wang.
+\newblock A deep-learning-based real-time detector for grape leaf diseases
+  using improved convolutional neural networks.
+\newblock \emph{Frontiers in Plant Science}, 11:\penalty0 751, 2020.
+\newblock \doi{10.3389/fpls.2020.00751}.
+
+\bibitem[Zhai et~al.(2020)Zhai, Mart{\'i}nez, Beltran, and
+  Lucas~Mart{\'i}nez]{Zhai2020Agriculture40DSS}
+Zhaoyu Zhai, Jos{\'e}~Fern{\'a}n Mart{\'i}nez, Victoria Beltran, and N{\'e}stor
+  Lucas~Mart{\'i}nez.
+\newblock Decision support systems for agriculture 4.0: Survey and challenges.
+\newblock \emph{Computers and Electronics in Agriculture}, 170:\penalty0
+  105256, 2020.
+\newblock \doi{10.1016/j.compag.2020.105256}.
+
+\bibitem[Zhang et~al.(2022)Zhang, Qiao, Guo, and
+  He]{Zhang2022DownyMildewDetection}
+Zhiqiang Zhang, Yanjie Qiao, Yuhui Guo, and Dongjian He.
+\newblock Deep learning based automatic grape downy mildew detection.
+\newblock \emph{Frontiers in Plant Science}, 13:\penalty0 872107, 2022.
+\newblock \doi{10.3389/fpls.2022.872107}.
+
+\end{thebibliography}
