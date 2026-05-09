@@ -1,0 +1,5 @@
+GrapeMaster links vineyard disease warning with mobile field operations.
+Crop seasons connect weather, phenology, disease risk, and task records.
+Completed sprays are fed back into later disease-risk recalculation.
+Deployment showed earlier warning than symptom-based field recognition.
+Model-guided timing suggested at least three fewer sprays per season.
