@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  9 MAY 2026 18:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  14 MAY 2026 09:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -693,11 +693,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/Users/20427/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3]
-<fig/fig1_system_architecture_v2.png, id=312, 1695.33376pt x 934.49126pt>
-File: fig/fig1_system_architecture_v2.png Graphic file (type png)
-<use fig/fig1_system_architecture_v2.png>
-Package pdftex.def Info: fig/fig1_system_architecture_v2.png  used on input lin
-e 63.
+<../fig/fig1_system_architecture_v2.png, id=316, 1695.33376pt x 934.49126pt>
+File: ../fig/fig1_system_architecture_v2.png Graphic file (type png)
+<use ../fig/fig1_system_architecture_v2.png>
+Package pdftex.def Info: ../fig/fig1_system_architecture_v2.png  used on input 
+line 63.
 (pdftex.def)             Requested size: 455.24411pt x 250.93288pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 77.
@@ -783,33 +783,48 @@ Underfull \hbox (badness 4378) in paragraph at lines 84--85
 \OT1/cmr/m/n/10 processed-image gen-er-a-tion, and
  []
 
-[4 <./fig/fig1_system_architecture_v2.png (PNG copy)>] [5]
-<fig/fig2_interaction_flow.png, id=327, 1701.35625pt x 931.48pt>
-File: fig/fig2_interaction_flow.png Graphic file (type png)
-<use fig/fig2_interaction_flow.png>
-Package pdftex.def Info: fig/fig2_interaction_flow.png  used on input line 104.
-
-(pdftex.def)             Requested size: 455.24411pt x 249.24306pt.
- [6 <./fig/fig2_interaction_flow.png (PNG copy)>] [7] [8]
+[4 <../fig/fig1_system_architecture_v2.png (PNG copy)>] [5]
+<../fig/fig2_interaction_flow.png, id=331, 1655.18375pt x 957.5775pt>
+File: ../fig/fig2_interaction_flow.png Graphic file (type png)
+<use ../fig/fig2_interaction_flow.png>
+Package pdftex.def Info: ../fig/fig2_interaction_flow.png  used on input line 1
+04.
+(pdftex.def)             Requested size: 455.24411pt x 263.37115pt.
+ [6 <../fig/fig2_interaction_flow.png (PNG copy)>] [7] [8]
+<../fig/fig3_input_optimization.png, id=346, 1824.8175pt x 868.24374pt>
+File: ../fig/fig3_input_optimization.png Graphic file (type png)
+<use ../fig/fig3_input_optimization.png>
+Package pdftex.def Info: ../fig/fig3_input_optimization.png  used on input line
+ 161.
+(pdftex.def)             Requested size: 455.24411pt x 216.59671pt.
+ [9 <../fig/fig3_input_optimization.png (PNG copy)>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 161.
- [9] [10] [11] [12] [13] [14] [15] [16]
-[17] (manuscript.bbl [18] [19] [20]) [21] (manuscript.aux)
+(Font)              <10.95> on input line 172.
+ [10]
+<../fig/grape_trial_distribution_china.png, id=361, 681.2652pt x 466.6233pt>
+File: ../fig/grape_trial_distribution_china.png Graphic file (type png)
+<use ../fig/grape_trial_distribution_china.png>
+Package pdftex.def Info: ../fig/grape_trial_distribution_china.png  used on inp
+ut line 193.
+(pdftex.def)             Requested size: 455.24411pt x 311.81717pt.
+ [11 <../fig/grape_trial_distribution_china.png>] [12] [13]
+[14] [15] [16] [17] [18] (manuscript.bbl [19] [20] [21] [22]) [23]
+(manuscript.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: D9862EFA946DC589A5F968CE95D22D42;6687.
+(rerunfilecheck)             Checksum: 0F761D39AE2FC84460CB542C98524964;6916.
  ) 
 Here is how much of TeX's memory you used:
- 21049 strings out of 467871
- 404034 string characters out of 5418376
- 816655 words of memory out of 5000000
- 49503 multiletter control sequences out of 15000+600000
+ 21071 strings out of 467871
+ 404815 string characters out of 5418376
+ 817193 words of memory out of 5000000
+ 49520 multiletter control sequences out of 15000+600000
  633714 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,94p,2303b,607s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,94p,2303b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/20427/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/20427/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/20427/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -823,9 +838,9 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
 :/Users/20427/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti
 10.pfb><C:/Users/20427/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb>
-Output written on manuscript.pdf (21 pages, 2729819 bytes).
+Output written on manuscript.pdf (23 pages, 6187559 bytes).
 PDF statistics:
- 636 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 658 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 500000)
+ 289 words of extra memory for PDF output out of 10000 (max. 10000000)
 

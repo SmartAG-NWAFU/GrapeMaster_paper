@@ -60,7 +60,7 @@ Figure~\ref{fig:conceptual_architecture} summarizes the main system flow.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{fig/fig1_system_architecture_v2.png}
+\includegraphics[width=\linewidth]{../fig/fig1_system_architecture_v2.png}
 \caption{Conceptual architecture of the GrapeMaster platform. The platform connects mobile field operations, backend business services, relational storage, scheduled analytical workflows, disease-risk simulation, image-analysis modules, and external data services.}
 \label{fig:conceptual_architecture}
 \end{figure}
@@ -101,7 +101,7 @@ Figure~\ref{fig:interaction_flow} describes the interaction among users, data so
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{fig/fig2_interaction_flow.png}
+\includegraphics[width=\linewidth]{../fig/fig2_interaction_flow.png}
 \caption{Interaction flow among users, mobile frontend, backend services, data sources, analytical models, and management feedback in GrapeMaster.}
 \label{fig:interaction_flow}
 \end{figure}
@@ -152,6 +152,17 @@ The model returns daily infection risks, stress risks, field risks, stress prote
 
 The spraying-suitability workflow evaluates whether short-term weather conditions support plant-protection operations. The implementation considers air temperature, current precipitation, wind speed, relative humidity, precipitation expected in the next hours, cultivation method, sunrise time, and sunset time. The resulting suitability indicators are calculated for the forecast horizon and stored with crop-weather records. These indicators allow the system to connect disease-risk warnings with practical execution conditions, reducing the chance that a recommended treatment is scheduled under unsuitable weather.
 
+\subsubsection{Model-Guided Input Optimization}
+
+The disease-risk and spraying-suitability workflows jointly provide the analytical basis for model-guided plant-protection input optimization. As summarized in Figure~\ref{fig:input_optimization}, GrapeMaster integrates weather records, cultivar information, soil and field data, and agrochemical master data within a crop-season analytical workflow. This integration allows recommendations to be expressed not only as disease-risk warnings, but also as operational decisions concerning input selection, application timing, spray frequency, and dose optimization.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{../fig/fig3_input_optimization.png}
+\caption{Model-guided optimization of vineyard plant-protection inputs in GrapeMaster. Weather records, cultivar data, soil and field information, and agrochemical master data are integrated within the crop-season analytical workflow to support input selection, application timing, spray-frequency reduction, and dose optimization.}
+\label{fig:input_optimization}
+\end{figure}
+
 \subsection{Image-Based Diagnosis Implementation}
 
 The image-based diagnosis layer is implemented in Python as a set of backend image-processing endpoints and model modules. The mobile client uploads images through multipart requests after local selection and preprocessing. For disease classification, the backend uses PyTorch and an EfficientViT-based classifier that maps uploaded grape images to disease or healthy categories and returns corresponding prevention or management text. Pillow is used for image loading in the classifier workflow, while model execution uses PyTorch tensors and EfficientViT model-zoo utilities. The current category mapping includes grape leaf blight, grape black rot, grape Esca or black measles, healthy grape, and grapevine yellowing.
@@ -175,7 +186,14 @@ Completed plant-protection tasks are converted into applied-fungicide inputs for
 
 \section{Deployment}
 
-GrapeMaster was deployed in multiple viticultural regions in China, including Yangling in Shaanxi Province, Nanning, Du'an of Hechi, and Xing'an of Guilin in Guangxi Province. These sites represent different climatic and management settings and provide an initial basis for examining whether the platform can support disease warning and spray-timing decisions beyond a single vineyard context. During deployment, the platform was used for spore monitoring, disease warning, and plant-protection scheduling. Field observations indicated that initial spore capture preceded the first visible disease symptoms by approximately one to two months, and that the first major spore peak broadly coincided with the period of rapid disease development. These observations suggest that the platform can provide a warning signal earlier than symptom-based scouting while retaining temporal consistency with subsequent epidemic acceleration.
+GrapeMaster was deployed in multiple viticultural regions in China, including Yangling in Shaanxi Province, Nanning, Du'an of Hechi, and Xing'an of Guilin in Guangxi Province. These sites represent different climatic and management settings and provide an initial basis for examining whether the platform can support disease warning and spray-timing decisions beyond a single vineyard context. Figure~\ref{fig:trial_distribution} shows the geographic distribution of the deployment sites. During deployment, the platform was used for spore monitoring, disease warning, and plant-protection scheduling. Field observations indicated that initial spore capture preceded the first visible disease symptoms by approximately one to two months, and that the first major spore peak broadly coincided with the period of rapid disease development. These observations suggest that the platform can provide a warning signal earlier than symptom-based scouting while retaining temporal consistency with subsequent epidemic acceleration.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{../fig/grape_trial_distribution_china.png}
+\caption{Geographic distribution of GrapeMaster deployment sites in China. The mapped sites include Yangling in Shaanxi Province and Nanning, Du'an, and Xing'an in Guangxi Province.}
+\label{fig:trial_distribution}
+\end{figure}
 
 Operational comparisons with routine grower practice further indicated that model-guided timing could reduce fungicide applications by at least three sprays per season. To express this result as a management benefit, direct costs were estimated for fungicide inputs, spraying equipment, and labor in a representative spray program used in the deployment regions. Under this cost structure, each avoided fungicide spray saved approximately 384.75 CNY ha$^{-1}$, and a three-spray reduction saved approximately 1154 CNY ha$^{-1}$ yr$^{-1}$. Extrapolated to different vineyard scales, the estimated annual savings were 1.154$\times10^{4}$ CNY for 10 ha, 1.154$\times10^{5}$ CNY for 100 ha, and 1.154$\times10^{6}$ CNY for 1000 ha.
 
