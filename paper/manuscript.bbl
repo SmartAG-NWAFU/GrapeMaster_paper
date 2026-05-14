@@ -1,18 +1,9 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Ara et~al.(2021)Ara, Turner, Harrison, Monjardino, DeVoil, and
-  Rodr{\'i}guez]{Ara2021IrrigatedDSSReview}
-Iffat Ara, L.~R. Turner, Matthew~T. Harrison, Marta Monjardino, Philip DeVoil,
-  and Daniel Rodr{\'i}guez.
-\newblock Application, adoption and opportunities for improving decision
-  support systems in irrigated agriculture: A review.
-\newblock \emph{Agricultural Water Management}, 257:\penalty0 107161, 2021.
-\newblock \doi{10.1016/j.agwat.2021.107161}.
 
 \bibitem[Bakir et~al.(2026)Bakir, Perea, Funk, Rahman, Spetter, Macon, Cox,
   Estell, Cao, Cibils, Spiegal, Bestelmeyer, and
@@ -73,14 +64,6 @@ Emilio Gil, Jordi Llorens, Andrew~J. Landers, Jordi Llop, and Lloren{\c c}
 \newblock \emph{European Journal of Agronomy}, 35\penalty0 (1):\penalty0
   33--46, 2011.
 \newblock \doi{10.1016/j.eja.2011.03.005}.
-
-\bibitem[Grant et~al.(2026)Grant, Scharpenberg, and
-  Manning]{Grant2026AlgorithmAversion}
-Jack~H. Grant, Dorothee Scharpenberg, and Louise Manning.
-\newblock Algorithm aversion in agricultural decision-making: Trust dynamics,
-  barriers, and fertiliser-related decision support.
-\newblock \emph{Agricultural Systems}, 233:\penalty0 104630, 2026.
-\newblock \doi{10.1016/j.agsy.2025.104630}.
 
 \bibitem[Guti{\'e}rrez et~al.(2019)Guti{\'e}rrez, Htun, Schlenz, Kasimati, and
   Verbert]{Gutierrez2019VisualizationReview}
@@ -321,15 +304,6 @@ Christopher~C. Steel, John~W. Blackman, and Leigh~M. Schmidtke.
 \newblock \emph{Journal of Agricultural and Food Chemistry}, 61\penalty0
   (22):\penalty0 5189--5206, 2013.
 \newblock \doi{10.1021/jf400641r}.
-
-\bibitem[Szab{\'o} et~al.(2023)Szab{\'o}, Csik{\'a}sz-Krizsics, Dula, Farkas,
-  Roznik, Kozma, and De{\'a}k]{Szabo2023BlackRot}
-M{\'a}rton Szab{\'o}, Anna Csik{\'a}sz-Krizsics, Ter{\'e}zia Dula, Eszter
-  Farkas, D{\'o}ra Roznik, P{\'a}l Kozma, and Tam{\'a}s De{\'a}k.
-\newblock Black rot of grapes ({Guignardia bidwellii})--a comprehensive
-  overview.
-\newblock \emph{Horticulturae}, 9\penalty0 (2):\penalty0 130, 2023.
-\newblock \doi{10.3390/horticulturae9020130}.
 
 \bibitem[Tummers et~al.(2021)Tummers, Kassahun, and
   Tekinerdogan]{Tummers2021ReferenceArchitecture}
