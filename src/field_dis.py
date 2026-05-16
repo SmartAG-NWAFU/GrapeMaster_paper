@@ -21,7 +21,7 @@ from sqlalchemy import create_engine
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_TRIAL_CSV = ROOT / "data" / "Grapemater_fields.csv"
 DEFAULT_CACHE_CSV = ROOT / "data" / "grape_trial_locations.csv"
-DEFAULT_OUTPUT = ROOT / "fig" / "grape_trial_distribution_china.png"
+DEFAULT_OUTPUT = ROOT / "fig" / "fig05_trial_distribution_map.png"
 CHINA_SHP = ROOT / "data" / "shp" / "国家矢量.shp"
 PROVINCE_SHP = ROOT / "data" / "shp" / "procince.shp"
 

@@ -27,7 +27,7 @@
 \maketitle
 
 \begin{abstract}
-Timely grapevine disease management requires the integration of local weather, crop phenology, disease-risk modeling, field observations, and plant-protection records within operational decision workflows. This study developed GrapeMaster, an end-to-end mobile decision-support platform for vineyard disease warning and precision management. The platform uses the crop season as the central data unit to link vineyard fields, weather retrieval, phenology simulation, disease-risk prediction, spraying-suitability assessment, image-based disease assistance, notifications, field notes, and plant-protection tasks. The system was implemented with a Flutter mobile client, a Django REST backend, PostgreSQL storage, scheduled analytical workflows, a FastAPI disease-model service, and Python-based image-recognition and severity-estimation modules. A central design feature is the closed management loop in which model outputs are translated into warnings, treatment windows, and tasks, while completed fungicide applications are converted into history inputs for subsequent disease-risk recalculation. Initial deployment in Yangling, Nanning, Du'an, and Xing'an showed that spore detection preceded visible disease onset by approximately one to two months, and that model-guided spray timing was associated with at least three fewer fungicide applications per season than conventional grower practice. These results demonstrate the feasibility of using GrapeMaster to connect vineyard disease warning, mobile field operations, and management feedback, while multi-season validation, quantitative model evaluation, and user-centered assessment remain necessary for operational validation.
+Timely grapevine disease management requires the integration of local weather, crop phenology, disease-risk modeling, field observations, and plant-protection records within operational decision workflows. This study developed GrapeMaster, an end-to-end mobile decision-support platform for vineyard disease warning and precision management, with grapevine downy mildew and powdery mildew as the main operational disease targets. The platform uses the crop season as the central data unit to link vineyard fields, weather retrieval, phenology simulation, disease-risk prediction, spraying-suitability assessment, image-based field evidence, notifications, field notes, and plant-protection tasks. The system was implemented with a Flutter mobile client, a Django REST backend, PostgreSQL storage, scheduled analytical workflows, a FastAPI disease-model service, and Python-based image-recognition and severity-estimation modules. A central design feature is the closed management loop in which model outputs are translated into warnings, treatment windows, and tasks, while completed fungicide applications are converted into history inputs for subsequent disease-risk recalculation. Operation from 2024 to 2026 in Yangling, Nanning, Du'an, and Xing'an showed that spore detection preceded visible disease onset by approximately one to two months, and that model-guided spray timing was associated with at least three fewer fungicide applications per season than conventional grower practice. These results demonstrate the feasibility of using GrapeMaster to connect vineyard disease warning, mobile field operations, and management feedback, while multi-season validation, quantitative model evaluation, and user-centered assessment remain necessary for operational validation.
 \end{abstract}
 
 \textbf{Keywords:} precision viticulture; grapevine disease warning; mobile decision support; crop-season management; phenology simulation; disease-risk modeling; image-based diagnosis
@@ -60,7 +60,7 @@ Figure~\ref{fig:conceptual_architecture} summarizes the main system flow.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig1_system_architecture_v2.png}
+\includegraphics[width=\linewidth]{../fig/fig01_system_architecture.png}
 \caption{Conceptual architecture of the GrapeMaster platform. The platform connects mobile field operations, backend business services, relational storage, scheduled analytical workflows, disease-risk simulation, image-analysis modules, and external data services.}
 \label{fig:conceptual_architecture}
 \end{figure}
@@ -101,7 +101,7 @@ Figure~\ref{fig:interaction_flow} describes the interaction among users, data so
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig2_interaction_flow.png}
+\includegraphics[width=\linewidth]{../fig/fig02_interaction_flow.png}
 \caption{Interaction flow among users, mobile frontend, backend services, data sources, analytical models, and management feedback in GrapeMaster.}
 \label{fig:interaction_flow}
 \end{figure}
@@ -144,7 +144,7 @@ Disease-risk simulation is provided by an independent Python FastAPI service wit
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig10_disease_model_workflow.png}
+\includegraphics[width=\linewidth]{../fig/fig03_disease_model_workflow.png}
 \caption{Disease-model simulation workflow in GrapeMaster. Hourly weather, crop growth stage, cultivar information, fungicide history, and target disease settings are converted into weather response, host correction, protection correction, and risk-timeline outputs, which support disease-risk display, field-risk interpretation, protection-time tracking, recommendations, and treatment-window generation.}
 \label{fig:disease_model_workflow}
 \end{figure}
@@ -165,14 +165,14 @@ The disease-risk and spraying-suitability workflows jointly provide the analytic
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig3_input_optimization.png}
+\includegraphics[width=\linewidth]{../fig/fig04_input_optimization.png}
 \caption{Model-guided optimization of vineyard plant-protection inputs in GrapeMaster. Weather records, cultivar data, soil and field information, and agrochemical master data are integrated within the crop-season analytical workflow to support input selection, application timing, spray-frequency reduction, and dose optimization.}
 \label{fig:input_optimization}
 \end{figure}
 
 \subsection{Image-Based Diagnosis Implementation}
 
-The image-based diagnosis layer is implemented in Python as a set of backend image-processing endpoints and model modules. The mobile client uploads images through multipart requests after local selection and preprocessing. For disease classification, the backend uses PyTorch and an EfficientViT-based classifier that maps uploaded grape images to disease or healthy categories and returns corresponding prevention or management text. Pillow is used for image loading in the classifier workflow, while model execution uses PyTorch tensors and EfficientViT model-zoo utilities. The current category mapping includes grape leaf blight, grape black rot, grape Esca or black measles, healthy grape, and grapevine yellowing.
+The image-based diagnosis layer is implemented in Python as a set of backend image-processing endpoints and model modules. The mobile client uploads images through multipart requests after local selection and preprocessing. For disease classification, the backend uses PyTorch and an EfficientViT-based classifier that maps uploaded grape images to disease or healthy categories and returns corresponding prevention or management text. Pillow is used for image loading in the classifier workflow, while model execution uses PyTorch tensors and EfficientViT model-zoo utilities. In the operational disease-warning workflow, image-based assistance is aligned with the main disease-risk targets, grapevine downy mildew and powdery mildew. Other abnormality labels can be retained as auxiliary categories, but they are not treated as primary evaluation targets in the present study.
 
 The platform also includes a segmentation-based severity pipeline. The pipeline uses OpenCV, NumPy, PyTorch, TorchVision transforms, and Ultralytics model components. It first applies YOLO to locate leaf or leaf-disc regions, then uses MobileSAM to segment the leaf region from the detected box, and finally applies a UNet model to segment lesion and leaf pixels in the cropped region. Severity is calculated as the percentage of lesion pixels relative to the sum of lesion and leaf pixels:
 
@@ -193,11 +193,11 @@ Completed plant-protection tasks are converted into applied-fungicide inputs for
 
 \section{Deployment}
 
-GrapeMaster was deployed in multiple viticultural regions in China, including Yangling in Shaanxi Province, Nanning, Du'an of Hechi, and Xing'an of Guilin in Guangxi Province. These sites represent different climatic and management settings and provide an initial basis for examining whether the platform can support disease warning and spray-timing decisions beyond a single vineyard context. Figure~\ref{fig:trial_distribution} shows the geographic distribution of the deployment sites. During deployment, the platform was used for spore monitoring, disease warning, and plant-protection scheduling. Field observations indicated that initial spore capture preceded the first visible disease symptoms by approximately one to two months, and that the first major spore peak broadly coincided with the period of rapid disease development. These observations suggest that the platform can provide a warning signal earlier than symptom-based scouting while retaining temporal consistency with subsequent epidemic acceleration.
+GrapeMaster has operated from 2024 to 2026 in multiple viticultural regions in China, including Yangling in Shaanxi Province, Nanning, Du'an of Hechi, and Xing'an of Guilin in Guangxi Province. These sites represent different climatic and management settings and provide an initial basis for examining whether the platform can support disease warning and spray-timing decisions beyond a single vineyard context. Figure~\ref{fig:trial_distribution} shows the geographic distribution of the deployment sites. During deployment, the platform was used for spore monitoring, disease warning, and plant-protection scheduling, with grapevine downy mildew and powdery mildew as the main disease targets. Field observations indicated that initial spore capture preceded the first visible disease symptoms by approximately one to two months, and that the first major spore peak broadly coincided with the period of rapid disease development. These observations suggest that the platform can provide a warning signal earlier than symptom-based scouting while retaining temporal consistency with subsequent epidemic acceleration.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/grape_trial_distribution_china.png}
+\includegraphics[width=\linewidth]{../fig/fig05_trial_distribution_map.png}
 \caption{Geographic distribution of GrapeMaster deployment sites in China. The mapped sites include Yangling in Shaanxi Province and Nanning, Du'an, and Xing'an in Guangxi Province.}
 \label{fig:trial_distribution}
 \end{figure}
@@ -231,7 +231,7 @@ The field-management function provides the spatial entry point of the platform. 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig6.PNG}
+\includegraphics[width=\linewidth]{../fig/fig06_field_management_interfaces.png}
 \caption{Representative field-management interfaces in GrapeMaster: (a) user login, (b) field list and weather overview, and (c) map-based field-boundary editing.}
 \label{fig:field_management_interfaces}
 \end{figure}
@@ -252,7 +252,7 @@ The spraying-suitability function converts short-term weather conditions into fi
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig8.PNG}
+\includegraphics[width=\linewidth]{../fig/fig07_weather_phenology_interfaces.png}
 \caption{Weather, operation-suitability, and crop-season status interfaces: (a) weather detail and multi-day forecast, (b) hourly weather and spraying-suitability display, and (c) field-level disease-risk and growth-stage forecasts.}
 \label{fig:weather_risk_interfaces}
 \end{figure}
@@ -265,7 +265,7 @@ Figure~\ref{fig:seasonal_disease_risk_timeline} shows representative daily disea
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/seasonal_disease_risk_timeline.png}
+\includegraphics[width=\linewidth]{../fig/fig08_disease_risk_timeline.png}
 \caption{Seasonal disease-risk output timeline generated from disease-model test outputs. Panels show (a) the Mingyang 2024 crop season, (b) the GXG-233 crop season without fungicide history, and (c) the GXG-233 crop season with fungicide history. Each panel contains daily risk states for downy mildew, powdery mildew, and field-level risk. Colors indicate the model risk code: not seasonal, unfavorable, favorable, optimal, or protected. The dashed vertical line in panel (c) marks the fungicide application date used by the model to produce protected risk states.}
 \label{fig:seasonal_disease_risk_timeline}
 \end{figure}
@@ -278,7 +278,7 @@ The warning function is connected with notifications and field feedback. When ph
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig7.PNG}
+\includegraphics[width=\linewidth]{../fig/fig09_alert_notification_interfaces.png}
 \caption{Warning and notification interfaces in GrapeMaster: (a) disease alert dialog, (b) irrigation notice with task-creation action, and (c) notification list.}
 \label{fig:alert_notification_interfaces}
 \end{figure}
@@ -291,7 +291,7 @@ Plant-protection tasks include container type, sprayer or mixer capacity, water 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig9.PNG}
+\includegraphics[width=\linewidth]{../fig/fig10_task_management_interfaces.png}
 \caption{Task-management and plant-protection input interfaces: (a) task list with pending and completed operations, (b) fungicide and pesticide product selection, and (c) sprayer-tank mixing and dosage calculation.}
 \label{fig:task_management_interfaces}
 \end{figure}
@@ -302,15 +302,22 @@ Irrigation tasks include irrigation method, growth-stage period, irrigation dura
 
 \subsection{Image-Based Disease Assistance and Severity Estimation}
 
-The recognition module supports field-image-based assistance. Users can select an image from the camera or gallery, preview it in the mobile client, and upload it for recognition. Before upload, the image can be resized and compressed to reduce transmission load. The backend image-recognition service classifies grape images into disease or healthy categories and returns corresponding diagnostic or management text to the user. The current recognition output includes grape leaf blight, grape black rot, grape Esca or black measles, healthy grape, and grapevine yellowing categories.
+The recognition module supports field-image-based assistance. Users can select an image from the camera or gallery, preview it in the mobile client, and upload it for recognition. Before upload, the image can be resized and compressed to reduce transmission load. The backend image-recognition service classifies grape images into disease or healthy categories and returns corresponding diagnostic or management text to the user. In the current operational workflow, the image-based module is used primarily to support field evidence collection and auxiliary recognition for grapevine downy mildew and powdery mildew, consistent with the main disease-risk simulation targets. Other disease or abnormality labels are retained as auxiliary categories rather than as primary validation targets in this study.
 
 The severity-estimation function provides lesion-level analysis for disease images. The backend applies a detection-segmentation pipeline to identify leaf regions, segment leaf and lesion areas, generate a processed image, and calculate a severity percentage for each detected region. The mobile interface displays the processed image and severity information, allowing users to inspect both the recognition result and the visual evidence supporting it. This output converts qualitative symptom observation into a quantitative estimate of disease severity.
 
-The recognition workflow is designed as a complement to model-based disease warning. Weather-driven models provide risk forecasts even before visible symptoms are present, while field images provide symptom-level evidence once disease signs are observed. Image-recognition and severity outputs can also be linked with disease notes or reports, giving the platform a structured observation record in addition to simulated risk. The platform keeps these functions in the same mobile environment, allowing users to compare warning information, field symptoms, and their own notes without switching to a separate diagnostic tool. Figure~\ref{fig:image_assistance_workflow} summarizes the image-based assistance workflow from field image capture to recognition, expert review, LLM-assisted response, and prevention or control suggestions.
+The recognition workflow is designed as a complement to model-based disease warning. Weather-driven models provide risk forecasts even before visible symptoms are present, while field images provide symptom-level evidence once disease signs are observed. The consistency between the disease-risk model and image-based evidence collection is important because both modules primarily support downy mildew and powdery mildew management. Image-recognition and severity outputs can also be linked with disease notes or reports, giving the platform a structured observation record in addition to simulated risk. The platform keeps these functions in the same mobile environment, allowing users to compare warning information, field symptoms, and their own notes without switching to a separate diagnostic tool. Figure~\ref{fig:ai_diagnosis_interfaces} shows representative mobile interfaces for image upload, question selection, and AI-assisted advisory response. Figure~\ref{fig:image_assistance_workflow} summarizes the image-based assistance workflow from field image capture to recognition, expert review, LLM-assisted response, and prevention or control suggestions.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig11.PNG}
+\includegraphics[width=\linewidth]{../fig/fig11_ai_diagnosis_interfaces.png}
+\caption{AI-assisted disease consultation interfaces in GrapeMaster. The mobile workflow supports field-image submission, guided question selection, and advisory responses that combine visible symptom information with disease-prevention and crop-management recommendations.}
+\label{fig:ai_diagnosis_interfaces}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../fig/fig12_image_assistance_workflow.png}
 \caption{Image-based disease assistance workflow in GrapeMaster. Users capture and upload field images through the mobile application; the visual model identifies disease type and returns prevention or control suggestions when confidence is sufficient, while low-confidence cases can be reported for expert review and LLM-assisted question answering.}
 \label{fig:image_assistance_workflow}
 \end{figure}
@@ -349,7 +356,7 @@ The present study documents an implemented system architecture, but it does not 
 
 \section{Conclusion}
 
-This study developed GrapeMaster, an end-to-end mobile decision-support platform for vineyard disease warning and precision management. The platform integrates crop-season data management, weather acquisition, phenology simulation, disease-risk modeling, image-based diagnosis, notification delivery, field-task execution, and fungicide-history feedback within one operational workflow. By using the crop season as the central data unit, GrapeMaster links biological development, local weather, disease risk, field observations, and completed operations, thereby shifting vineyard disease support from isolated model consultation toward continuous field management. The implemented system demonstrates that this workflow can be realized through a layered mobile, backend, database, and analytical-service architecture, with functions covering field and crop-season management, weather and phenology display, disease-risk warning, treatment-window review, plant-protection and irrigation tasks, and image-based disease assistance. A key functional feature is that completed plant-protection tasks are converted into fungicide-history inputs for subsequent risk recalculation, allowing management actions to influence later model states. Initial deployment in Yangling, Nanning, Du'an, and Xing'an showed practical application potential across different vineyard regions: initial spore capture preceded visible disease onset by approximately one to two months, the first major spore peak was broadly consistent with the rapid disease-development period, and model-guided spray timing was associated with at least three fewer fungicide applications per season than conventional grower practice, corresponding to an estimated saving of approximately 1154 CNY ha$^{-1}$ yr$^{-1}$. Overall, this study establishes the architecture, implementation, functions, and preliminary deployment evidence of GrapeMaster, while future work should focus on multi-season field validation, quantitative evaluation of disease-warning and image-recognition modules, deployment-scale reliability assessment, and user-centered evaluation of its effects on spray timing, intervention reduction, and sustained commercial use.
+This study developed GrapeMaster, an end-to-end mobile decision-support platform for vineyard disease warning and precision management, with grapevine downy mildew and powdery mildew as the main disease-management targets. The platform integrates crop-season data management, weather acquisition, phenology simulation, disease-risk modeling, image-based field evidence, notification delivery, field-task execution, and fungicide-history feedback within one operational workflow. By using the crop season as the central data unit, GrapeMaster links biological development, local weather, disease risk, field observations, and completed operations, thereby shifting vineyard disease support from isolated model consultation toward continuous field management. The implemented system demonstrates that this workflow can be realized through a layered mobile, backend, database, and analytical-service architecture, with functions covering field and crop-season management, weather and phenology display, disease-risk warning, treatment-window review, plant-protection and irrigation tasks, and image-based disease assistance. A key functional feature is that completed plant-protection tasks are converted into fungicide-history inputs for subsequent risk recalculation, allowing management actions to influence later model states. Operation from 2024 to 2026 in Yangling, Nanning, Du'an, and Xing'an showed practical application potential across different vineyard regions: initial spore capture preceded visible disease onset by approximately one to two months, the first major spore peak was broadly consistent with the rapid disease-development period, and model-guided spray timing was associated with at least three fewer fungicide applications per season than conventional grower practice, corresponding to an estimated saving of approximately 1154 CNY ha$^{-1}$ yr$^{-1}$. Overall, this study establishes the architecture, implementation, functions, and preliminary deployment evidence of GrapeMaster, while future work should focus on multi-season field validation, quantitative evaluation of disease-warning and image-recognition modules, deployment-scale reliability assessment, and user-centered evaluation of its effects on spray timing, intervention reduction, and sustained commercial use.
 
 \section*{CRediT Authorship Contribution Statement}
 
