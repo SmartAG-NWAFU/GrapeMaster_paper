@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RESPONSE_JSON = ROOT / "diseasemodel" / "test" / "mingyang" / "data" / "2024_grape_response.json"
 DEFAULT_REQUEST_JSON = ROOT / "diseasemodel" / "test" / "mingyang" / "data" / "2024_grape_rb.json"
 DEFAULT_TIMELINE_CSV = ROOT / "data" / "seasonal_disease_risk_timeline.csv"
-DEFAULT_OUTPUT_FIG = ROOT / "fig" / "fig08_disease_risk_timeline.png"
+DEFAULT_OUTPUT_FIG = ROOT / "fig" / "fig09_disease_risk_timeline.png"
 DEFAULT_SITE_LABEL = "Mingyang, Guangxi"
 DEFAULT_DATASETS = [
     {
