@@ -1,0 +1,17 @@
+seed,metric,baseline_error_days,fsims_error_days,absolute_reduction_days,relative_reduction_percent
+42,Validation MAE,9.333,6.333,3.000,32.14
+42,Validation RMSE,10.622,6.494,4.129,38.87
+42,Training MAE,6.833,4.000,2.833,41.46
+42,Training RMSE,8.116,4.036,4.080,50.27
+123,Validation MAE,8.000,8.000,0.000,0.00
+123,Validation RMSE,8.134,8.631,-0.497,-6.11
+123,Training MAE,5.583,4.833,0.750,13.43
+123,Training RMSE,5.875,4.937,0.938,15.97
+2024,Validation MAE,8.833,6.000,2.833,32.08
+2024,Validation RMSE,9.215,6.042,3.174,34.44
+2024,Training MAE,6.250,4.333,1.917,30.67
+2024,Training RMSE,7.462,4.392,3.070,41.14
+42,Selected train MAE,6.833,4.000,2.833,41.46
+42,Selected validation MAE,9.333,6.333,3.000,32.14
+42,Selected train RMSE,8.116,4.036,4.080,50.27
+42,Selected validation RMSE,10.622,6.494,4.129,38.87
