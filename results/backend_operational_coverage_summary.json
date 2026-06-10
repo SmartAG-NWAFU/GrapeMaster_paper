@@ -1,0 +1,124 @@
+{
+  "summary": {
+    "raw_deduplicated_accounts": 95,
+    "retained_operational_accounts": 47,
+    "excluded_accounts": 48,
+    "screening_rule": "Retain accounts with at least one field and at least one crop season; summarize downstream records linked to retained accounts, retained fields, retained crop seasons, or retained tasks.",
+    "retained_fields": 139,
+    "retained_crop_seasons": 128,
+    "date_ranges": {
+      "fields": "2024-01-05 to 2026-05-27",
+      "crop_seasons": "2024-01-05 to 2026-05-13",
+      "notifications": "2024-10-12 to 2026-05-27",
+      "disease_reports": "2024-03-04 to 2024-12-28",
+      "image_records": "2024-01-06 to 2026-05-18",
+      "messages": "2024-04-19 to 2025-11-27"
+    }
+  },
+  "coverage": [
+    {
+      "workflow_domain": "Account and field setup",
+      "backend_object": "Retained operational accounts",
+      "source_tables": "public_user_customuser, public_field_field, public_crop_cropseason",
+      "records": 47,
+      "linked_units": "accounts with >=1 field and >=1 crop season",
+      "role_in_workflow": "Defines the cleaned account set used for operational coverage statistics."
+    },
+    {
+      "workflow_domain": "Account and field setup",
+      "backend_object": "Vineyard fields",
+      "source_tables": "public_field_field",
+      "records": 139,
+      "linked_units": "47 retained accounts",
+      "role_in_workflow": "Stores field geometry, centroid, area, region, sharing, and field-level access."
+    },
+    {
+      "workflow_domain": "Account and field setup",
+      "backend_object": "Crop seasons",
+      "source_tables": "public_crop_cropseason",
+      "records": 128,
+      "linked_units": "139 retained fields",
+      "role_in_workflow": "Links field, cultivar, cultivation method, vine age, coordinates, and season-level records."
+    },
+    {
+      "workflow_domain": "Environmental and analytical state",
+      "backend_object": "Weather payloads",
+      "source_tables": "public_weatherdata_cropweather",
+      "records": 126,
+      "linked_units": "126 crop seasons",
+      "role_in_workflow": "Stores hourly and daily weather JSON payloads used by phenology, risk, and operation-suitability views."
+    },
+    {
+      "workflow_domain": "Environmental and analytical state",
+      "backend_object": "Phenology payloads",
+      "source_tables": "public_phendata_phendata",
+      "records": 126,
+      "linked_units": "126 crop seasons",
+      "role_in_workflow": "Stores model-derived growth-stage trajectories attached to crop seasons."
+    },
+    {
+      "workflow_domain": "Environmental and analytical state",
+      "backend_object": "Disease-risk outputs",
+      "source_tables": "public_diseasedata_diseasedata, public_diseasedata_rb",
+      "records": 252,
+      "linked_units": "126 crop seasons",
+      "role_in_workflow": "Stores disease-risk states and model request or response bodies for later display and replay."
+    },
+    {
+      "workflow_domain": "Risk delivery and field operations",
+      "backend_object": "Notifications",
+      "source_tables": "public_notice_notification",
+      "records": 3590,
+      "linked_units": "125 crop seasons",
+      "role_in_workflow": "Delivers risk, phenology, sharing, and management events to users."
+    },
+    {
+      "workflow_domain": "Risk delivery and field operations",
+      "backend_object": "Plant-protection and irrigation tasks",
+      "source_tables": "public_task_cropprotection, public_task_irrigation",
+      "records": 151,
+      "linked_units": "55 crop seasons",
+      "role_in_workflow": "Stores pending, completed, and overdue field operations generated or managed within the crop-season workflow."
+    },
+    {
+      "workflow_domain": "Risk delivery and field operations",
+      "backend_object": "Fungicide and pesticide records",
+      "source_tables": "public_task_fungicides, public_task_pesticides",
+      "records": 234,
+      "linked_units": "141 plant-protection tasks",
+      "role_in_workflow": "Stores product, dose, unit, and task-linked application information used as protection feedback."
+    },
+    {
+      "workflow_domain": "Field evidence and consultation",
+      "backend_object": "Field notes and disease reports",
+      "source_tables": "public_note_recode, public_note_growthstagenote, public_note_incidencenote, public_warn_discoveringdiseases",
+      "records": 94,
+      "linked_units": "crop seasons, fields, or retained accounts",
+      "role_in_workflow": "Stores field observations, growth-stage notes, incidence notes, and reported disease events."
+    },
+    {
+      "workflow_domain": "Field evidence and consultation",
+      "backend_object": "Image-analysis records",
+      "source_tables": "public_vitgpt_vit, public_seg_imageupload, public_yolo_yolo_m",
+      "records": 2808,
+      "linked_units": "retained accounts or uploaded images",
+      "role_in_workflow": "Stores image-recognition, segmentation, and object-detection records used as symptom-level evidence."
+    },
+    {
+      "workflow_domain": "Field evidence and consultation",
+      "backend_object": "Advisory and message records",
+      "source_tables": "public_jiaojia_jiaojia, public_message_message, public_message_jiaojiamessage, public_suggestions_suggestion",
+      "records": 1360,
+      "linked_units": "27 retained accounts",
+      "role_in_workflow": "Stores consultation sessions, image-associated messages, advisory messages, and suggestion records."
+    },
+    {
+      "workflow_domain": "Community communication",
+      "backend_object": "Forum records",
+      "source_tables": "public_forum_forumpost, public_forum_comment, public_forum_reply",
+      "records": 27,
+      "linked_units": "7 retained accounts",
+      "role_in_workflow": "Stores grower communication records outside the core risk-task loop."
+    }
+  ]
+}

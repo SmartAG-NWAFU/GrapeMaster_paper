@@ -142,18 +142,18 @@ The phenology output has two functions in the platform. It provides growers with
 
 Disease-risk simulation is provided by an independent Python FastAPI service with a \texttt{/simulate} endpoint. The service uses Uvicorn for ASGI serving and Pydantic models for request validation and typed schema definition. The Django backend constructs a crop-season-level request body containing crop-season identifiers, region, crop EPPO code, latitude, longitude, request date, hourly weather, growth-stage sequence, historical fungicide applications, target disease codes, cultivar susceptibility values, requested features, and date ranges. In the current vineyard workflow, the main target disease codes are \texttt{PLASVI} for grape downy mildew and \texttt{UNCINE} for grape powdery mildew. The model service also contains additional grape disease modules, but the operational backend workflow primarily consumes downy mildew and powdery mildew outputs. Figure~\ref{fig:disease_model_workflow} summarizes the main disease-model simulation workflow.
 
+Inside the disease-model service, the request body is parsed into a crop-season object. The service dynamically loads the crop implementation according to the crop EPPO code and dynamically initializes the requested disease modules. Numerical and tabular computation is performed mainly with Pandas and NumPy, while date handling uses Python Dateutil and Pytz. The grape disease implementation calculates daily weather favorability from hourly weather. For infection favorability, the model uses temperature response, relative-humidity-derived wetness duration, and disease-specific thresholds. It then applies growth-stage correction, cultivar susceptibility correction, and fungicide-effect correction. Daily favorability values are classified into infection-risk categories, and a rolling short-term aggregation is used to derive more stable disease-risk states.
+
+The disease-risk workflow also includes disease-onset logic. It estimates primary inoculum availability, inoculum maturation, spore release, and potential infection events using weather and disease parameters. Dates before modeled disease onset are downgraded to unfavorable states, and dates outside the configured BBCH disease window are treated as non-seasonal. Fungicide records can convert otherwise risky days into protected days when preventive or curative protection effects are active.
+
+The model returns daily infection risks, stress risks, field risks, stress protection times, action recommendations, and treatment windows. Field risk is derived from the individual disease risks by selecting the highest relevant unprotected risk while preserving fully protected states when all target diseases are protected. The backend compresses these outputs into date-aligned arrays and stores them in the disease-data table for mobile display and later use.
+
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{../fig/fig03_disease_model_workflow.png}
 \caption{Disease-model simulation workflow in GrapeMaster. Hourly weather, crop growth stage, cultivar information, fungicide history, and target disease settings are converted into weather response, host correction, protection correction, and risk-timeline outputs, which support disease-risk display, field-risk interpretation, protection-time tracking, recommendations, and treatment-window generation.}
 \label{fig:disease_model_workflow}
 \end{figure}
-
-Inside the disease-model service, the request body is parsed into a crop-season object. The service dynamically loads the crop implementation according to the crop EPPO code and dynamically initializes the requested disease modules. Numerical and tabular computation is performed mainly with Pandas and NumPy, while date handling uses Python Dateutil and Pytz. The grape disease implementation calculates daily weather favorability from hourly weather. For infection favorability, the model uses temperature response, relative-humidity-derived wetness duration, and disease-specific thresholds. It then applies growth-stage correction, cultivar susceptibility correction, and fungicide-effect correction. Daily favorability values are classified into infection-risk categories, and a rolling short-term aggregation is used to derive more stable disease-risk states.
-
-The disease-risk workflow also includes disease-onset logic. It estimates primary inoculum availability, inoculum maturation, spore release, and potential infection events using weather and disease parameters. Dates before modeled disease onset are downgraded to unfavorable states, and dates outside the configured BBCH disease window are treated as non-seasonal. Fungicide records can convert otherwise risky days into protected days when preventive or curative protection effects are active.
-
-The model returns daily infection risks, stress risks, field risks, stress protection times, action recommendations, and treatment windows. Field risk is derived from the individual disease risks by selecting the highest relevant unprotected risk while preserving fully protected states when all target diseases are protected. The backend compresses these outputs into date-aligned arrays and stores them in the disease-data table for mobile display and later use.
 
 \subsubsection{Spraying Suitability Assessment}
 
@@ -193,23 +193,9 @@ Completed plant-protection tasks are converted into applied-fungicide inputs for
 
 \section{Deployment}
 
-GrapeMaster has operated from 2024 to 2026 in multiple viticultural regions in China, including Yangling in Shaanxi Province, Nanning, Du'an of Hechi, and Xing'an of Guilin in Guangxi Province. These sites represent different climatic and management settings and provide an initial basis for examining whether the platform can support disease warning and spray-timing decisions beyond a single vineyard context. Figure~\ref{fig:trial_distribution} shows the geographic distribution of the deployment sites. During deployment, the platform was used for spore monitoring, disease warning, and plant-protection scheduling. The weather-driven warning workflow mainly simulated grapevine downy mildew and powdery mildew risks, corresponding to \texttt{PLASVI} and \texttt{UNCINE} in the disease-model service. Field observations indicated that initial spore capture preceded the first visible disease symptoms by approximately one to two months, and that the first major spore peak broadly coincided with the period of rapid disease development. These observations suggest that the platform can provide a warning signal earlier than symptom-based scouting while retaining temporal consistency with subsequent epidemic acceleration.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{../fig/fig05_trial_distribution_map.png}
-\caption{Geographic distribution of GrapeMaster deployment sites in China. The mapped sites include Yangling in Shaanxi Province and Nanning, Du'an, and Xing'an in Guangxi Province.}
-\label{fig:trial_distribution}
-\end{figure}
+GrapeMaster has operated from 2024 to 2026 in multiple viticultural regions in China, including Yangling in Shaanxi Province, Nanning, Du'an of Hechi, and Xing'an of Guilin in Guangxi Province. These sites represent different climatic and management settings and provide an initial basis for examining whether the platform can support disease warning and spray-timing decisions beyond a single vineyard context. Figure~\ref{fig:trial_distribution} shows the geographic distribution of test-account fields used for platform-function testing and experimental data sites used for phenology and disease evidence. During deployment, the platform was used for spore monitoring, disease warning, and plant-protection scheduling. The weather-driven warning workflow mainly simulated grapevine downy mildew and powdery mildew risks, corresponding to \texttt{PLASVI} and \texttt{UNCINE} in the disease-model service. Field observations indicated that initial spore capture preceded the first visible disease symptoms by approximately one to two months, and that the first major spore peak broadly coincided with the period of rapid disease development. These observations suggest that the platform can provide a warning signal earlier than symptom-based scouting while retaining temporal consistency with subsequent epidemic acceleration.
 
 Figure~\ref{fig:monitoring_instruments} shows representative field-monitoring instruments used during deployment, including spore traps and an automatic weather station. These instruments provided the field-level monitoring context for spore capture and local weather acquisition used by the platform workflow.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{../fig/fig06_monitoring_instruments.png}
-\caption{Field-monitoring instruments used in GrapeMaster deployment. Panels show (a) a spore trap, (b) an automatic weather station, and (c) slide replacement for a vineyard-installed spore trap.}
-\label{fig:monitoring_instruments}
-\end{figure}
 
 Operational comparisons with routine grower practice further indicated that model-guided timing could reduce fungicide applications by at least three sprays per season. To express this result as a management benefit, direct costs were estimated for fungicide inputs, spraying equipment, and labor in a representative spray program used in the deployment regions. Under this cost structure, each avoided fungicide spray saved approximately 384.75 CNY ha$^{-1}$, and a three-spray reduction saved approximately 1154 CNY ha$^{-1}$ yr$^{-1}$. Extrapolated to different vineyard scales, the estimated annual savings were 1.154$\times10^{4}$ CNY for 10 ha, 1.154$\times10^{5}$ CNY for 100 ha, and 1.154$\times10^{6}$ CNY for 1000 ha.
 
@@ -230,6 +216,20 @@ Large vineyard & 1000 ha & 1{,}154{,}000 CNY yr$^{-1}$ \\
 \end{tabular}
 \end{table}
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{../fig/grapemaster_test_site_distribution_map.png}
+\caption{Geographic distribution of GrapeMaster test-account fields and experimental data sites in China. Test-account fields indicate fields associated with accounts used for platform-function testing, while experimental data sites indicate field locations used as sources of phenology and disease evidence.}
+\label{fig:trial_distribution}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{../fig/fig06_monitoring_instruments.png}
+\caption{Field-monitoring instruments used in GrapeMaster deployment. Panels show (a) a spore trap, (b) an automatic weather station, and (c) slide replacement for a vineyard-installed spore trap.}
+\label{fig:monitoring_instruments}
+\end{figure}
+
 \section{Features and Functionalities}
 
 GrapeMaster provides user-facing functions through mobile workspaces for vineyard field management, crop-season status review, task management, and image-based disease assistance. These workspaces share a crop-season context, allowing weather information, phenological status, disease warnings, image evidence, field observations, and completed operations to be displayed and updated for the same vineyard season. The following subsections focus on the functions most directly related to vineyard disease warning and precision management.
@@ -238,18 +238,18 @@ GrapeMaster provides user-facing functions through mobile workspaces for vineyar
 
 The field-management function provides the spatial entry point of the platform. Users can create, inspect, edit, share, delete, recover, and select vineyard fields. During field creation, the mobile client supports map-assisted input and records the field name, boundary geometry, area, centroid longitude and latitude, administrative region, and a generated boundary preview. Each field is displayed as a selectable field card in the mobile workspace, from which users can access crop seasons, weather, warnings, notes, tasks, and field settings. Representative field-management interfaces are shown in Figure~\ref{fig:field_management_interfaces}.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{../fig/fig07_field_management_interfaces.png}
-\caption{Representative field-management interfaces in GrapeMaster: (a) user login, (b) field list and weather overview, and (c) map-based field-boundary editing.}
-\label{fig:field_management_interfaces}
-\end{figure}
-
 The platform treats field sharing as a managed collaboration function rather than only a data export operation. A user can invite another account to access a field. The recipient receives a field-sharing notice, accepts the invitation from the notification interface, and then sees the shared field in the operational field list. Deleted fields are moved into a recycle-bin workflow so that accidental deletion does not immediately remove the field from user interaction. This supports practical field management in situations where vineyards are operated by multiple users or where historical field information must remain recoverable.
 
 The crop-season function links a vineyard field with grape variety, cultivation method, vine age, field area, and coordinates. It is the central working unit of the platform: weather retrieval, phenology simulation, disease-risk calculation, plant-protection tasks, irrigation tasks, notes, and alerts are all associated with a crop season. This design is appropriate for perennial crop management because the same vineyard field persists across production years, whereas each season requires separate weather records, growth-stage trajectories, disease-risk outputs, and field-operation histories.
 
 Within the crop-season workspace, users can view the selected cultivar and cultivation method, inspect the current growth-stage context, open disease-warning information, review weather details, and enter task or note pages without manually reselecting the field. Ordinary crop notes, growth-stage notes, and disease-incidence notes can be stored with dates, text, images, and crop-season context, providing field evidence that helps interpret model warnings and later management outcomes. The workspace therefore makes the crop season the operational decision context and keeps weather, disease, notes, and tasks attached to the same field-season object.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{../fig/field_management_interfaces.png}
+\caption{Representative field-management interfaces in GrapeMaster: (a) user login, (b) field list and weather overview, and (c) map-based field-boundary editing.}
+\label{fig:field_management_interfaces}
+\end{figure}
 
 \subsection{Weather, Phenology, and Spraying-Suitability Display}
 
@@ -261,7 +261,7 @@ The spraying-suitability function converts short-term weather conditions into fi
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig08_weather_phenology_interfaces.png}
+\includegraphics[width=\linewidth]{../fig/weather_phenology_interfaces.png}
 \caption{Weather, operation-suitability, and crop-season status interfaces: (a) weather detail and multi-day forecast, (b) hourly weather and spraying-suitability display, and (c) field-level disease-risk and growth-stage forecasts.}
 \label{fig:weather_risk_interfaces}
 \end{figure}
@@ -272,13 +272,6 @@ The disease-warning function presents model-derived disease-risk information for
 
 Figure~\ref{fig:seasonal_disease_risk_timeline} shows representative daily disease-model outputs from test crop seasons. The three horizontal tracks in each panel separate downy mildew risk, powdery mildew risk, and field-level integrated risk. The color sequence shows how the model moves from non-seasonal periods to unfavorable, favorable, optimal, and, when fungicide records are present, protected states. This timeline format makes the temporal structure of warnings visible and shows how a fungicide application can modify subsequent model risk states.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{../fig/fig09_disease_risk_timeline.png}
-\caption{Seasonal disease-risk output timeline generated from disease-model test outputs. Panels show (a) the Mingyang 2024 crop season, (b) the GXG-233 crop season without fungicide history, and (c) the GXG-233 crop season with fungicide history. Each panel contains daily risk states for downy mildew, powdery mildew, and field-level risk. Colors indicate the model risk code: not seasonal, unfavorable, favorable, optimal, or protected. The dashed vertical line in panel (c) marks the fungicide application date used by the model to produce protected risk states.}
-\label{fig:seasonal_disease_risk_timeline}
-\end{figure}
-
 The warning display separates several kinds of information that growers need to interpret together. Infection risk describes whether weather and disease conditions are favorable for infection. Stress risk summarizes disease-related pressure under recent or short-term conditions. Field risk integrates the disease-specific results into a crop-season-level warning state. Protection-related states indicate whether previous fungicide applications are still considered active by the model. Action recommendations translate these states into practical guidance, including whether treatment is recommended, delayed, or regarded as unnecessary because protection is already active.
 
 The treatment-window function translates model risk into management timing. A future window indicates that a recommendation is approaching, a current window indicates that the recommended treatment period is active, and a missed window indicates that the suggested timing has passed while the risk remains relevant. This design reduces the need for users to infer timing from weather, phenology, and risk codes, and provides a direct bridge from disease warning to task creation.
@@ -287,7 +280,14 @@ The warning function is connected with notifications and field feedback. When ph
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig10_alert_notification_interfaces.png}
+\includegraphics[width=\linewidth]{../fig/disease_risk_timeline.png}
+\caption{Seasonal disease-risk output timeline generated from disease-model test outputs. Panels show (a) the Mingyang 2024 crop season, (b) the GXG-233 crop season without fungicide history, and (c) the GXG-233 crop season with fungicide history. Each panel contains daily risk states for downy mildew, powdery mildew, and field-level risk. Colors indicate the model risk code: not seasonal, unfavorable, favorable, optimal, or protected. The dashed vertical line in panel (c) marks the fungicide application date used by the model to produce protected risk states.}
+\label{fig:seasonal_disease_risk_timeline}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{../fig/alert_notification_interfaces.png}
 \caption{Warning and notification interfaces in GrapeMaster: (a) disease alert dialog, (b) irrigation notice with task-creation action, and (c) notification list.}
 \label{fig:alert_notification_interfaces}
 \end{figure}
@@ -298,16 +298,16 @@ The task module supports two major operation types: plant protection and irrigat
 
 Plant-protection tasks include container type, sprayer or mixer capacity, water consumption, execution date, task status, and one or more fungicide or pesticide records. The mobile task-creation workflow supports both large-container and sprayer-based mixing modes. Fungicide and pesticide records include product name, dose, dose unit, and total unit, allowing the task to represent the practical spray mixture rather than only a generic operation name. Users can revise task parameters before execution and mark tasks as completed after the field operation is carried out. Figure~\ref{fig:task_management_interfaces} shows the task list, product selection, and sprayer-tank mixing interfaces.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{../fig/fig11_task_management_interfaces.png}
-\caption{Task-management and plant-protection input interfaces: (a) task list with pending and completed operations, (b) fungicide and pesticide product selection, and (c) sprayer-tank mixing and dosage calculation.}
-\label{fig:task_management_interfaces}
-\end{figure}
-
 Once a plant-protection task is completed, the backend converts the operation into applied-fungicide history for the disease model. The completed task supplies the application date, target disease, and protection parameters derived from fungicide master data. This distinguishes GrapeMaster from a task calendar: completed operations are archived and also change the disease-risk model state by adding protection effects. Subsequent disease-risk recalculation can therefore reflect whether users acted on previous recommendations.
 
 Irrigation tasks include irrigation method, growth-stage period, irrigation duration, irrigation dosage, execution time, and task status. This allows users to manage water-related operations in the same operational environment as plant protection, keeping crop-season activities organized around the same field and crop context.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{../fig/task_management_interfaces.png}
+\caption{Task-management and plant-protection input interfaces: (a) task list with pending and completed operations, (b) fungicide and pesticide product selection, and (c) sprayer-tank mixing and dosage calculation.}
+\label{fig:task_management_interfaces}
+\end{figure}
 
 \subsection{Image-Based Disease Assistance and Severity Estimation}
 
@@ -319,7 +319,7 @@ The recognition workflow is designed as a complement to model-based disease warn
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig12_ai_diagnosis_interfaces.png}
+\includegraphics[width=\linewidth]{../fig/ai_diagnosis_interfaces.png}
 \caption{AI-assisted disease consultation interfaces in GrapeMaster. The mobile workflow supports field-image submission, guided question selection, and advisory responses that combine visible symptom information with disease-prevention and crop-management recommendations.}
 \label{fig:ai_diagnosis_interfaces}
 \end{figure}

@@ -1,0 +1,315 @@
+% Manuscript format standard/template
+% ===================================
+% Purpose:
+%   Reusable LaTeX manuscript-format standard for journal-style .tex files.
+%   Copy this file into another repository and replace the manuscript content.
+%
+% Reference style source:
+%   /Users/yaolinjia/Desktop/Rice/paper/manuscript.tex
+%
+% Scope:
+%   Defines title, author block, affiliations, abstract, keywords, headings,
+%   body text, line spacing, fonts, font sizes, captions, figures, tables,
+%   page numbers, line numbers, margins, hyperlinks, references, and common
+%   manuscript helper commands.
+%
+% Compilation:
+%   pdflatex manuscript_format_standard.tex
+%   bibtex manuscript_format_standard
+%   pdflatex manuscript_format_standard.tex
+%   pdflatex manuscript_format_standard.tex
+%
+% Recommended use in a real paper:
+%   1. Copy the preamble from this file into manuscript.tex.
+%   2. Replace title, author block, abstract, keywords, sections, figures,
+%      tables, and bibliography database name.
+%   3. Keep the formatting commands unchanged unless required by the journal.
+
+\documentclass[12pt]{article}
+
+% -----------------------------------------------------------------------------
+% Page size, margins, font encoding, and base fonts
+% -----------------------------------------------------------------------------
+\usepackage[margin=1in]{geometry}       % 1-inch page margins on all sides
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{newtxtext,newtxmath}        % Times-like text and math fonts
+
+% -----------------------------------------------------------------------------
+% Core packages
+% -----------------------------------------------------------------------------
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage{xcolor}
+\usepackage[round,authoryear]{natbib}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{}
+\urlstyle{same}
+
+% -----------------------------------------------------------------------------
+% Page numbers, line spacing, paragraph spacing, and line breaking
+% -----------------------------------------------------------------------------
+\pagestyle{plain}                       % Page number centered in footer
+\doublespacing                          % Double-spaced manuscript body
+\setlength{\parindent}{0pt}             % No paragraph indentation
+\setlength{\parskip}{0pt}               % No extra paragraph gap
+\setlength{\emergencystretch}{3em}      % Reduce overfull lines
+
+% -----------------------------------------------------------------------------
+% Section heading format
+% -----------------------------------------------------------------------------
+% The reference manuscript uses standard article headings. The following sizes
+% make the hierarchy explicit while preserving a conservative journal style.
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\large\bfseries}
+  {\thesection}{0.75em}{}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}
+  {\thesubsection}{0.75em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\itshape}
+  {\thesubsubsection}{0.75em}{}
+\titlespacing*{\section}{0pt}{1.2em}{0.6em}
+\titlespacing*{\subsection}{0pt}{1.0em}{0.45em}
+\titlespacing*{\subsubsection}{0pt}{0.8em}{0.35em}
+
+% -----------------------------------------------------------------------------
+% Caption and table font standards
+% -----------------------------------------------------------------------------
+\newcommand{\tablecaptionfontsize}{\fontsize{10pt}{12pt}\selectfont}
+\newcommand{\tablefontsize}{\fontsize{9pt}{11pt}\selectfont}
+\DeclareCaptionFont{captionten}{\fontsize{10pt}{12pt}\selectfont}
+\captionsetup{
+  font=captionten,
+  labelfont=bf,
+  textfont=captionten,
+  justification=raggedright,
+  labelsep=period,
+  singlelinecheck=false
+}
+\newcolumntype{L}[1]{>{\tablefontsize\raggedright\arraybackslash}m{#1}}
+
+% -----------------------------------------------------------------------------
+% Hyperlink and bibliography helper commands
+% -----------------------------------------------------------------------------
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\DOIprefix}{doi: }
+\providecommand{\URLprefix}{URL: }
+\providecommand{\ArXivprefix}{arXiv: }
+\providecommand{\Pubmedprefix}{PMID: }
+\providecommand{\doi}[1]{\href{https://doi.org/\detokenize{#1}}{\nolinkurl{#1}}}
+\hypersetup{
+  pdftitle={Manuscript title},
+  hidelinks,
+  pdfcreator={LaTeX}
+}
+
+% Figure/table cross-reference helpers
+\newcommand{\figref}[1]{\hyperref[#1]{Figure~\ref*{#1}}}
+\newcommand{\figpanelref}[2]{\hyperref[#1]{Figure~\ref*{#1}#2}}
+\newcommand{\tabref}[2]{\hyperref[#1]{Table~#2}}
+
+% -----------------------------------------------------------------------------
+% Manuscript title
+% -----------------------------------------------------------------------------
+% Title format:
+%   - Centered
+%   - Large font
+%   - Slightly compressed line spacing for long titles
+\newcommand{\manuscripttitle}{Manuscript title: replace with the full title}
+
+\begin{document}
+
+% -----------------------------------------------------------------------------
+% Line numbers
+% -----------------------------------------------------------------------------
+% Enable line numbers for review manuscripts. Remove or comment this line for
+% final production files if the journal requests no line numbering.
+\linenumbers
+
+% -----------------------------------------------------------------------------
+% Title block
+% -----------------------------------------------------------------------------
+\begin{center}
+{\LARGE\setstretch{0.9}\selectfont \manuscripttitle\par}
+\end{center}
+
+\vspace{0.8em}
+
+% -----------------------------------------------------------------------------
+% Author and affiliation block
+% -----------------------------------------------------------------------------
+% Standard format:
+%   - Author names on one or more lines
+%   - Affiliations listed below with superscript letters
+%   - Corresponding author marked with *
+\begingroup
+\normalsize
+\setstretch{1.05}
+\noindent
+\mbox{First~Author}\textsuperscript{a},
+\mbox{Second~Author}\textsuperscript{b},
+\mbox{Corresponding~Author}\textsuperscript{a,*}
+\par
+\vspace{0.7em}
+
+\noindent
+\textsuperscript{a}Affiliation A, City, Postal Code, Country
+\par
+\noindent
+\textsuperscript{b}Affiliation B, City, Postal Code, Country
+\par
+\vspace{0.55em}
+
+\noindent
+\textsuperscript{*}Corresponding author:
+Corresponding Author,
+E-mail: \href{mailto:corresponding.author@example.com}
+{corresponding.author@example.com}
+\par
+\endgroup
+
+\vspace{1em}
+
+% -----------------------------------------------------------------------------
+% Abstract and keywords
+% -----------------------------------------------------------------------------
+% Abstract format:
+%   - Unnumbered section heading
+%   - Same body font as manuscript
+%   - Double spacing inherited from document unless changed locally
+\section*{Abstract}
+
+Replace this paragraph with the manuscript abstract. The abstract should be a
+single coherent block unless the target journal requires structured headings.
+It should state the background, gap, objective, methods, main results, and
+conclusion without citations unless explicitly permitted by the journal.
+
+\noindent\textbf{Keywords:} keyword one; keyword two; keyword three; keyword four; keyword five
+
+% -----------------------------------------------------------------------------
+% Main manuscript body
+% -----------------------------------------------------------------------------
+% Heading hierarchy:
+%   \section{}       = first-level heading
+%   \subsection{}    = second-level heading
+%   \subsubsection{} = third-level heading
+% Avoid deeper heading levels in most journal manuscripts.
+
+\section{Introduction}\label{introduction}
+
+Replace with manuscript text. Body text is 12 pt Times-like font, double
+spaced, with 1-inch margins, no paragraph indent, and line numbers enabled.
+Use author-year citations with natbib, for example \citep{example2024}.
+
+\section{Materials and methods}\label{materials-and-methods}
+
+\subsection{Study design}\label{study-design}
+
+Replace with method text.
+
+\subsubsection{Detailed method component}\label{detailed-method-component}
+
+Replace with detailed method text.
+
+% -----------------------------------------------------------------------------
+% Figure format
+% -----------------------------------------------------------------------------
+% Standard figure rules:
+%   - Use figure environment
+%   - Place with [htbp] unless exact placement is required
+%   - Center figure
+%   - Use width=\linewidth for full-width figures
+%   - Caption below figure
+%   - Label after caption
+\begin{figure}[htbp]
+\centering
+\IfFileExists{example_figure.png}
+  {\includegraphics[width=\linewidth]{example_figure.png}}
+  {\fbox{\parbox[c][0.25\textheight][c]{0.9\linewidth}{\centering Example figure placeholder}}}
+\caption{Replace with a concise figure caption. The caption should explain the
+main message, define panels if present, and define abbreviations used in the
+figure.}
+\label{fig:example}
+\end{figure}
+
+% -----------------------------------------------------------------------------
+% Table format
+% -----------------------------------------------------------------------------
+% Standard table rules:
+%   - Use booktabs rules: \toprule, \midrule, \bottomrule
+%   - Avoid vertical lines
+%   - Use \tablefontsize for dense tables
+%   - Use L{} columns for wrapped text
+%   - Caption above table
+\begin{table}[H]
+\centering
+\caption{Replace with a concise table caption.}
+\label{tab:example}
+\tablefontsize
+\renewcommand{\arraystretch}{1}
+\begin{tabular}{@{}L{0.28\linewidth} L{0.32\linewidth} L{0.30\linewidth}@{}}
+\toprule
+Column 1 & Column 2 & Column 3 \\
+\midrule
+Example row & Wrapped text is supported in L columns & Example value \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Results}\label{results}
+
+Replace with results text. Present results in a logical order that matches the
+study objectives. Avoid mixing interpretation-heavy discussion into this
+section unless the target journal permits combined Results and Discussion.
+
+\section{Discussion}\label{discussion}
+
+Replace with discussion text. The discussion should interpret the results,
+connect them to the stated gap, compare with prior work, define implications,
+and state limitations.
+
+\section{Conclusion}\label{conclusion}
+
+Replace with the conclusion. Keep it concise and avoid introducing new
+results.
+
+% -----------------------------------------------------------------------------
+% Optional end sections
+% -----------------------------------------------------------------------------
+\section*{Acknowledgements}
+
+Replace with acknowledgements or remove this section.
+
+\section*{Declaration of competing interest}
+
+The authors declare that they have no known competing financial interests or
+personal relationships that could have appeared to influence the work reported
+in this paper.
+
+\section*{Data and code availability}
+
+Data and code availability statement.
+
+% -----------------------------------------------------------------------------
+% References
+% -----------------------------------------------------------------------------
+% Bibliography format:
+%   - Author-year citation style through natbib
+%   - Elsevier Harvard style by default, matching the reference manuscript
+%   - Change references to the project-specific .bib filename if needed
+\bibliographystyle{elsarticle-harv}
+\bibliography{references}
+
+\end{document}

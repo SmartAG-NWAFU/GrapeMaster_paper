@@ -1,0 +1,424 @@
+\begin{thebibliography}{34}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Bakir et~al.(2026)Bakir, Perea, Funk, Rahman, Spetter, Macon, Cox,
+  Estell, Cao, Cibils, Spiegal, Bestelmeyer and
+  Utsumi}]{bakirScalableEndtoendIoT2026}
+\bibinfo{author}{Bakir, M.E.}, \bibinfo{author}{Perea, A.R.},
+  \bibinfo{author}{Funk, M.}, \bibinfo{author}{Rahman, S.},
+  \bibinfo{author}{Spetter, M.J.}, \bibinfo{author}{Macon, L.},
+  \bibinfo{author}{Cox, A.}, \bibinfo{author}{Estell, R.E.},
+  \bibinfo{author}{Cao, H.}, \bibinfo{author}{Cibils, A.F.},
+  \bibinfo{author}{Spiegal, S.A.}, \bibinfo{author}{Bestelmeyer, B.T.},
+  \bibinfo{author}{Utsumi, S.A.}, \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{A scalable, end-to-end {{IoT}} and remote sensing
+  platform for precision rangeland and livestock management}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{247}, \bibinfo{pages}{111615}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2026.111615}.
+%Type = Article
+\bibitem[{Boso et~al.(2014)Boso, {Alonso-Villaverde}, Gago, Santiago and
+  Mart{\'i}nez}]{bosoSusceptibilityDownyMildew2014}
+\bibinfo{author}{Boso, S.}, \bibinfo{author}{{Alonso-Villaverde}, V.},
+  \bibinfo{author}{Gago, P.}, \bibinfo{author}{Santiago, J.L.},
+  \bibinfo{author}{Mart{\'i}nez, M.C.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Susceptibility to downy mildew ({{Plasmopara}}
+  viticola) of different {{Vitis}} varieties}.
+\newblock \bibinfo{journal}{Crop Protection} \bibinfo{volume}{63},
+  \bibinfo{pages}{26--35}.
+\newblock \DOIprefix\doi{10.1016/j.cropro.2014.04.018}.
+%Type = Article
+\bibitem[{Bregaglio et~al.(2022)Bregaglio, Savian, Raparelli, Morelli, Epifani,
+  Pietrangeli, Nigro, Bugiani, Pini, Culatti, Tognetti, Spanna, Gerardi,
+  Delillo, Bajocco, Fanchini, Fila, Ginaldi and
+  Manici}]{bregaglioPublicDecisionSupport2022}
+\bibinfo{author}{Bregaglio, S.}, \bibinfo{author}{Savian, F.},
+  \bibinfo{author}{Raparelli, E.}, \bibinfo{author}{Morelli, D.},
+  \bibinfo{author}{Epifani, R.}, \bibinfo{author}{Pietrangeli, F.},
+  \bibinfo{author}{Nigro, C.}, \bibinfo{author}{Bugiani, R.},
+  \bibinfo{author}{Pini, S.}, \bibinfo{author}{Culatti, P.},
+  \bibinfo{author}{Tognetti, D.}, \bibinfo{author}{Spanna, F.},
+  \bibinfo{author}{Gerardi, M.}, \bibinfo{author}{Delillo, I.},
+  \bibinfo{author}{Bajocco, S.}, \bibinfo{author}{Fanchini, D.},
+  \bibinfo{author}{Fila, G.}, \bibinfo{author}{Ginaldi, F.},
+  \bibinfo{author}{Manici, L.M.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{A public decision support system for the assessment
+  of plant disease infection risk shared by {{Italian}} regions}.
+\newblock \bibinfo{journal}{Journal of Environmental Management}
+  \bibinfo{volume}{317}, \bibinfo{pages}{115365}.
+\newblock \DOIprefix\doi{10.1016/j.jenvman.2022.115365}.
+%Type = Article
+\bibitem[{Brischetto et~al.(2021)Brischetto, Bove, Fedele and
+  Rossi}]{brischettoWeatherDrivenModelPredicting2021}
+\bibinfo{author}{Brischetto, C.}, \bibinfo{author}{Bove, F.},
+  \bibinfo{author}{Fedele, G.}, \bibinfo{author}{Rossi, V.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{A {{Weather-Driven Model}} for {{Predicting
+  Infections}} of {{Grapevines}} by {{Sporangia}} of {{Plasmopara}} viticola}.
+\newblock \bibinfo{journal}{Frontiers in Plant Science} \bibinfo{volume}{12},
+  \bibinfo{pages}{636607}.
+\newblock \DOIprefix\doi{10.3389/fpls.2021.636607}.
+%Type = Article
+\bibitem[{Caffarra and
+  Eccel(2010)}]{caffarraIncreasingRobustnessPhenological2010}
+\bibinfo{author}{Caffarra, A.}, \bibinfo{author}{Eccel, E.},
+  \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Increasing the robustness of phenological models for
+  {{Vitis}} vinifera cv. {{Chardonnay}}}.
+\newblock \bibinfo{journal}{International Journal of Biometeorology}
+  \bibinfo{volume}{54}, \bibinfo{pages}{255--267}.
+\newblock \DOIprefix\doi{10.1007/s00484-009-0277-5}.
+%Type = Article
+\bibitem[{CAFFI and ROSSI(2018)}]{caffiFungicideModelsAre2018}
+\bibinfo{author}{CAFFI, T.}, \bibinfo{author}{ROSSI, V.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Fungicide models are key components of multiple
+  modelling approaches for decision-making in crop protection}.
+\newblock \bibinfo{journal}{Phytopathologia Mediterranea} \bibinfo{volume}{57}.
+\newblock \DOIprefix\doi{10.14601/Phytopathol_Mediterr-22471}.
+%Type = Article
+\bibitem[{Caffi et~al.(2010)Caffi, Rossi and
+  Bugiani}]{caffiEvaluationWarningSystem2010}
+\bibinfo{author}{Caffi, T.}, \bibinfo{author}{Rossi, V.},
+  \bibinfo{author}{Bugiani, R.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Evaluation of a {{Warning System}} for {{Controlling
+  Primary Infections}} of {{Grapevine Downy Mildew}}}.
+\newblock \bibinfo{journal}{Plant Disease} \bibinfo{volume}{94},
+  \bibinfo{pages}{709--716}.
+\newblock \DOIprefix\doi{10.1094/PDIS-94-6-0709}.
+%Type = Article
+\bibitem[{Caffi et~al.(2009)Caffi, Rossi, Bugiani, Spanna, Flamini, Cossu and
+  Nigro}]{caffiModelPredictingPrimary2009c}
+\bibinfo{author}{Caffi, T.}, \bibinfo{author}{Rossi, V.},
+  \bibinfo{author}{Bugiani, R.}, \bibinfo{author}{Spanna, F.},
+  \bibinfo{author}{Flamini, L.}, \bibinfo{author}{Cossu, A.},
+  \bibinfo{author}{Nigro, C.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{A model predicting primary infections of plasmopara
+  viticola in different grapevine-growing areas of italy}.
+\newblock \bibinfo{journal}{Journal of Plant Pathology} ,
+  \bibinfo{pages}{535--548}.
+%Type = Article
+\bibitem[{Caffi et~al.(2011a)Caffi, Rossi and
+  Carisse}]{caffiEvaluationDynamicModel2011}
+\bibinfo{author}{Caffi, T.}, \bibinfo{author}{Rossi, V.},
+  \bibinfo{author}{Carisse, O.}, \bibinfo{year}{2011}a.
+\newblock \bibinfo{title}{Evaluation of a {{Dynamic Model}} for {{Primary
+  Infections Caused}} by {{Plasmopara}} viticola on {{Grapevine}} in
+  {{Quebec}}}.
+\newblock \bibinfo{journal}{Plant Health Progress} \bibinfo{volume}{12},
+  \bibinfo{pages}{22}.
+\newblock \DOIprefix\doi{10.1094/PHP-2011-0126-01-RS}.
+%Type = Article
+\bibitem[{Caffi et~al.(2011b)Caffi, Rossi, Legler and
+  Bugiani}]{caffiMechanisticModelSimulating2011}
+\bibinfo{author}{Caffi, T.}, \bibinfo{author}{Rossi, V.},
+  \bibinfo{author}{Legler, S.E.}, \bibinfo{author}{Bugiani, R.},
+  \bibinfo{year}{2011}b.
+\newblock \bibinfo{title}{A mechanistic model simulating ascosporic infections
+  by {\emph{erysiphe necator}} , the powdery mildew fungus of grapevine}.
+\newblock \bibinfo{journal}{Plant Pathology} \bibinfo{volume}{60},
+  \bibinfo{pages}{522--531}.
+\newblock \DOIprefix\doi{10.1111/j.1365-3059.2010.02395.x}.
+%Type = Article
+\bibitem[{Carisse(2016)}]{carisseDevelopmentGrapeDowny2016}
+\bibinfo{author}{Carisse, O.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Development of grape downy mildew ({{Plasmopara}}
+  viticola) under northern viticulture conditions: Influence of fall disease
+  incidence}.
+\newblock \bibinfo{journal}{European Journal of Plant Pathology}
+  \bibinfo{volume}{144}, \bibinfo{pages}{773--783}.
+\newblock \DOIprefix\doi{10.1007/s10658-015-0748-y}.
+%Type = Article
+\bibitem[{Chen et~al.(2026)Chen, Hou, Hua, Wang, Chen and
+  Zhang}]{chenAgriculturalAutonomousDecisionmaking2026}
+\bibinfo{author}{Chen, H.}, \bibinfo{author}{Hou, G.}, \bibinfo{author}{Hua,
+  C.}, \bibinfo{author}{Wang, S.}, \bibinfo{author}{Chen, Z.},
+  \bibinfo{author}{Zhang, Y.}, \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{Agricultural autonomous decision-making system ''fuxi
+  brain'' based on generative large model fusion internet of things}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{244}, \bibinfo{pages}{111454}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2026.111454}.
+%Type = Article
+\bibitem[{{Garc{\'i}a de Cort{\'a}zar-Atauri} et~al.(2017){Garc{\'i}a de
+  Cort{\'a}zar-Atauri}, Duch{\^e}ne, {Destrac-Irvine}, Barbeau,
+  De~Ress{\'e}guier, Lacombe, Parker, Saurin and
+  Van~Leeuwen}]{garciadecortazar-atauriGrapevinePhenologyFrance2017}
+\bibinfo{author}{{Garc{\'i}a de Cort{\'a}zar-Atauri}, I.},
+  \bibinfo{author}{Duch{\^e}ne, E.}, \bibinfo{author}{{Destrac-Irvine}, A.},
+  \bibinfo{author}{Barbeau, G.}, \bibinfo{author}{De~Ress{\'e}guier, L.},
+  \bibinfo{author}{Lacombe, T.}, \bibinfo{author}{Parker, A.K.},
+  \bibinfo{author}{Saurin, N.}, \bibinfo{author}{Van~Leeuwen, C.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Grapevine phenology in {{France}}: From past
+  observations to future evolutions in the context of climate change}.
+\newblock \bibinfo{journal}{OENO One} \bibinfo{volume}{51},
+  \bibinfo{pages}{115}.
+\newblock \DOIprefix\doi{10.20870/oeno-one.2016.0.0.1622}.
+%Type = Article
+\bibitem[{GESSLER et~al.(2011)GESSLER, PERTOT and
+  PERAZZOLLI}]{gesslerPlasmoparaViticolaReview2011}
+\bibinfo{author}{GESSLER, C.}, \bibinfo{author}{PERTOT, I.},
+  \bibinfo{author}{PERAZZOLLI, M.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Plasmopara viticola: A review of knowledge on downy
+  mildew of grapevine and effective disease management}.
+\newblock \bibinfo{journal}{Phytopathologia Mediterranea} \bibinfo{volume}{50},
+  \bibinfo{pages}{3--44}.
+\newblock \href{http://arxiv.org/abs/26458675}{{\tt arXiv:26458675}}.
+%Type = Article
+\bibitem[{{Gonz{\'a}lez-Dom{\'i}nguez}
+  et~al.(2023){Gonz{\'a}lez-Dom{\'i}nguez}, Caffi, Rossi, Salotti and
+  Fedele}]{gonzalez-dominguezPlantDiseaseModels2023}
+\bibinfo{author}{{Gonz{\'a}lez-Dom{\'i}nguez}, E.}, \bibinfo{author}{Caffi,
+  T.}, \bibinfo{author}{Rossi, V.}, \bibinfo{author}{Salotti, I.},
+  \bibinfo{author}{Fedele, G.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Plant disease models and forecasting: Changes in
+  principles and applications over the last 50 years}.
+\newblock \bibinfo{journal}{Phytopathology\textregistered}
+  \bibinfo{volume}{113}, \bibinfo{pages}{678--693}.
+%Type = Article
+\bibitem[{Nkwocha and Chandel(2025)}]{nkwochaEndtoendDigitalFramework2025}
+\bibinfo{author}{Nkwocha, C.L.}, \bibinfo{author}{Chandel, A.K.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Towards an end-to-end digital framework for precision
+  crop disease diagnosis and management based on emerging sensing and computing
+  technologies: {{State}} over past decade and prospects}.
+\newblock \bibinfo{journal}{Computers}
+  \DOIprefix\doi{10.3390/computers14100443}.
+%Type = Article
+\bibitem[{Oliver et~al.(2023)Oliver, Cooper, Lewis~Ivey, Brannen, Miles,
+  Lowder, Mahaffee and Moyer}]{oliverFungicideUsePatterns2023}
+\bibinfo{author}{Oliver, C.}, \bibinfo{author}{Cooper, M.},
+  \bibinfo{author}{Lewis~Ivey, M.L.}, \bibinfo{author}{Brannen, P.},
+  \bibinfo{author}{Miles, T.D.}, \bibinfo{author}{Lowder, S.R.},
+  \bibinfo{author}{Mahaffee, W.F.}, \bibinfo{author}{Moyer, M.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Fungicide {{Use Patterns}} in {{Select United States
+  Wine Grape Production Regions}}}.
+\newblock \bibinfo{journal}{Plant Disease} ,
+  \bibinfo{pages}{PDIS--04--23--0798--RE}\DOIprefix\doi{10.1094/PDIS-04-23-0798-RE}.
+%Type = Article
+\bibitem[{Orlandini et~al.(1993)Orlandini, Gozzini, Rosa, Egger, Storchi,
+  Maracchi and Miglietta}]{orlandiniPLASMOSimulationModel1993}
+\bibinfo{author}{Orlandini, S.}, \bibinfo{author}{Gozzini, B.},
+  \bibinfo{author}{Rosa, M.}, \bibinfo{author}{Egger, E.},
+  \bibinfo{author}{Storchi, P.}, \bibinfo{author}{Maracchi, G.},
+  \bibinfo{author}{Miglietta, F.}, \bibinfo{year}{1993}.
+\newblock \bibinfo{title}{{{PLASMO}}: A simulation model for control of
+  {{Plasmopara}} viticola on grapevine}.
+\newblock \bibinfo{journal}{EPPO Bulletin} \bibinfo{volume}{23},
+  \bibinfo{pages}{619--626}.
+\newblock \DOIprefix\doi{10.1111/j.1365-2338.1993.tb00559.x}.
+%Type = Article
+\bibitem[{Park et~al.(1997)Park, Seem, Gadoury and
+  Pearson}]{parkDMCASTPredictionModel1997}
+\bibinfo{author}{Park, E.W.}, \bibinfo{author}{Seem, R.C.},
+  \bibinfo{author}{Gadoury, D.M.}, \bibinfo{author}{Pearson, R.C.},
+  \bibinfo{year}{1997}.
+\newblock \bibinfo{title}{{{DMCAST}}: {{A}} prediction model for grape downy
+  mildew development}.
+\newblock \bibinfo{journal}{Wein-Wissenschaft} \bibinfo{volume}{52},
+  \bibinfo{pages}{182--189}.
+%Type = Article
+\bibitem[{Parker et~al.(2011)Parker, {De Cort{\'a}zar-Atauri}, Van~Leeuwen and
+  Chuine}]{parkerGeneralPhenologicalModel2011}
+\bibinfo{author}{Parker, A.}, \bibinfo{author}{{De Cort{\'a}zar-Atauri}, I.},
+  \bibinfo{author}{Van~Leeuwen, C.}, \bibinfo{author}{Chuine, I.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{General phenological model to characterise the timing
+  of flowering and veraison of {{Vitis}} vinifera {{L}}.: {{Grapevine}}
+  flowering and veraison model}.
+\newblock \bibinfo{journal}{Australian Journal of Grape and Wine Research}
+  \bibinfo{volume}{17}, \bibinfo{pages}{206--216}.
+\newblock \DOIprefix\doi{10.1111/j.1755-0238.2011.00140.x}.
+%Type = Article
+\bibitem[{Pertot et~al.(2017)Pertot, Caffi, Rossi, Mugnai, Hoffmann, Grando,
+  Gary, Lafond, Duso, Thiery, Mazzoni and
+  Anfora}]{pertotCriticalReviewPlant2017}
+\bibinfo{author}{Pertot, I.}, \bibinfo{author}{Caffi, T.},
+  \bibinfo{author}{Rossi, V.}, \bibinfo{author}{Mugnai, L.},
+  \bibinfo{author}{Hoffmann, C.}, \bibinfo{author}{Grando, M.},
+  \bibinfo{author}{Gary, C.}, \bibinfo{author}{Lafond, D.},
+  \bibinfo{author}{Duso, C.}, \bibinfo{author}{Thiery, D.},
+  \bibinfo{author}{Mazzoni, V.}, \bibinfo{author}{Anfora, G.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{A critical review of plant protection tools for
+  reducing pesticide use on grapevine and new perspectives for the
+  implementation of {{IPM}} in viticulture}.
+\newblock \bibinfo{journal}{Crop Protection} \bibinfo{volume}{97},
+  \bibinfo{pages}{70--84}.
+\newblock \DOIprefix\doi{10.1016/j.cropro.2016.11.025}.
+%Type = Article
+\bibitem[{Puelles et~al.(2024)Puelles, {Arbizu-Milagro}, {Castillo-Ruiz} and
+  Pe{\~n}a}]{puellesPredictiveModelsGrape2024}
+\bibinfo{author}{Puelles, M.}, \bibinfo{author}{{Arbizu-Milagro}, J.},
+  \bibinfo{author}{{Castillo-Ruiz}, F.}, \bibinfo{author}{Pe{\~n}a, J.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Predictive models for grape downy mildew (plasmopara
+  viticola) as a decision support system in mediterranean conditions}.
+\newblock \bibinfo{journal}{Crop Protection} \bibinfo{volume}{175},
+  \bibinfo{pages}{106450}.
+\newblock \DOIprefix\doi{10.1016/j.cropro.2023.106450}.
+%Type = Article
+\bibitem[{Rai et~al.(2026)Rai, (Dana)~Choi, Boyd and
+  Schumann}]{raiAdvancingSitespecificDisease2026}
+\bibinfo{author}{Rai, N.}, \bibinfo{author}{(Dana)~Choi, D.},
+  \bibinfo{author}{Boyd, N.S.}, \bibinfo{author}{Schumann, A.W.},
+  \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{Advancing site-specific disease and pest management
+  in precision agriculture: {{From}} reasoning-driven foundation models to
+  adaptive, feedback-based learning}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{250}, \bibinfo{pages}{111859}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2026.111859}.
+%Type = Article
+\bibitem[{Rossi et~al.(2008)Rossi, Caffi, Giosu{\`e} and
+  Bugiani}]{rossiMechanisticModelSimulating2008}
+\bibinfo{author}{Rossi, V.}, \bibinfo{author}{Caffi, T.},
+  \bibinfo{author}{Giosu{\`e}, S.}, \bibinfo{author}{Bugiani, R.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{A mechanistic model simulating primary infections of
+  downy mildew in grapevine}.
+\newblock \bibinfo{journal}{Ecological Modelling} \bibinfo{volume}{212},
+  \bibinfo{pages}{480--491}.
+\newblock \DOIprefix\doi{10.1016/j.ecolmodel.2007.10.046}.
+%Type = Article
+\bibitem[{Rossi et~al.(2023)Rossi, Caffi, Salotti and
+  Fedele}]{rossiSharingDecisionmakingTools2023}
+\bibinfo{author}{Rossi, V.}, \bibinfo{author}{Caffi, T.},
+  \bibinfo{author}{Salotti, I.}, \bibinfo{author}{Fedele, G.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Sharing decision-making tools for pest management may
+  foster implementation of integrated pest management}.
+\newblock \bibinfo{journal}{Food Security} \bibinfo{volume}{15},
+  \bibinfo{pages}{1459--1474}.
+\newblock \DOIprefix\doi{10.1007/s12571-023-01402-3}.
+%Type = Article
+\bibitem[{Rossi et~al.(2014)Rossi, Salinari, Poni, Caffi and
+  Bettati}]{rossiAddressingImplementationProblem2014}
+\bibinfo{author}{Rossi, V.}, \bibinfo{author}{Salinari, F.},
+  \bibinfo{author}{Poni, S.}, \bibinfo{author}{Caffi, T.},
+  \bibinfo{author}{Bettati, T.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Addressing the implementation problem in agricultural
+  decision support systems: The example of vite.net\textregistered}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{100}, \bibinfo{pages}{88--99}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2013.10.011}.
+%Type = Article
+\bibitem[{Savary et~al.(2018)Savary, Nelson, Djurle, Esker, Sparks, Amorim,
+  Bergamin~Filho, Caffi, Castilla, Garrett, McRoberts, Rossi, Yuen and
+  Willocquet}]{savaryConceptsApproachesAvenues2018}
+\bibinfo{author}{Savary, S.}, \bibinfo{author}{Nelson, A.D.},
+  \bibinfo{author}{Djurle, A.}, \bibinfo{author}{Esker, P.D.},
+  \bibinfo{author}{Sparks, A.}, \bibinfo{author}{Amorim, L.},
+  \bibinfo{author}{Bergamin~Filho, A.}, \bibinfo{author}{Caffi, T.},
+  \bibinfo{author}{Castilla, N.}, \bibinfo{author}{Garrett, K.},
+  \bibinfo{author}{McRoberts, N.}, \bibinfo{author}{Rossi, V.},
+  \bibinfo{author}{Yuen, J.}, \bibinfo{author}{Willocquet, L.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Concepts, approaches, and avenues for modelling crop
+  health and crop losses}.
+\newblock \bibinfo{journal}{European Journal of Agronomy}
+  \bibinfo{volume}{100}, \bibinfo{pages}{4--18}.
+\newblock \DOIprefix\doi{10.1016/j.eja.2018.04.003}.
+%Type = Article
+\bibitem[{Seem(2004)}]{seemForecastingPlantDisease2004}
+\bibinfo{author}{Seem, R.C.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Forecasting plant disease in a changing climate: A
+  question of scale}.
+\newblock \bibinfo{journal}{Canadian Journal of Plant Pathology}
+  \bibinfo{volume}{26}, \bibinfo{pages}{274--283}.
+\newblock \DOIprefix\doi{10.1080/07060660409507144}.
+%Type = Article
+\bibitem[{Shafay et~al.(2026)Shafay, Velayudhan, Owais, Hassan, Seneviratne,
+  Hussain and Werghi}]{shafayEndtoendVisionLanguage2026}
+\bibinfo{author}{Shafay, M.}, \bibinfo{author}{Velayudhan, D.},
+  \bibinfo{author}{Owais, M.}, \bibinfo{author}{Hassan, T.},
+  \bibinfo{author}{Seneviratne, L.}, \bibinfo{author}{Hussain, I.},
+  \bibinfo{author}{Werghi, N.}, \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{An end-to-end vision--language framework with
+  {{LLM-based}} reasoning for decision-oriented tomato leaf disease management
+  in greenhouse environments}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{247}, \bibinfo{pages}{111692}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2026.111692}.
+%Type = Article
+\bibitem[{Toffolatti et~al.(2024)Toffolatti, Lecchi, Maddalena, Marcian{\`o},
+  Stuknyt{\.e}, Arioli, Mora, Bianco, Borsa, Coatti, {Waldner-Zulauf}, Borghi
+  and Torriani}]{toffolattiManagementGrapevineDowny2024}
+\bibinfo{author}{Toffolatti, S.L.}, \bibinfo{author}{Lecchi, B.},
+  \bibinfo{author}{Maddalena, G.}, \bibinfo{author}{Marcian{\`o}, D.},
+  \bibinfo{author}{Stuknyt{\.e}, M.}, \bibinfo{author}{Arioli, S.},
+  \bibinfo{author}{Mora, D.}, \bibinfo{author}{Bianco, P.A.},
+  \bibinfo{author}{Borsa, P.}, \bibinfo{author}{Coatti, M.},
+  \bibinfo{author}{{Waldner-Zulauf}, M.}, \bibinfo{author}{Borghi, L.},
+  \bibinfo{author}{Torriani, S.F.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{The management of grapevine downy mildew: {{From}}
+  anti-resistance strategies to innovative approaches for fungicide resistance
+  monitoring}.
+\newblock \bibinfo{journal}{Journal of Plant Diseases and Protection}
+  \bibinfo{volume}{131}, \bibinfo{pages}{1225--1232}.
+\newblock \DOIprefix\doi{10.1007/s41348-024-00867-4}.
+%Type = Article
+\bibitem[{Tudi et~al.(2021)Tudi, Daniel~Ruan, Wang, Lyu, Sadler, Connell, Chu
+  and Phung}]{tudiAgricultureDevelopmentPesticide2021}
+\bibinfo{author}{Tudi, M.}, \bibinfo{author}{Daniel~Ruan, H.},
+  \bibinfo{author}{Wang, L.}, \bibinfo{author}{Lyu, J.},
+  \bibinfo{author}{Sadler, R.}, \bibinfo{author}{Connell, D.},
+  \bibinfo{author}{Chu, C.}, \bibinfo{author}{Phung, D.T.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Agriculture {{Development}}, {{Pesticide
+  Application}} and {{Its Impact}} on the {{Environment}}}.
+\newblock \bibinfo{journal}{International Journal of Environmental Research and
+  Public Health} \bibinfo{volume}{18}, \bibinfo{pages}{1112}.
+\newblock \DOIprefix\doi{10.3390/ijerph18031112}.
+%Type = Article
+\bibitem[{Wang et~al.(2020)Wang, Li and Garc{\'i}a De
+  Cort{\'a}zar~Atauri}]{wangAssessingGrapevinePhenological2020}
+\bibinfo{author}{Wang, X.}, \bibinfo{author}{Li, H.},
+  \bibinfo{author}{Garc{\'i}a De Cort{\'a}zar~Atauri, I.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Assessing grapevine phenological models under
+  {{Chinese}} climatic conditions}.
+\newblock \bibinfo{journal}{OENO One}
+  \DOIprefix\doi{10.20870/oeno-one.2020.54.3.3195}.
+%Type = Article
+\bibitem[{Yan et~al.(2025)Yan, Liang, Cheng, Li, Yang, Li, Yin, Qu, Wang, Wu,
+  Tian, Yu and Zhao}]{yanCDIPChatGLM3DualModel2025}
+\bibinfo{author}{Yan, C.}, \bibinfo{author}{Liang, Z.}, \bibinfo{author}{Cheng,
+  H.}, \bibinfo{author}{Li, S.}, \bibinfo{author}{Yang, G.},
+  \bibinfo{author}{Li, Z.}, \bibinfo{author}{Yin, L.}, \bibinfo{author}{Qu,
+  J.}, \bibinfo{author}{Wang, J.}, \bibinfo{author}{Wu, G.},
+  \bibinfo{author}{Tian, Q.}, \bibinfo{author}{Yu, Q.}, \bibinfo{author}{Zhao,
+  G.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{{{CDIP-ChatGLM3}}: A dual-model approach integrating
+  computer vision and language modeling for crop disease identification and
+  prescription}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{236}, \bibinfo{pages}{110442}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2025.110442}.
+%Type = Article
+\bibitem[{Yan et~al.(2024)Yan, Liang, Yin, Wei, Tian, Li, Cheng, Liu, Yu, Zhao
+  et~al.}]{yanAFMYOLOv8sAccurateFast2024}
+\bibinfo{author}{Yan, C.}, \bibinfo{author}{Liang, Z.}, \bibinfo{author}{Yin,
+  L.}, \bibinfo{author}{Wei, S.}, \bibinfo{author}{Tian, Q.},
+  \bibinfo{author}{Li, Y.}, \bibinfo{author}{Cheng, H.}, \bibinfo{author}{Liu,
+  J.}, \bibinfo{author}{Yu, Q.}, \bibinfo{author}{Zhao, G.}, et~al.,
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{{{AFM-YOLOv8s}}: {{An}} accurate, fast, and highly
+  robust model for detection of sporangia of plasmopara viticola with various
+  morphological variants}.
+\newblock \bibinfo{journal}{Plant Phenomics} \bibinfo{volume}{6},
+  \bibinfo{pages}{0246}.
+
+\end{thebibliography}

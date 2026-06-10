@@ -1,0 +1,257 @@
+﻿id,name,content_type_id,codename
+1,Can add custom user,1,add_customuser
+2,Can change custom user,1,change_customuser
+3,Can delete custom user,1,delete_customuser
+4,Can view custom user,1,view_customuser
+5,Can add error log,2,add_errorlog
+6,Can change error log,2,change_errorlog
+7,Can delete error log,2,delete_errorlog
+8,Can view error log,2,view_errorlog
+9,Can add cultivation method,3,add_cultivationmethod
+10,Can change cultivation method,3,change_cultivationmethod
+11,Can delete cultivation method,3,delete_cultivationmethod
+12,Can view cultivation method,3,view_cultivationmethod
+13,Can add disease type,4,add_diseasetype
+14,Can change disease type,4,change_diseasetype
+15,Can delete disease type,4,delete_diseasetype
+16,Can view disease type,4,view_diseasetype
+17,Can add grape variety,5,add_grapevariety
+18,Can change grape variety,5,change_grapevariety
+19,Can delete grape variety,5,delete_grapevariety
+20,Can view grape variety,5,view_grapevariety
+21,Can add growth stage,6,add_growthstage
+22,Can change growth stage,6,change_growthstage
+23,Can delete growth stage,6,delete_growthstage
+24,Can view growth stage,6,view_growthstage
+25,Can add reminder,7,add_reminder
+26,Can change reminder,7,change_reminder
+27,Can delete reminder,7,delete_reminder
+28,Can view reminder,7,view_reminder
+29,Can add pesticide,8,add_pesticide
+30,Can change pesticide,8,change_pesticide
+31,Can delete pesticide,8,delete_pesticide
+32,Can view pesticide,8,view_pesticide
+33,Can add fungicide,9,add_fungicide
+34,Can change fungicide,9,change_fungicide
+35,Can delete fungicide,9,delete_fungicide
+36,Can view fungicide,9,view_fungicide
+37,Can add log entry,10,add_logentry
+38,Can change log entry,10,change_logentry
+39,Can delete log entry,10,delete_logentry
+40,Can view log entry,10,view_logentry
+41,Can add permission,11,add_permission
+42,Can change permission,11,change_permission
+43,Can delete permission,11,delete_permission
+44,Can view permission,11,view_permission
+45,Can add group,12,add_group
+46,Can change group,12,change_group
+47,Can delete group,12,delete_group
+48,Can view group,12,view_group
+49,Can add user,13,add_user
+50,Can change user,13,change_user
+51,Can delete user,13,delete_user
+52,Can view user,13,view_user
+53,Can add content type,14,add_contenttype
+54,Can change content type,14,change_contenttype
+55,Can delete content type,14,delete_contenttype
+56,Can view content type,14,view_contenttype
+57,Can add session,15,add_session
+58,Can change session,15,change_session
+59,Can delete session,15,delete_session
+60,Can view session,15,view_session
+61,Can add 地块信息,16,add_field
+62,Can change 地块信息,16,change_field
+63,Can delete 地块信息,16,delete_field
+64,Can view 地块信息,16,view_field
+65,Can add crop season,17,add_cropseason
+66,Can change crop season,17,change_cropseason
+67,Can delete crop season,17,delete_cropseason
+68,Can view crop season,17,view_cropseason
+69,Can add 天气API,18,add_weather
+70,Can change 天气API,18,change_weather
+71,Can delete 天气API,18,delete_weather
+72,Can view 天气API,18,view_weather
+73,Can add 15天气API,19,add_weather15
+74,Can change 15天气API,19,change_weather15
+75,Can delete 15天气API,19,delete_weather15
+76,Can view 15天气API,19,view_weather15
+77,Can add 地块气象数据,20,add_fieldhourlyweather
+78,Can change 地块气象数据,20,change_fieldhourlyweather
+79,Can delete 地块气象数据,20,delete_fieldhourlyweather
+80,Can view 地块气象数据,20,view_fieldhourlyweather
+81,Can add 作物天气小时气象数据,21,add_crophourlyweather
+82,Can change 作物天气小时气象数据,21,change_crophourlyweather
+83,Can delete 作物天气小时气象数据,21,delete_crophourlyweather
+84,Can view 作物天气小时气象数据,21,view_crophourlyweather
+85,Can add 作物天气天气象数据,22,add_cropdailyweather
+86,Can change 作物天气天气象数据,22,change_cropdailyweather
+87,Can delete 作物天气天气象数据,22,delete_cropdailyweather
+88,Can view 作物天气天气象数据,22,view_cropdailyweather
+89,Can add 田间记录,23,add_recode
+90,Can change 田间记录,23,change_recode
+91,Can delete 田间记录,23,delete_recode
+92,Can view 田间记录,23,view_recode
+93,Can add note,24,add_note
+94,Can change note,24,change_note
+95,Can delete note,24,delete_note
+96,Can view note,24,view_note
+97,Can add image,25,add_image
+98,Can change image,25,change_image
+99,Can delete image,25,delete_image
+100,Can view image,25,view_image
+101,Can add incidence note,26,add_incidencenote
+102,Can change incidence note,26,change_incidencenote
+103,Can delete incidence note,26,delete_incidencenote
+104,Can view incidence note,26,view_incidencenote
+105,Can add growthstage note,27,add_growthstagenote
+106,Can change growthstage note,27,change_growthstagenote
+107,Can delete growthstage note,27,delete_growthstagenote
+108,Can view growthstage note,27,view_growthstagenote
+109,Can add 生育期模型数据,28,add_phenmodeldata
+110,Can change 生育期模型数据,28,change_phenmodeldata
+111,Can delete 生育期模型数据,28,delete_phenmodeldata
+112,Can view 生育期模型数据,28,view_phenmodeldata
+113,Can add crop protection,29,add_cropprotection
+114,Can change crop protection,29,change_cropprotection
+115,Can delete crop protection,29,delete_cropprotection
+116,Can view crop protection,29,view_cropprotection
+117,Can add pesticides,30,add_pesticides
+118,Can change pesticides,30,change_pesticides
+119,Can delete pesticides,30,delete_pesticides
+120,Can view pesticides,30,view_pesticides
+121,Can add irrigation,31,add_irrigation
+122,Can change irrigation,31,change_irrigation
+123,Can delete irrigation,31,delete_irrigation
+124,Can view irrigation,31,view_irrigation
+125,Can add fungicides,32,add_fungicides
+126,Can change fungicides,32,change_fungicides
+127,Can delete fungicides,32,delete_fungicides
+128,Can view fungicides,32,view_fungicides
+129,Can add django job,33,add_djangojob
+130,Can change django job,33,change_djangojob
+131,Can delete django job,33,delete_djangojob
+132,Can view django job,33,view_djangojob
+133,Can add django job execution,34,add_djangojobexecution
+134,Can change django job execution,34,change_djangojobexecution
+135,Can delete django job execution,34,delete_djangojobexecution
+136,Can view django job execution,34,view_djangojobexecution
+137,Can add notification,35,add_notification
+138,Can change notification,35,change_notification
+139,Can delete notification,35,delete_notification
+140,Can view notification,35,view_notification
+141,Can add r b_data,36,add_rb_data
+142,Can change r b_data,36,change_rb_data
+143,Can delete r b_data,36,delete_rb_data
+144,Can view r b_data,36,view_rb_data
+145,Can add disease,37,add_disease
+146,Can change disease,37,change_disease
+147,Can delete disease,37,delete_disease
+148,Can view disease,37,view_disease
+149,Can add 作物气象数据,38,add_cropweather
+150,Can change 作物气象数据,38,change_cropweather
+151,Can delete 作物气象数据,38,delete_cropweather
+152,Can view 作物气象数据,38,view_cropweather
+153,Can add 生育期模型数据,39,add_phendata
+154,Can change 生育期模型数据,39,change_phendata
+155,Can delete 生育期模型数据,39,delete_phendata
+156,Can view 生育期模型数据,39,view_phendata
+157,Can add rb,40,add_rb
+158,Can change rb,40,change_rb
+159,Can delete rb,40,delete_rb
+160,Can view rb,40,view_rb
+161,Can add disease data,41,add_diseasedata
+162,Can change disease data,41,change_diseasedata
+163,Can delete disease data,41,delete_diseasedata
+164,Can view disease data,41,view_diseasedata
+165,Can add recode,42,add_recode
+166,Can change recode,42,change_recode
+167,Can delete recode,42,delete_recode
+168,Can view recode,42,view_recode
+169,Can add image,43,add_image
+170,Can change image,43,change_image
+171,Can delete image,43,delete_image
+172,Can view image,43,view_image
+173,Can add yol o_m,44,add_yolo_m
+174,Can change yol o_m,44,change_yolo_m
+175,Can delete yol o_m,44,delete_yolo_m
+176,Can view yol o_m,44,view_yolo_m
+177,Can add vit,45,add_vit
+178,Can change vit,45,change_vit
+179,Can delete vit,45,delete_vit
+180,Can view vit,45,view_vit
+181,Can add image,46,add_image
+182,Can change image,46,change_image
+183,Can delete image,46,delete_image
+184,Can view image,46,view_image
+185,Can add 消息记录,47,add_message
+186,Can change 消息记录,47,change_message
+187,Can delete 消息记录,47,delete_message
+188,Can view 消息记录,47,view_message
+189,Can add message text,48,add_messagetext
+190,Can change message text,48,change_messagetext
+191,Can delete message text,48,delete_messagetext
+192,Can view message text,48,view_messagetext
+193,Can add comment image,49,add_commentimage
+194,Can change comment image,49,change_commentimage
+195,Can delete comment image,49,delete_commentimage
+196,Can view comment image,49,view_commentimage
+197,Can add comment,50,add_comment
+198,Can change comment,50,change_comment
+199,Can delete comment,50,delete_comment
+200,Can view comment,50,view_comment
+201,Can add forum_ notice,51,add_forum_notice
+202,Can change forum_ notice,51,change_forum_notice
+203,Can delete forum_ notice,51,delete_forum_notice
+204,Can view forum_ notice,51,view_forum_notice
+205,Can add reply,52,add_reply
+206,Can change reply,52,change_reply
+207,Can delete reply,52,delete_reply
+208,Can view reply,52,view_reply
+209,Can add forum post,53,add_forumpost
+210,Can change forum post,53,change_forumpost
+211,Can delete forum post,53,delete_forumpost
+212,Can view forum post,53,view_forumpost
+213,Can add post image,54,add_postimage
+214,Can change post image,54,change_postimage
+215,Can delete post image,54,delete_postimage
+216,Can view post image,54,view_postimage
+217,Can add discovering diseases,55,add_discoveringdiseases
+218,Can change discovering diseases,55,change_discoveringdiseases
+219,Can delete discovering diseases,55,delete_discoveringdiseases
+220,Can view discovering diseases,55,view_discoveringdiseases
+221,Can add image paths,56,add_imagepaths
+222,Can change image paths,56,change_imagepaths
+223,Can delete image paths,56,delete_imagepaths
+224,Can view image paths,56,view_imagepaths
+225,Can add user_ text_ infor,57,add_user_text_infor
+226,Can change user_ text_ infor,57,change_user_text_infor
+227,Can delete user_ text_ infor,57,delete_user_text_infor
+228,Can view user_ text_ infor,57,view_user_text_infor
+229,Can add text_ infor,58,add_text_infor
+230,Can change text_ infor,58,change_text_infor
+231,Can delete text_ infor,58,delete_text_infor
+232,Can view text_ infor,58,view_text_infor
+233,Can add image upload,59,add_imageupload
+234,Can change image upload,59,change_imageupload
+235,Can delete image upload,59,delete_imageupload
+236,Can view image upload,59,view_imageupload
+237,Can add suggestion,60,add_suggestion
+238,Can change suggestion,60,change_suggestion
+239,Can delete suggestion,60,delete_suggestion
+240,Can view suggestion,60,view_suggestion
+241,Can add pdf,61,add_pdf
+242,Can change pdf,61,change_pdf
+243,Can delete pdf,61,delete_pdf
+244,Can view pdf,61,view_pdf
+245,Can add jiaojia,62,add_jiaojia
+246,Can change jiaojia,62,change_jiaojia
+247,Can delete jiaojia,62,delete_jiaojia
+248,Can view jiaojia,62,view_jiaojia
+249,Can add image,63,add_image
+250,Can change image,63,change_image
+251,Can delete image,63,delete_image
+252,Can view image,63,view_image
+253,Can add 教稼消息记录,64,add_jiaojiamessage
+254,Can change 教稼消息记录,64,change_jiaojiamessage
+255,Can delete 教稼消息记录,64,delete_jiaojiamessage
+256,Can view 教稼消息记录,64,view_jiaojiamessage

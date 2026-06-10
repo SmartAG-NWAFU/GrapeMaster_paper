@@ -1,0 +1,20 @@
+﻿uuid,principal_code,bbch,ch_description,en_description
+bcd73352-76d9-42e3-b08d-29b0e110ec58,萌芽期,0,休眠,"Dormancy: winter buds pointed to rounded, light or dark brown according to cultivar; bud scales more or less closed according to cultivar"
+ef967f97-ecf9-4264-9f28-0111694247d5,萌芽期,9,绽放,"Bud burst, green shoot tips clearly visible"
+bf213452-d5b0-4d5d-938c-e505ff2e5518,展叶期,11,1叶展开,First leaf unfolded and spread away from shoot
+2de32f64-aad5-4fea-abbd-002515869916,展叶期,13,3叶展开,3nd leaves unfolded
+a818cb78-9ff0-4797-9f96-7e1026e482a2,花序期,53,花序出现,Inflorescences clearly visible
+a6fb16fc-1939-4a70-8ff6-578b0a72a718,花序期,55,花蕾挤压,"Inflorescences swelling, flowers closely pressed together"
+c0863a91-a163-4b20-9c78-d6cd73106ef9,花序期,57,花蕾分离,Inflorescences fully developed; flowers separating
+c9df68a9-7c62-4e60-a772-85db7d4ecbff,开花期,61,10%的花冠掉落,Beginning of flowering: 10% of flowerhoods fallen
+537e5c33-2a4a-414e-959f-3f527b6a09f5,开花期,65,50%的花冠脱落,Full flowering: 50% of flowerhoods fallen
+b80d3f4f-2308-4813-8bb7-e8efa0a11f79,开花期,69,开花结束,End of flowering
+08b63e7a-94b0-471e-96d8-29510bed0f9b,坐果期,71,幼果膨大,"Fruit set: young fruits begin to swell, remains of flowers lost"
+4b94ddb8-006a-445d-a628-f3ff14d7e82a,坐果期,73,铅丸大小,"Berries groat-sized, bunches begin to hang"
+3f32a5d9-9382-4a31-8295-3b7bb5e17463,坐果期,75,豌豆大小,"Berries pea-sized, bunches hang"
+47a85e00-bbd1-4c4c-88ab-8a24c71acaff,坐果期,77,开始挤压,Berries beginning to touch
+3360a3f9-c9f5-4ffb-8987-63320e4ec628,坐果期,79,大多数挤压,Majority of berries touching
+98c79392-a818-4582-b821-922c32a92ccd,成熟期,81,出现特有颜色,Beginning of ripening: berries begin to develop variety-specific colour
+bb8943ac-57d1-4b0a-98c7-94a1bedf90f4,成熟期,83,转色,Berries developing colour
+e7637f8c-7f3f-4b8f-aa58-04eeaff9f8d2,成熟期,85,软化,Softening of berries
+bb221ef7-894d-4c9d-9c4d-814da99f3910,成熟期,89,成熟,Berries ripe for harvest

@@ -1,0 +1,262 @@
+﻿id,created_datetime,text
+1127,2025-03-27T06:24:14.386908+00:00,"Image1:4-4.jpg, Normal:52, Malformed:3, Empty:10, MalformationRate:4.6%, GerminationRate:15.4%
+Image2:Propamocarb-0300.jpg, Normal:3, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image3:2-8.jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Image4:20220420-washing(1).jpg, Normal:8, Malformed:9, Empty:20, MalformationRate:24.3%, GerminationRate:54.1%
+Total: Number of images: 4, Normal:91, Malformed:13, Empty:38, MalformationRate:7.9%, GerminationRate:22.8%"
+1128,2025-04-03T03:14:23.772475+00:00,
+1129,2025-04-03T03:14:30.883300+00:00,"Image1:4-4.jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Total: Number of images: 1, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%"
+1130,2025-04-06T13:15:10.482065+00:00,
+1131,2025-04-06T13:15:20.322001+00:00,
+1132,2025-04-06T13:15:26.276665+00:00,"Image1:Propamocarb-0046.jpg, Normal:5, Malformed:6, Empty:10, MalformationRate:28.6%, GerminationRate:47.6%
+Total: Number of images: 1, Normal:5, Malformed:6, Empty:10, MalformationRate:28.6%, GerminationRate:47.6%"
+1133,2025-04-11T13:34:22.037970+00:00,
+1134,2025-04-22T12:36:25.934221+00:00,
+1135,2025-04-28T01:58:25.617989+00:00,
+1136,2025-04-28T01:58:37.067275+00:00,"Image1:Propamocarb-0300.jpg, Normal:8, Malformed:9, Empty:20, MalformationRate:24.3%, GerminationRate:54.1%
+Total: Number of images: 1, Normal:8, Malformed:9, Empty:20, MalformationRate:24.3%, GerminationRate:54.1%"
+1137,2025-06-23T03:37:06.740129+00:00,
+1138,2025-06-23T03:37:09.378769+00:00,
+1139,2025-06-23T03:37:27.767485+00:00,
+1140,2025-06-23T03:39:19.622145+00:00,
+1141,2025-06-23T08:48:23.146377+00:00,
+1142,2025-06-23T08:48:26.042882+00:00,
+1143,2025-06-23T08:48:28.622323+00:00,
+1144,2025-07-11T01:58:08.644531+00:00,
+1145,2025-07-11T02:01:55.402135+00:00,
+1146,2025-07-11T02:02:17.289024+00:00,
+1147,2025-09-19T02:17:25.015595+00:00,
+1148,2025-09-19T02:17:40.420529+00:00,
+1149,2025-09-19T02:18:42.031330+00:00,
+1150,2025-09-19T02:22:33.915446+00:00,
+1151,2025-09-19T02:28:42.773429+00:00,
+1152,2025-09-19T09:25:11.025213+00:00,
+1153,2025-09-19T09:25:17.171305+00:00,
+1154,2025-09-19T09:27:37.144600+00:00,
+1155,2025-10-20T08:04:52.758586+00:00,
+1156,2025-10-20T08:04:56.436361+00:00,
+1157,2025-10-20T08:07:21.522221+00:00,
+1158,2025-11-11T07:19:07.339505+00:00,
+1159,2025-11-11T07:19:13.985661+00:00,
+1160,2025-11-15T08:37:04.299187+00:00,
+1161,2025-11-15T08:37:17.749562+00:00,
+1162,2025-11-15T08:37:23.955186+00:00,
+1163,2025-11-15T08:37:26.211007+00:00,
+1164,2025-11-15T08:37:28.042242+00:00,
+1165,2025-11-15T08:37:30.461164+00:00,
+1166,2025-11-15T08:38:12.824693+00:00,
+1167,2025-11-15T08:39:02.080274+00:00,
+1168,2025-11-15T08:39:13.211838+00:00,
+1169,2025-11-15T08:40:22.010734+00:00,
+1170,2025-11-17T09:09:14.700112+00:00,
+1171,2025-11-17T09:09:17.237554+00:00,
+1172,2025-11-17T09:09:20.380751+00:00,
+1173,2025-11-17T09:31:55.535055+00:00,
+1174,2025-11-17T09:32:02.092155+00:00,"Image1:4-4.jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Image2:pv3-4-10x20(98).jpg, Normal:18, Malformed:0, Empty:13, MalformationRate:0.0%, GerminationRate:41.9%
+Total: Number of images: 2, Normal:46, Malformed:1, Empty:21, MalformationRate:1.4%, GerminationRate:31.8%"
+1175,2025-11-17T14:15:22.840712+00:00,
+1176,2025-11-17T14:15:28.615302+00:00,"Image1:4-4.jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Total: Number of images: 1, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%"
+1177,2025-11-17T14:16:10.811270+00:00,
+1178,2025-11-17T14:16:17.317768+00:00,"Image1:4-4.jpg, Normal:24, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image2:10X40fanshiling(7).jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Total: Number of images: 2, Normal:52, Malformed:1, Empty:8, MalformationRate:1.4%, GerminationRate:10.8%"
+1179,2025-11-17T14:16:58.879124+00:00,
+1180,2025-11-17T14:17:06.049287+00:00,"Image1:4-4.jpg, Normal:24, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image2:10X40fanshiling(7).jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Image3:Propamocarb-0046.jpg, Normal:5, Malformed:6, Empty:10, MalformationRate:28.6%, GerminationRate:47.6%
+Total: Number of images: 3, Normal:57, Malformed:7, Empty:18, MalformationRate:10.4%, GerminationRate:23.1%"
+1181,2025-11-18T06:45:07.168647+00:00,
+1182,2025-11-18T06:45:21.607031+00:00,"Image1:Propamocarb-0046.jpg, Normal:5, Malformed:6, Empty:10, MalformationRate:28.6%, GerminationRate:47.6%
+Image2:Propamocarb-0300.jpg, Normal:8, Malformed:9, Empty:20, MalformationRate:24.3%, GerminationRate:54.1%
+Total: Number of images: 2, Normal:13, Malformed:15, Empty:30, MalformationRate:26.5%, GerminationRate:50.9%"
+1183,2025-11-18T06:52:02.592656+00:00,
+1184,2025-11-18T06:52:08.407095+00:00,"Image1:4-4.jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Total: Number of images: 1, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%"
+1185,2025-11-20T13:00:50.737266+00:00,
+1186,2025-11-20T13:01:04.415669+00:00,"Image1:Propamocarb-0046.jpg, Normal:5, Malformed:6, Empty:10, MalformationRate:28.6%, GerminationRate:47.6%
+Image2:ddH2O(27).jpg, Normal:7, Malformed:5, Empty:6, MalformationRate:27.8%, GerminationRate:33.3%
+Total: Number of images: 2, Normal:12, Malformed:11, Empty:16, MalformationRate:28.2%, GerminationRate:40.5%"
+1187,2025-12-03T09:01:13.244245+00:00,
+1188,2025-12-03T09:01:32.025407+00:00,"Image1:IMG_8602.JPG, Normal:45, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image2:IMG_8605.JPG, Normal:9, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image3:IMG_8606.JPG, Normal:3, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image4:25.JPG, Normal:0, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Total: Number of images: 4, Normal:57, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%"
+1189,2025-12-03T09:02:21.860749+00:00,
+1190,2025-12-03T09:02:31.883333+00:00,"Image1:IMG_8602.JPG, Normal:45, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image2:IMG_8605.JPG, Normal:9, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image3:IMG_8606.JPG, Normal:3, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image4:25.JPG, Normal:0, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Total: Number of images: 4, Normal:57, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%"
+1191,2025-12-03T09:05:24.932104+00:00,
+1192,2025-12-03T09:05:37.712552+00:00,"Image1:25.JPG, Normal:2, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image2:19 (1).JPG, Normal:45, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image3:32 (1).JPG, Normal:0, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image4:29 (1).JPG, Normal:0, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image5:32 (2).JPG, Normal:1, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Total: Number of images: 5, Normal:48, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%"
+1193,2025-12-03T09:07:16.912364+00:00,
+1194,2025-12-03T09:07:24.899213+00:00,"Image1:28 (1).JPG, Normal:0, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:0, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%"
+1195,2025-12-03T09:10:45.611719+00:00,
+1196,2025-12-03T09:10:52.106778+00:00,"Image1:23 (2).JPG, Normal:1, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:1, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%"
+1197,2025-12-03T09:16:26.972686+00:00,
+1198,2025-12-03T09:16:33.816550+00:00,"Image1:23 (2).JPG, Normal:1, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image2:观测 10X20-01.jpg, Normal:0, Malformed:0, Empty:1, MalformationRate:0.0%, GerminationRate:100.0%
+Total: Number of images: 2, Normal:1, Malformed:0, Empty:1, MalformationRate:0.0%, GerminationRate:50.0%"
+1199,2025-12-03T09:18:45.709602+00:00,
+1200,2025-12-03T09:18:51.376691+00:00,"Image1:观测 10X20-02.jpg, Normal:2, Malformed:1, Empty:0, MalformationRate:33.3%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:2, Malformed:1, Empty:0, MalformationRate:33.3%, GerminationRate:0.0%"
+1201,2025-12-03T09:21:16.254111+00:00,
+1202,2025-12-03T09:21:21.874926+00:00,"Image1:观测 10X40-03.jpg, Normal:1, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:1, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%"
+1203,2025-12-03T09:24:45.222545+00:00,
+1204,2025-12-03T09:24:50.910748+00:00,"Image1:观测 10X20-0004.json, Normal:0, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:0, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%"
+1205,2025-12-10T01:33:07.454215+00:00,
+1206,2025-12-10T01:33:21.459940+00:00,"Image1:观测10X10 (3).jpg, Normal:51, Malformed:0, Empty:1, MalformationRate:0.0%, GerminationRate:1.9%
+Total: Number of images: 1, Normal:51, Malformed:0, Empty:1, MalformationRate:0.0%, GerminationRate:1.9%"
+1207,2025-12-10T01:38:44.219026+00:00,
+1208,2025-12-10T01:38:49.936148+00:00,"Image1:观测10X20 (1).jpg, Normal:12, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:12, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%"
+1209,2025-12-10T01:44:00.840854+00:00,
+1210,2025-12-10T01:44:06.847157+00:00,"Image1:观测10X20 (78).jpg, Normal:57, Malformed:0, Empty:1, MalformationRate:0.0%, GerminationRate:1.7%
+Total: Number of images: 1, Normal:57, Malformed:0, Empty:1, MalformationRate:0.0%, GerminationRate:1.7%"
+1211,2025-12-10T01:48:48.677318+00:00,
+1212,2025-12-10T01:48:54.298987+00:00,"Image1:观测10X20 (84).jpg, Normal:5, Malformed:1, Empty:0, MalformationRate:16.7%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:5, Malformed:1, Empty:0, MalformationRate:16.7%, GerminationRate:0.0%"
+1213,2025-12-10T01:49:17.847639+00:00,
+1214,2025-12-10T01:49:23.455070+00:00,"Image1:观测10X20 (84).jpg, Normal:5, Malformed:1, Empty:0, MalformationRate:16.7%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:5, Malformed:1, Empty:0, MalformationRate:16.7%, GerminationRate:0.0%"
+1215,2025-12-10T01:54:13.438718+00:00,
+1216,2025-12-10T01:54:19.061309+00:00,"Image1:观测10X20 (85).jpg, Normal:12, Malformed:1, Empty:0, MalformationRate:7.7%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:12, Malformed:1, Empty:0, MalformationRate:7.7%, GerminationRate:0.0%"
+1217,2025-12-10T01:57:13.573362+00:00,
+1218,2025-12-10T01:57:19.298491+00:00,"Image1:观测10X20 (17).jpg, Normal:2, Malformed:0, Empty:12, MalformationRate:0.0%, GerminationRate:85.7%
+Total: Number of images: 1, Normal:2, Malformed:0, Empty:12, MalformationRate:0.0%, GerminationRate:85.7%"
+1219,2025-12-10T02:00:20.660790+00:00,
+1220,2025-12-10T02:00:26.312988+00:00,"Image1:观测10x20 (21).tif, Normal:2, Malformed:1, Empty:0, MalformationRate:33.3%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:2, Malformed:1, Empty:0, MalformationRate:33.3%, GerminationRate:0.0%"
+1221,2025-12-10T02:01:07.813092+00:00,
+1222,2025-12-10T02:01:13.486689+00:00,"Image1:观测10x20 (21).tif, Normal:2, Malformed:1, Empty:0, MalformationRate:33.3%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:2, Malformed:1, Empty:0, MalformationRate:33.3%, GerminationRate:0.0%"
+1223,2025-12-10T02:06:05.225666+00:00,
+1224,2025-12-10T02:06:10.939610+00:00,"Image1:观测10X20 (31).tif, Normal:4, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Total: Number of images: 1, Normal:4, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%"
+1225,2025-12-10T02:09:02.181187+00:00,
+1226,2025-12-10T02:09:07.822305+00:00,"Image1:20240516-明-水洗10X20-07.jpg, Normal:0, Malformed:1, Empty:1, MalformationRate:50.0%, GerminationRate:50.0%
+Total: Number of images: 1, Normal:0, Malformed:1, Empty:1, MalformationRate:50.0%, GerminationRate:50.0%"
+1227,2025-12-10T02:14:15.178383+00:00,
+1228,2025-12-10T02:14:21.506100+00:00,"Image1:20240521-都-水洗10X40-02.jpg, Normal:1, Malformed:0, Empty:0, MalformationRate:0.0%, GerminationRate:0.0%
+Image2:明阳-水洗-10X40-02.jpg, Normal:1, Malformed:1, Empty:0, MalformationRate:50.0%, GerminationRate:0.0%
+Total: Number of images: 2, Normal:2, Malformed:1, Empty:0, MalformationRate:25.0%, GerminationRate:0.0%"
+1229,2025-12-10T07:36:14.687301+00:00,
+1230,2025-12-10T07:36:20.608547+00:00,"Image1:10X20倍 (2).tif, Normal:44, Malformed:3, Empty:15, MalformationRate:4.8%, GerminationRate:24.2%
+Total: Number of images: 1, Normal:44, Malformed:3, Empty:15, MalformationRate:4.8%, GerminationRate:24.2%"
+1231,2025-12-10T07:44:51.803795+00:00,
+1232,2025-12-10T07:44:57.678021+00:00,"Image1:10X20倍 (3).tif, Normal:40, Malformed:3, Empty:24, MalformationRate:4.5%, GerminationRate:35.8%
+Total: Number of images: 1, Normal:40, Malformed:3, Empty:24, MalformationRate:4.5%, GerminationRate:35.8%"
+1233,2025-12-10T07:58:32.882943+00:00,
+1234,2025-12-10T07:58:38.579350+00:00,"Image1:10X20倍 (42).tif, Normal:7, Malformed:1, Empty:13, MalformationRate:4.8%, GerminationRate:61.9%
+Total: Number of images: 1, Normal:7, Malformed:1, Empty:13, MalformationRate:4.8%, GerminationRate:61.9%"
+1235,2025-12-10T08:02:29.632221+00:00,
+1236,2025-12-10T08:02:35.334208+00:00,"Image1:10X20倍 (17).tif, Normal:13, Malformed:1, Empty:9, MalformationRate:4.3%, GerminationRate:39.1%
+Total: Number of images: 1, Normal:13, Malformed:1, Empty:9, MalformationRate:4.3%, GerminationRate:39.1%"
+1237,2025-12-10T08:06:55.189938+00:00,
+1238,2025-12-10T08:07:00.866244+00:00,"Image1:10X20倍 (21).tif, Normal:12, Malformed:1, Empty:10, MalformationRate:4.3%, GerminationRate:43.5%
+Total: Number of images: 1, Normal:12, Malformed:1, Empty:10, MalformationRate:4.3%, GerminationRate:43.5%"
+1239,2025-12-10T08:11:46.222580+00:00,
+1240,2025-12-10T08:11:52.255879+00:00,"Image1:10X20倍 (29).tif, Normal:60, Malformed:2, Empty:35, MalformationRate:2.1%, GerminationRate:36.1%
+Total: Number of images: 1, Normal:60, Malformed:2, Empty:35, MalformationRate:2.1%, GerminationRate:36.1%"
+1241,2025-12-10T08:24:01.291822+00:00,
+1242,2025-12-10T08:24:07.048332+00:00,"Image1:10X40倍 (194).tif, Normal:8, Malformed:0, Empty:2, MalformationRate:0.0%, GerminationRate:20.0%
+Total: Number of images: 1, Normal:8, Malformed:0, Empty:2, MalformationRate:0.0%, GerminationRate:20.0%"
+1243,2025-12-10T08:30:55.048943+00:00,
+1244,2025-12-10T08:31:00.764315+00:00,"Image1:10X40倍 (155).tif, Normal:12, Malformed:0, Empty:2, MalformationRate:0.0%, GerminationRate:14.3%
+Total: Number of images: 1, Normal:12, Malformed:0, Empty:2, MalformationRate:0.0%, GerminationRate:14.3%"
+1245,2025-12-10T08:38:59.417022+00:00,
+1246,2025-12-10T08:39:05.154094+00:00,"Image1:10X40倍 (1).tif, Normal:8, Malformed:0, Empty:8, MalformationRate:0.0%, GerminationRate:50.0%
+Total: Number of images: 1, Normal:8, Malformed:0, Empty:8, MalformationRate:0.0%, GerminationRate:50.0%"
+1247,2025-12-10T08:45:38.003713+00:00,
+1248,2025-12-10T08:45:43.687140+00:00,"Image1:10X40倍 (6).tif, Normal:13, Malformed:0, Empty:4, MalformationRate:0.0%, GerminationRate:23.5%
+Total: Number of images: 1, Normal:13, Malformed:0, Empty:4, MalformationRate:0.0%, GerminationRate:23.5%"
+1249,2025-12-10T08:50:08.050526+00:00,
+1250,2025-12-10T08:50:13.836975+00:00,"Image1:10X40倍 (8).tif, Normal:14, Malformed:3, Empty:8, MalformationRate:12.0%, GerminationRate:32.0%
+Total: Number of images: 1, Normal:14, Malformed:3, Empty:8, MalformationRate:12.0%, GerminationRate:32.0%"
+1251,2025-12-10T08:55:51.331190+00:00,
+1252,2025-12-10T08:55:57.031562+00:00,"Image1:10X40倍 (14).tif, Normal:13, Malformed:2, Empty:8, MalformationRate:8.7%, GerminationRate:34.8%
+Total: Number of images: 1, Normal:13, Malformed:2, Empty:8, MalformationRate:8.7%, GerminationRate:34.8%"
+1253,2025-12-10T09:01:41.256409+00:00,
+1254,2025-12-10T09:01:46.944843+00:00,"Image1:10X40倍 (29).tif, Normal:8, Malformed:0, Empty:7, MalformationRate:0.0%, GerminationRate:46.7%
+Total: Number of images: 1, Normal:8, Malformed:0, Empty:7, MalformationRate:0.0%, GerminationRate:46.7%"
+1255,2025-12-10T09:08:34.108781+00:00,
+1256,2025-12-10T09:08:39.724537+00:00,"Image1:10X40倍 (29).tif, Normal:8, Malformed:0, Empty:7, MalformationRate:0.0%, GerminationRate:46.7%
+Total: Number of images: 1, Normal:8, Malformed:0, Empty:7, MalformationRate:0.0%, GerminationRate:46.7%"
+1257,2025-12-10T09:10:41.572253+00:00,
+1258,2025-12-10T09:10:47.214985+00:00,"Image1:10X40倍 (42).tif, Normal:11, Malformed:3, Empty:6, MalformationRate:15.0%, GerminationRate:30.0%
+Total: Number of images: 1, Normal:11, Malformed:3, Empty:6, MalformationRate:15.0%, GerminationRate:30.0%"
+1259,2025-12-10T09:15:38.994722+00:00,
+1260,2025-12-10T09:15:44.698079+00:00,"Image1:10X40倍 (44).tif, Normal:10, Malformed:0, Empty:4, MalformationRate:0.0%, GerminationRate:28.6%
+Total: Number of images: 1, Normal:10, Malformed:0, Empty:4, MalformationRate:0.0%, GerminationRate:28.6%"
+1261,2025-12-10T09:20:23.375474+00:00,
+1262,2025-12-10T09:20:29.044750+00:00,"Image1:10X40倍 (47).tif, Normal:16, Malformed:1, Empty:4, MalformationRate:4.8%, GerminationRate:19.0%
+Total: Number of images: 1, Normal:16, Malformed:1, Empty:4, MalformationRate:4.8%, GerminationRate:19.0%"
+1263,2025-12-10T09:23:15.386739+00:00,
+1264,2025-12-10T09:23:21.086313+00:00,"Image1:10X40倍 (49).tif, Normal:12, Malformed:1, Empty:6, MalformationRate:5.3%, GerminationRate:31.6%
+Total: Number of images: 1, Normal:12, Malformed:1, Empty:6, MalformationRate:5.3%, GerminationRate:31.6%"
+1265,2025-12-10T09:27:59.539743+00:00,
+1266,2025-12-10T09:28:05.355554+00:00,"Image1:10X40倍 (55).tif, Normal:14, Malformed:1, Empty:8, MalformationRate:4.3%, GerminationRate:34.8%
+Total: Number of images: 1, Normal:14, Malformed:1, Empty:8, MalformationRate:4.3%, GerminationRate:34.8%"
+1267,2025-12-10T09:30:15.937499+00:00,
+1268,2025-12-10T09:30:21.716852+00:00,"Image1:10X40倍 (57).tif, Normal:19, Malformed:5, Empty:10, MalformationRate:14.7%, GerminationRate:29.4%
+Total: Number of images: 1, Normal:19, Malformed:5, Empty:10, MalformationRate:14.7%, GerminationRate:29.4%"
+1269,2025-12-10T09:37:28.260714+00:00,
+1270,2025-12-10T09:37:33.911693+00:00,"Image1:10X40倍 (55).tif, Normal:14, Malformed:1, Empty:8, MalformationRate:4.3%, GerminationRate:34.8%
+Total: Number of images: 1, Normal:14, Malformed:1, Empty:8, MalformationRate:4.3%, GerminationRate:34.8%"
+1271,2025-12-10T09:55:29.256809+00:00,
+1272,2025-12-10T09:55:34.985953+00:00,"Image1:10X40倍 (55).tif, Normal:14, Malformed:1, Empty:8, MalformationRate:4.3%, GerminationRate:34.8%
+Total: Number of images: 1, Normal:14, Malformed:1, Empty:8, MalformationRate:4.3%, GerminationRate:34.8%"
+1273,2025-12-10T09:59:01.150123+00:00,
+1274,2025-12-10T09:59:06.819381+00:00,"Image1:10X40倍 (161).tif, Normal:4, Malformed:1, Empty:4, MalformationRate:11.1%, GerminationRate:44.4%
+Total: Number of images: 1, Normal:4, Malformed:1, Empty:4, MalformationRate:11.1%, GerminationRate:44.4%"
+1275,2025-12-29T02:52:13.646302+00:00,
+1276,2025-12-29T02:52:17.050512+00:00,
+1277,2025-12-29T03:07:30.070919+00:00,
+1278,2025-12-29T03:07:32.699210+00:00,
+1279,2026-04-17T02:39:21.405965+00:00,
+1280,2026-04-17T02:41:15.152142+00:00,
+1281,2026-04-17T02:45:08.653235+00:00,
+1282,2026-04-17T02:45:13.899709+00:00,
+1283,2026-04-17T02:46:31.303017+00:00,
+1284,2026-04-17T02:46:47.674283+00:00,
+1285,2026-04-17T02:48:43.717211+00:00,
+1286,2026-04-17T02:49:01.159018+00:00,"Image1:4-4.jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Image2:pv3-4-10x20(98).jpg, Normal:18, Malformed:0, Empty:13, MalformationRate:0.0%, GerminationRate:41.9%
+Total: Number of images: 2, Normal:46, Malformed:1, Empty:21, MalformationRate:1.4%, GerminationRate:31.8%"
+1287,2026-04-17T02:50:52.976563+00:00,
+1288,2026-04-17T02:51:03.313839+00:00,"Image1:4-4.jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Image2:pv3-4-10x20(98).jpg, Normal:5, Malformed:6, Empty:10, MalformationRate:28.6%, GerminationRate:47.6%
+Image3:Propamocarb-0046.jpg, Normal:18, Malformed:0, Empty:13, MalformationRate:0.0%, GerminationRate:41.9%
+Total: Number of images: 3, Normal:51, Malformed:7, Empty:31, MalformationRate:10.4%, GerminationRate:37.0%"
+1289,2026-04-19T05:26:11.539438+00:00,
+1290,2026-04-19T05:26:29.162307+00:00,"Image1:4-4.jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Image2:pv3-4-10x20(98).jpg, Normal:18, Malformed:0, Empty:13, MalformationRate:0.0%, GerminationRate:41.9%
+Total: Number of images: 2, Normal:46, Malformed:1, Empty:21, MalformationRate:1.4%, GerminationRate:31.8%"
+1291,2026-04-24T08:03:15.217310+00:00,
+1292,2026-04-24T08:03:48.976459+00:00,
+1293,2026-04-24T08:03:51.931905+00:00,
+1294,2026-04-24T08:04:04.470510+00:00,
+1295,2026-04-24T08:04:43.944641+00:00,
+1296,2026-04-24T08:04:58.757791+00:00,"Image1:4-4.jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Total: Number of images: 1, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%"
+1297,2026-04-24T08:05:01.729878+00:00,
+1298,2026-04-24T08:05:10.810936+00:00,"Image1:4-4.jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Image2:pv3-4-10x20(98).jpg, Normal:18, Malformed:0, Empty:13, MalformationRate:0.0%, GerminationRate:41.9%
+Total: Number of images: 2, Normal:46, Malformed:1, Empty:21, MalformationRate:1.4%, GerminationRate:31.8%"
+1299,2026-05-18T02:43:09.284727+00:00,
+1300,2026-05-18T02:43:24.839901+00:00,"Image1:4-4.jpg, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%
+Total: Number of images: 1, Normal:28, Malformed:1, Empty:8, MalformationRate:2.7%, GerminationRate:21.6%"
