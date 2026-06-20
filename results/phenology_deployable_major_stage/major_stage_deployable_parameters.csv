@@ -1,0 +1,22 @@
+﻿model,biofix_rule,source_variety_code,major_stage,major_stage_label,boundary_GDD,cultivar_offset_GDD,effective_boundary_GDD
+cultivar_major_thresholds,tmean_ge_12_run_7d,JF,00,Budburst or early shoot emergence,0.0,0.0,0.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,JF,10,Leaf development,220.0,0.0,220.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,JF,50,Inflorescence emergence,230.0,0.0,230.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,JF,60,Flowering,460.0,0.0,460.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,JF,70,Berry development,550.0,0.0,550.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,JF,80,Ripening,950.0,0.0,950.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,JF,90,Post-harvest or senescence,2130.0,0.0,2130.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,MPT,00,Budburst or early shoot emergence,0.0,0.0,0.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,MPT,10,Leaf development,220.0,0.0,220.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,MPT,50,Inflorescence emergence,230.0,0.0,230.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,MPT,60,Flowering,650.0,0.0,650.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,MPT,70,Berry development,710.0,0.0,710.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,MPT,80,Ripening,1810.0,0.0,1810.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,MPT,90,Post-harvest or senescence,2260.0,0.0,2260.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,wk,00,Budburst or early shoot emergence,0.0,0.0,0.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,wk,10,Leaf development,10.0,0.0,10.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,wk,50,Inflorescence emergence,80.0,0.0,80.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,wk,60,Flowering,180.0,0.0,180.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,wk,70,Berry development,240.0,0.0,240.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,wk,80,Ripening,520.0,0.0,520.0
+cultivar_major_thresholds,tmean_ge_12_run_7d,wk,90,Post-harvest or senescence,1960.0,0.0,1960.0

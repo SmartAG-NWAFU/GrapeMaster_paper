@@ -1,0 +1,7 @@
+﻿metric_level,model,evaluation,n_events,n_matched,mean_abs_stage_distance,exact_state_accuracy,adjacent_state_accuracy,major_stage_accuracy,mae_days,rmse_days,bias_days,within_7_days,within_14_days
+observed_date_state,baseline_interpolated,resubstitution,150,150,5.06,0.09333333333333334,0.25333333333333335,0.36666666666666664,,,,,
+observed_date_state,deployable_recalibrated,losyo,150,150,3.026666666666667,0.18,0.4866666666666667,0.5933333333333334,,,,,
+observed_date_state,deployable_recalibrated,resubstitution,150,150,2.4466666666666668,0.22666666666666666,0.56,0.6266666666666667,,,,,
+first_observed_stage_date,baseline_interpolated,resubstitution,66,65,,,,,29.06153846153846,35.14169121625283,25.584615384615386,0.15384615384615385,0.35384615384615387
+first_observed_stage_date,deployable_recalibrated,losyo,66,65,,,,,16.107692307692307,21.317021007058763,10.538461538461538,0.35384615384615387,0.5538461538461539
+first_observed_stage_date,deployable_recalibrated,resubstitution,66,66,,,,,12.909090909090908,18.887225119833584,8.93939393939394,0.4393939393939394,0.6212121212121212

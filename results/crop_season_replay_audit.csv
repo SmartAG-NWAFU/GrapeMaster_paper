@@ -1,0 +1,9 @@
+workflow_step,source_table,observed_record,closed_loop_role
+Field and crop-season anchor,public_crop_cropseason,"Crop-season 62f4173f...f74b; Du'an Kangsheng wild-grape field, open-field cultivation, 355.09 m2.","Defines the field-season object used to link weather, risk, notifications, and tasks."
+Weather update,public_weatherdata_cropweather,1 weather payload; daily forecast span 2026-05-28 to 2026-06-12.,Provides environmental input for crop-season state and risk interpretation.
+Phenology state,public_phendata_phendata,"1 phenology payload; principal stages include budburst, leaf expansion, inflorescence development, flowering....",Adds crop-stage context for risk windows and operation timing.
+Disease-risk timeline,public_diseasedata_diseasedata,1 risk payload covering 2026-01-01 to 2026-06-12; risk states: NOT_SEASONAL: 92; OPTIMAL: 29; FAVORABLE: 28; UNFAVORABLE: 14; action states: NO_ACTION: 121; TREAT: 42.,Transforms model output into a date-indexed field-risk and action sequence.
+Risk and event delivery,public_notice_notification,53 notifications; 45 disease-risk or spray-reminder notifications; 52 marked as read.,Delivers risk and crop-season events as reviewable records linked to the same crop season.
+Plant-protection task execution,public_task_cropprotection,"2 plant-protection tasks; 2 completed; execution dates: 2024-08-06, 2024-07-20.",Converts reviewed risk or management events into executable field-operation records.
+Fungicide management feedback,public_task_fungicides,4 fungicide-product entries linked to the completed plant-protection tasks.,Supplies structured treatment feedback for protection-state updating and later review.
+Symptom or field-evidence archive,public_note_recode / public_note_incidencenote,0 field-note records and 0 incidence-note records linked to this crop season.,Documents whether post-operation field evidence is available for the same crop-season record chain.

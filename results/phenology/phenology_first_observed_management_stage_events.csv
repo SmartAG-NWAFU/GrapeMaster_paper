@@ -1,0 +1,15 @@
+﻿site_id,year,province,variety,source_variety_code,maturation,lat,lon,BBCH_Principal,observed_date,management_stage
+guilin,2022,GuangXi,温克,wk,晚,25.45,110.8,53,2022-04-10,inflorescence_flowering
+Duan,2022,GuangXi,毛葡萄野酿2号,MPT,晚,23.83,108.11,53,2022-05-08,inflorescence_flowering
+guilin,2022,GuangXi,温克,wk,晚,25.45,110.8,71,2022-05-13,berry_development
+Mingyang,2023,GuangXi,巨峰,JF,中,22.61,108.23,55,2023-03-21,inflorescence_flowering
+Duan,2023,GuangXi,毛葡萄野酿2号,MPT,晚,23.83,108.11,53,2023-03-28,inflorescence_flowering
+Mingyang,2023,GuangXi,巨峰,JF,中,22.61,108.23,71,2023-04-17,berry_development
+Mingyang,2023,GuangXi,巨峰,JF,中,22.61,108.23,81,2023-05-26,ripening
+Duan,2023,GuangXi,毛葡萄野酿2号,MPT,晚,23.83,108.11,71,2023-05-28,berry_development
+Duan,2023,GuangXi,毛葡萄野酿2号,MPT,晚,23.83,108.11,81,2023-07-24,ripening
+Mingyang,2024,GuangXi,巨峰,JF,中,22.61,108.23,55,2024-04-04,inflorescence_flowering
+Duan,2024,GuangXi,毛葡萄野酿2号,MPT,晚,23.83,108.11,55,2024-04-18,inflorescence_flowering
+Mingyang,2024,GuangXi,巨峰,JF,中,22.61,108.23,73,2024-04-19,berry_development
+Duan,2024,GuangXi,毛葡萄野酿2号,MPT,晚,23.83,108.11,73,2024-05-12,berry_development
+Mingyang,2024,GuangXi,巨峰,JF,中,22.61,108.23,81,2024-05-29,ripening

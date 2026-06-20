@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180.0mm" height="102.0mm" viewBox="0 0 510.236 289.134">
+<desc>SCI manuscript schematic with central crop-season anchor connecting prediction, action, feedback, optional evidence, and replay/audit traceability.</desc>
+<style>
+  text { font-family: Times New Roman; letter-spacing: normal; }
+  .group { font-style: italic; fill: #60676C; }
+  .line { stroke: #596166; stroke-width: 0.90; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .dash { stroke-dasharray: 3.2 2.4; }
+</style>
+<defs>
+  <marker id="arrow" viewBox="0 0 8 8" refX="6.8" refY="4" markerWidth="5.8" markerHeight="5.8" orient="auto-start-reverse">
+    <path d="M 0 0 L 8 4 L 0 8 z" fill="#596166"/>
+  </marker>
+  <marker id="arrowGreen" viewBox="0 0 8 8" refX="6.8" refY="4" markerWidth="5.8" markerHeight="5.8" orient="auto-start-reverse">
+    <path d="M 0 0 L 8 4 L 0 8 z" fill="#5F8D62"/>
+  </marker>
+</defs>
+<rect width="100%" height="100%" fill="white"/>
+
+<path d="M 420.52 46.80 C 420.52 25.00, 408.52 15.00, 382.52 15.00 L 200.50 15.00 C 174.50 15.00, 162.50 25.00, 162.50 46.80" stroke="#5F8D62" stroke-width="0.90" fill="none" stroke-linecap="round" marker-end="url(#arrowGreen)"/>
+<text x="291.51" y="11.00" font-family="Times New Roman" font-size="7.40" font-weight="normal" text-anchor="middle" fill="#5F8D62" >feedback</text>
+<text x="112.04" y="39.20" font-family="Times New Roman" font-size="8.00" font-weight="normal" text-anchor="middle" fill="#60676C" class="group" >Prediction</text>
+<text x="290.89" y="39.20" font-family="Times New Roman" font-size="8.00" font-weight="normal" text-anchor="middle" fill="#60676C" class="group" >Action</text>
+<text x="398.20" y="39.20" font-family="Times New Roman" font-size="8.00" font-weight="normal" text-anchor="middle" fill="#60676C" class="group" >Feedback</text>
+<text x="469.74" y="39.20" font-family="Times New Roman" font-size="8.00" font-weight="normal" text-anchor="middle" fill="#60676C" class="group" >Replay</text>
+<rect x="9.50" y="50.00" width="62.00" height="58.00" rx="5.80" ry="5.80" fill="#EAF3FA" stroke="#517CA6" stroke-width="0.90"/>
+<text x="40.50" y="61.30" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >Field and</text>
+<text x="40.50" y="70.50" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >season setup</text>
+<text x="40.50" y="81.00" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >field identity</text>
+<text x="40.50" y="89.40" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >boundary</text>
+<text x="40.50" y="97.80" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >cultivar</text>
+<rect x="81.04" y="50.00" width="62.00" height="58.00" rx="5.80" ry="5.80" fill="#EAF3FA" stroke="#517CA6" stroke-width="0.90"/>
+<text x="112.04" y="61.30" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >Environmental</text>
+<text x="112.04" y="70.50" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >and crop state</text>
+<text x="112.04" y="81.00" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >weather records</text>
+<text x="112.04" y="89.40" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >phenology state</text>
+<text x="112.04" y="97.80" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >stage timeline</text>
+<rect x="152.58" y="50.00" width="62.00" height="58.00" rx="5.80" ry="5.80" fill="#FFF3D8" stroke="#A97518" stroke-width="0.90"/>
+<text x="183.58" y="61.30" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >Disease-risk</text>
+<text x="183.58" y="70.50" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >interpretation</text>
+<text x="183.58" y="81.00" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >model input-output</text>
+<text x="183.58" y="89.40" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >risk state</text>
+<text x="183.58" y="97.80" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >treatment window</text>
+<rect x="224.12" y="50.00" width="62.00" height="58.00" rx="5.80" ry="5.80" fill="#FFF3D8" stroke="#A97518" stroke-width="0.90"/>
+<text x="255.12" y="63.00" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >Event delivery</text>
+<text x="255.12" y="78.00" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >warning display</text>
+<text x="255.12" y="86.40" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >notification records</text>
+<text x="255.12" y="94.80" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >user review</text>
+<rect x="295.66" y="50.00" width="62.00" height="58.00" rx="5.80" ry="5.80" fill="#EAF6EC" stroke="#5F8D62" stroke-width="0.90"/>
+<text x="326.66" y="63.00" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >Field operation</text>
+<text x="326.66" y="78.00" font-family="Times New Roman" font-size="7.10" font-weight="normal" text-anchor="middle" fill="#2F3437" >plant-protection task</text>
+<text x="326.66" y="86.40" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >execution date</text>
+<text x="326.66" y="94.80" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >product entry</text>
+<rect x="367.20" y="50.00" width="62.00" height="58.00" rx="5.80" ry="5.80" fill="#EAF6EC" stroke="#5F8D62" stroke-width="0.90"/>
+<text x="398.20" y="61.30" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >Treatment</text>
+<text x="398.20" y="70.50" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >feedback</text>
+<text x="398.20" y="81.00" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >fungicide record</text>
+<text x="398.20" y="89.40" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >protection state</text>
+<text x="398.20" y="97.80" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >renewed risk</text>
+<rect x="438.74" y="50.00" width="62.00" height="58.00" rx="5.80" ry="5.80" fill="#F0ECF8" stroke="#7A679C" stroke-width="0.90"/>
+<text x="469.74" y="61.30" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >Replay</text>
+<text x="469.74" y="70.50" font-family="Times New Roman" font-size="8.80" font-weight="bold" text-anchor="middle" fill="#2F3437" >and audit</text>
+<text x="469.74" y="81.00" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >shared UUID</text>
+<text x="469.74" y="89.40" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >linkage checks</text>
+<text x="469.74" y="97.80" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >season review</text>
+<line x1="74.30" y1="79.00" x2="78.04" y2="79.00" class="line" marker-end="url(#arrow)"/>
+<line x1="145.84" y1="79.00" x2="149.58" y2="79.00" class="line" marker-end="url(#arrow)"/>
+<line x1="217.38" y1="79.00" x2="221.12" y2="79.00" class="line" marker-end="url(#arrow)"/>
+<line x1="288.92" y1="79.00" x2="292.66" y2="79.00" class="line" marker-end="url(#arrow)"/>
+<line x1="360.46" y1="79.00" x2="364.20" y2="79.00" class="line" marker-end="url(#arrow)"/>
+<line x1="432.00" y1="79.00" x2="435.74" y2="79.00" class="line" marker-end="url(#arrow)"/>
+<rect x="36.12" y="128.50" width="438.00" height="39.50" rx="7.20" ry="7.20" fill="#F7F8F9" stroke="#40484D" stroke-width="1.15"/>
+<text x="255.12" y="144.50" font-family="Times New Roman" font-size="11.20" font-weight="bold" text-anchor="middle" fill="#2F3437" >Crop-season anchor</text>
+<text x="255.12" y="157.50" font-family="Times New Roman" font-size="8.60" font-weight="normal" text-anchor="middle" fill="#2F3437" >field + season + cultivar + management context</text>
+<line x1="40.50" y1="112.20" x2="40.50" y2="125.30" class="line"/>
+<circle cx="40.50" cy="128.50" r="1.45" fill="#40484D"/>
+<line x1="112.04" y1="112.20" x2="112.04" y2="125.30" class="line"/>
+<circle cx="112.04" cy="128.50" r="1.45" fill="#40484D"/>
+<line x1="183.58" y1="112.20" x2="183.58" y2="125.30" class="line"/>
+<circle cx="183.58" cy="128.50" r="1.45" fill="#40484D"/>
+<line x1="255.12" y1="112.20" x2="255.12" y2="125.30" class="line"/>
+<circle cx="255.12" cy="128.50" r="1.45" fill="#40484D"/>
+<line x1="326.66" y1="112.20" x2="326.66" y2="125.30" class="line"/>
+<circle cx="326.66" cy="128.50" r="1.45" fill="#40484D"/>
+<line x1="398.20" y1="112.20" x2="398.20" y2="125.30" class="line"/>
+<circle cx="398.20" cy="128.50" r="1.45" fill="#40484D"/>
+<line x1="469.74" y1="112.20" x2="469.74" y2="125.30" class="line"/>
+<circle cx="469.74" cy="128.50" r="1.45" fill="#40484D"/>
+<text x="255.12" y="198.00" font-family="Times New Roman" font-size="8.00" font-weight="normal" text-anchor="middle" fill="#60676C" class="group" >Evidence</text>
+<rect x="122.12" y="211.50" width="116.00" height="50.00" rx="5.80" ry="5.80" fill="#F0ECF8" stroke="#7A679C" stroke-width="0.90"/>
+<text x="180.12" y="224.50" font-family="Times New Roman" font-size="8.90" font-weight="bold" text-anchor="middle" fill="#2F3437" >Symptom evidence</text>
+<text x="180.12" y="239.50" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >uploaded image</text>
+<text x="180.12" y="247.90" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >recognition result</text>
+<text x="180.12" y="256.30" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >field note</text>
+<rect x="272.12" y="211.50" width="116.00" height="50.00" rx="5.80" ry="5.80" fill="#F0ECF8" stroke="#7A679C" stroke-width="0.90"/>
+<text x="330.12" y="224.50" font-family="Times New Roman" font-size="8.90" font-weight="bold" text-anchor="middle" fill="#2F3437" >Advisory evidence</text>
+<text x="330.12" y="239.50" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >consultation</text>
+<text x="330.12" y="247.90" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >advisory message</text>
+<text x="330.12" y="256.30" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >management explanation</text>
+<line x1="180.12" y1="172.20" x2="180.12" y2="207.30" class="line dash"/>
+<circle cx="180.12" cy="168.00" r="1.25" fill="#7A679C"/>
+<line x1="330.12" y1="172.20" x2="330.12" y2="207.30" class="line dash"/>
+<circle cx="330.12" cy="168.00" r="1.25" fill="#7A679C"/>
+</svg>

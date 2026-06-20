@@ -1,0 +1,28 @@
+{
+  "raw_rows": 561,
+  "valid_observations": 151,
+  "site_years": 6,
+  "exact_first_observed_events": 67,
+  "supported_bbch_transition_events": 47,
+  "management_stage_events": 14,
+  "thermal_params": {
+    "Tbase": 10.0,
+    "Topt": 30.0,
+    "Tcei": 42.0
+  },
+  "min_stage_events_for_threshold_update": 2,
+  "variety_mapping": {
+    "wk": {
+      "variety": "温克",
+      "maturation": "晚"
+    },
+    "JF": {
+      "variety": "巨峰",
+      "maturation": "中"
+    },
+    "MPT": {
+      "variety": "毛葡萄野酿2号",
+      "maturation": "晚"
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "approach": "deployable_major_stage_state_estimator",
+  "stage_order": [
+    "00",
+    "10",
+    "50",
+    "60",
+    "70",
+    "80",
+    "90"
+  ],
+  "stage_labels": {
+    "00": "Budburst or early shoot emergence",
+    "10": "Leaf development",
+    "50": "Inflorescence emergence",
+    "60": "Flowering",
+    "70": "Berry development",
+    "80": "Ripening",
+    "90": "Post-harvest or senescence"
+  },
+  "cultivar_search_config": {
+    "JF": {
+      "offset_limit": 180.0,
+      "offset_step": 10.0,
+      "threshold_step": 10.0,
+      "prior_weight": 2.0
+    },
+    "MPT": {
+      "offset_limit": 180.0,
+      "offset_step": 10.0,
+      "threshold_step": 10.0,
+      "prior_weight": 2.0
+    },
+    "wk": {
+      "offset_limit": 300.0,
+      "offset_step": 10.0,
+      "threshold_step": 20.0,
+      "prior_weight": 6.0
+    }
+  },
+  "empirical_cultivar_offsets": {
+    "wk": 0.0
+  },
+  "empirical_cultivar_boundaries": {
+    "wk": {
+      "00": 0.0,
+      "10": 10.0,
+      "50": 80.0,
+      "60": 180.0,
+      "70": 240.0,
+      "80": 520.0,
+      "90": 1960.0
+    }
+  },
+  "transition_margin_GDD": 100.0,
+  "n_observations": 151,
+  "n_site_years": 6,
+  "n_folds": 3,
+  "selected_without_feedback": {
+    "model": "cultivar_major_thresholds",
+    "biofix_rule": "tmean_ge_12_run_7d",
+    "evaluation": "3fold",
+    "all_n_events": 151,
+    "all_mean_abs_stage_distance": 0.4503311258278146,
+    "all_exact_major_accuracy": 0.5761589403973509,
+    "all_display_major_accuracy": 0.7549668874172185,
+    "all_transition_display_rate": 0.48344370860927155,
+    "all_adjacent_major_accuracy": 0.9735099337748344,
+    "all_severe_error_rate": 0.026490066225165563,
+    "core_no90_n_events": 150,
+    "core_no90_mean_abs_stage_distance": 0.44666666666666666,
+    "core_no90_exact_major_accuracy": 0.58,
+    "core_no90_display_major_accuracy": 0.76,
+    "core_no90_transition_display_rate": 0.4866666666666667,
+    "core_no90_adjacent_major_accuracy": 0.9733333333333334,
+    "core_no90_severe_error_rate": 0.02666666666666667
+  },
+  "selected_after_one_user_feedback": {
+    "model": "cultivar_major_thresholds",
+    "biofix_rule": "tmean_ge_8_run_7d",
+    "evaluation": "3fold_after_one_user_feedback",
+    "all_n_events": 145,
+    "all_mean_abs_stage_distance": 0.4689655172413793,
+    "all_exact_major_accuracy": 0.593103448275862,
+    "all_display_major_accuracy": 0.7517241379310344,
+    "all_transition_display_rate": 0.5310344827586206,
+    "all_adjacent_major_accuracy": 0.9448275862068966,
+    "all_severe_error_rate": 0.05517241379310345,
+    "core_no90_n_events": 144,
+    "core_no90_mean_abs_stage_distance": 0.4652777777777778,
+    "core_no90_exact_major_accuracy": 0.5972222222222222,
+    "core_no90_display_major_accuracy": 0.7569444444444444,
+    "core_no90_transition_display_rate": 0.5347222222222222,
+    "core_no90_adjacent_major_accuracy": 0.9444444444444444,
+    "core_no90_severe_error_rate": 0.05555555555555555
+  },
+  "deployable_parameter_file": "major_stage_deployable_parameters.csv",
+  "folds": [
+    {
+      "fold_id": "fold1:Mingyang_2024_巨峰|guilin_2022_温克",
+      "site_years": [
+        {
+          "site_id": "Mingyang",
+          "year": 2024,
+          "province": "GuangXi",
+          "variety": "巨峰",
+          "maturation": "中",
+          "lat": 22.61,
+          "lon": 108.23
+        },
+        {
+          "site_id": "guilin",
+          "year": 2022,
+          "province": "GuangXi",
+          "variety": "温克",
+          "maturation": "晚",
+          "lat": 25.45,
+          "lon": 110.8
+        }
+      ]
+    },
+    {
+      "fold_id": "fold2:Duan_2022_毛葡萄野酿2号|Duan_2024_毛葡萄野酿2号",
+      "site_years": [
+        {
+          "site_id": "Duan",
+          "year": 2022,
+          "province": "GuangXi",
+          "variety": "毛葡萄野酿2号",
+          "maturation": "晚",
+          "lat": 23.83,
+          "lon": 108.11
+        },
+        {
+          "site_id": "Duan",
+          "year": 2024,
+          "province": "GuangXi",
+          "variety": "毛葡萄野酿2号",
+          "maturation": "晚",
+          "lat": 23.83,
+          "lon": 108.11
+        }
+      ]
+    },
+    {
+      "fold_id": "fold3:Mingyang_2023_巨峰|Duan_2023_毛葡萄野酿2号",
+      "site_years": [
+        {
+          "site_id": "Mingyang",
+          "year": 2023,
+          "province": "GuangXi",
+          "variety": "巨峰",
+          "maturation": "中",
+          "lat": 22.61,
+          "lon": 108.23
+        },
+        {
+          "site_id": "Duan",
+          "year": 2023,
+          "province": "GuangXi",
+          "variety": "毛葡萄野酿2号",
+          "maturation": "晚",
+          "lat": 23.83,
+          "lon": 108.11
+        }
+      ]
+    }
+  ]
+}

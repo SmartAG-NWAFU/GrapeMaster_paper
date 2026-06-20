@@ -10,14 +10,18 @@ import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.patches import Rectangle
+from PIL import Image, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RESPONSE_JSON = ROOT / "diseasemodel" / "test" / "mingyang" / "data" / "2024_grape_response.json"
 DEFAULT_REQUEST_JSON = ROOT / "diseasemodel" / "test" / "mingyang" / "data" / "2024_grape_rb.json"
 DEFAULT_TIMELINE_CSV = ROOT / "data" / "seasonal_disease_risk_timeline.csv"
-DEFAULT_OUTPUT_FIG = ROOT / "fig" / "disease_risk_timeline.png"
+DEFAULT_OUTPUT_FIG = ROOT / "fig" / "disease_risk_timeline_downy_field.png"
+DEFAULT_NOTIFICATION_FIG = ROOT / "fig" / "alert_notification_interfaces.png"
 DEFAULT_SITE_LABEL = "Mingyang, Guangxi"
+DOUBLE_COLUMN_WIDTH_IN = 7.1
+FIGURE_DPI = 300
 DEFAULT_DATASETS = [
     {
         "name": "Mingyang 2024",
@@ -26,22 +30,21 @@ DEFAULT_DATASETS = [
         "request": DEFAULT_REQUEST_JSON,
     },
     {
-        "name": "GXG-233 without fungicide",
-        "site": "GXG-233, Guangxi",
+        "name": "Guangxi case without fungicide feedback",
+        "site": "Guangxi crop-season case",
         "response": ROOT / "diseasemodel" / "test" / "GXG-233" / "data" / "rsb_without_fun.json",
         "request": ROOT / "diseasemodel" / "test" / "GXG-233" / "data" / "rb_without_fun.json",
     },
     {
-        "name": "GXG-233 with fungicide",
-        "site": "GXG-233, Guangxi",
+        "name": "Guangxi case with fungicide feedback",
+        "site": "Guangxi crop-season case",
         "response": ROOT / "diseasemodel" / "test" / "GXG-233" / "data" / "rsb_with_fun.json",
         "request": ROOT / "diseasemodel" / "test" / "GXG-233" / "data" / "rb_with_fun.json",
     },
 ]
 
 TRACKS = [
-    ("PLASVI", "Downy mildew", 2),
-    ("UNCINE", "Powdery mildew", 1),
+    ("PLASVI", "Downy mildew", 1),
     ("FIELD", "Field risk", 0),
 ]
 
@@ -51,6 +54,14 @@ RISK_COLOR_MAP = {
     "FAVORABLE": "#e4b43f",
     "OPTIMAL": "#c9473a",
     "PROTECTED": "#3b78b8",
+}
+
+RISK_LABEL_MAP = {
+    "NOT_SEASONAL": "Not seasonal",
+    "UNFAVORABLE": "Unfavorable",
+    "FAVORABLE": "Favorable",
+    "OPTIMAL": "Optimal",
+    "PROTECTED": "Protected",
 }
 
 
@@ -102,6 +113,13 @@ def write_timeline_csv(rows: list[dict[str, str]], output_csv: Path) -> None:
         writer = csv.DictWriter(f, fieldnames=["date", "dataset", "site", "track", "stress_id", "risk_code"])
         writer.writeheader()
         writer.writerows(rows)
+
+
+def read_timeline_csv(input_csv: Path) -> list[dict[str, str]]:
+    allowed_tracks = {track for _, track, _ in TRACKS}
+    with input_csv.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        return [row for row in reader if row.get("track") in allowed_tracks]
 
 
 def load_spray_dates(request_json: Path | None) -> list[pd.Timestamp]:
@@ -165,17 +183,20 @@ def iter_risk_segments(group: pd.DataFrame) -> list[tuple[pd.Timestamp, pd.Times
 
 def add_inside_legend(ax: plt.Axes) -> None:
     legend_items = list(RISK_COLOR_MAP.items())
-    x0 = 0.07
-    y0 = 0.935
-    item_width = 0.19
-    swatch_width = 0.024
-    swatch_height = 0.036
+    positions = [
+        (0.13, 0.970),
+        (0.40, 0.970),
+        (0.67, 0.970),
+        (0.40, 0.842),
+        (0.67, 0.842),
+    ]
+    swatch_width = 0.020
+    swatch_height = 0.028
 
-    for index, (label, color) in enumerate(legend_items):
-        x = x0 + index * item_width
+    for (label, color), (x, y) in zip(legend_items, positions):
         ax.add_patch(
             Rectangle(
-                (x, y0),
+                (x, y),
                 swatch_width,
                 swatch_height,
                 transform=ax.transAxes,
@@ -187,12 +208,12 @@ def add_inside_legend(ax: plt.Axes) -> None:
         )
         ax.text(
             x + swatch_width + 0.008,
-            y0 + swatch_height / 2,
-            label.replace("_", " "),
+            y + swatch_height / 2,
+            RISK_LABEL_MAP.get(label, label.replace("_", " ").title()),
             transform=ax.transAxes,
             ha="left",
             va="center",
-            fontsize=10,
+            fontsize=7.1,
             color="#202020",
         )
 
@@ -201,14 +222,15 @@ def plot_timeline(
     rows: list[dict[str, str]],
     spray_dates_by_dataset: dict[str, list[pd.Timestamp]],
     output_fig: Path,
+    figure_width: float = DOUBLE_COLUMN_WIDTH_IN,
 ) -> None:
     plt.rcParams.update(
         {
             "font.family": "Times New Roman",
-            "axes.titlesize": 14,
-            "axes.labelsize": 13,
-            "xtick.labelsize": 11,
-            "ytick.labelsize": 13,
+            "axes.titlesize": 12,
+            "axes.labelsize": 12,
+            "xtick.labelsize": 10,
+            "ytick.labelsize": 12,
             "pdf.fonttype": 42,
             "ps.fonttype": 42,
         }
@@ -218,8 +240,8 @@ def plot_timeline(
     df["date"] = pd.to_datetime(df["date"])
     dataset_names = list(dict.fromkeys(df["dataset"].tolist()))
 
-    fig_height = 0.95 + len(dataset_names) * 1.95
-    fig, axes = plt.subplots(len(dataset_names), 1, figsize=(9.2, fig_height), sharex=False)
+    fig_height = 0.72 + len(dataset_names) * 1.26
+    fig, axes = plt.subplots(len(dataset_names), 1, figsize=(figure_width, fig_height), sharex=False)
     if len(dataset_names) == 1:
         axes = [axes]
     fig.patch.set_facecolor("white")
@@ -248,21 +270,21 @@ def plot_timeline(
             ax.vlines(
                 spray_date,
                 -track_height / 2,
-                2 + track_height / 2,
+                1 + track_height / 2,
                 color="#202020",
                 linewidth=0.8,
                 linestyle=(0, (3, 2)),
                 alpha=0.75,
             )
         if spray_dates:
-            ax.text(spray_dates[0], 2.38, "Fungicide", fontsize=12, ha="left", va="bottom", color="#202020")
+            ax.text(spray_dates[0], 1.38, "Fungicide", fontsize=12, ha="left", va="bottom", color="#202020")
 
         min_date = group_df["date"].min()
         max_date = group_df["date"].max() + timedelta(days=1)
         ax.set_xlim(min_date, max_date)
-        ax.set_ylim(-0.55, 3.15)
-        ax.set_yticks([0, 1, 2])
-        ax.set_yticklabels(["Field risk", "Powdery mildew", "Downy mildew"])
+        ax.set_ylim(-0.55, 2.15)
+        ax.set_yticks([0, 1])
+        ax.set_yticklabels(["Field risk", "Downy mildew"])
         ax.grid(axis="x", color="#e7e8eb", linewidth=0.65)
         ax.grid(axis="y", visible=False)
         major_interval = 15 if axis_index == 0 else 30
@@ -278,7 +300,7 @@ def plot_timeline(
             transform=ax.transAxes,
             ha="left",
             va="top",
-            fontsize=14,
+            fontsize=12,
             fontweight="bold",
             color="#202020",
         )
@@ -299,9 +321,47 @@ def plot_timeline(
     axes[-1].set_xlabel("Date")
 
     output_fig.parent.mkdir(parents=True, exist_ok=True)
-    fig.tight_layout(h_pad=1.0)
-    fig.savefig(output_fig, dpi=300, bbox_inches="tight")
+    fig.tight_layout(h_pad=0.68)
+    fig.savefig(output_fig, dpi=FIGURE_DPI, bbox_inches="tight")
     plt.close(fig)
+
+
+def compose_timeline_notification_figure(
+    timeline_fig: Path,
+    notification_fig: Path,
+    output_fig: Path,
+    target_width: int = round(DOUBLE_COLUMN_WIDTH_IN * FIGURE_DPI),
+    max_height: int = round(9.2 * FIGURE_DPI),
+) -> None:
+    timeline = Image.open(timeline_fig).convert("RGBA")
+    notification = Image.open(notification_fig).convert("RGBA")
+
+    def scale_to_width(image: Image.Image, width: int) -> Image.Image:
+        ratio = width / image.width
+        return image.resize((width, round(image.height * ratio)), Image.Resampling.LANCZOS)
+
+    timeline = scale_to_width(timeline, target_width)
+
+    padding = round(0.18 * FIGURE_DPI)
+    available_notification_height = max_height - timeline.height - padding
+    notification_by_width = scale_to_width(notification, target_width)
+    if notification_by_width.height > available_notification_height:
+        ratio = available_notification_height / notification.height
+        notification = notification.resize(
+            (round(notification.width * ratio), available_notification_height),
+            Image.Resampling.LANCZOS,
+        )
+    else:
+        notification = notification_by_width
+
+    canvas_height = timeline.height + notification.height + padding
+    canvas = Image.new("RGBA", (target_width, canvas_height), "WHITE")
+    canvas.alpha_composite(timeline, (0, 0))
+    notification_x = round((target_width - notification.width) / 2)
+    canvas.alpha_composite(notification, (notification_x, timeline.height + padding))
+
+    output_fig.parent.mkdir(parents=True, exist_ok=True)
+    ImageOps.expand(canvas.convert("RGB"), border=0, fill="white").save(output_fig, dpi=(FIGURE_DPI, FIGURE_DPI))
 
 
 def parse_args() -> argparse.Namespace:
@@ -310,24 +370,44 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--request-json", type=Path, default=DEFAULT_REQUEST_JSON)
     parser.add_argument("--timeline-csv", type=Path, default=DEFAULT_TIMELINE_CSV)
     parser.add_argument("--output-fig", type=Path, default=DEFAULT_OUTPUT_FIG)
+    parser.add_argument("--notification-fig", type=Path, default=DEFAULT_NOTIFICATION_FIG)
+    parser.add_argument(
+        "--combined-output-fig",
+        type=Path,
+        default=None,
+        help="Optional output path for a stacked timeline + notification composite figure.",
+    )
     parser.add_argument("--site-label", default=DEFAULT_SITE_LABEL)
     parser.add_argument("--single", action="store_true", help="Plot only --response-json and --request-json.")
+    parser.add_argument(
+        "--from-csv",
+        action="store_true",
+        help="Read --timeline-csv directly instead of rebuilding rows from disease-model JSON files.",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    if args.single:
+    if args.from_csv:
+        rows = read_timeline_csv(args.timeline_csv)
+        spray_dates_by_dataset = {}
+    elif args.single:
         site_note = load_site_note(args.request_json, args.site_label)
         response = load_json(args.response_json)
         rows = build_timeline_rows(response, args.site_label, site_note)
         spray_dates_by_dataset = {args.site_label: load_spray_dates(args.request_json)}
     else:
         rows, spray_dates_by_dataset = build_default_rows_and_sprays()
-    write_timeline_csv(rows, args.timeline_csv)
+    if not args.from_csv:
+        write_timeline_csv(rows, args.timeline_csv)
     plot_timeline(rows, spray_dates_by_dataset, args.output_fig)
-    print(f"Wrote timeline data: {args.timeline_csv}")
+    if not args.from_csv:
+        print(f"Wrote timeline data: {args.timeline_csv}")
     print(f"Wrote figure: {args.output_fig}")
+    if args.combined_output_fig is not None:
+        compose_timeline_notification_figure(args.output_fig, args.notification_fig, args.combined_output_fig)
+        print(f"Wrote combined figure: {args.combined_output_fig}")
 
 
 if __name__ == "__main__":

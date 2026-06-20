@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.23)  10 JUN 2026 14:26
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.23)  20 JUN 2026 16:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -76,7 +76,7 @@ pport for TeXGyreTermesX
 nd its extensions (msharpe)
 (/usr/local/texlive/2026/texmf-dist/tex/latex/xpatch/xpatch.sty
 (/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2026-01-19 L3 programming layer (loader) 
+Package: expl3 2026-01-19 L3 programming layer (loader)
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
@@ -649,59 +649,59 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/TeXGyreTermesX.fontspec)
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-Regular scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-Regular scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-Regular scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-Bold scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-Bold scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-Italic scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-Italic scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-Slanted scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-Slanted scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-BoldItalic scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-BoldItalic scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-BoldSlanted scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             TeXGyreTermesX-BoldSlanted scale = 1.
 
 
-Package fontspec Info: 
+Package fontspec Info:
 (fontspec)             Font family 'TeXGyreTermesX(0)' created for font
 (fontspec)             'TeXGyreTermesX' with options [Ligatures = TeX,Scale =
 (fontspec)             1,Extension = .otf,SmallCapsFeatures={RawFeature =
@@ -712,10 +712,10 @@ Package fontspec Info:
 (fontspec)             TeXGyreTermesX-BoldItalic,SlantedFont =
 (fontspec)             *-Slanted,BoldSlantedFont= *-BoldSlanted,Numbers =
 (fontspec)             {Monospaced,Lining}].
-(fontspec)              
+(fontspec)
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
-(fontspec)              
+(fontspec)
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->s*[1]"[TeXGyreTermesX-Regular.otf]/OT:script=latn;lan
 guage=dflt;-ss05;+tnum;+lnum;mapping=tex-text;"
@@ -780,7 +780,7 @@ LaTeX Font Info:    ... okay on input line 99.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
 LaTeX Font Info:    ... okay on input line 99.
 LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 99.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line
 99.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/untxexa.fd
@@ -815,7 +815,7 @@ LaTeX Font Info:    ... okay on input line 99.
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes:
 * h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
 * v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
 * \paperwidth=614.295pt
@@ -856,411 +856,445 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 124.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 124.
-[1
-
-]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 128.
- [2] [3]
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 148.
- [4] [5]
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 174.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 174.
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 176.
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
-e 177.
+[1
 
-(/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/ot1minntx.fd
+] [2] [3]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 146.
+
+Underfull \hbox (badness 1946) in paragraph at lines 148--149
+\TU/TeXGyreTermesX(0)/m/n/12 includes crop-season setup, weather and phenology
+updating, disease-risk warning, plant-
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 152--153
+\TU/TeXGyreTermesX(0)/m/n/12 period warning, a phenology module for crop-stage
+interpretation, a grape-focused image-
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 152--153
+\TU/TeXGyreTermesX(0)/m/n/12 recognition module for symptom evidence, and an LL
+M advisory module for season-long
+ []
+
+[4]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 170.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 170.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 172.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
+e 173.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 9.0pt on input line 177.
+(Font)              scaled to size 9.0pt on input line 173.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 177.
+(Font)              scaled to size 6.6pt on input line 173.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 177.
+(Font)              scaled to size 5.5pt on input line 173.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 9.0pt on input line 177.
+(Font)              scaled to size 9.0pt on input line 173.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 177.
+(Font)              scaled to size 6.6pt on input line 173.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 5.5pt on input line 177.
+(Font)              scaled to size 5.5pt on input line 173.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 9.0pt on input line 177.
+(Font)              scaled to size 9.0pt on input line 173.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 177.
+(Font)              scaled to size 6.6pt on input line 173.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 5.5pt on input line 177.
+(Font)              scaled to size 5.5pt on input line 173.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 9.0pt on input line 177.
+(Font)              scaled to size 9.0pt on input line 173.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 177.
+(Font)              scaled to size 6.6pt on input line 173.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 177.
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-177.
+(Font)              scaled to size 5.5pt on input line 173.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line
+173.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.0pt on input line 177.
+(Font)              scaled to size 9.0pt on input line 173.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 177.
+(Font)              scaled to size 6.6pt on input line 173.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 5.5pt on input line 177.
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-177.
+(Font)              scaled to size 5.5pt on input line 173.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line
+173.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.0pt on input line 177.
+(Font)              scaled to size 9.0pt on input line 173.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 177.
+(Font)              scaled to size 6.6pt on input line 173.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 5.5pt on input line 177.
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-177.
+(Font)              scaled to size 5.5pt on input line 173.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line
+173.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.0pt on input line 177.
+(Font)              scaled to size 9.0pt on input line 173.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 177.
+(Font)              scaled to size 6.6pt on input line 173.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 5.5pt on input line 177.
+(Font)              scaled to size 5.5pt on input line 173.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.0pt on input line 177.
+(Font)              scaled to size 9.0pt on input line 173.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 177.
+(Font)              scaled to size 6.6pt on input line 173.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 5.5pt on input line 177.
+(Font)              scaled to size 5.5pt on input line 173.
 
-Underfull \hbox (badness 4927) in paragraph at lines 181--181
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Dart/Flutter mobile modules for field, crop-
+Underfull \hbox (badness 3568) in paragraph at lines 177--177
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Mobile modules for field, crop-season, task,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 182--182
+Underfull \hbox (badness 1502) in paragraph at lines 178--178
 []|\TU/TeXGyreTermesX(0)/m/n/9 Data ingestion and storage
  []
 
 
-Underfull \hbox (badness 6157) in paragraph at lines 182--182
-\TU/TeXGyreTermesX(0)/m/n/9 Channels, Django APScheduler, SimpleJWT,
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Weather preprocessing, phenology workflow,
  []
 
 
-Underfull \hbox (badness 2237) in paragraph at lines 182--183
-\TU/TeXGyreTermesX(0)/m/n/9 records, crop-season records, and opera-
- []
-
-
-Underfull \hbox (badness 2310) in paragraph at lines 183--184
+Underfull \hbox (badness 2310) in paragraph at lines 179--180
 []|\TU/TeXGyreTermesX(0)/m/n/9 Weather transformation, crop-stage simu-
  []
 
 
-Underfull \hbox (badness 6876) in paragraph at lines 183--184
+Underfull \hbox (badness 6876) in paragraph at lines 179--180
 \TU/TeXGyreTermesX(0)/m/n/9 lation, disease-risk request construction,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 3746) in paragraph at lines 180--180
+\TU/TeXGyreTermesX(0)/m/n/9 service, consultation interface, and advisory-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 []|\TU/TeXGyreTermesX(0)/m/n/9 Symptom-image processing, disease-
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 184--185
+Underfull \hbox (badness 2073) in paragraph at lines 180--181
 \TU/TeXGyreTermesX(0)/m/n/9 category output, visual evidence storage,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
-\TU/TeXGyreTermesX(0)/m/n/9 LLM-assisted explanation, and post-
+Underfull \hbox (badness 2781) in paragraph at lines 181--181
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Notification services, task services, fungicide
  []
 
-[6] [7] [8] [9]
+[5]
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 220.
+(Font)              scaled to size 12.0pt on input line 192.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 220.
+(Font)              scaled to size 8.8pt on input line 192.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 220.
+(Font)              scaled to size 12.0pt on input line 192.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 220.
+(Font)              scaled to size 8.8pt on input line 192.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 220.
+(Font)              scaled to size 12.0pt on input line 192.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 220.
+(Font)              scaled to size 8.8pt on input line 192.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 220.
+(Font)              scaled to size 12.0pt on input line 192.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 220.
+(Font)              scaled to size 8.8pt on input line 192.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 220.
+(Font)              scaled to size 12.0pt on input line 192.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 220.
+(Font)              scaled to size 8.8pt on input line 192.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 220.
+(Font)              scaled to size 12.0pt on input line 192.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 220.
+(Font)              scaled to size 8.8pt on input line 192.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 220.
+(Font)              scaled to size 12.0pt on input line 192.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 220.
+(Font)              scaled to size 8.8pt on input line 192.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 220.
+(Font)              scaled to size 12.0pt on input line 192.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 220.
- [10]
-File: ../fig/fig03_disease_model_workflow.png Graphic file (type bmp)
-<../fig/fig03_disease_model_workflow.png>
- [11]
-Underfull \hbox (badness 1831) in paragraph at lines 256--257
-[]\TU/TeXGyreTermesX(0)/m/n/12 In GrapeMaster, the image-recognition and adviso
-ry module follows the published CDIP-
- []
-
-[12]
-File: ../fig/fig13_image_assistance_workflow.png Graphic file (type bmp)
-<../fig/fig13_image_assistance_workflow.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
-[]|\TU/TeXGyreTermesX(0)/m/n/9 GrapeMaster backend,
+(Font)              scaled to size 8.8pt on input line 192.
+ [6]
+File: ../fig/grapemaster_crop_season_traceability_minor_refined_figure_package/
+grapemaster_crop_season_traceability_minor_refined.pdf Graphic file (type pdf)
+<use ../fig/grapemaster_crop_season_traceability_minor_refined_figure_package/g
+rapemaster_crop_season_traceability_minor_refined.pdf>
+ [7] [8] [9] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Deployed GrapeMaster
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
-\TU/TeXGyreTermesX(0)/m/n/9 mobile client, database,
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
+\TU/TeXGyreTermesX(0)/m/n/9 backend, mobile client,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
+\TU/TeXGyreTermesX(0)/m/n/9 database, scheduled jobs,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\TU/TeXGyreTermesX(0)/m/n/9 Links field, crop season,
  []
 
 
-Underfull \hbox (badness 4981) in paragraph at lines 292--292
-\TU/TeXGyreTermesX(0)/m/n/9 phenology workflow, cali-
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Deployed-platform evidence
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 292--292
-\TU/TeXGyreTermesX(0)/m/n/9 brated with Guangxi field
+Underfull \hbox (badness 2591) in paragraph at lines 326--327
+\TU/TeXGyreTermesX(0)/m/n/9 for workflow operability and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
-\TU/TeXGyreTermesX(0)/m/n/9 risk interpretation, advisory
+Underfull \hbox (badness 10000) in paragraph at lines 327--327
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Weather-driven phenology
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 292--293
-\TU/TeXGyreTermesX(0)/m/n/9 tation in the Guangxi humid
+Underfull \hbox (badness 10000) in paragraph at lines 327--327
+\TU/TeXGyreTermesX(0)/m/n/9 workflow calibrated with
  []
 
 
-Underfull \hbox (badness 7907) in paragraph at lines 292--293
-\TU/TeXGyreTermesX(0)/m/n/9 subtropical context; broader
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
 []|\TU/TeXGyreTermesX(0)/m/n/9 Team-developed downy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Provides pre-symptomatic
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+\TU/TeXGyreTermesX(0)/m/n/9 for a platform-compatible
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 293--293
-\TU/TeXGyreTermesX(0)/m/n/9 downy mildew risk windows
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Platform-compatible grape
  []
 
 
-Underfull \hbox (badness 3492) in paragraph at lines 293--294
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Validated for downy mildew
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
+\TU/TeXGyreTermesX(0)/m/n/9 on the published CDIP-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--294
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Grape-focused retraining
+Underfull \hbox (badness 4582) in paragraph at lines 329--329
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Post-symptomatic image evi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--294
-\TU/TeXGyreTermesX(0)/m/n/9 based on the published
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--294
-\TU/TeXGyreTermesX(0)/m/n/9 CDIP-ChatGLM3 visual-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Supports grape symptom
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 294--295
-\TU/TeXGyreTermesX(0)/m/n/9 recognition; does not replace
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
+Underfull \hbox (badness 10000) in paragraph at lines 330--330
 []|\TU/TeXGyreTermesX(0)/m/n/9 Fine-tuned ChatGLM3-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Knowledge-support function
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Knowledge-support evidence
  []
 
-[13] [14] [15]
-Underfull \hbox (badness 1681) in paragraph at lines 326--327
-[]\TU/TeXGyreTermesX(0)/m/n/12 Module evidence is used to support the trustwort
-hiness of the analytical configuration in
+[12]
+Underfull \hbox (badness 1496) in paragraph at lines 344--345
+\TU/TeXGyreTermesX(0)/m/n/9 ticide reduction, disease-control effi-
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 326--327
-\TU/TeXGyreTermesX(0)/m/n/12 post-symptomatic grape disease evidence, including
- downy mildew-related diagnosis where
+Underfull \hbox (badness 1275) in paragraph at lines 345--345
+[]|\TU/TeXGyreTermesX(0)/m/n/9 The FSIM-S, broad-stage phenology, and
  []
 
-[16] [17]
+
+Underfull \hbox (badness 6575) in paragraph at lines 345--345
+\TU/TeXGyreTermesX(0)/m/n/9 grape disease image-recognition compo-
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 346--346
+\TU/TeXGyreTermesX(0)/m/n/9 retrieve weather, phenology, disease-risk,
+ []
+
+[13] [14] [15] [16]
 File: ../fig/grapemaster_backend_linkage.png Graphic file (type bmp)
 <../fig/grapemaster_backend_linkage.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 352.
+(Font)              scaled to size 8.0pt on input line 401.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 355.
+(Font)              scaled to size 8.0pt on input line 404.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 355.
+(Font)              scaled to size 6.0pt on input line 404.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 355.
+(Font)              scaled to size 8.0pt on input line 404.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.0pt on input line 355.
+(Font)              scaled to size 6.0pt on input line 404.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 355.
+(Font)              scaled to size 8.0pt on input line 404.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 355.
+(Font)              scaled to size 6.0pt on input line 404.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 355.
+(Font)              scaled to size 8.0pt on input line 404.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 355.
+(Font)              scaled to size 6.0pt on input line 404.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 355.
+(Font)              scaled to size 8.0pt on input line 404.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.0pt on input line 355.
+(Font)              scaled to size 6.0pt on input line 404.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 355.
+(Font)              scaled to size 8.0pt on input line 404.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.0pt on input line 355.
+(Font)              scaled to size 6.0pt on input line 404.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 355.
+(Font)              scaled to size 8.0pt on input line 404.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 355.
+(Font)              scaled to size 6.0pt on input line 404.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 355.
+(Font)              scaled to size 8.0pt on input line 404.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.0pt on input line 355.
+(Font)              scaled to size 6.0pt on input line 404.
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
-[]|\TU/TeXGyreTermesX(0)/m/n/8 Excludes inactive
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
+[]|\TU/TeXGyreTermesX(0)/m/n/8 Accounts available for
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 360--361
-[]|\TU/TeXGyreTermesX(0)/m/n/8 Defines the operational de-
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
+\TU/TeXGyreTermesX(0)/m/n/8 crop-season workflow
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
-[]|\TU/TeXGyreTermesX(0)/m/n/8 Analytical payload complete-
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+[]|\TU/TeXGyreTermesX(0)/m/n/8 Field and crop-season
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
-[]|\TU/TeXGyreTermesX(0)/m/n/8 126 of 128 crop seasons with
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
+[]|\TU/TeXGyreTermesX(0)/m/n/8 Environmental, crop-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
-\TU/TeXGyreTermesX(0)/m/n/8 weather, phenology, risk, and
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
+\TU/TeXGyreTermesX(0)/m/n/8 stage, and disease-risk
  []
 
 
-Underfull \hbox (badness 3780) in paragraph at lines 362--362
-[]|\TU/TeXGyreTermesX(0)/m/n/8 3590 notifications and 151 field-
+Underfull \hbox (badness 3009) in paragraph at lines 410--411
+\TU/TeXGyreTermesX(0)/m/n/8 states reconstructable by
  []
 
 
-Underfull \hbox (badness 7963) in paragraph at lines 362--363
-[]|\TU/TeXGyreTermesX(0)/m/n/8 Shows delivery into user-
+Underfull \hbox (badness 2050) in paragraph at lines 411--411
+[]|\TU/TeXGyreTermesX(0)/m/n/8 Retained user, field, or crop-
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 363--363
-[]|\TU/TeXGyreTermesX(0)/m/n/8 234 fungicide or pesticide records
+Underfull \hbox (badness 1527) in paragraph at lines 411--412
+[]|\TU/TeXGyreTermesX(0)/m/n/8 Event-delivery and field-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
-[]|\TU/TeXGyreTermesX(0)/m/n/8 Shows protection inputs
+Underfull \hbox (badness 1152) in paragraph at lines 413--413
+\TU/TeXGyreTermesX(0)/m/n/8 image-analysis records, 1360 advisory or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--364
-[]|\TU/TeXGyreTermesX(0)/m/n/8 Observation and consultation
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
+[]|\TU/TeXGyreTermesX(0)/m/n/8 Optional evidence
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--364
-[]|\TU/TeXGyreTermesX(0)/m/n/8 94 field-note or disease-report
+Underfull \hbox (badness 3039) in paragraph at lines 413--414
+\TU/TeXGyreTermesX(0)/m/n/8 branches retained; com-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--364
-\TU/TeXGyreTermesX(0)/m/n/8 records, 2808 image-analysis
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+[]|\TU/TeXGyreTermesX(0)/m/n/8 No efficacy, pesticide-
  []
 
-[18]
-File: ../fig/field_management_interfaces.png Graphic file (type bmp)
-<../fig/field_management_interfaces.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+\TU/TeXGyreTermesX(0)/m/n/8 reduction, adoption, or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+\TU/TeXGyreTermesX(0)/m/n/8 economic outcome in-
+ []
+
+[17]
 File: ../fig/weather_phenology_interfaces.png Graphic file (type bmp)
 <../fig/weather_phenology_interfaces.png>
- [19] [20] [21]
-File: ../fig/disease_risk_timeline.png Graphic file (type bmp)
-<../fig/disease_risk_timeline.png>
+ [18] [19]
+File: ../fig/disease_risk_timeline_downy_field.png Graphic file (type bmp)
+<../fig/disease_risk_timeline_downy_field.png>
 File: ../fig/alert_notification_interfaces.png Graphic file (type bmp)
 <../fig/alert_notification_interfaces.png>
- [22] [23] [24] (./manuscript_R.bbl [25] [26] [27] [28]
-[29]) [30] (./manuscript_R.aux)
+ [20]
+File: ../fig/task_management_interfaces.png Graphic file (type bmp)
+<../fig/task_management_interfaces.png>
+ [21]
+File: ../fig/ai_diagnosis_interfaces.png Graphic file (type bmp)
+<../fig/ai_diagnosis_interfaces.png>
+ [22] [23]
+File: ../fig/disease_feedback_loop.png Graphic file (type bmp)
+<../fig/disease_feedback_loop.png>
+
+Underfull \hbox (badness 5359) in paragraph at lines 500--500
+[]|\TU/TeXGyreTermesX(0)/m/n/8 Weather, phenology, risk, notification,
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 500--501
+[]|\TU/TeXGyreTermesX(0)/m/n/8 Representative crop-season re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 502--502
+[]|\TU/TeXGyreTermesX(0)/m/n/8 Notifications and completed plant-
+ []
+
+[24]
+File: ../fig/phenology_major_stage_validation.png Graphic file (type bmp)
+<../fig/phenology_major_stage_validation.png>
+File: ../fig/fsims_supporting_performance.png Graphic file (type bmp)
+<../fig/fsims_supporting_performance.png>
+ [25] [26] [27] [28] [29] [30] [31] [32] [33] (./manuscript_R.bbl [34]
+[35] [36] [37] [38] [39]) [40] (./manuscript_R.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
- ) 
+ )
 Here is how much of TeX's memory you used:
- 18935 strings out of 468168
- 344519 string characters out of 5432815
- 798837 words of memory out of 5000000
- 47381 multiletter control sequences out of 15000+600000
+ 19007 strings out of 468168
+ 347982 string characters out of 5432815
+ 798789 words of memory out of 5000000
+ 47449 multiletter control sequences out of 15000+600000
  658719 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 75i,15n,117p,1944b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,117p,1863b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on manuscript_R.xdv (30 pages, 641168 bytes).
+Output written on manuscript_R.xdv (40 pages, 860252 bytes).

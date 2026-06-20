@@ -1,0 +1,43 @@
+﻿evaluation,site_id,year,province,variety,maturation,lat,lon,source_variety_code,management_stage,management_stage_label,observed_date,predicted_date,error_days,abs_error_days,matched,fold_id
+baseline,guilin,2022,GuangXi,温克,晚,25.45,110.8,wk,inflorescence_flowering,Inflorescence and flowering,2022-04-10,2022-05-27,47,47,True,
+baseline,guilin,2022,GuangXi,温克,晚,25.45,110.8,wk,berry_development,Berry development,2022-05-13,2022-07-11,59,59,True,
+baseline,Duan,2022,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,inflorescence_flowering,Inflorescence and flowering,2022-05-08,2022-04-27,-11,11,True,
+baseline,Mingyang,2023,GuangXi,巨峰,中,22.61,108.23,JF,inflorescence_flowering,Inflorescence and flowering,2023-03-21,2023-04-05,15,15,True,
+baseline,Mingyang,2023,GuangXi,巨峰,中,22.61,108.23,JF,berry_development,Berry development,2023-04-17,2023-05-23,36,36,True,
+baseline,Mingyang,2023,GuangXi,巨峰,中,22.61,108.23,JF,ripening,Ripening,2023-05-26,2023-07-03,38,38,True,
+baseline,Duan,2023,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,inflorescence_flowering,Inflorescence and flowering,2023-03-28,2023-04-17,20,20,True,
+baseline,Duan,2023,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,berry_development,Berry development,2023-05-28,2023-06-03,6,6,True,
+baseline,Duan,2023,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,ripening,Ripening,2023-07-24,2023-07-17,-7,7,True,
+baseline,Mingyang,2024,GuangXi,巨峰,中,22.61,108.23,JF,inflorescence_flowering,Inflorescence and flowering,2024-04-04,2024-03-31,-4,4,True,
+baseline,Mingyang,2024,GuangXi,巨峰,中,22.61,108.23,JF,berry_development,Berry development,2024-04-19,2024-05-14,25,25,True,
+baseline,Mingyang,2024,GuangXi,巨峰,中,22.61,108.23,JF,ripening,Ripening,2024-05-29,2024-06-27,29,29,True,
+baseline,Duan,2024,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,inflorescence_flowering,Inflorescence and flowering,2024-04-18,2024-04-11,-7,7,True,
+baseline,Duan,2024,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,berry_development,Berry development,2024-05-12,2024-05-29,17,17,True,
+calibrated_resubstitution,guilin,2022,GuangXi,温克,晚,25.45,110.8,wk,inflorescence_flowering,Inflorescence and flowering,2022-04-10,2022-05-27,47,47,True,
+calibrated_resubstitution,guilin,2022,GuangXi,温克,晚,25.45,110.8,wk,berry_development,Berry development,2022-05-13,2022-07-11,59,59,True,
+calibrated_resubstitution,Duan,2022,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,inflorescence_flowering,Inflorescence and flowering,2022-05-08,2022-04-25,-13,13,True,
+calibrated_resubstitution,Mingyang,2023,GuangXi,巨峰,中,22.61,108.23,JF,inflorescence_flowering,Inflorescence and flowering,2023-03-21,2023-04-05,15,15,True,
+calibrated_resubstitution,Mingyang,2023,GuangXi,巨峰,中,22.61,108.23,JF,berry_development,Berry development,2023-04-17,2023-05-23,36,36,True,
+calibrated_resubstitution,Mingyang,2023,GuangXi,巨峰,中,22.61,108.23,JF,ripening,Ripening,2023-05-26,2023-06-17,22,22,True,
+calibrated_resubstitution,Duan,2023,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,inflorescence_flowering,Inflorescence and flowering,2023-03-28,2023-04-13,16,16,True,
+calibrated_resubstitution,Duan,2023,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,berry_development,Berry development,2023-05-28,2023-06-03,6,6,True,
+calibrated_resubstitution,Duan,2023,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,ripening,Ripening,2023-07-24,2023-07-17,-7,7,True,
+calibrated_resubstitution,Mingyang,2024,GuangXi,巨峰,中,22.61,108.23,JF,inflorescence_flowering,Inflorescence and flowering,2024-04-04,2024-03-31,-4,4,True,
+calibrated_resubstitution,Mingyang,2024,GuangXi,巨峰,中,22.61,108.23,JF,berry_development,Berry development,2024-04-19,2024-05-14,25,25,True,
+calibrated_resubstitution,Mingyang,2024,GuangXi,巨峰,中,22.61,108.23,JF,ripening,Ripening,2024-05-29,2024-06-11,13,13,True,
+calibrated_resubstitution,Duan,2024,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,inflorescence_flowering,Inflorescence and flowering,2024-04-18,2024-04-06,-12,12,True,
+calibrated_resubstitution,Duan,2024,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,berry_development,Berry development,2024-05-12,2024-05-29,17,17,True,
+losyo_calibrated,Duan,2022,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,inflorescence_flowering,Inflorescence and flowering,2022-05-08,2022-04-27,-11,11,True,Duan_2022_毛葡萄野酿2号
+losyo_calibrated,guilin,2022,GuangXi,温克,晚,25.45,110.8,wk,inflorescence_flowering,Inflorescence and flowering,2022-04-10,2022-05-27,47,47,True,guilin_2022_温克
+losyo_calibrated,guilin,2022,GuangXi,温克,晚,25.45,110.8,wk,berry_development,Berry development,2022-05-13,2022-07-11,59,59,True,guilin_2022_温克
+losyo_calibrated,Mingyang,2023,GuangXi,巨峰,中,22.61,108.23,JF,inflorescence_flowering,Inflorescence and flowering,2023-03-21,2023-04-05,15,15,True,Mingyang_2023_巨峰
+losyo_calibrated,Mingyang,2023,GuangXi,巨峰,中,22.61,108.23,JF,berry_development,Berry development,2023-04-17,2023-05-23,36,36,True,Mingyang_2023_巨峰
+losyo_calibrated,Mingyang,2023,GuangXi,巨峰,中,22.61,108.23,JF,ripening,Ripening,2023-05-26,2023-07-03,38,38,True,Mingyang_2023_巨峰
+losyo_calibrated,Duan,2023,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,inflorescence_flowering,Inflorescence and flowering,2023-03-28,2023-04-17,20,20,True,Duan_2023_毛葡萄野酿2号
+losyo_calibrated,Duan,2023,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,berry_development,Berry development,2023-05-28,2023-06-03,6,6,True,Duan_2023_毛葡萄野酿2号
+losyo_calibrated,Duan,2023,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,ripening,Ripening,2023-07-24,2023-07-17,-7,7,True,Duan_2023_毛葡萄野酿2号
+losyo_calibrated,Mingyang,2024,GuangXi,巨峰,中,22.61,108.23,JF,inflorescence_flowering,Inflorescence and flowering,2024-04-04,2024-03-31,-4,4,True,Mingyang_2024_巨峰
+losyo_calibrated,Mingyang,2024,GuangXi,巨峰,中,22.61,108.23,JF,berry_development,Berry development,2024-04-19,2024-05-14,25,25,True,Mingyang_2024_巨峰
+losyo_calibrated,Mingyang,2024,GuangXi,巨峰,中,22.61,108.23,JF,ripening,Ripening,2024-05-29,2024-06-27,29,29,True,Mingyang_2024_巨峰
+losyo_calibrated,Duan,2024,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,inflorescence_flowering,Inflorescence and flowering,2024-04-18,2024-04-06,-12,12,True,Duan_2024_毛葡萄野酿2号
+losyo_calibrated,Duan,2024,GuangXi,毛葡萄野酿2号,晚,23.83,108.11,MPT,berry_development,Berry development,2024-05-12,2024-05-29,17,17,True,Duan_2024_毛葡萄野酿2号

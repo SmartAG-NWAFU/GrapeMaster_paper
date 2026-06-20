@@ -1,0 +1,4 @@
+﻿model,Tbase,Topt,Tcei,offset_JF,offset_MPT,offset_wk
+baseline_interpolated,10.0,30.0,42.0,,,
+pooled_calibrated,5.176818184138927,27.517153745246503,40.700417992399174,0.0,0.0,0.0
+cultivar_offset_calibrated,7.853360947032358,25.03671382741936,40.72540343868772,-128.1090692587402,150.0,0.0

@@ -1,0 +1,14 @@
+module,metric,value,reference_value,note
+FSIM-S,Validation MAE,6.333,,3-fold mean +/- SD
+FSIM-S,Validation RMSE,6.494,,overall validation RMSE
+Disease recognition,Test Accuracy,0.976,,n=2637
+Disease recognition,Test Precision,0.956,,n=2637
+Disease recognition,Test Recall,0.979,,n=2637
+Disease recognition,Test F1-Score,0.967,,n=2637
+Disease recognition,Leaf Blight F1-score,0.962,,test class
+Disease recognition,Powdery Mildew F1-score,0.972,,test class
+Disease recognition,Mosaic Virus F1-score,0.926,,test class
+Disease recognition,Downy Mildew F1-score,0.986,,test class
+Disease recognition,Yellows F1-score,0.998,,test class
+Disease recognition,Black Measles F1-score,0.968,,test class
+Disease recognition,Black Rot F1-score,0.953,,test class

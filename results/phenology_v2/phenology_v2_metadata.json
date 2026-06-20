@@ -1,0 +1,63 @@
+{
+  "raw_file": "/Users/yaolinjia/Desktop/Grape/GrapeMaster_paper/model_moudle/grape_bbch/standalone_phenology/data/growth_stage_data.xlsx",
+  "n_first_observed_events_excluding_bbch00": 66,
+  "site_years": 6,
+  "observed_stages": [
+    "01",
+    "05",
+    "07",
+    "14",
+    "15",
+    "17",
+    "18",
+    "53",
+    "55",
+    "57",
+    "60",
+    "61",
+    "62",
+    "63",
+    "68",
+    "71",
+    "73",
+    "75",
+    "76",
+    "77",
+    "79",
+    "81",
+    "83",
+    "85",
+    "89",
+    "99"
+  ],
+  "thermal_bounds": [
+    [
+      5.0,
+      12.0
+    ],
+    [
+      25.0,
+      35.0
+    ],
+    [
+      38.0,
+      45.0
+    ]
+  ],
+  "offset_limit_gdd": 250.0,
+  "prior_weight": 1.0,
+  "variety_mapping": {
+    "wk": {
+      "variety": "温克",
+      "maturation": "晚"
+    },
+    "JF": {
+      "variety": "巨峰",
+      "maturation": "中"
+    },
+    "MPT": {
+      "variety": "毛葡萄野酿2号",
+      "maturation": "晚"
+    }
+  }
+}

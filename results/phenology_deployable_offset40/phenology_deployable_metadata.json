@@ -1,0 +1,46 @@
+{
+  "approach": "single_axis_deployment_recalibration",
+  "thermal_response": {
+    "Tbase": 10.0,
+    "Topt": 30.0,
+    "Tcei": 42.0
+  },
+  "selected_biofix_rule": {
+    "name": "tmean_ge_8_run_3d",
+    "tmean_threshold": 8.0,
+    "run_days": 3
+  },
+  "use_cultivar_offsets": true,
+  "offset_limit_GDD": 40.0,
+  "n_observations_excluding_bbch00": 150,
+  "n_site_years": 6,
+  "observed_stages": [
+    "01",
+    "05",
+    "07",
+    "14",
+    "15",
+    "17",
+    "18",
+    "53",
+    "55",
+    "57",
+    "60",
+    "61",
+    "62",
+    "63",
+    "68",
+    "71",
+    "73",
+    "75",
+    "76",
+    "77",
+    "79",
+    "81",
+    "83",
+    "85",
+    "89",
+    "99"
+  ],
+  "output_parameter_table": "BBCHGDD_deployable_recalibrated.json"
+}

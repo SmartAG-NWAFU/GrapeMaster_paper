@@ -4,44 +4,44 @@ The top-level auxiliary file: manuscript_R.aux
 The style file: elsarticle-harv.bst
 Database file #1: ../reference/Grape.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 34 entries,
+You've used 42 entries,
             2990 wiz_defined-function locations,
-            898 strings with 17278 characters,
-and the built_in function-call counts, 29695 in all, are:
-= -- 2038
-> -- 1780
-< -- 5
-+ -- 695
-- -- 642
-* -- 3733
-:= -- 4376
-add.period$ -- 129
-call.type$ -- 34
-change.case$ -- 383
-chr.to.int$ -- 33
-cite$ -- 34
-duplicate$ -- 1938
-empty$ -- 1793
-format.name$ -- 746
-if$ -- 5285
+            961 strings with 19274 characters,
+and the built_in function-call counts, 35250 in all, are:
+= -- 2477
+> -- 1988
+< -- 6
++ -- 777
+- -- 714
+* -- 4365
+:= -- 5176
+add.period$ -- 160
+call.type$ -- 42
+change.case$ -- 447
+chr.to.int$ -- 41
+cite$ -- 42
+duplicate$ -- 2346
+empty$ -- 2198
+format.name$ -- 844
+if$ -- 6312
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 445
-newline$ -- 212
-num.names$ -- 136
-pop$ -- 668
+missing$ -- 525
+newline$ -- 259
+num.names$ -- 168
+pop$ -- 798
 preamble$ -- 1
-purify$ -- 349
+purify$ -- 405
 quote$ -- 0
-skip$ -- 477
+skip$ -- 588
 stack$ -- 0
-substring$ -- 1055
-swap$ -- 1705
+substring$ -- 1324
+swap$ -- 2009
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 306
+type$ -- 378
 warning$ -- 0
-while$ -- 151
+while$ -- 188
 width$ -- 0
-write$ -- 543
+write$ -- 669
