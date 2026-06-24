@@ -254,9 +254,9 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT ../fig/grapemaster_crop_season_traceability_minor_refined_figure_package/grapemaster_crop_season_traceability_minor_refined.pdf
 INPUT ../fig/grapemaster_crop_season_traceability_minor_refined_figure_package/grapemaster_crop_season_traceability_minor_refined.pdf
 INPUT ../fig/grapemaster_crop_season_traceability_minor_refined_figure_package/grapemaster_crop_season_traceability_minor_refined.pdf
-INPUT ../fig/grapemaster_backend_linkage.png
-INPUT ../fig/grapemaster_backend_linkage.png
-INPUT ../fig/grapemaster_backend_linkage.png
+INPUT ../fig/grapemaster_test_site_distribution_map.png
+INPUT ../fig/grapemaster_test_site_distribution_map.png
+INPUT ../fig/grapemaster_test_site_distribution_map.png
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/newtx/ntxmi7.tfm
@@ -288,9 +288,9 @@ INPUT ../fig/task_management_interfaces.png
 INPUT ../fig/ai_diagnosis_interfaces.png
 INPUT ../fig/ai_diagnosis_interfaces.png
 INPUT ../fig/ai_diagnosis_interfaces.png
-INPUT ../fig/disease_feedback_loop.png
-INPUT ../fig/disease_feedback_loop.png
-INPUT ../fig/disease_feedback_loop.png
+INPUT ../fig/disease_feedback_loop_frame_balanced_revised_figure_package/disease_feedback_loop_frame_balanced_revised_300dpi.png
+INPUT ../fig/disease_feedback_loop_frame_balanced_revised_figure_package/disease_feedback_loop_frame_balanced_revised_300dpi.png
+INPUT ../fig/disease_feedback_loop_frame_balanced_revised_figure_package/disease_feedback_loop_frame_balanced_revised_300dpi.png
 INPUT ../fig/phenology_major_stage_validation.png
 INPUT ../fig/phenology_major_stage_validation.png
 INPUT ../fig/phenology_major_stage_validation.png

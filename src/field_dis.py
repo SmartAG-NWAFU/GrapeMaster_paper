@@ -27,6 +27,7 @@ FIELD_CSV = ROOT / "data" / "dataset_csv" / "public_field_field.csv"
 CROP_SEASON_CSV = ROOT / "data" / "dataset_csv" / "public_crop_cropseason.csv"
 DEFAULT_CACHE_CSV = ROOT / "data" / "grapemaster_test_site_locations.csv"
 DEFAULT_OUTPUT = ROOT / "fig" / "grapemaster_test_site_distribution_map.png"
+DEFAULT_REGION_SUMMARY_CSV = ROOT / "results" / "platform_mappable_field_region_summary.csv"
 CHINA_SHP = ROOT / "data" / "shp" / "国家矢量.shp"
 PROVINCE_SHP = ROOT / "data" / "shp" / "procince.shp"
 
@@ -393,7 +394,25 @@ def add_south_china_sea_inset(ax: plt.Axes, china: gpd.GeoDataFrame) -> None:
         spine.set_color("black")
 
 
-def plot_point_layer(ax: plt.Axes, points: gpd.GeoDataFrame, color: str, zorder: int) -> None:
+def platform_marker_size(field_count: pd.Series | np.ndarray | float) -> pd.Series | np.ndarray | float:
+    return 42 + np.sqrt(field_count) * 34
+
+
+def plot_platform_region_layer(ax: plt.Axes, points: gpd.GeoDataFrame, zorder: int) -> None:
+    sizes = platform_marker_size(points["field_record_count"].astype(float))
+    points.plot(ax=ax, markersize=sizes + 42, color="black", edgecolor="none", alpha=0.70, zorder=zorder)
+    points.plot(
+        ax=ax,
+        markersize=sizes,
+        color=POINT_COLOR,
+        edgecolor=POINT_EDGE_COLOR,
+        linewidth=1.05,
+        alpha=0.96,
+        zorder=zorder + 1,
+    )
+
+
+def plot_site_layer(ax: plt.Axes, points: gpd.GeoDataFrame, color: str, zorder: int) -> None:
     points.plot(ax=ax, markersize=82, color="black", edgecolor="none", alpha=0.82, zorder=zorder)
     points.plot(
         ax=ax,
@@ -417,7 +436,7 @@ def add_site_legend(ax: plt.Axes) -> None:
             markeredgecolor=POINT_EDGE_COLOR,
             markeredgewidth=1.05,
             markersize=8,
-            label="Test-account fields",
+            label="Mappable platform field records",
         ),
         Line2D(
             [0],
@@ -428,7 +447,7 @@ def add_site_legend(ax: plt.Axes) -> None:
             markeredgecolor=POINT_EDGE_COLOR,
             markeredgewidth=1.05,
             markersize=8,
-            label="Experimental data sites",
+            label="Experimental module-evidence sites",
         ),
     ]
     legend = ax.legend(
@@ -442,9 +461,64 @@ def add_site_legend(ax: plt.Axes) -> None:
         fontsize=10.5,
     )
     legend.get_frame().set_linewidth(0.8)
+    ax.add_artist(legend)
 
 
-def plot_distribution(account_points: gpd.GeoDataFrame, experimental_points: gpd.GeoDataFrame) -> None:
+def add_size_legend(ax: plt.Axes) -> None:
+    handles = [
+        Line2D(
+            [0],
+            [0],
+            marker="o",
+            linestyle="none",
+            markerfacecolor=POINT_COLOR,
+            markeredgecolor=POINT_EDGE_COLOR,
+            markeredgewidth=1.05,
+            markersize=np.sqrt(platform_marker_size(count)),
+            label=f"{count}",
+        )
+        for count in (1, 10, 25)
+    ]
+    legend = ax.legend(
+        handles=handles,
+        title="Field records",
+        loc="lower left",
+        bbox_to_anchor=(0.060, 0.105),
+        frameon=True,
+        framealpha=0.92,
+        facecolor="white",
+        edgecolor="#6c757d",
+        fontsize=9.5,
+        title_fontsize=9.5,
+        labelspacing=1.0,
+        borderpad=0.7,
+    )
+    legend.get_frame().set_linewidth(0.8)
+    ax.add_artist(legend)
+
+
+def aggregate_mappable_field_records(df: pd.DataFrame) -> pd.DataFrame:
+    region_df = (
+        df.groupby("region", dropna=False)
+        .agg(
+            field_record_count=("uuid", "count"),
+            retained_account_count=("user_id_id", lambda values: values.astype(str).nunique()),
+            crop_season_count=("crop_season_count", "sum"),
+            centroid_lon=("centroid_lon", "mean"),
+            centroid_lat=("centroid_lat", "mean"),
+        )
+        .reset_index()
+        .rename(columns={"region": "region_name"})
+    )
+    region_df["region_name"] = region_df["region_name"].fillna("Unspecified")
+    region_df = region_df.sort_values(["field_record_count", "region_name"], ascending=[False, True])
+
+    DEFAULT_REGION_SUMMARY_CSV.parent.mkdir(parents=True, exist_ok=True)
+    region_df.to_csv(DEFAULT_REGION_SUMMARY_CSV, index=False, encoding="utf-8-sig")
+    return region_df
+
+
+def plot_distribution(platform_region_points: gpd.GeoDataFrame, experimental_points: gpd.GeoDataFrame) -> None:
     plt.rcParams.update(
         {
             "font.family": "serif",
@@ -475,13 +549,14 @@ def plot_distribution(account_points: gpd.GeoDataFrame, experimental_points: gpd
         provinces.boundary.plot(ax=ax, color=PROVINCE_EDGE_COLOR, linewidth=0.85, alpha=0.95, zorder=3)
     china.boundary.plot(ax=ax, color="black", linewidth=1.25, zorder=4)
 
-    plot_point_layer(ax, account_points, POINT_COLOR, zorder=5)
-    plot_point_layer(ax, experimental_points, EXPERIMENT_SITE_COLOR, zorder=7)
+    plot_platform_region_layer(ax, platform_region_points, zorder=5)
+    plot_site_layer(ax, experimental_points, EXPERIMENT_SITE_COLOR, zorder=7)
     add_south_china_sea_inset(ax, china)
     add_overview_ticks(ax, bounds_3857)
     add_north_arrow(ax, bounds_3857)
     add_scale_bar(ax, bounds_3857)
     add_site_legend(ax)
+    add_size_legend(ax)
 
     ax.set_xlabel("")
     ax.set_ylabel("")
@@ -497,16 +572,23 @@ def plot_distribution(account_points: gpd.GeoDataFrame, experimental_points: gpd
 
 def main() -> None:
     df = get_fields_data()
-    account_points = make_points_gdf(df)
+    region_df = aggregate_mappable_field_records(df)
+    platform_region_points = make_points_gdf(region_df)
     experimental_points = make_points_gdf(get_experimental_sites_data())
-    if account_points.empty:
-        raise ValueError("No valid test-account vineyard points found for plotting.")
+    if platform_region_points.empty:
+        raise ValueError("No valid mappable platform vineyard regions found for plotting.")
     if experimental_points.empty:
         raise ValueError("No valid experimental sites found for plotting.")
 
-    plot_distribution(account_points, experimental_points)
+    plot_distribution(platform_region_points, experimental_points)
     print(f"Saved GrapeMaster site distribution map to: {DEFAULT_OUTPUT}")
     print(f"Saved merged point table to: {DEFAULT_CACHE_CSV}")
+    print(f"Saved regional summary table to: {DEFAULT_REGION_SUMMARY_CSV}")
+    print(
+        "Mapped "
+        f"{len(df)} field records from {df['user_id_id'].astype(str).nunique()} retained accounts "
+        f"across {len(region_df)} county-level regions."
+    )
 
 
 if __name__ == "__main__":

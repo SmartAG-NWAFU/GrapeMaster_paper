@@ -9,6 +9,7 @@ from pathlib import Path
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import pandas as pd
+from matplotlib.offsetbox import AnnotationBbox, OffsetImage
 from matplotlib.patches import Rectangle
 from PIL import Image, ImageOps
 
@@ -187,8 +188,8 @@ def add_inside_legend(ax: plt.Axes) -> None:
         (0.13, 0.970),
         (0.40, 0.970),
         (0.67, 0.970),
+        (0.13, 0.842),
         (0.40, 0.842),
-        (0.67, 0.842),
     ]
     swatch_width = 0.020
     swatch_height = 0.028
@@ -213,9 +214,55 @@ def add_inside_legend(ax: plt.Axes) -> None:
             transform=ax.transAxes,
             ha="left",
             va="center",
-            fontsize=7.1,
+            fontsize=8.2,
             color="#202020",
         )
+
+
+def add_fungicide_icon(
+    ax: plt.Axes,
+    track_group: pd.DataFrame,
+    icon_path: Path,
+    zoom: float = 0.16,
+) -> None:
+    protected_segments = [
+        (start_date, end_date)
+        for start_date, end_date, risk_code in iter_risk_segments(track_group)
+        if risk_code == "PROTECTED"
+    ]
+    if not protected_segments or not icon_path.exists():
+        return
+
+    start_date, end_date = protected_segments[0]
+    midpoint = start_date + (end_date - start_date) / 2
+    icon = Image.open(icon_path).convert("RGBA")
+    image_box = OffsetImage(icon, zoom=zoom, interpolation="lanczos")
+    annotation = AnnotationBbox(
+        image_box,
+        (mdates.date2num(midpoint), 2.02),
+        xycoords="data",
+        frameon=False,
+        box_alignment=(0.5, 0.5),
+        pad=0,
+        zorder=20,
+    )
+    ax.add_artist(annotation)
+    ax.annotate(
+        "",
+        xy=(mdates.date2num(midpoint), 1.34),
+        xytext=(mdates.date2num(midpoint), 1.70),
+        xycoords="data",
+        textcoords="data",
+        arrowprops={
+            "arrowstyle": "-|>",
+            "color": "#202020",
+            "linewidth": 0.8,
+            "mutation_scale": 8,
+            "shrinkA": 0,
+            "shrinkB": 0,
+        },
+        zorder=19,
+    )
 
 
 def plot_timeline(
@@ -223,6 +270,7 @@ def plot_timeline(
     spray_dates_by_dataset: dict[str, list[pd.Timestamp]],
     output_fig: Path,
     figure_width: float = DOUBLE_COLUMN_WIDTH_IN,
+    fungicide_icon: Path | None = None,
 ) -> None:
     plt.rcParams.update(
         {
@@ -264,6 +312,8 @@ def plot_timeline(
                     edgecolors="white",
                     linewidth=0.7,
                 )
+            if axis_index == 2 and track == "Downy mildew" and fungicide_icon is not None:
+                add_fungicide_icon(ax, track_group, fungicide_icon)
 
         spray_dates = spray_dates_by_dataset.get(dataset_name, [])
         for spray_date in spray_dates:
@@ -378,6 +428,12 @@ def parse_args() -> argparse.Namespace:
         help="Optional output path for a stacked timeline + notification composite figure.",
     )
     parser.add_argument("--site-label", default=DEFAULT_SITE_LABEL)
+    parser.add_argument(
+        "--fungicide-icon",
+        type=Path,
+        default=None,
+        help="Optional icon to place above the protected downy mildew segment in panel c.",
+    )
     parser.add_argument("--single", action="store_true", help="Plot only --response-json and --request-json.")
     parser.add_argument(
         "--from-csv",
@@ -401,7 +457,7 @@ def main() -> None:
         rows, spray_dates_by_dataset = build_default_rows_and_sprays()
     if not args.from_csv:
         write_timeline_csv(rows, args.timeline_csv)
-    plot_timeline(rows, spray_dates_by_dataset, args.output_fig)
+    plot_timeline(rows, spray_dates_by_dataset, args.output_fig, fungicide_icon=args.fungicide_icon)
     if not args.from_csv:
         print(f"Wrote timeline data: {args.timeline_csv}")
     print(f"Wrote figure: {args.output_fig}")
