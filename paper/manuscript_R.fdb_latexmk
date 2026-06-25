@@ -1,18 +1,18 @@
 # Fdb version 4
-["bibtex manuscript_R"] 1782311852.07099 "manuscript_R.aux" "manuscript_R.bbl" "manuscript_R" 1782311888.28173 0
+["bibtex manuscript_R"] 1782381057.85321 "manuscript_R.aux" "manuscript_R.bbl" "manuscript_R" 1782381093.42153 0
   "../reference/Grape.bib" 1782285889.50928 1177088 8255e21422c33459986d5b7aabceda7d ""
   "/usr/local/texlive/2026/texmf-dist/bibtex/bst/elsarticle/elsarticle-harv.bst" 1767996394 30002 8c3d766e7980d576fdc8329774bbf7b2 ""
-  "manuscript_R.aux" 1782311852.85674 22844 76520ba86c9b7174b60cd4befe9e5d00 "xelatex"
+  "manuscript_R.aux" 1782381058.5881 22768 06312e4471a5ae9cf293f34853cf036e "xelatex"
   (generated)
   "manuscript_R.bbl"
   "manuscript_R.blg"
   (rewritten before read)
-["xdvipdfmx"] 1782311853.13443 "manuscript_R.xdv" "manuscript_R.pdf" "manuscript_R" 1782311888.28262 0
-  "manuscript_R.xdv" 1782311852.85771 869976 07288510ca7080472db144f94d7e4d2d "xelatex"
+["xdvipdfmx"] 1782381058.79562 "manuscript_R.xdv" "manuscript_R.pdf" "manuscript_R" 1782381093.42239 0
+  "manuscript_R.xdv" 1782381058.58896 848660 14c94c4ae054c7f33f26707d43e242b1 "xelatex"
   (generated)
   "manuscript_R.pdf"
   (rewritten before read)
-["xelatex"] 1782311852.22734 "manuscript_R.tex" "manuscript_R.xdv" "manuscript_R" 1782311888.28179 0
+["xelatex"] 1782381058.00351 "manuscript_R.tex" "manuscript_R.xdv" "manuscript_R" 1782381093.42159 0
   "../fig/ai_diagnosis_interfaces.png" 1781080294.13012 6072706 d5e41c9cc5379157a6fbc5ec6f34a495 ""
   "../fig/alert_notification_interfaces.png" 1781080294.1396 4937474 389037f42235d7c6c68fc9e53a9ae94c ""
   "../fig/disease_feedback_loop_frame_balanced_revised_figure_package/disease_feedback_loop_frame_balanced_revised_300dpi.png" 1782025708.58226 337095 d453a92ad39a256de493755859ecebd8 ""
@@ -130,9 +130,9 @@
   "/usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf" 1770478701 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
   "/usr/local/texlive/2026/texmf-var/web2c/xetex/xelatex.fmt" 1776926076 5948563 30de48e9b6d3b2b0959514538098e2fb ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "manuscript_R.aux" 1782311852.85674 22844 76520ba86c9b7174b60cd4befe9e5d00 "xelatex"
-  "manuscript_R.bbl" 1782311852.22542 27329 e153ed3266d7f1f1317040f1237ffb94 "bibtex manuscript_R"
-  "manuscript_R.tex" 1782309616.21167 78237 fb6476616b3dd12db38a0f498060cc8e ""
+  "manuscript_R.aux" 1782381058.5881 22768 06312e4471a5ae9cf293f34853cf036e "xelatex"
+  "manuscript_R.bbl" 1782381058.00064 27329 e153ed3266d7f1f1317040f1237ffb94 "bibtex manuscript_R"
+  "manuscript_R.tex" 1782373647.55962 76198 6b24a57c48008c0c2260d7e3ea8fc836 ""
   (generated)
   "manuscript_R.aux"
   "manuscript_R.log"
