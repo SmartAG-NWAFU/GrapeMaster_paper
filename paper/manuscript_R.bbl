@@ -91,8 +91,8 @@
   \bibinfo{volume}{54}, \bibinfo{pages}{255--267}.
 \newblock \DOIprefix\doi{10.1007/s00484-009-0277-5}.
 %Type = Article
-\bibitem[{Caffi and Rossi(2018)}]{caffiFungicideModelsAre2018}
-\bibinfo{author}{Caffi, T.}, \bibinfo{author}{Rossi, V.}, \bibinfo{year}{2018}.
+\bibitem[{CAFFI and ROSSI(2018)}]{caffiFungicideModelsAre2018}
+\bibinfo{author}{CAFFI, T.}, \bibinfo{author}{ROSSI, V.}, \bibinfo{year}{2018}.
 \newblock \bibinfo{title}{Fungicide models are key components of multiple
   modelling approaches for decision-making in crop protection}.
 \newblock \bibinfo{journal}{Phytopathologia Mediterranea} \bibinfo{volume}{57}.
@@ -187,15 +187,15 @@
   \bibinfo{pages}{115}.
 \newblock \DOIprefix\doi{10.20870/oeno-one.2016.0.0.1622}.
 %Type = Article
-\bibitem[{Gessler et~al.(2011)Gessler, Pertot and
-  Perazzolli}]{gesslerPlasmoparaViticolaReview2011}
-\bibinfo{author}{Gessler, C.}, \bibinfo{author}{Pertot, I.},
-  \bibinfo{author}{Perazzolli, M.}, \bibinfo{year}{2011}.
+\bibitem[{GESSLER et~al.(2011)GESSLER, PERTOT and
+  PERAZZOLLI}]{gesslerPlasmoparaViticolaReview2011}
+\bibinfo{author}{GESSLER, C.}, \bibinfo{author}{PERTOT, I.},
+  \bibinfo{author}{PERAZZOLLI, M.}, \bibinfo{year}{2011}.
 \newblock \bibinfo{title}{Plasmopara viticola: A review of knowledge on downy
   mildew of grapevine and effective disease management}.
 \newblock \bibinfo{journal}{Phytopathologia Mediterranea} \bibinfo{volume}{50},
   \bibinfo{pages}{3--44}.
-\newblock \URLprefix \url{https://www.jstor.org/stable/26458675}.
+\newblock \href{http://arxiv.org/abs/26458675}{{\tt arXiv:26458675}}.
 %Type = Article
 \bibitem[{{Gonz{\'a}lez-Dom{\'i}nguez}
   et~al.(2023){Gonz{\'a}lez-Dom{\'i}nguez}, Caffi, Rossi, Salotti and
@@ -207,7 +207,6 @@
   principles and applications over the last 50 years}.
 \newblock \bibinfo{journal}{Phytopathology\textregistered}
   \bibinfo{volume}{113}, \bibinfo{pages}{678--693}.
-\newblock \DOIprefix\doi{10.1094/PHYTO-10-22-0362-KD}.
 %Type = Article
 \bibitem[{Koledenkova et~al.(2022)Koledenkova, Esmaeel, Jacquard, Nowak,
   Cl{\'e}ment and Ait~Barka}]{koledenkovaPlasmoparaViticolaCausal2022}
@@ -227,9 +226,8 @@
 \newblock \bibinfo{title}{Towards an end-to-end digital framework for precision
   crop disease diagnosis and management based on emerging sensing and computing
   technologies: {{State}} over past decade and prospects}.
-\newblock \bibinfo{journal}{Computers} \bibinfo{volume}{14},
-  \bibinfo{pages}{443}.
-\newblock \DOIprefix\doi{10.3390/computers14100443}.
+\newblock \bibinfo{journal}{Computers}
+  \DOIprefix\doi{10.3390/computers14100443}.
 %Type = Article
 \bibitem[{Nogueira~J{\'u}nior et~al.(2018)Nogueira~J{\'u}nior, Amorim, Savary
   and Willocquet}]{nogueirajuniorModellingDynamicsGrapevine2018b}
@@ -251,8 +249,8 @@
   \bibinfo{year}{2023}.
 \newblock \bibinfo{title}{Fungicide {{Use Patterns}} in {{Select United States
   Wine Grape Production Regions}}}.
-\newblock \bibinfo{journal}{Plant Disease}
-  \DOIprefix\doi{10.1094/PDIS-04-23-0798-RE}.
+\newblock \bibinfo{journal}{Plant Disease} ,
+  \bibinfo{pages}{PDIS--04--23--0798--RE}\DOIprefix\doi{10.1094/PDIS-04-23-0798-RE}.
 %Type = Article
 \bibitem[{Orlandini et~al.(1993)Orlandini, Gozzini, Rosa, Egger, Storchi,
   Maracchi and Miglietta}]{orlandiniPLASMOSimulationModel1993}
@@ -378,8 +376,8 @@
   \bibinfo{year}{2020}.
 \newblock \bibinfo{title}{Assessing grapevine phenological models under
   {{Chinese}} climatic conditions}.
-\newblock \bibinfo{journal}{OENO One} \bibinfo{volume}{54}.
-\newblock \DOIprefix\doi{10.20870/oeno-one.2020.54.3.3195}.
+\newblock \bibinfo{journal}{OENO One}
+  \DOIprefix\doi{10.20870/oeno-one.2020.54.3.3195}.
 %Type = Article
 \bibitem[{Warneke et~al.(2020)Warneke, Thiessen and
   Mahaffee}]{warnekeEffectFungicideMobility2020}
@@ -429,17 +427,17 @@
   morphological variants}.
 \newblock \bibinfo{journal}{Plant Phenomics} \bibinfo{volume}{6},
   \bibinfo{pages}{0246}.
-\newblock \DOIprefix\doi{10.34133/plantphenomics.0246}.
 %Type = Article
 \bibitem[{Yao et~al.(2025)Yao, Zhao, Yan, Srivastava, Tian, Jin, Qu, Yin, Yao,
-  Webber et~al.}]{yaoInfluenceInformationSources2025}
+  Webber, Luedeling and Yu}]{yaoInfluenceInformationSources2025}
 \bibinfo{author}{Yao, L.}, \bibinfo{author}{Zhao, G.}, \bibinfo{author}{Yan,
   C.}, \bibinfo{author}{Srivastava, A.K.}, \bibinfo{author}{Tian, Q.},
   \bibinfo{author}{Jin, N.}, \bibinfo{author}{Qu, J.}, \bibinfo{author}{Yin,
-  L.}, \bibinfo{author}{Yao, N.}, \bibinfo{author}{Webber, H.}, et~al.,
+  L.}, \bibinfo{author}{Yao, N.}, \bibinfo{author}{Webber, H.},
+  \bibinfo{author}{Luedeling, E.}, \bibinfo{author}{Yu, Q.},
   \bibinfo{year}{2025}.
-\newblock \bibinfo{title}{Influence of information sources on technology
-  adoption in apple production in china}.
+\newblock \bibinfo{title}{Influence of {{Information Sources}} on {{Technology
+  Adoption}} in {{Apple Production}} in {{China}}}.
 \newblock \bibinfo{journal}{Agriculture} \bibinfo{volume}{15},
   \bibinfo{pages}{1785}.
 \newblock \DOIprefix\doi{10.3390/agriculture15161785}.
@@ -500,6 +498,5 @@
 \newblock \bibinfo{title}{Fungicides: An overlooked pesticide class?}
 \newblock \bibinfo{journal}{Environmental science \& technology}
   \bibinfo{volume}{53}, \bibinfo{pages}{3347--3365}.
-\newblock \DOIprefix\doi{10.1021/acs.est.8b04392}.
 
 \end{thebibliography}

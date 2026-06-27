@@ -6,37 +6,37 @@ Database file #1: ../reference/Grape.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 42 entries,
             2990 wiz_defined-function locations,
-            966 strings with 19444 characters,
-and the built_in function-call counts, 35644 in all, are:
-= -- 2478
-> -- 2060
+            961 strings with 19418 characters,
+and the built_in function-call counts, 35772 in all, are:
+= -- 2488
+> -- 2068
 < -- 6
-+ -- 804
-- -- 741
-* -- 4448
-:= -- 5250
-add.period$ -- 165
++ -- 807
+- -- 744
+* -- 4459
+:= -- 5260
+add.period$ -- 160
 call.type$ -- 42
-change.case$ -- 455
+change.case$ -- 457
 chr.to.int$ -- 41
 cite$ -- 42
-duplicate$ -- 2367
-empty$ -- 2189
-format.name$ -- 871
-if$ -- 6358
+duplicate$ -- 2366
+empty$ -- 2203
+format.name$ -- 874
+if$ -- 6390
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 536
-newline$ -- 264
+missing$ -- 535
+newline$ -- 259
 num.names$ -- 168
-pop$ -- 794
+pop$ -- 808
 preamble$ -- 1
-purify$ -- 413
+purify$ -- 415
 quote$ -- 0
-skip$ -- 590
+skip$ -- 588
 stack$ -- 0
-substring$ -- 1260
-swap$ -- 2054
+substring$ -- 1305
+swap$ -- 2049
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
@@ -44,4 +44,4 @@ type$ -- 378
 warning$ -- 0
 while$ -- 187
 width$ -- 0
-write$ -- 679
+write$ -- 669

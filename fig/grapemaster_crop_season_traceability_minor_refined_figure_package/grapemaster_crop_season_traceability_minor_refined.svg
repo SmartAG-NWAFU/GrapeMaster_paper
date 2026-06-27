@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="180.0mm" height="102.0mm" viewBox="0 0 510.236 289.134">
-<desc>SCI manuscript schematic with central crop-season anchor connecting prediction, action, feedback, optional evidence, and replay/audit traceability.</desc>
+<desc>SCI manuscript schematic with central crop-season anchor connecting prediction, action, feedback, optional symptom and advisory records, and replay/audit traceability.</desc>
 <style>
   text { font-family: Times New Roman; letter-spacing: normal; }
   .group { font-style: italic; fill: #60676C; }
@@ -85,14 +85,14 @@
 <circle cx="398.20" cy="128.50" r="1.45" fill="#40484D"/>
 <line x1="469.74" y1="112.20" x2="469.74" y2="125.30" class="line"/>
 <circle cx="469.74" cy="128.50" r="1.45" fill="#40484D"/>
-<text x="255.12" y="198.00" font-family="Times New Roman" font-size="8.00" font-weight="normal" text-anchor="middle" fill="#60676C" class="group" >Evidence</text>
+<text x="255.12" y="198.00" font-family="Times New Roman" font-size="8.00" font-weight="normal" text-anchor="middle" fill="#60676C" class="group" >Optional records</text>
 <rect x="122.12" y="211.50" width="116.00" height="50.00" rx="5.80" ry="5.80" fill="#F0ECF8" stroke="#7A679C" stroke-width="0.90"/>
-<text x="180.12" y="224.50" font-family="Times New Roman" font-size="8.90" font-weight="bold" text-anchor="middle" fill="#2F3437" >Symptom evidence</text>
+<text x="180.12" y="224.50" font-family="Times New Roman" font-size="8.90" font-weight="bold" text-anchor="middle" fill="#2F3437" >Symptom-image records</text>
 <text x="180.12" y="239.50" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >uploaded image</text>
 <text x="180.12" y="247.90" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >recognition result</text>
 <text x="180.12" y="256.30" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >field note</text>
 <rect x="272.12" y="211.50" width="116.00" height="50.00" rx="5.80" ry="5.80" fill="#F0ECF8" stroke="#7A679C" stroke-width="0.90"/>
-<text x="330.12" y="224.50" font-family="Times New Roman" font-size="8.90" font-weight="bold" text-anchor="middle" fill="#2F3437" >Advisory evidence</text>
+<text x="330.12" y="224.50" font-family="Times New Roman" font-size="8.90" font-weight="bold" text-anchor="middle" fill="#2F3437" >Advisory records</text>
 <text x="330.12" y="239.50" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >consultation</text>
 <text x="330.12" y="247.90" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >advisory message</text>
 <text x="330.12" y="256.30" font-family="Times New Roman" font-size="7.55" font-weight="normal" text-anchor="middle" fill="#2F3437" >management explanation</text>

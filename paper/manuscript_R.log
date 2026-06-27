@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.23)  25 JUN 2026 17:50
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.23)  27 JUN 2026 16:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,13 +22,17 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
 (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
@@ -44,29 +48,36 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen155
 \Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks18
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 6.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks19
 \inpenc@posthook=\toks20
+
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/newtxtext.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/newtxtext.sty
 Package: newtxtext 2024/04/01 v1.744(Michael Sharpe) latex and unicode latex su
 pport for TeXGyreTermesX
 
 `newtxtext' v1.744, 2024/04/01 Text macros taking advantage of TeXGyre Termes a
-nd its extensions (msharpe) (/usr/local/texlive/2026/texmf-dist/tex/latex/xpatc
-h/xpatch.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+nd its extensions (msharpe)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2026-01-19 L3 programming layer (loader) 
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count282
@@ -74,20 +85,26 @@ File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__pdfannot_backend_link_int=\count284
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count285
-)) (/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 274.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `RGB' extended on input line 1365.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
@@ -96,34 +113,42 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
-(/usr/local/texlive/2026/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local
-/texlive/2026/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks21
 \XKV@tempa@toks=\toks22
 \XKV@tempb@toks=\toks23
 )
 \XKV@depth=\count286
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/usr/local/texlive/2026/texmf-dist/tex/generic/xstring/xstring.sty (/usr/lo
-cal/texlive/2026/texmf-dist/tex/generic/xstring/xstring.tex
+))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/xstring/xstring.tex
 \xs_counta=\count287
 \xs_countb=\count288
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 LaTeX Font Info:    Setting ntxLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting ntxTLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting ntxOsF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting ntxTOsF sub-encoding to TS1/0 on input line 24.
+
 (/usr/local/texlive/2026/texmf-dist/tex/generic/kastrup/binhex.tex)
 \ntx@tmpcnta=\count289
 \ntx@cnt=\count290
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
 X
@@ -141,9 +166,11 @@ X
 \l__fontspec_tmpa_dim=\dimen157
 \l__fontspec_tmpb_dim=\dimen158
 \l__fontspec_tmpc_dim=\dimen159
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
 LaTeX Info: Redefining \oldstylenums on input line 611.
 LaTeX Info: Redefining \liningnums on input line 615.
 \tx@sixem=\dimen160
@@ -160,24 +187,29 @@ LaTeX Info: Redefining \liningnums on input line 615.
 \tx@dimB=\dimen171
 \tx@dimBB=\dimen172
 \tx@dimC=\dimen173
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/newtxmath.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/newtxmath.sty
 Package: newtxmath 2024/09/22 v1.754
 
 `newtxmath' v1.754, 2024/09/22 Math macros based originally on txfonts (msharpe
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip51
+
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks24
 \ex@=\dimen174
-)) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen175
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count302
@@ -227,16 +259,19 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/oberdiek/centernot.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
 \tx@cntz=\count314
+
 (/usr/local/texlive/2026/texmf-dist/tex/generic/kastrup/binhex.tex)
 \tx@Isdigit=\count315
 \tx@IsAlNum=\count316
 \tx@tA=\toks29
 \tx@tB=\toks30
 \tx@su=\read2
+
 amsthm NOT loaded
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 402.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -334,18 +369,22 @@ LaTeX Info: Redefining \Bbbk on input line 2847.
 LaTeX Info: Redefining \not on input line 2995.
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 106.
 )
 \Gin@req@height=\dimen183
 \Gin@req@width=\dimen184
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen185
 \lightrulewidth=\dimen186
@@ -364,7 +403,8 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count319
 \@lastruleclass=\count320
 \@thisrulewidth=\dimen197
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen198
 \ar@mcellbox=\box55
@@ -373,7 +413,8 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \extratabsurround=\skip54
 \backup@length=\skip55
 \ar@cellbox=\box56
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/longtable.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip56
 \LTright=\skip57
@@ -391,7 +432,8 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \c@LT@tables=\count324
 \c@LT@chunks=\count325
 \LT@p@ftn=\toks33
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/calc.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count326
 \calc@Bcount=\count327
@@ -403,15 +445,18 @@ LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count328
 \calc@Cskip=\skip62
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count329
 \float@exts=\toks34
 \float@box=\box62
 \@float@everytoks=\toks35
 \@floatcapt=\box63
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen259
@@ -428,17 +473,23 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count331
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-)) (/usr/local/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/lineno/lineno.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2026/03/08 line numbers on paragraphs v5.9
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
 (/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
 \linenopenalty=\count332
@@ -456,31 +507,40 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 \bframesep=\dimen271
 \bframebox=\box64
 \@LN@amsmath@ams@eqpen=\count339
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/natbib/natbib.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip63
 \bibsep=\skip64
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count340
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+
 (/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
+
 (/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-)) (/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
@@ -496,12 +556,15 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 \@linkdim=\dimen272
 \Hy@linkcounter=\count342
 \Hy@pagecounter=\count343
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
-) (/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count344
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 )
@@ -513,14 +576,17 @@ Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4468.
 \c@Hy@tempcnt=\count345
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4807.
 \XeTeXLinkMargin=\dimen273
+
 (/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
 (/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
@@ -540,6 +606,7 @@ Package hyperref Info: PDF/A mode OFF on input line 6114.
 \c@Hfootnote=\count349
 )
 Package hyperref Info: Driver (autodetected): hxetex.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hxetex.def
 File: hxetex.def 2026-01-29 v7.01p Hyperref driver for XeTeX
 \pdfm@box=\box65
@@ -560,12 +627,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip65
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 \BKM@id=\count354
-)) (/usr/local/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titlesec.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box66
 \beforetitleunit=\skip66
@@ -576,7 +646,8 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidth=\dimen278
 \titlewidthlast=\dimen279
 \titlewidthfirst=\dimen280
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/TeXGyreTermesX.fontspec)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/TeXGyreTermesX.fontspec)
 
 Package fontspec Info: 
 (fontspec)             TeXGyreTermesX-Regular scale = 1.
@@ -684,12 +755,14 @@ language=dflt;-ss05;+tnum;+lnum;+smcp;+pcap;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 99.
+
 (./manuscript_R.aux)
 \openout1 = `manuscript_R.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 99.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
  99.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
@@ -709,6 +782,7 @@ LaTeX Font Info:    ... okay on input line 99.
 LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 99.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
 99.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
@@ -716,6 +790,7 @@ LaTeX Font Info:    ... okay on input line 99.
 LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 99.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
  99.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
@@ -723,6 +798,7 @@ LaTeX Font Info:    ... okay on input line 99.
 LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 99.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
 e 99.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
@@ -731,6 +807,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
 LaTeX Font Info:    ... okay on input line 99.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
 LaTeX Font Info:    ... okay on input line 99.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -784,446 +861,468 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 [1
 
 ] [2] [3]
-LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 146.
-
-Underfull \hbox (badness 1365) in paragraph at lines 152--153
-\TU/TeXGyreTermesX(0)/m/n/12 period warning, a phenology module for crop-stage 
-interpretation, a grape-focused image-
- []
-
-
-Underfull \hbox (badness 1348) in paragraph at lines 152--153
-\TU/TeXGyreTermesX(0)/m/n/12 recognition module for symptom evidence, and an LL
-M advisory module for season-long
- []
-
-[4] [5]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 170.
+(Font)              scaled to size 10.0pt on input line 152.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 170.
+(Font)              scaled to size 10.0pt on input line 152.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 172.
+(Font)              scaled to size 9.0pt on input line 154.
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
-e 173.
-(/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/ot1minntx.fd
+e 155.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 9.0pt on input line 173.
+(Font)              scaled to size 9.0pt on input line 155.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 173.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 173.
+(Font)              scaled to size 5.5pt on input line 155.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 9.0pt on input line 173.
+(Font)              scaled to size 9.0pt on input line 155.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 173.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 5.5pt on input line 173.
+(Font)              scaled to size 5.5pt on input line 155.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 9.0pt on input line 173.
+(Font)              scaled to size 9.0pt on input line 155.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 173.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 5.5pt on input line 173.
+(Font)              scaled to size 5.5pt on input line 155.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 9.0pt on input line 173.
+(Font)              scaled to size 9.0pt on input line 155.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 173.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 173.
+(Font)              scaled to size 5.5pt on input line 155.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-173.
+155.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.0pt on input line 173.
+(Font)              scaled to size 9.0pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 173.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 5.5pt on input line 173.
+(Font)              scaled to size 5.5pt on input line 155.
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-173.
+155.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.0pt on input line 173.
+(Font)              scaled to size 9.0pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 173.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 5.5pt on input line 173.
+(Font)              scaled to size 5.5pt on input line 155.
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-173.
+155.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.0pt on input line 173.
+(Font)              scaled to size 9.0pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 173.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 5.5pt on input line 173.
+(Font)              scaled to size 5.5pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.0pt on input line 173.
+(Font)              scaled to size 9.0pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 173.
+(Font)              scaled to size 6.6pt on input line 155.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 5.5pt on input line 173.
+(Font)              scaled to size 5.5pt on input line 155.
 
-Underfull \hbox (badness 3568) in paragraph at lines 177--177
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Mobile modules for field, crop-season, task,
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Phenology observations, downy
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 178--178
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Data ingestion and storage
+Underfull \hbox (badness 6412) in paragraph at lines 159--160
+\TU/TeXGyreTermesX(0)/m/n/9 mildew monitoring, airborne spo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--179
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Phenology observations, downy
+ []
+
+
+Underfull \hbox (badness 6412) in paragraph at lines 160--161
+\TU/TeXGyreTermesX(0)/m/n/9 mildew monitoring, airborne spo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Phenology observations, downy
+ []
+
+
+Underfull \hbox (badness 6412) in paragraph at lines 161--162
+\TU/TeXGyreTermesX(0)/m/n/9 mildew monitoring, airborne spo-
+ []
+
+[4]
+Underfull \hbox (badness 1968) in paragraph at lines 180--180
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Mobile interfaces for field setup, crop-season
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 181--182
+[]|\TU/TeXGyreTermesX(0)/m/n/9 API routing, access control, data persis-
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 181--182
+\TU/TeXGyreTermesX(0)/m/n/9 tence, scheduled updates, field and crop-
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 182--182
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Analytical input and risk-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
 []|\TU/TeXGyreTermesX(0)/m/n/9 Weather preprocessing, phenology workflow,
  []
 
 
-Underfull \hbox (badness 2310) in paragraph at lines 179--180
+Underfull \hbox (badness 2310) in paragraph at lines 182--183
 []|\TU/TeXGyreTermesX(0)/m/n/9 Weather transformation, crop-stage simu-
  []
 
 
-Underfull \hbox (badness 6876) in paragraph at lines 179--180
+Underfull \hbox (badness 6876) in paragraph at lines 182--183
 \TU/TeXGyreTermesX(0)/m/n/9 lation, disease-risk request construction,
  []
 
 
-Underfull \hbox (badness 3746) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Symptom diagnosis and
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 183--183
 \TU/TeXGyreTermesX(0)/m/n/9 service, consultation interface, and advisory-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 []|\TU/TeXGyreTermesX(0)/m/n/9 Symptom-image processing, disease-
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 180--181
-\TU/TeXGyreTermesX(0)/m/n/9 category output, visual evidence storage,
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+\TU/TeXGyreTermesX(0)/m/n/9 category output, visual-record storage,
  []
 
 
-Underfull \hbox (badness 2781) in paragraph at lines 181--181
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Notification services, task services, fungicide
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Notification service, task service, fungicide
  []
 
-[6]
+[5]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 191.
+ [6]
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 192.
+(Font)              scaled to size 12.0pt on input line 199.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 192.
+(Font)              scaled to size 8.8pt on input line 199.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 192.
+(Font)              scaled to size 12.0pt on input line 199.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 192.
+(Font)              scaled to size 8.8pt on input line 199.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 192.
+(Font)              scaled to size 12.0pt on input line 199.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 192.
+(Font)              scaled to size 8.8pt on input line 199.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 192.
+(Font)              scaled to size 12.0pt on input line 199.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 192.
+(Font)              scaled to size 8.8pt on input line 199.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 192.
+(Font)              scaled to size 12.0pt on input line 199.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 192.
+(Font)              scaled to size 8.8pt on input line 199.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 192.
+(Font)              scaled to size 12.0pt on input line 199.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 192.
+(Font)              scaled to size 8.8pt on input line 199.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 192.
+(Font)              scaled to size 12.0pt on input line 199.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 192.
+(Font)              scaled to size 8.8pt on input line 199.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 192.
+(Font)              scaled to size 12.0pt on input line 199.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 192.
-
-Underfull \hbox (badness 2173) in paragraph at lines 207--208
-[]\TU/TeXGyreTermesX(0)/m/n/12 Figure []1[] shows the crop-season-centered trac
-eability structure implemented in GrapeMas-
- []
-
+(Font)              scaled to size 8.8pt on input line 199.
 File: ../fig/grapemaster_crop_season_traceability_minor_refined_figure_package/
 grapemaster_crop_season_traceability_minor_refined.pdf Graphic file (type pdf)
 <use ../fig/grapemaster_crop_season_traceability_minor_refined_figure_package/g
 rapemaster_crop_season_traceability_minor_refined.pdf>
-[7] [8] [9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Evidence type and claim
+ [7]
+Overfull \vbox (27.48956pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (27.48956pt too high) has occurred while \output is active []
+
+
+[8] [9] [10] [11] [12] [13]
+Underfull \hbox (badness 2020) in paragraph at lines 343--343
+\TU/TeXGyreTermesX(0)/m/n/9 phenology, risk, task, fungicide,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Deployed GrapeMaster
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Backend-record export
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-\TU/TeXGyreTermesX(0)/m/n/9 backend, mobile client,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-\TU/TeXGyreTermesX(0)/m/n/9 database, scheduled jobs,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Links field, crop season,
- []
-
-
-Underfull \hbox (badness 6893) in paragraph at lines 326--327
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Backend-record evidence for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
 []|\TU/TeXGyreTermesX(0)/m/n/9 Weather-driven phenology
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
 \TU/TeXGyreTermesX(0)/m/n/9 workflow calibrated with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
+Underfull \hbox (badness 1910) in paragraph at lines 344--345
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Offline Guangxi phenol-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
 []|\TU/TeXGyreTermesX(0)/m/n/9 Team-developed downy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
-\TU/TeXGyreTermesX(0)/m/n/9 for a platform-compatible
+Underfull \hbox (badness 1681) in paragraph at lines 345--345
+\TU/TeXGyreTermesX(0)/m/n/9 mildew first-infection model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 2626) in paragraph at lines 345--345
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Supplies first seasonal infection-
+ []
+
+
+Underfull \hbox (badness 7759) in paragraph at lines 345--346
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Offline Guangxi downy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--346
 []|\TU/TeXGyreTermesX(0)/m/n/9 Platform-compatible grape
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 3271) in paragraph at lines 346--346
+\TU/TeXGyreTermesX(0)/m/n/9 disease visual model based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--346
 \TU/TeXGyreTermesX(0)/m/n/9 on the published CDIP-
  []
 
 
-Underfull \hbox (badness 4582) in paragraph at lines 329--329
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Post-symptomatic image evi-
+Underfull \hbox (badness 1226) in paragraph at lines 346--346
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Supplies post-symptomatic image
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--330
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Fine-tuned ChatGLM3-
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\TU/TeXGyreTermesX(0)/m/n/9 advisory model from the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
-[]|\TU/TeXGyreTermesX(0)/m/n/9 Knowledge-support evidence
- []
-
-[12]
-Underfull \hbox (badness 1496) in paragraph at lines 344--345
-\TU/TeXGyreTermesX(0)/m/n/9 ticide reduction, disease-control effi-
+Underfull \hbox (badness 5862) in paragraph at lines 347--347
+[]|\TU/TeXGyreTermesX(0)/m/n/9 Stores consultation, explanation,
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 345--345
-[]|\TU/TeXGyreTermesX(0)/m/n/9 The FSIM-S, broad-stage phenology, and
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
+\TU/TeXGyreTermesX(0)/m/n/9 and published advisory
  []
 
-
-Underfull \hbox (badness 6575) in paragraph at lines 345--345
-\TU/TeXGyreTermesX(0)/m/n/9 grape disease image-recognition compo-
- []
-
-
-Underfull \hbox (badness 2269) in paragraph at lines 346--346
-\TU/TeXGyreTermesX(0)/m/n/9 retrieve weather, phenology, disease-risk,
- []
-
-[13] [14] [15] [16]
+[14] [15]
 File: ../fig/grapemaster_test_site_distribution_map.png Graphic file (type bmp)
 
 <../fig/grapemaster_test_site_distribution_map.png>
-[17]
+ [16]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 403.
+(Font)              scaled to size 8.0pt on input line 392.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 406.
+(Font)              scaled to size 8.0pt on input line 395.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 406.
+(Font)              scaled to size 6.0pt on input line 395.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 406.
+(Font)              scaled to size 8.0pt on input line 395.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.0pt on input line 406.
+(Font)              scaled to size 6.0pt on input line 395.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 406.
+(Font)              scaled to size 8.0pt on input line 395.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 406.
+(Font)              scaled to size 6.0pt on input line 395.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 406.
+(Font)              scaled to size 8.0pt on input line 395.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 406.
+(Font)              scaled to size 6.0pt on input line 395.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 406.
+(Font)              scaled to size 8.0pt on input line 395.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.0pt on input line 406.
+(Font)              scaled to size 6.0pt on input line 395.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 406.
+(Font)              scaled to size 8.0pt on input line 395.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.0pt on input line 406.
+(Font)              scaled to size 6.0pt on input line 395.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 406.
+(Font)              scaled to size 8.0pt on input line 395.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 406.
+(Font)              scaled to size 6.0pt on input line 395.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 406.
+(Font)              scaled to size 8.0pt on input line 395.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.0pt on input line 406.
+(Font)              scaled to size 6.0pt on input line 395.
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 []|\TU/TeXGyreTermesX(0)/m/n/8 Accounts available for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 \TU/TeXGyreTermesX(0)/m/n/8 crop-season workflow
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 []|\TU/TeXGyreTermesX(0)/m/n/8 Field and crop-season
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 []|\TU/TeXGyreTermesX(0)/m/n/8 Environmental, crop-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 \TU/TeXGyreTermesX(0)/m/n/8 stage, and disease-risk
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 412--413
+Underfull \hbox (badness 3009) in paragraph at lines 401--402
 \TU/TeXGyreTermesX(0)/m/n/8 states reconstructable by
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 413--413
+Underfull \hbox (badness 2050) in paragraph at lines 402--402
 []|\TU/TeXGyreTermesX(0)/m/n/8 Retained user, field, or crop-
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 413--414
+Underfull \hbox (badness 1527) in paragraph at lines 402--403
 []|\TU/TeXGyreTermesX(0)/m/n/8 Event-delivery and field-
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 415--415
+Underfull \hbox (badness 1152) in paragraph at lines 404--404
 \TU/TeXGyreTermesX(0)/m/n/8 image-analysis records, 1360 advisory or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 []|\TU/TeXGyreTermesX(0)/m/n/8 Optional symp-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 \TU/TeXGyreTermesX(0)/m/n/8 tom/advisory branches
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 \TU/TeXGyreTermesX(0)/m/n/8 retained; completeness
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 []|\TU/TeXGyreTermesX(0)/m/n/8 No efficacy, pesticide-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 \TU/TeXGyreTermesX(0)/m/n/8 reduction, adoption, or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 \TU/TeXGyreTermesX(0)/m/n/8 economic outcome in-
  []
 
-[18]
+[17]
 File: ../fig/weather_phenology_interfaces.png Graphic file (type bmp)
 <../fig/weather_phenology_interfaces.png>
-[19] [20]
+ [18] [19]
 File: ../fig/disease_risk_timeline_downy_field.png Graphic file (type bmp)
 <../fig/disease_risk_timeline_downy_field.png>
 File: ../fig/alert_notification_interfaces.png Graphic file (type bmp)
 <../fig/alert_notification_interfaces.png>
-[21]
+ [20]
 File: ../fig/task_management_interfaces.png Graphic file (type bmp)
 <../fig/task_management_interfaces.png>
-[22]
+ [21]
 File: ../fig/ai_diagnosis_interfaces.png Graphic file (type bmp)
 <../fig/ai_diagnosis_interfaces.png>
-[23] [24]
+ [22] [23]
 File: ../fig/disease_feedback_loop_frame_balanced_revised_figure_package/diseas
 e_feedback_loop_frame_balanced_revised_300dpi.png Graphic file (type bmp)
 <../fig/disease_feedback_loop_frame_balanced_revised_figure_package/disease_fee
 dback_loop_frame_balanced_revised_300dpi.png>
 
-Underfull \hbox (badness 5359) in paragraph at lines 505--505
+Underfull \hbox (badness 5359) in paragraph at lines 494--494
 []|\TU/TeXGyreTermesX(0)/m/n/8 Weather, phenology, risk, notification,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--507
+Underfull \hbox (badness 10000) in paragraph at lines 496--496
 []|\TU/TeXGyreTermesX(0)/m/n/8 Notifications and completed plant-
  []
 
-[25]
+[24]
 File: ../fig/fsims_supporting_performance.png Graphic file (type bmp)
 <../fig/fsims_supporting_performance.png>
 File: ../fig/phenology_major_stage_validation.png Graphic file (type bmp)
 <../fig/phenology_major_stage_validation.png>
-[26] [27] [28]
-Overfull \hbox (0.38899pt too wide) in paragraph at lines 551--552
+ [25] [26] [27]
+Overfull \hbox (0.38899pt too wide) in paragraph at lines 540--541
 \TU/TeXGyreTermesX(0)/m/n/12 tion, and reduces dependence on informal informati
 on sources of uneven reliability while preserving
  []
 
-[29] [30] [31] [32] [33] (./manuscript_R.bbl [34] [35] [36] [37] [38] [39]) [40
-] (./manuscript_R.aux)
+[28] [29] [30] [31] [32] (./manuscript_R.bbl [33] [34] [35] [36] [37] [38])
+[39] (./manuscript_R.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 19005 strings out of 468168
- 348862 string characters out of 5432815
+ 19012 strings out of 468168
+ 348978 string characters out of 5432815
  798789 words of memory out of 5000000
- 47448 multiletter control sequences out of 15000+600000
- 658711 words of font info for 120 fonts, out of 8000000 for 9000
+ 47453 multiletter control sequences out of 15000+600000
+ 658719 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 75i,14n,117p,1908b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,117p,1910b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on manuscript_R.xdv (40 pages, 848660 bytes).
+Output written on manuscript_R.xdv (39 pages, 791836 bytes).
