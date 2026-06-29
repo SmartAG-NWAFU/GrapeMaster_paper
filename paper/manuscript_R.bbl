@@ -91,8 +91,8 @@
   \bibinfo{volume}{54}, \bibinfo{pages}{255--267}.
 \newblock \DOIprefix\doi{10.1007/s00484-009-0277-5}.
 %Type = Article
-\bibitem[{CAFFI and ROSSI(2018)}]{caffiFungicideModelsAre2018}
-\bibinfo{author}{CAFFI, T.}, \bibinfo{author}{ROSSI, V.}, \bibinfo{year}{2018}.
+\bibitem[{Caffi and Rossi(2018)}]{caffiFungicideModelsAre2018}
+\bibinfo{author}{Caffi, T.}, \bibinfo{author}{Rossi, V.}, \bibinfo{year}{2018}.
 \newblock \bibinfo{title}{Fungicide models are key components of multiple
   modelling approaches for decision-making in crop protection}.
 \newblock \bibinfo{journal}{Phytopathologia Mediterranea} \bibinfo{volume}{57}.
@@ -187,15 +187,14 @@
   \bibinfo{pages}{115}.
 \newblock \DOIprefix\doi{10.20870/oeno-one.2016.0.0.1622}.
 %Type = Article
-\bibitem[{GESSLER et~al.(2011)GESSLER, PERTOT and
-  PERAZZOLLI}]{gesslerPlasmoparaViticolaReview2011}
-\bibinfo{author}{GESSLER, C.}, \bibinfo{author}{PERTOT, I.},
-  \bibinfo{author}{PERAZZOLLI, M.}, \bibinfo{year}{2011}.
+\bibitem[{Gessler et~al.(2011)Gessler, Pertot and
+  Perazzolli}]{gesslerPlasmoparaViticolaReview2011}
+\bibinfo{author}{Gessler, C.}, \bibinfo{author}{Pertot, I.},
+  \bibinfo{author}{Perazzolli, M.}, \bibinfo{year}{2011}.
 \newblock \bibinfo{title}{Plasmopara viticola: A review of knowledge on downy
   mildew of grapevine and effective disease management}.
 \newblock \bibinfo{journal}{Phytopathologia Mediterranea} \bibinfo{volume}{50},
   \bibinfo{pages}{3--44}.
-\newblock \href{http://arxiv.org/abs/26458675}{{\tt arXiv:26458675}}.
 %Type = Article
 \bibitem[{{Gonz{\'a}lez-Dom{\'i}nguez}
   et~al.(2023){Gonz{\'a}lez-Dom{\'i}nguez}, Caffi, Rossi, Salotti and

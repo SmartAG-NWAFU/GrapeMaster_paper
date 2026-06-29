@@ -1,24 +1,24 @@
 # Fdb version 4
-["bibtex manuscript_R"] 1782547942.2334 "manuscript_R.aux" "manuscript_R.bbl" "manuscript_R" 1782547983.96059 0
-  "../reference/Grape.bib" 1782543974.71285 1178750 68a59188a18ca91190fa50bff1ee77b0 ""
+["bibtex manuscript_R"] 1782703075.43986 "manuscript_R.aux" "manuscript_R.bbl" "manuscript_R" 1782703117.52253 0
+  "../reference/Grape.bib" 1782697362.33841 1178703 f2bd8ad0dc1f7da6b8c70508d28c1109 ""
   "/usr/local/texlive/2026/texmf-dist/bibtex/bst/elsarticle/elsarticle-harv.bst" 1767996394 30002 8c3d766e7980d576fdc8329774bbf7b2 ""
-  "manuscript_R.aux" 1782547943.10067 23141 da675db3aa4135f498b5fbeeecdd783c "xelatex"
+  "manuscript_R.aux" 1782703076.27013 23095 2cbb2913fbdddc3524e7ca14655c2f66 "xelatex"
   (generated)
   "manuscript_R.bbl"
   "manuscript_R.blg"
   (rewritten before read)
-["xdvipdfmx"] 1782547943.35984 "manuscript_R.xdv" "manuscript_R.pdf" "manuscript_R" 1782547983.96163 0
-  "manuscript_R.xdv" 1782547943.10253 791836 7aab7e529531d28bfd91040d7e030786 "xelatex"
+["xdvipdfmx"] 1782703076.52624 "manuscript_R.xdv" "manuscript_R.pdf" "manuscript_R" 1782703117.52359 0
+  "manuscript_R.xdv" 1782703076.2713 771640 07c7eb283d7513f91c3410986bb0de07 "xelatex"
   (generated)
   "manuscript_R.pdf"
   (rewritten before read)
-["xelatex"] 1782547942.41571 "manuscript_R.tex" "manuscript_R.xdv" "manuscript_R" 1782547983.96067 0
+["xelatex"] 1782703075.62032 "manuscript_R.tex" "manuscript_R.xdv" "manuscript_R" 1782703117.5226 0
   "../fig/ai_diagnosis_interfaces.png" 1781080294.13012 6072706 d5e41c9cc5379157a6fbc5ec6f34a495 ""
   "../fig/alert_notification_interfaces.png" 1781080294.1396 4937474 389037f42235d7c6c68fc9e53a9ae94c ""
   "../fig/disease_feedback_loop_frame_balanced_revised_figure_package/disease_feedback_loop_frame_balanced_revised_300dpi.png" 1782025708.58226 337095 d453a92ad39a256de493755859ecebd8 ""
   "../fig/disease_risk_timeline_downy_field.png" 1782034332.97862 136747 8ec84f3db73fd7ac5ad2c200ea690005 ""
   "../fig/fsims_supporting_performance.png" 1781084219.21954 350102 353aa1c2a0f761c3a2aaef2080f3a3ad ""
-  "../fig/grapemaster_crop_season_traceability_minor_refined_figure_package/grapemaster_crop_season_traceability_minor_refined.pdf" 1782547771.76816 182920 42300651d51d729757b856417b598619 ""
+  "../fig/grapemaster_crop_season_traceability_minor_refined_figure_package/grapemaster_crop_season_traceability_minor_refined.pdf" 1782696595.81445 168405 2756ee661d1c8f6a238a36c67d91d8d9 ""
   "../fig/grapemaster_test_site_distribution_map.png" 1781959189.29626 607582 5201c9caded223e6680cb51dd05a182a ""
   "../fig/phenology_major_stage_validation.png" 1781419677.73108 202594 0a6e87ad7734fc68e800994554450ac7 ""
   "../fig/task_management_interfaces.png" 1781080294.213 4393378 4694d4bef2a5d807bc44dee3f738a585 ""
@@ -130,9 +130,9 @@
   "/usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf" 1770478701 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
   "/usr/local/texlive/2026/texmf-var/web2c/xetex/xelatex.fmt" 1776926076 5948563 30de48e9b6d3b2b0959514538098e2fb ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "manuscript_R.aux" 1782547943.10067 23141 da675db3aa4135f498b5fbeeecdd783c "xelatex"
-  "manuscript_R.bbl" 1782547942.41374 27208 733b494c17f3d68e2de9bdbb1456879c "bibtex manuscript_R"
-  "manuscript_R.tex" 1782547406.53131 71194 b4a7e7c7371da104d81759b2e3a5c5dc ""
+  "manuscript_R.aux" 1782703076.27013 23095 2cbb2913fbdddc3524e7ca14655c2f66 "xelatex"
+  "manuscript_R.bbl" 1782703075.61837 27138 5e30833b618c36e3117dcf4e93235659 "bibtex manuscript_R"
+  "manuscript_R.tex" 1782702892.95576 69141 a097c1628100a916efe74465ac53cd0e ""
   (generated)
   "manuscript_R.aux"
   "manuscript_R.log"

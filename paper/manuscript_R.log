@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.23)  27 JUN 2026 16:12
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.23)  29 JUN 2026 11:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1031,51 +1031,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--184
 [5]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 191.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 12.0pt on input line 199.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 8.8pt on input line 199.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 12.0pt on input line 199.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 8.8pt on input line 199.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 12.0pt on input line 199.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.8pt on input line 199.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 12.0pt on input line 199.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.8pt on input line 199.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 12.0pt on input line 199.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.8pt on input line 199.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 12.0pt on input line 199.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.8pt on input line 199.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 12.0pt on input line 199.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.8pt on input line 199.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 12.0pt on input line 199.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.8pt on input line 199.
  [6]
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 199.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 199.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 199.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 199.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 199.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 199.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 199.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 199.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 199.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 199.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 199.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 199.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 199.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 199.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 199.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 199.
 File: ../fig/grapemaster_crop_season_traceability_minor_refined_figure_package/
 grapemaster_crop_season_traceability_minor_refined.pdf Graphic file (type pdf)
 <use ../fig/grapemaster_crop_season_traceability_minor_refined_figure_package/g
 rapemaster_crop_season_traceability_minor_refined.pdf>
- [7]
-Overfull \vbox (27.48956pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (27.48956pt too high) has occurred while \output is active []
-
-
-[8] [9] [10] [11] [12] [13]
+ [7] [8] [9] [10] [11] [12]
 Underfull \hbox (badness 2020) in paragraph at lines 343--343
 \TU/TeXGyreTermesX(0)/m/n/9 phenology, risk, task, fungicide,
  []
@@ -1155,174 +1148,188 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--348
 \TU/TeXGyreTermesX(0)/m/n/9 and published advisory
  []
 
-[14] [15]
+[13] [14]
 File: ../fig/grapemaster_test_site_distribution_map.png Graphic file (type bmp)
 
 <../fig/grapemaster_test_site_distribution_map.png>
- [16]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 392.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 395.
+(Font)              scaled to size 8.0pt on input line 396.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 395.
+(Font)              scaled to size 6.0pt on input line 396.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 395.
+(Font)              scaled to size 8.0pt on input line 396.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.0pt on input line 395.
+(Font)              scaled to size 6.0pt on input line 396.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 395.
+(Font)              scaled to size 8.0pt on input line 396.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 395.
+(Font)              scaled to size 6.0pt on input line 396.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 395.
+(Font)              scaled to size 8.0pt on input line 396.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 395.
+(Font)              scaled to size 6.0pt on input line 396.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 395.
+(Font)              scaled to size 8.0pt on input line 396.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.0pt on input line 395.
+(Font)              scaled to size 6.0pt on input line 396.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 395.
+(Font)              scaled to size 8.0pt on input line 396.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.0pt on input line 395.
+(Font)              scaled to size 6.0pt on input line 396.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 395.
+(Font)              scaled to size 8.0pt on input line 396.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 395.
+(Font)              scaled to size 6.0pt on input line 396.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 395.
+(Font)              scaled to size 8.0pt on input line 396.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.0pt on input line 395.
+(Font)              scaled to size 6.0pt on input line 396.
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 []|\TU/TeXGyreTermesX(0)/m/n/8 Accounts available for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 \TU/TeXGyreTermesX(0)/m/n/8 crop-season workflow
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 []|\TU/TeXGyreTermesX(0)/m/n/8 Field and crop-season
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 []|\TU/TeXGyreTermesX(0)/m/n/8 Environmental, crop-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 \TU/TeXGyreTermesX(0)/m/n/8 stage, and disease-risk
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 401--402
+Underfull \hbox (badness 1163) in paragraph at lines 402--403
 \TU/TeXGyreTermesX(0)/m/n/8 states reconstructable by
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 402--402
+Underfull \hbox (badness 1184) in paragraph at lines 403--403
 []|\TU/TeXGyreTermesX(0)/m/n/8 Retained user, field, or crop-
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 402--403
-[]|\TU/TeXGyreTermesX(0)/m/n/8 Event-delivery and field-
- []
-
-
-Underfull \hbox (badness 1152) in paragraph at lines 404--404
-\TU/TeXGyreTermesX(0)/m/n/8 image-analysis records, 1360 advisory or
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 404--405
+[]|\TU/TeXGyreTermesX(0)/m/n/8 Product records con-
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 404--405
+\TU/TeXGyreTermesX(0)/m/n/8 nected to completed or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
+[]|\TU/TeXGyreTermesX(0)/m/n/8 Symptom and advisory
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 405--405
+[]|\TU/TeXGyreTermesX(0)/m/n/8 94 field-note or disease-report records,
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 405--405
+\TU/TeXGyreTermesX(0)/m/n/8 sory or message records, and 27 forum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 []|\TU/TeXGyreTermesX(0)/m/n/8 Optional symp-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 \TU/TeXGyreTermesX(0)/m/n/8 tom/advisory branches
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
-\TU/TeXGyreTermesX(0)/m/n/8 retained; completeness
+Underfull \hbox (badness 1014) in paragraph at lines 405--406
+\TU/TeXGyreTermesX(0)/m/n/8 retained, with complete-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 []|\TU/TeXGyreTermesX(0)/m/n/8 No efficacy, pesticide-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
+Underfull \hbox (badness 6348) in paragraph at lines 406--407
 \TU/TeXGyreTermesX(0)/m/n/8 reduction, adoption, or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 \TU/TeXGyreTermesX(0)/m/n/8 economic outcome in-
  []
 
-[17]
+[15]
 File: ../fig/weather_phenology_interfaces.png Graphic file (type bmp)
 <../fig/weather_phenology_interfaces.png>
- [18] [19]
+ [16] [17]
 File: ../fig/disease_risk_timeline_downy_field.png Graphic file (type bmp)
 <../fig/disease_risk_timeline_downy_field.png>
 File: ../fig/alert_notification_interfaces.png Graphic file (type bmp)
 <../fig/alert_notification_interfaces.png>
- [20]
+ [18]
 File: ../fig/task_management_interfaces.png Graphic file (type bmp)
 <../fig/task_management_interfaces.png>
- [21]
+ [19]
 File: ../fig/ai_diagnosis_interfaces.png Graphic file (type bmp)
 <../fig/ai_diagnosis_interfaces.png>
- [22] [23]
+ [20]
 File: ../fig/disease_feedback_loop_frame_balanced_revised_figure_package/diseas
 e_feedback_loop_frame_balanced_revised_300dpi.png Graphic file (type bmp)
 <../fig/disease_feedback_loop_frame_balanced_revised_figure_package/disease_fee
 dback_loop_frame_balanced_revised_300dpi.png>
-
-Underfull \hbox (badness 5359) in paragraph at lines 494--494
+ [21]
+Underfull \hbox (badness 5359) in paragraph at lines 488--488
 []|\TU/TeXGyreTermesX(0)/m/n/8 Weather, phenology, risk, notification,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--496
+Underfull \hbox (badness 10000) in paragraph at lines 490--490
 []|\TU/TeXGyreTermesX(0)/m/n/8 Notifications and completed plant-
  []
 
-[24]
+[22]
 File: ../fig/fsims_supporting_performance.png Graphic file (type bmp)
 <../fig/fsims_supporting_performance.png>
 File: ../fig/phenology_major_stage_validation.png Graphic file (type bmp)
 <../fig/phenology_major_stage_validation.png>
- [25] [26] [27]
-Overfull \hbox (0.38899pt too wide) in paragraph at lines 540--541
+ [23] [24] [25]
+Overfull \hbox (0.38899pt too wide) in paragraph at lines 534--535
 \TU/TeXGyreTermesX(0)/m/n/12 tion, and reduces dependence on informal informati
 on sources of uneven reliability while preserving
  []
 
-[28] [29] [30] [31] [32] (./manuscript_R.bbl [33] [34] [35] [36] [37] [38])
-[39] (./manuscript_R.aux)
+[26] [27] [28] [29] [30] (./manuscript_R.bbl [31] [32] [33] [34] [35] [36])
+[37] (./manuscript_R.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 19012 strings out of 468168
- 348978 string characters out of 5432815
+ 19011 strings out of 468168
+ 348986 string characters out of 5432815
  798789 words of memory out of 5000000
- 47453 multiletter control sequences out of 15000+600000
- 658719 words of font info for 121 fonts, out of 8000000 for 9000
+ 47454 multiletter control sequences out of 15000+600000
+ 658711 words of font info for 120 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  75i,14n,117p,1910b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on manuscript_R.xdv (39 pages, 791836 bytes).
+Output written on manuscript_R.xdv (37 pages, 771640 bytes).

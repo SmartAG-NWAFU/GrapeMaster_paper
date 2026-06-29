@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180.0mm" height="102.0mm" viewBox="0 0 510.236 289.134">
+<svg xmlns="http://www.w3.org/2000/svg" width="180.0mm" height="94.0mm" viewBox="0 0 510.236 266.50">
 <desc>SCI manuscript schematic with central crop-season anchor connecting prediction, action, feedback, optional symptom and advisory records, and replay/audit traceability.</desc>
 <style>
+  @page { size: 180mm 94mm; margin: 0; }
   text { font-family: Times New Roman; letter-spacing: normal; }
   .group { font-style: italic; fill: #60676C; }
   .line { stroke: #596166; stroke-width: 0.90; fill: none; stroke-linecap: round; stroke-linejoin: round; }
