@@ -1,0 +1,370 @@
+\begin{thebibliography}{30}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Bakir et~al.(2026)Bakir, Perea, Funk, Rahman, Spetter, Macon, Cox,
+  Estell, Cao, Cibils, Spiegal, Bestelmeyer and
+  Utsumi}]{bakirScalableEndtoendIoT2026}
+\bibinfo{author}{Bakir, M.E.}, \bibinfo{author}{Perea, A.R.},
+  \bibinfo{author}{Funk, M.}, \bibinfo{author}{Rahman, S.},
+  \bibinfo{author}{Spetter, M.J.}, \bibinfo{author}{Macon, L.},
+  \bibinfo{author}{Cox, A.}, \bibinfo{author}{Estell, R.E.},
+  \bibinfo{author}{Cao, H.}, \bibinfo{author}{Cibils, A.F.},
+  \bibinfo{author}{Spiegal, S.A.}, \bibinfo{author}{Bestelmeyer, B.T.},
+  \bibinfo{author}{Utsumi, S.A.}, \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{A scalable, end-to-end {{IoT}} and remote sensing
+  platform for precision rangeland and livestock management}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{247}, \bibinfo{pages}{111615}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2026.111615}.
+%Type = Article
+\bibitem[{Bregaglio et~al.(2022)Bregaglio, Savian, Raparelli, Morelli, Epifani,
+  Pietrangeli, Nigro, Bugiani, Pini, Culatti, Tognetti, Spanna, Gerardi,
+  Delillo, Bajocco, Fanchini, Fila, Ginaldi and
+  Manici}]{bregaglioPublicDecisionSupport2022}
+\bibinfo{author}{Bregaglio, S.}, \bibinfo{author}{Savian, F.},
+  \bibinfo{author}{Raparelli, E.}, \bibinfo{author}{Morelli, D.},
+  \bibinfo{author}{Epifani, R.}, \bibinfo{author}{Pietrangeli, F.},
+  \bibinfo{author}{Nigro, C.}, \bibinfo{author}{Bugiani, R.},
+  \bibinfo{author}{Pini, S.}, \bibinfo{author}{Culatti, P.},
+  \bibinfo{author}{Tognetti, D.}, \bibinfo{author}{Spanna, F.},
+  \bibinfo{author}{Gerardi, M.}, \bibinfo{author}{Delillo, I.},
+  \bibinfo{author}{Bajocco, S.}, \bibinfo{author}{Fanchini, D.},
+  \bibinfo{author}{Fila, G.}, \bibinfo{author}{Ginaldi, F.},
+  \bibinfo{author}{Manici, L.M.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{A public decision support system for the assessment
+  of plant disease infection risk shared by {{Italian}} regions}.
+\newblock \bibinfo{journal}{Journal of Environmental Management}
+  \bibinfo{volume}{317}, \bibinfo{pages}{115365}.
+\newblock \DOIprefix\doi{10.1016/j.jenvman.2022.115365}.
+%Type = Article
+\bibitem[{Brischetto et~al.(2021)Brischetto, Bove, Fedele and
+  Rossi}]{brischettoWeatherDrivenModelPredicting2021}
+\bibinfo{author}{Brischetto, C.}, \bibinfo{author}{Bove, F.},
+  \bibinfo{author}{Fedele, G.}, \bibinfo{author}{Rossi, V.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{A {{Weather-Driven Model}} for {{Predicting
+  Infections}} of {{Grapevines}} by {{Sporangia}} of {{Plasmopara}} viticola}.
+\newblock \bibinfo{journal}{Frontiers in Plant Science} \bibinfo{volume}{12},
+  \bibinfo{pages}{636607}.
+\newblock \DOIprefix\doi{10.3389/fpls.2021.636607}.
+%Type = Article
+\bibitem[{Caffi and Rossi(2018)}]{caffiFungicideModelsAre2018}
+\bibinfo{author}{Caffi, T.}, \bibinfo{author}{Rossi, V.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Fungicide models are key components of multiple
+  modelling approaches for decision-making in crop protection}.
+\newblock \bibinfo{journal}{Phytopathologia Mediterranea} \bibinfo{volume}{57}.
+\newblock \DOIprefix\doi{10.14601/Phytopathol_Mediterr-22471}.
+%Type = Article
+\bibitem[{Caffi et~al.(2009)Caffi, Rossi, Bugiani, Spanna, Flamini, Cossu and
+  Nigro}]{caffiModelPredictingPrimary2009c}
+\bibinfo{author}{Caffi, T.}, \bibinfo{author}{Rossi, V.},
+  \bibinfo{author}{Bugiani, R.}, \bibinfo{author}{Spanna, F.},
+  \bibinfo{author}{Flamini, L.}, \bibinfo{author}{Cossu, A.},
+  \bibinfo{author}{Nigro, C.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{A model predicting primary infections of plasmopara
+  viticola in different grapevine-growing areas of italy}.
+\newblock \bibinfo{journal}{Journal of Plant Pathology} ,
+  \bibinfo{pages}{535--548}.
+%Type = Article
+\bibitem[{Caffi et~al.(2011)Caffi, Rossi and
+  Carisse}]{caffiEvaluationDynamicModel2011}
+\bibinfo{author}{Caffi, T.}, \bibinfo{author}{Rossi, V.},
+  \bibinfo{author}{Carisse, O.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Evaluation of a {{Dynamic Model}} for {{Primary
+  Infections Caused}} by {{Plasmopara}} viticola on {{Grapevine}} in
+  {{Quebec}}}.
+\newblock \bibinfo{journal}{Plant Health Progress} \bibinfo{volume}{12},
+  \bibinfo{pages}{22}.
+\newblock \DOIprefix\doi{10.1094/PHP-2011-0126-01-RS}.
+%Type = Article
+\bibitem[{Chen et~al.(2026)Chen, Hou, Hua, Wang, Chen and
+  Zhang}]{chenAgriculturalAutonomousDecisionmaking2026}
+\bibinfo{author}{Chen, H.}, \bibinfo{author}{Hou, G.}, \bibinfo{author}{Hua,
+  C.}, \bibinfo{author}{Wang, S.}, \bibinfo{author}{Chen, Z.},
+  \bibinfo{author}{Zhang, Y.}, \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{Agricultural autonomous decision-making system ''fuxi
+  brain'' based on generative large model fusion internet of things}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{244}, \bibinfo{pages}{111454}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2026.111454}.
+%Type = Article
+\bibitem[{Fountas et~al.(2015)Fountas, Carli, S{\o}rensen, Tsiropoulos,
+  Cavalaris, Vatsanidou, Liakos, Canavari, Wiebensohn and
+  Tisserye}]{fountasFarmManagementInformation2015}
+\bibinfo{author}{Fountas, S.}, \bibinfo{author}{Carli, G.},
+  \bibinfo{author}{S{\o}rensen, C.A.G.}, \bibinfo{author}{Tsiropoulos, Z.},
+  \bibinfo{author}{Cavalaris, C.}, \bibinfo{author}{Vatsanidou, A.},
+  \bibinfo{author}{Liakos, B.}, \bibinfo{author}{Canavari, M.},
+  \bibinfo{author}{Wiebensohn, J.}, \bibinfo{author}{Tisserye, B.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Farm management information systems: Current
+  situation and future perspectives}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{115}, \bibinfo{pages}{40--50}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2015.05.011}.
+%Type = Article
+\bibitem[{Gent et~al.(2011)Gent, De~Wolf and
+  Pethybridge}]{gentPerceptionsRiskRisk2011}
+\bibinfo{author}{Gent, D.H.}, \bibinfo{author}{De~Wolf, E.},
+  \bibinfo{author}{Pethybridge, S.J.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Perceptions of risk, risk aversion, and barriers to
+  adoption of decision support systems and integrated pest management: An
+  introduction}.
+\newblock \bibinfo{journal}{Phytopathology} \bibinfo{volume}{101},
+  \bibinfo{pages}{640--643}.
+\newblock \DOIprefix\doi{10.1094/PHYTO-04-10-0124}.
+%Type = Article
+\bibitem[{Gessler et~al.(2011)Gessler, Pertot and
+  Perazzolli}]{gesslerPlasmoparaViticolaReview2011}
+\bibinfo{author}{Gessler, C.}, \bibinfo{author}{Pertot, I.},
+  \bibinfo{author}{Perazzolli, M.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Plasmopara viticola: A review of knowledge on downy
+  mildew of grapevine and effective disease management}.
+\newblock \bibinfo{journal}{Phytopathologia Mediterranea} \bibinfo{volume}{50},
+  \bibinfo{pages}{3--44}.
+\newblock \href{http://arxiv.org/abs/26458675}{{\tt arXiv:26458675}}.
+%Type = Article
+\bibitem[{McCown(2002)}]{mccownLocatingAgriculturalDecision2002}
+\bibinfo{author}{McCown, R.L.}, \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Locating agricultural decision support systems in the
+  troubled past and socio-technical complexity of `models for management'}.
+\newblock \bibinfo{journal}{Agricultural Systems} \bibinfo{volume}{74},
+  \bibinfo{pages}{11--25}.
+\newblock \DOIprefix\doi{10.1016/S0308-521X(02)00020-3}.
+%Type = Article
+\bibitem[{Nogueira~J{\'u}nior et~al.(2018)Nogueira~J{\'u}nior, Amorim, Savary
+  and Willocquet}]{nogueirajuniorModellingDynamicsGrapevine2018}
+\bibinfo{author}{Nogueira~J{\'u}nior, A.F.}, \bibinfo{author}{Amorim, L.},
+  \bibinfo{author}{Savary, S.}, \bibinfo{author}{Willocquet, L.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Modelling the dynamics of grapevine growth over
+  years}.
+\newblock \bibinfo{journal}{Ecological Modelling} \bibinfo{volume}{369},
+  \bibinfo{pages}{77--87}.
+\newblock \DOIprefix\doi{10.1016/j.ecolmodel.2017.12.016}.
+%Type = Article
+\bibitem[{Oliver et~al.(2023)Oliver, Cooper, Lewis~Ivey, Brannen, Miles,
+  Lowder, Mahaffee and Moyer}]{oliverFungicideUsePatterns2023}
+\bibinfo{author}{Oliver, C.}, \bibinfo{author}{Cooper, M.},
+  \bibinfo{author}{Lewis~Ivey, M.L.}, \bibinfo{author}{Brannen, P.},
+  \bibinfo{author}{Miles, T.D.}, \bibinfo{author}{Lowder, S.R.},
+  \bibinfo{author}{Mahaffee, W.F.}, \bibinfo{author}{Moyer, M.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Fungicide {{Use Patterns}} in {{Select United States
+  Wine Grape Production Regions}}}.
+\newblock \bibinfo{journal}{Plant Disease} ,
+  \bibinfo{pages}{PDIS--04--23--0798--RE}\DOIprefix\doi{10.1094/PDIS-04-23-0798-RE}.
+%Type = Article
+\bibitem[{Parker et~al.(2011)Parker, {De Cort{\'a}zar-Atauri}, Van~Leeuwen and
+  Chuine}]{parkerGeneralPhenologicalModel2011a}
+\bibinfo{author}{Parker, A.}, \bibinfo{author}{{De Cort{\'a}zar-Atauri}, I.},
+  \bibinfo{author}{Van~Leeuwen, C.}, \bibinfo{author}{Chuine, I.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{General phenological model to characterise the timing
+  of flowering and veraison of {{Vitis}} vinifera {{L}}.: {{Grapevine}}
+  flowering and veraison model}.
+\newblock \bibinfo{journal}{Australian Journal of Grape and Wine Research}
+  \bibinfo{volume}{17}, \bibinfo{pages}{206--216}.
+\newblock \DOIprefix\doi{10.1111/j.1755-0238.2011.00140.x}.
+%Type = Article
+\bibitem[{Rai et~al.(2026)Rai, (Dana)~Choi, Boyd and
+  Schumann}]{raiAdvancingSitespecificDisease2026}
+\bibinfo{author}{Rai, N.}, \bibinfo{author}{(Dana)~Choi, D.},
+  \bibinfo{author}{Boyd, N.S.}, \bibinfo{author}{Schumann, A.W.},
+  \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{Advancing site-specific disease and pest management
+  in precision agriculture: {{From}} reasoning-driven foundation models to
+  adaptive, feedback-based learning}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{250}, \bibinfo{pages}{111859}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2026.111859}.
+%Type = Article
+\bibitem[{Romera et~al.(2024)Romera, Sharifi and
+  Charters}]{romera2024digitalization}
+\bibinfo{author}{Romera, {\relax AJ}.}, \bibinfo{author}{Sharifi, M.},
+  \bibinfo{author}{Charters, S.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Digitalization in agriculture. {{Towards}} an
+  integrative approach}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{219}, \bibinfo{pages}{108817}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2024.108817}.
+%Type = Article
+\bibitem[{Romero et~al.(2022)Romero, Cazzato, Walder, Vogelgsang, Bender and
+  {van der Heijden}}]{romeroHumidityHighTemperature2022}
+\bibinfo{author}{Romero, F.}, \bibinfo{author}{Cazzato, S.},
+  \bibinfo{author}{Walder, F.}, \bibinfo{author}{Vogelgsang, S.},
+  \bibinfo{author}{Bender, S.F.}, \bibinfo{author}{{van der Heijden}, M.G.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Humidity and high temperature are important for
+  predicting fungal disease outbreaks worldwide}.
+\newblock \bibinfo{journal}{New Phytologist} \bibinfo{volume}{234},
+  \bibinfo{pages}{1553--1556}.
+\newblock \DOIprefix\doi{10.1111/nph.17340}.
+%Type = Article
+\bibitem[{Rose et~al.(2016)Rose, Sutherland, Parker, Lobley, Winter, Morris,
+  Twining, Ffoulkes, Amano and Dicks}]{roseDecisionSupportTools2016}
+\bibinfo{author}{Rose, D.C.}, \bibinfo{author}{Sutherland, W.J.},
+  \bibinfo{author}{Parker, C.}, \bibinfo{author}{Lobley, M.},
+  \bibinfo{author}{Winter, M.}, \bibinfo{author}{Morris, C.},
+  \bibinfo{author}{Twining, S.}, \bibinfo{author}{Ffoulkes, C.},
+  \bibinfo{author}{Amano, T.}, \bibinfo{author}{Dicks, L.V.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Decision support tools for agriculture: Towards
+  effective design and delivery}.
+\newblock \bibinfo{journal}{Agricultural Systems} \bibinfo{volume}{149},
+  \bibinfo{pages}{165--174}.
+\newblock \DOIprefix\doi{10.1016/j.agsy.2016.09.009}.
+%Type = Article
+\bibitem[{Rossi et~al.(2008)Rossi, Caffi, Giosu{\`e} and
+  Bugiani}]{rossiMechanisticModelSimulating2008}
+\bibinfo{author}{Rossi, V.}, \bibinfo{author}{Caffi, T.},
+  \bibinfo{author}{Giosu{\`e}, S.}, \bibinfo{author}{Bugiani, R.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{A mechanistic model simulating primary infections of
+  downy mildew in grapevine}.
+\newblock \bibinfo{journal}{Ecological Modelling} \bibinfo{volume}{212},
+  \bibinfo{pages}{480--491}.
+\newblock \DOIprefix\doi{10.1016/j.ecolmodel.2007.10.046}.
+%Type = Article
+\bibitem[{Rossi et~al.(2023)Rossi, Caffi, Salotti and
+  Fedele}]{rossiSharingDecisionmakingTools2023}
+\bibinfo{author}{Rossi, V.}, \bibinfo{author}{Caffi, T.},
+  \bibinfo{author}{Salotti, I.}, \bibinfo{author}{Fedele, G.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Sharing decision-making tools for pest management may
+  foster implementation of integrated pest management}.
+\newblock \bibinfo{journal}{Food Security} \bibinfo{volume}{15},
+  \bibinfo{pages}{1459--1474}.
+\newblock \DOIprefix\doi{10.1007/s12571-023-01402-3}.
+%Type = Article
+\bibitem[{Rossi et~al.(2014)Rossi, Salinari, Poni, Caffi and
+  Bettati}]{rossiAddressingImplementationProblem2014}
+\bibinfo{author}{Rossi, V.}, \bibinfo{author}{Salinari, F.},
+  \bibinfo{author}{Poni, S.}, \bibinfo{author}{Caffi, T.},
+  \bibinfo{author}{Bettati, T.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Addressing the implementation problem in agricultural
+  decision support systems: The example of vite.net\textregistered}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{100}, \bibinfo{pages}{88--99}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2013.10.011}.
+%Type = Article
+\bibitem[{Tummers et~al.(2019)Tummers, Kassahun and
+  Tekinerdogan}]{tummersObstaclesFeaturesFarm2019}
+\bibinfo{author}{Tummers, J.}, \bibinfo{author}{Kassahun, A.},
+  \bibinfo{author}{Tekinerdogan, B.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Obstacles and features of farm management information
+  systems: A systematic literature review}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{157}, \bibinfo{pages}{189--204}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2018.12.044}.
+%Type = Article
+\bibitem[{Wang et~al.(2020)Wang, Li and Garc{\'i}a De
+  Cort{\'a}zar~Atauri}]{wangAssessingGrapevinePhenological2020}
+\bibinfo{author}{Wang, X.}, \bibinfo{author}{Li, H.},
+  \bibinfo{author}{Garc{\'i}a De Cort{\'a}zar~Atauri, I.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Assessing grapevine phenological models under
+  {{Chinese}} climatic conditions}.
+\newblock \bibinfo{journal}{OENO One}
+  \DOIprefix\doi{10.20870/oeno-one.2020.54.3.3195}.
+%Type = Article
+\bibitem[{Warneke et~al.(2020)Warneke, Thiessen and
+  Mahaffee}]{warnekeEffectFungicideMobility2020}
+\bibinfo{author}{Warneke, B.}, \bibinfo{author}{Thiessen, L.D.},
+  \bibinfo{author}{Mahaffee, W.F.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Effect of {{Fungicide Mobility}} and {{Application
+  Timing}} on the {{Management}} of {{Grape Powdery Mildew}}}.
+\newblock \bibinfo{journal}{Plant Disease} \bibinfo{volume}{104},
+  \bibinfo{pages}{1167--1174}.
+\newblock \DOIprefix\doi{10.1094/PDIS-06-19-1285-RE}.
+%Type = Article
+\bibitem[{Yan et~al.(2025)Yan, Liang, Cheng, Li, Yang, Li, Yin, Qu, Wang, Wu,
+  Tian, Yu and Zhao}]{yanCDIPChatGLM3DualmodelApproach2025}
+\bibinfo{author}{Yan, C.}, \bibinfo{author}{Liang, Z.}, \bibinfo{author}{Cheng,
+  H.}, \bibinfo{author}{Li, S.}, \bibinfo{author}{Yang, G.},
+  \bibinfo{author}{Li, Z.}, \bibinfo{author}{Yin, L.}, \bibinfo{author}{Qu,
+  J.}, \bibinfo{author}{Wang, J.}, \bibinfo{author}{Wu, G.},
+  \bibinfo{author}{Tian, Q.}, \bibinfo{author}{Yu, Q.}, \bibinfo{author}{Zhao,
+  G.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{{{CDIP-ChatGLM3}}: {{A}} dual-model approach
+  integrating computer vision and language modeling for crop disease
+  identification and prescription}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{236}, \bibinfo{pages}{110442}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2025.110442}.
+%Type = Article
+\bibitem[{Yao et~al.(2025)Yao, Zhao, Yan, Srivastava, Tian, Jin, Qu, Yin, Yao,
+  Webber, Luedeling and Yu}]{yaoInfluenceInformationSources2025}
+\bibinfo{author}{Yao, L.}, \bibinfo{author}{Zhao, G.}, \bibinfo{author}{Yan,
+  C.}, \bibinfo{author}{Srivastava, A.K.}, \bibinfo{author}{Tian, Q.},
+  \bibinfo{author}{Jin, N.}, \bibinfo{author}{Qu, J.}, \bibinfo{author}{Yin,
+  L.}, \bibinfo{author}{Yao, N.}, \bibinfo{author}{Webber, H.},
+  \bibinfo{author}{Luedeling, E.}, \bibinfo{author}{Yu, Q.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Influence of {{Information Sources}} on {{Technology
+  Adoption}} in {{Apple Production}} in {{China}}}.
+\newblock \bibinfo{journal}{Agriculture} \bibinfo{volume}{15},
+  \bibinfo{pages}{1785}.
+\newblock \DOIprefix\doi{10.3390/agriculture15161785}.
+%Type = Article
+\bibitem[{Yu et~al.(2017)Yu, Liu, Liang, Zang, Liu, Wang and
+  Guan}]{yuEffectsRainShelter2017}
+\bibinfo{author}{Yu, S.}, \bibinfo{author}{Liu, C.}, \bibinfo{author}{Liang,
+  C.}, \bibinfo{author}{Zang, C.}, \bibinfo{author}{Liu, L.},
+  \bibinfo{author}{Wang, H.}, \bibinfo{author}{Guan, T.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Effects of {{Rain}}-shelter {{Cultivation}} on the
+  {{Temporal Dynamics}} of {{Grape Downy Mildew Epidemics}}}.
+\newblock \bibinfo{journal}{Journal of Phytopathology} \bibinfo{volume}{165},
+  \bibinfo{pages}{331--341}.
+\newblock \DOIprefix\doi{10.1111/jph.12566}.
+%Type = Article
+\bibitem[{Zhai et~al.(2020)Zhai, Mart{\'i}nez, Beltran and
+  Lucas~Mart{\'i}nez}]{zhaiDecisionSupportSystems2020}
+\bibinfo{author}{Zhai, Z.}, \bibinfo{author}{Mart{\'i}nez, J.F.},
+  \bibinfo{author}{Beltran, V.}, \bibinfo{author}{Lucas~Mart{\'i}nez, N.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Decision support systems for agriculture 4.0: Survey
+  and challenges}.
+\newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
+  \bibinfo{volume}{170}, \bibinfo{pages}{105256}.
+\newblock \DOIprefix\doi{10.1016/j.compag.2020.105256}.
+%Type = Article
+\bibitem[{Zhao et~al.(2024)Zhao, Zhao, Webber, Johnen, Rossi and
+  Nogueira~Junior}]{zhaoIntegratingMachineLearning2024}
+\bibinfo{author}{Zhao, G.}, \bibinfo{author}{Zhao, Q.},
+  \bibinfo{author}{Webber, H.}, \bibinfo{author}{Johnen, A.},
+  \bibinfo{author}{Rossi, V.}, \bibinfo{author}{Nogueira~Junior, A.F.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Integrating machine learning and change detection for
+  enhanced crop disease forecasting in rice farming: {{A}} multi-regional
+  study}.
+\newblock \bibinfo{journal}{European Journal of Agronomy}
+  \bibinfo{volume}{160}, \bibinfo{pages}{127317}.
+\newblock \DOIprefix\doi{10.1016/j.eja.2024.127317}.
+%Type = Article
+\bibitem[{Zubrod et~al.(2019)Zubrod, Bundschuh, Arts, Br{\"u}hl, Imfeld,
+  Kn{\"a}bel, Payraudeau, Rasmussen, Rohr and
+  Scharm{\"u}ller}]{zubrodFungicidesOverlookedPesticide2019}
+\bibinfo{author}{Zubrod, J.P.}, \bibinfo{author}{Bundschuh, M.},
+  \bibinfo{author}{Arts, G.}, \bibinfo{author}{Br{\"u}hl, C.A.},
+  \bibinfo{author}{Imfeld, G.}, \bibinfo{author}{Kn{\"a}bel, A.},
+  \bibinfo{author}{Payraudeau, S.}, \bibinfo{author}{Rasmussen, J.J.},
+  \bibinfo{author}{Rohr, J.}, \bibinfo{author}{Scharm{\"u}ller, A.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Fungicides: An overlooked pesticide class?}
+\newblock \bibinfo{journal}{Environmental Science \& Technology}
+  \bibinfo{volume}{53}, \bibinfo{pages}{3347--3365}.
+\newblock \DOIprefix\doi{10.1021/acs.est.8b04392}.
+
+\end{thebibliography}

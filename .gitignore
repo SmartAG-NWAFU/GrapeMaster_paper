@@ -3,3 +3,13 @@ grape_backend/
 grape_frontend/
 .env
 note/
+paper/paper_R/
+paper/*.aux
+paper/*.aux.bak_*
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.synctex*
+paper/*.xdv

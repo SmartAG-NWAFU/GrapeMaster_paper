@@ -45,36 +45,22 @@
 {\LARGE Supplementary Material}
 \end{center}
 
-This supplementary material lists implementation details used in the GrapeMaster platform. The main manuscript reports the platform architecture, data flow, analytical modules, validation design, and workflow verification; this document provides supplementary workflow figures, the software stack, selected data-model attributes, and backend-record screening rules for reproducibility and technical inspection.
+This supplementary material lists implementation details used in the GrapeMaster platform. The main manuscript reports the platform architecture, data flow, analytical modules, validation design, and workflow verification; this document provides supplementary linkage figures, database relationship rules, workflow verification rules, the software stack, selected data-model attributes, and operational-record screening rules for reproducibility and technical inspection.
 
 \section*{Supplementary figures}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{../fig/fig03_disease_model_workflow.png}
-\caption{Platform-compatible structure of the GrapeMaster disease-risk engine. Weather, growth-stage, cultivar, protection-status, and target-disease inputs are converted into disease-risk states, field-risk states, protection timing, recommendations, and treatment-window outputs through the platform workflow.}
-\label{fig:supp_disease_risk_engine_structure}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth]{../fig/fig13_image_assistance_workflow.png}
-\caption{Image-recognition and advisory workflow in GrapeMaster. Field images are uploaded through the mobile application, screened by the visual model, and returned as candidate disease categories with confidence information. Low-confidence cases can be routed to expert review, while the LLM channel provides auxiliary agronomic consultation based on the recognition context.}
-\label{fig:supp_image_assistance_workflow}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth]{../fig/field_management_interfaces.png}
-\caption{Mobile field-management interfaces in GrapeMaster. The field workspace provides the operational entry point for field creation, field inspection, crop-season access, field sharing, deletion, recovery, and linked management functions.}
-\label{fig:supp_field_management_interfaces}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth]{../fig/grapemaster_backend_linkage.png}
-\caption{Backend linkage topology among retained GrapeMaster records. The crop-season record is shown as the central anchor connecting account-field setup, analytical payloads, risk outputs, notifications, tasks, protection feedback, image-analysis records, advisory messages, and forum records. Numbers in the corner labels indicate retained record counts for each record class in the screened backend export.}
+\includegraphics[width=\linewidth]{../fig/grapemaster_backend_identifier_linkage.png}
+\caption{Backend identifier linkage among GrapeMaster record classes. The crop-season record is shown as the central anchor connecting account-field setup, analytical payloads, disease-risk outputs, notifications, tasks, treatment feedback, image-analysis records, advisory messages, and forum records. The figure is a schematic linkage view and does not report deployment counts or audit results.}
 \label{fig:supp_backend_operational_linkage}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../fig/grapemaster_test_site_distribution_map.png}
+\caption{Spatial context of mappable platform field records and independent experimental module-validation sites. Teal bubbles show mappable field records aggregated by region, with bubble size indicating the number of records per region. Red points indicate experimental sites used for module-level validation and are not part of the operational-record denominator.}
+\label{fig:supp_platform_field_distribution}
 \end{figure}
 
 \section*{Supplementary tables}
@@ -82,46 +68,20 @@ This supplementary material lists implementation details used in the GrapeMaster
 \begingroup
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.12}
-\begin{longtable}{@{}L{0.22\linewidth} L{0.36\linewidth} L{0.34\linewidth}@{}}
-\caption{Additional module-level technical details supporting the platform-compatible analytical components.}\label{tab:supp_module_details}\\
+\begin{longtable}{@{}L{0.22\linewidth} L{0.37\linewidth} L{0.33\linewidth}@{}}
+\caption{Input-output definitions and calibration notes for platform-compatible analytical components.}\label{tab:supp_module_details}\\
 \toprule
-Module detail & Main implementation or evaluation element & Role in the main manuscript \\
+Module & Inputs and outputs & Workflow position and calibration note \\
 \midrule
 \endfirsthead
 \toprule
-Module detail & Main implementation or evaluation element & Role in the main manuscript \\
+Module & Inputs and outputs & Workflow position and calibration note \\
 \midrule
 \endhead
-Phenology calibration & Guangxi phenology observations were mapped to broad BBCH-related major stages and evaluated by grouped site-year validation using exact agreement, user-visible agreement, adjacent-stage agreement, severe-mismatch rate, and mean absolute stage distance. & Supports the crop-stage context used for mobile display, risk interpretation, and task timing. \\
-FSIM-S disease-risk module & The downy mildew module used platform-transformed weather, crop-stage sequence, cultivar susceptibility, target-disease information, and fungicide-history input to produce date-aligned disease-risk states, protection states, recommendations, and treatment windows. & Supports first seasonal infection-period warning and protection-state interpretation within the traceability workflow. \\
-FSIM-S spore-pressure term & Field-derived sporangia pressure was used in the evaluated configuration to adjust the infection-triggering threshold; this is a model-level enhancement and an optional sensor-enhanced pathway. & Supports Guangxi-oriented risk modelling but is not required as a live input for routine platform operation. \\
-Image-recognition model selection & Candidate visual models were evaluated with grape-focused validation metrics, including accuracy, precision, recall, and F1-score; the selected classifier provides disease labels and confidence values for the advisory interface. & Supports post-symptom image records within the crop-season record context. \\
-LLM-assisted advisory & Recognition outputs are converted into disease-specific consultation context before advisory text is generated; advisory messages are stored or linked to the crop-season context where identifiers are available. & Provides auxiliary explanation and consultation records; it does not replace validated models, expert diagnosis, pesticide labels, or local regulations. \\
-\bottomrule
-\end{longtable}
-\endgroup
-
-\begingroup
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.12}
-\begin{longtable}{@{}L{0.22\linewidth} L{0.36\linewidth} L{0.34\linewidth}@{}}
-\caption{Formal crop-season traceability object used in the GrapeMaster workflow.}\label{tab:supp_traceability_object}\\
-\toprule
-Object element & Included records or payloads & Traceability function \\
-\midrule
-\endfirsthead
-\toprule
-Object element & Included records or payloads & Traceability function \\
-\midrule
-\endhead
-Season identity & Crop-season identifier, linked field identifier, crop year or season context, cultivar, cultivation method, vine age, field coordinates, and field size & Defines the relational and temporal anchor for one vineyard management season \\
-Environmental state & Weather records, historical and forecast weather payloads, transformed hourly and daily weather inputs & Preserves the environmental exposure used by phenology, disease-risk, and operation-suitability workflows \\
-Crop-development state & Phenology payloads, broad growth-stage labels, BBCH-related stage information, and stage descriptions & Links crop-stage interpretation to warning windows, advisory timing, and field-task planning \\
-Disease-risk state & Disease-risk payloads, request-response bodies, field-risk states, protection states, treatment windows, and action recommendations & Connects model input, model output, and user-facing warning interpretation under the same seasonal anchor \\
-Operation state & Notification records, plant-protection tasks, irrigation tasks, task status, execution date, and overdue state & Tracks whether risk or management events were delivered and converted into executable field operations \\
-Treatment feedback & Fungicide or pesticide records linked to plant-protection tasks, product information, dosage information, and application date & Converts completed field operations into treatment-feedback records for later protection-state interpretation and risk recalculation \\
-Symptom-image and advisory records & Image-analysis records, advisory or message records, disease reports, field notes, and forum records where linked to account, field, crop season, or image identifiers & Preserves symptom-related records and season-long advisory interactions for later interpretation and review \\
-Replay archive & Shared crop-season keys, task keys, payload availability, linkage checks, explicit absence notes for optional symptom records, and representative replay summaries & Allows the season to be reconstructed as a prediction-action-feedback-review chain \\
+Phenology service & Inputs include crop-season metadata, cultivar and cultivation context, and date-aligned daily temperature or weather series. Outputs include broad BBCH-related growth-stage states, stage timelines, and daily crop-stage sequences. & Provides host-development context for susceptibility interpretation, warning-window definition, task timing, and mobile display. The implementation is a Guangxi-calibrated adaptation of temperature-driven grapevine phenology modelling; parameter thresholds and validation metrics are retained as module-level configuration. \\
+FSIM-S risk service & Inputs include transformed hourly or daily weather, crop-stage sequence, cultivar susceptibility, target-disease settings, and recent fungicide-history records. Outputs include downy mildew disease-risk states, first-infection warning triggers, treatment-window information, and protection-state interpretation. & Provides the first seasonal infection-warning and disease-risk-to-task trigger within the crop-season workflow. The evaluated configuration is locally calibrated for humid subtropical Guangxi vineyards. Field-derived sporangia pressure is used as an optional model-level calibration or sensor-enhanced pathway, not as a required live input for routine operation. \\
+Image-recognition service & Inputs include user-uploaded grape symptom images. Outputs include disease or healthy categories, confidence values, and stored image-analysis records. & Provides post-symptom diagnostic evidence within the crop-season record. Candidate visual models were evaluated with grape-focused validation metrics, including accuracy, precision, recall, and F1-score. \\
+LLM-assisted advisory service & Inputs include advisory text and available diagnostic or management context. Outputs include management-oriented advisory text and stored advisory records. & Provides auxiliary explanation and advisory documentation within the crop-season context. The service follows the CDIP-ChatGLM3 framework and is not used as a substitute for validated disease models, expert diagnosis, pesticide labels, or local regulations. \\
 \bottomrule
 \end{longtable}
 \endgroup
@@ -153,34 +113,8 @@ Explicit absence rule & If an expected optional record type is absent for a repl
 \begingroup
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.12}
-\begin{longtable}{@{}L{0.22\linewidth} L{0.36\linewidth} L{0.34\linewidth}@{}}
-\caption{Workflow state-transition rules used to interpret the risk-task-protection-feedback chain.}\label{tab:supp_state_transition_rules}\\
-\toprule
-State transition & Trigger or record basis & Interpretation \\
-\midrule
-\endfirsthead
-\toprule
-State transition & Trigger or record basis & Interpretation \\
-\midrule
-\endhead
-Field setup to crop-season setup & A field record is created and a crop-season record is attached to that field & Establishes the seasonal management object \\
-Crop-season setup to state updating & Weather and phenology payloads are generated or attached to the crop season & Provides environmental and crop-development state for risk interpretation \\
-State updating to risk interpretation & Disease-risk request-response payloads are attached to the same crop season & Converts weather, phenology, and management inputs into date-aligned risk states \\
-Risk interpretation to event delivery & Warning or management notifications are generated under the retained account or crop-season context & Documents that analytical state was translated into user-facing events \\
-Event delivery to task creation & A plant-protection or irrigation task is created from or within the crop-season workflow & Converts a warning or management context into an executable operation record \\
-Task creation to task completion or non-completion & Task status, planned date, execution date, completion state, or overdue state is stored & Distinguishes pending, completed, and missed operations \\
-Task completion to treatment feedback & Completed plant-protection tasks are linked to fungicide or pesticide product records & Converts the field operation into product-level management feedback \\
-Treatment feedback to renewed interpretation & Product and execution records are available for protection-state interpretation or later risk recalculation & Allows later risk states to be interpreted in light of recent management history \\
-Season replay & Shared crop-season and task identifiers retrieve the sequence of state updating, risk interpretation, event delivery, task execution, feedback, and optional symptom/advisory record availability & Reconstructs the management chain for audit and later evaluation \\
-\bottomrule
-\end{longtable}
-\endgroup
-
-\begingroup
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.12}
 \begin{longtable}{@{}L{0.24\linewidth} L{0.36\linewidth} L{0.32\linewidth}@{}}
-\caption{Workflow verification rules used for backend-record and representative-replay checks.}\label{tab:supp_verification_rules}\\
+\caption{Workflow verification rules used for operational-record and representative-replay checks.}\label{tab:supp_verification_rules}\\
 \toprule
 Verification check & Operational criterion & Supported interpretation \\
 \midrule
@@ -191,12 +125,34 @@ Verification check & Operational criterion & Supported interpretation \\
 \endhead
 Operational-account retention & An account is retained only when it has business records and field-crop-season linkage after deduplication and target-context screening & Defines the evaluated operational account set \\
 Analytical payload completeness & A crop season is counted as analytically complete when weather, phenology, disease-risk, and request-response payloads are present under the shared seasonal context & Shows whether the analytical state can be reconstructed for that season \\
-Risk-to-operation linkage & Notification and task records are checked against retained user, field, or crop-season context & Shows whether risk or management events entered the operational workflow \\
+Disease-risk-to-operation linkage & Notification and task records are checked against retained user, field, or crop-season context & Shows whether disease-risk or management events entered the operational workflow \\
 Treatment-feedback linkage & Fungicide or pesticide records are checked through task identifiers and task completion status & Shows whether field operations can be converted into feedback records \\
 Symptom/advisory record-linkage availability & Image-analysis, advisory, disease-report, and note records are checked for available account, field, crop-season, image, or message links & Shows whether symptom-related records and advisory interactions are available for seasonal interpretation \\
-Representative replay & A selected crop-season anchor must retrieve weather, phenology, risk, notification, task, and fungicide records through shared crop-season or task keys & Demonstrates reconstructability of one risk-to-feedback chain \\
+Representative replay & A selected crop-season anchor must retrieve weather, phenology, disease-risk, notification, task, and fungicide records through shared crop-season or task keys & Demonstrates reconstructability of one disease-risk-to-feedback chain \\
 Boundary reporting & Missing optional symptom or advisory records under the replay anchor are explicitly reported rather than omitted & Separates verified linkage from unsupported production-outcome claims \\
-Excluded outcome claim & Backend linkage and replay checks are not treated as demonstrations of pesticide reduction, disease-control efficacy, economic benefit, or user adoption & Maintains the distinction between record-based workflow assessment and agronomic-impact evaluation \\
+Excluded outcome claim & Operational-record linkage and replay checks are not treated as demonstrations of pesticide reduction, disease-control efficacy, economic benefit, or user adoption & Maintains the distinction between record-based workflow assessment and agronomic-impact evaluation \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}L{0.20\linewidth} L{0.29\linewidth} L{0.19\linewidth} L{0.22\linewidth}@{}}
+\caption{Record-level reconstruction results for a loop-complete crop-season replay in GrapeMaster.}\label{tab:supp_crop_season_replay_audit}\\
+\toprule
+Record group & Retained record set & Identifier or status & Result note \\
+\midrule
+\endfirsthead
+\toprule
+Record group & Retained record set & Identifier or status & Result note \\
+\midrule
+\endhead
+Replay record set & Weather, phenology, disease-risk, notification, task, and fungicide records & One crop-season UUID & Loop-complete crop-season replay \\
+State and risk records & Weather, phenology, and disease-risk payloads & Shared crop-season key & Shared seasonal record set \\
+Operation records & Notifications and completed plant-protection tasks & Same crop-season context & Notification and task records \\
+Treatment-feedback records & Fungicide-product records & Task identifiers & Product-task record set \\
+Field-note branch & No field-note or incidence-note record & Explicit absence & No field/incidence note in this replay \\
 \bottomrule
 \end{longtable}
 \endgroup
@@ -255,7 +211,7 @@ Model payload records & Weather, phenology, disease-risk, and request-response p
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.12}
 \begin{longtable}{@{}L{0.25\linewidth} L{0.43\linewidth} L{0.24\linewidth}@{}}
-\caption{Backend-record screening rules used before summarizing deployed GrapeMaster records.}\label{tab:supp_screening_rules}\\
+\caption{Operational-record screening rules used before summarizing deployed GrapeMaster records.}\label{tab:supp_screening_rules}\\
 \toprule
 Screening step & Rule & Rationale \\
 \midrule
