@@ -61,14 +61,14 @@
 \providecommand{\Pubmedprefix}{PMID: }
 \providecommand{\doi}[1]{\href{https://doi.org/\detokenize{#1}}{\nolinkurl{#1}}}
 \hypersetup{
-  pdftitle={GrapeMaster: A Scalable Crop-Season-Centered Digital Platform for Closed-Loop Vineyard Disease Management},
+  pdftitle={From Disease Risk to Field Action: GrapeMaster, an Integrated and Traceable Platform for Vineyard Disease Management},
   hidelinks,
   pdfcreator={LaTeX}
 }
 
 \newcommand{\figref}[1]{\hyperref[#1]{Figure~\ref*{#1}}}
 \newcommand{\tabref}[2]{\hyperref[#1]{Table~#2}}
-\newcommand{\manuscripttitle}{GrapeMaster: A Scalable Crop-Season-Centered Digital Platform for Closed-Loop Vineyard Disease Management}
+\newcommand{\manuscripttitle}{From Disease Risk to Field Action: GrapeMaster, an Integrated and Traceable Platform for Vineyard Disease Management}
 
 \begin{document}
 
@@ -97,7 +97,7 @@ Affiliations, author order, and corresponding author details will be completed b
 
 \section*{Abstract}
 
-Effective vineyard disease management depends on the continuous integration of crop, environmental, disease, and management-action information throughout the crop season. However, recently developed digital tools, including disease-risk prediction, image recognition, and advisory support, remain largely focused on individual functions and application scenarios. Their limited integration of information and workflows across modules restricts their ability to support management throughout the crop season. To address this gap, this study presents GrapeMaster, a scalable digital platform centered on the crop season and designed to integrate these isolated functions into a closed-loop vineyard disease-management workflow. Using the crop season as its organizing unit, the platform integrates field configuration, weather data, phenology simulation, disease-risk interpretation, warning notifications, plant-protection tasks, and treatment feedback, while incorporating symptom image recognition and LLM-assisted advisory support to establish a unified seasonal management process. The deployed platform managed 47 operational accounts, 139 vineyard fields, and 128 crop seasons. A representative workflow replay illustrated the core progression from disease-risk interpretation and event delivery to field operations, treatment feedback, and management review. Platform-compatible analytical modules further supported deployment in humid subtropical vineyards in Guangxi, including downy mildew first-infection warning, broad-stage phenology visualization, and grape disease image recognition. GrapeMaster organizes disease-risk prediction, diagnosis, advisory support, and operational records into a unified, auditable workflow, providing a crop-season-centered organizational framework for continuous disease management in perennial fruit crops.
+Digital tools for vineyard disease management often deliver risk predictions, diagnostic outputs, or recommendations as isolated results, leaving weak links between analytical outputs, field operations, treatment records, and subsequent review. We developed GrapeMaster, an integrated digital platform that connects field configuration, weather and phenology data, disease-risk interpretation, notifications, plant-protection tasks, treatment records, symptom-image recognition, and LLM-assisted advisory support within a traceable management workflow. The platform was evaluated through an audit of records exported from its deployment and independent validation of its analytical modules. After screening 95 deduplicated accounts, 47 operational accounts covering 139 vineyard fields and 128 crop seasons were retained. The export contained linked environmental and analytical records for 126 crop seasons, 3,590 notifications, 151 field-operation tasks, and 234 fungicide or pesticide records. A representative record-level replay showed that disease-risk interpretation, event delivery, task execution, and treatment feedback could be reconstructed through shared season and task identifiers. In independent evaluations, broad-stage phenology estimates achieved 58.0\% exact agreement and 76.0\% agreement using transition-window display; the downy mildew first-infection model achieved a mean absolute error of 6.3 days; and image recognition produced class-wise F1-scores of 0.926--0.998. Advisory quality was not independently evaluated. Together, the deployment audit and module evaluations show that GrapeMaster can connect disease-risk information with field action and subsequent review through an integrated, traceable vineyard management workflow.
 
 \noindent\textbf{Keywords:} grapevine; downy mildew; decision support system; crop-season management; digital agriculture; advisory support; record traceability
 
