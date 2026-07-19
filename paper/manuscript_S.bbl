@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{26}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -114,17 +114,6 @@
   \bibinfo{volume}{115}, \bibinfo{pages}{40--50}.
 \newblock \DOIprefix\doi{10.1016/j.compag.2015.05.011}.
 %Type = Article
-\bibitem[{Gent et~al.(2011)Gent, De~Wolf and
-  Pethybridge}]{gentPerceptionsRiskRisk2011}
-\bibinfo{author}{Gent, D.H.}, \bibinfo{author}{De~Wolf, E.},
-  \bibinfo{author}{Pethybridge, S.J.}, \bibinfo{year}{2011}.
-\newblock \bibinfo{title}{Perceptions of risk, risk aversion, and barriers to
-  adoption of decision support systems and integrated pest management: An
-  introduction}.
-\newblock \bibinfo{journal}{Phytopathology} \bibinfo{volume}{101},
-  \bibinfo{pages}{640--643}.
-\newblock \DOIprefix\doi{10.1094/PHYTO-04-10-0124}.
-%Type = Article
 \bibitem[{Gessler et~al.(2011)Gessler, Pertot and
   Perazzolli}]{gesslerPlasmoparaViticolaReview2011}
 \bibinfo{author}{Gessler, C.}, \bibinfo{author}{Pertot, I.},
@@ -142,17 +131,6 @@
 \newblock \bibinfo{journal}{Agricultural Systems} \bibinfo{volume}{74},
   \bibinfo{pages}{11--25}.
 \newblock \DOIprefix\doi{10.1016/S0308-521X(02)00020-3}.
-%Type = Article
-\bibitem[{Nogueira~J{\'u}nior et~al.(2018)Nogueira~J{\'u}nior, Amorim, Savary
-  and Willocquet}]{nogueirajuniorModellingDynamicsGrapevine2018}
-\bibinfo{author}{Nogueira~J{\'u}nior, A.F.}, \bibinfo{author}{Amorim, L.},
-  \bibinfo{author}{Savary, S.}, \bibinfo{author}{Willocquet, L.},
-  \bibinfo{year}{2018}.
-\newblock \bibinfo{title}{Modelling the dynamics of grapevine growth over
-  years}.
-\newblock \bibinfo{journal}{Ecological Modelling} \bibinfo{volume}{369},
-  \bibinfo{pages}{77--87}.
-\newblock \DOIprefix\doi{10.1016/j.ecolmodel.2017.12.016}.
 %Type = Article
 \bibitem[{Oliver et~al.(2023)Oliver, Cooper, Lewis~Ivey, Brannen, Miles,
   Lowder, Mahaffee and Moyer}]{oliverFungicideUsePatterns2023}
@@ -199,18 +177,6 @@
 \newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
   \bibinfo{volume}{219}, \bibinfo{pages}{108817}.
 \newblock \DOIprefix\doi{10.1016/j.compag.2024.108817}.
-%Type = Article
-\bibitem[{Romero et~al.(2022)Romero, Cazzato, Walder, Vogelgsang, Bender and
-  {van der Heijden}}]{romeroHumidityHighTemperature2022}
-\bibinfo{author}{Romero, F.}, \bibinfo{author}{Cazzato, S.},
-  \bibinfo{author}{Walder, F.}, \bibinfo{author}{Vogelgsang, S.},
-  \bibinfo{author}{Bender, S.F.}, \bibinfo{author}{{van der Heijden}, M.G.},
-  \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{Humidity and high temperature are important for
-  predicting fungal disease outbreaks worldwide}.
-\newblock \bibinfo{journal}{New Phytologist} \bibinfo{volume}{234},
-  \bibinfo{pages}{1553--1556}.
-\newblock \DOIprefix\doi{10.1111/nph.17340}.
 %Type = Article
 \bibitem[{Rose et~al.(2016)Rose, Sutherland, Parker, Lobley, Winter, Morris,
   Twining, Ffoulkes, Amano and Dicks}]{roseDecisionSupportTools2016}
@@ -339,19 +305,6 @@
 \newblock \bibinfo{journal}{Computers and Electronics in Agriculture}
   \bibinfo{volume}{170}, \bibinfo{pages}{105256}.
 \newblock \DOIprefix\doi{10.1016/j.compag.2020.105256}.
-%Type = Article
-\bibitem[{Zhao et~al.(2024)Zhao, Zhao, Webber, Johnen, Rossi and
-  Nogueira~Junior}]{zhaoIntegratingMachineLearning2024}
-\bibinfo{author}{Zhao, G.}, \bibinfo{author}{Zhao, Q.},
-  \bibinfo{author}{Webber, H.}, \bibinfo{author}{Johnen, A.},
-  \bibinfo{author}{Rossi, V.}, \bibinfo{author}{Nogueira~Junior, A.F.},
-  \bibinfo{year}{2024}.
-\newblock \bibinfo{title}{Integrating machine learning and change detection for
-  enhanced crop disease forecasting in rice farming: {{A}} multi-regional
-  study}.
-\newblock \bibinfo{journal}{European Journal of Agronomy}
-  \bibinfo{volume}{160}, \bibinfo{pages}{127317}.
-\newblock \DOIprefix\doi{10.1016/j.eja.2024.127317}.
 %Type = Article
 \bibitem[{Zubrod et~al.(2019)Zubrod, Bundschuh, Arts, Br{\"u}hl, Imfeld,
   Kn{\"a}bel, Payraudeau, Rasmussen, Rohr and

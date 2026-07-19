@@ -61,14 +61,14 @@
 \providecommand{\Pubmedprefix}{PMID: }
 \providecommand{\doi}[1]{\href{https://doi.org/\detokenize{#1}}{\nolinkurl{#1}}}
 \hypersetup{
-  pdftitle={From Disease Risk to Field Action: GrapeMaster, an Integrated and Traceable Platform for Vineyard Disease Management},
+  pdftitle={From Disease Risk to Field Action: GrapeMaster, a Model-Integrated Software Platform for Vineyard Disease Management},
   hidelinks,
   pdfcreator={LaTeX}
 }
 
 \newcommand{\figref}[1]{\hyperref[#1]{Figure~\ref*{#1}}}
 \newcommand{\tabref}[2]{\hyperref[#1]{Table~#2}}
-\newcommand{\manuscripttitle}{From Disease Risk to Field Action: GrapeMaster, an Integrated and Traceable Platform for Vineyard Disease Management}
+\newcommand{\manuscripttitle}{From Disease Risk to Field Action: GrapeMaster, a Model-Integrated Software Platform for Vineyard Disease Management}
 
 \begin{document}
 
@@ -97,272 +97,197 @@ Affiliations, author order, and corresponding author details will be completed b
 
 \section*{Abstract}
 
-Digital tools for vineyard disease management often deliver risk predictions, diagnostic outputs, or recommendations as isolated results, leaving weak links between analytical outputs, field operations, treatment records, and subsequent review. We developed GrapeMaster, an integrated digital platform that connects field configuration, weather and phenology data, disease-risk interpretation, notifications, plant-protection tasks, treatment records, symptom-image recognition, and LLM-assisted advisory support within a traceable management workflow. The platform was evaluated through an audit of records exported from its deployment and independent validation of its analytical modules. After screening 95 deduplicated accounts, 47 operational accounts covering 139 vineyard fields and 128 crop seasons were retained. The export contained linked environmental and analytical records for 126 crop seasons, 3,590 notifications, 151 field-operation tasks, and 234 fungicide or pesticide records. A representative record-level replay showed that disease-risk interpretation, event delivery, task execution, and treatment feedback could be reconstructed through shared season and task identifiers. In independent evaluations, broad-stage phenology estimates achieved 58.0\% exact agreement and 76.0\% agreement using transition-window display; the downy mildew first-infection model achieved a mean absolute error of 6.3 days; and image recognition produced class-wise F1-scores of 0.926--0.998. Advisory quality was not independently evaluated. Together, the deployment audit and module evaluations show that GrapeMaster can connect disease-risk information with field action and subsequent review through an integrated, traceable vineyard management workflow.
+Vineyard disease-management software must combine information that differs in source, timing, and operational role, including environmental observations, phenological state, disease forecasts, symptom images, advisory interaction, field operations, and treatment history. We developed GrapeMaster, a mobile and backend software platform that orchestrates these heterogeneous resources within two connected workflows. A proactive workflow assembles weather, phenology, cultivar susceptibility, and recent treatment records for disease-risk analysis, translates model output into notifications and plant-protection tasks, and returns completed treatments to subsequent risk interpretation. A post-symptomatic workflow connects image recognition with large language model (LLM)-assisted advisory interaction. The implementation combines a Flutter mobile client, a Django REST backend, relational record storage, scheduled processing, and independently deployable analytical services. Deployment records from 47 operational accounts covered 139 vineyard fields, 128 crop-management records, 3,590 notifications, 151 field-operation tasks, and 234 product records; a representative replay reconstructed the implemented risk-to-action-to-feedback sequence. Supporting component evaluations yielded 76.0\% user-visible agreement for broad phenological stages, a mean absolute error of 6.3 days for downy mildew first-infection timing, and class-wise F1-scores of 0.926--0.998 for image recognition. LLM advisory quality was not independently evaluated. GrapeMaster demonstrates how predictive, diagnostic, advisory, and operational services can be integrated into a persistent field-management application rather than delivered as isolated analytical outputs.
 
-\noindent\textbf{Keywords:} grapevine; downy mildew; decision support system; crop-season management; digital agriculture; advisory support; record traceability
+\noindent\textbf{Keywords:} grapevine; disease management; software architecture; model integration; decision support system; large language model; treatment feedback
 
 \section{Introduction}\label{introduction}
 
-In subtropical grape-growing regions, environmental conditions characterized by high temperature, high humidity, persistent rainfall, and leaf wetness make downy mildew outbreaks more frequent, less predictable, and more destructive \citep{gesslerPlasmoparaViticolaReview2011,yuEffectsRainShelter2017}. Consequently, these production conditions depend more heavily on efficient and precise vineyard disease management. However, growers' management decisions still rely heavily on past experience, paper-based records, and informal advisory sources of varying reliability, making it difficult to accurately assess disease risk and continuously integrate multi-source information \citep{tummersObstaclesFeaturesFarm2019,yaoInfluenceInformationSources2025}. The inappropriate use of fungicides further increases production costs, reduces control efficacy, and imposes additional environmental pressure \citep{oliverFungicideUsePatterns2023,zubrodFungicidesOverlookedPesticide2019}. Therefore, improving disease-risk identification and management decision making has become an important research objective \citep{gentPerceptionsRiskRisk2011,roseDecisionSupportTools2016}.
+Grapevine disease management requires repeated decisions under changing environmental, biological, and operational conditions. In humid subtropical production regions, high temperature, persistent rainfall, humidity, and leaf wetness can increase the frequency and severity of downy mildew infection \citep{gesslerPlasmoparaViticolaReview2011,yuEffectsRainShelter2017}. Growers must interpret current weather and host development, anticipate infection, inspect symptoms, select control measures, and account for recent treatments. When these decisions depend primarily on experience, paper records, or informal information sources, relevant evidence is difficult to combine and review \citep{tummersObstaclesFeaturesFarm2019,yaoInfluenceInformationSources2025}. Inappropriate fungicide use can then increase costs and environmental pressure without improving control \citep{oliverFungicideUsePatterns2023,zubrodFungicidesOverlookedPesticide2019}. Digital support must therefore address not only disease prediction, but also the continuity of information from risk recognition to field action.
 
-In recent years, digital tools targeting key components of disease management have advanced considerably, providing new technical approaches for improving management practices \citep{fountasFarmManagementInformation2015,zhaiDecisionSupportSystems2020}. Downy mildew warning models have evolved from empirical rules to semi-mechanistic and mechanistic models based on pathogen development and infection processes, enabling more accurate characterization of infection risk and improved spray timing \citep{rossiMechanisticModelSimulating2008,caffiEvaluationDynamicModel2011}. Grapevine phenology models describe host development and support the interpretation of susceptible periods and the scheduling of plant-protection operations \citep{parkerGeneralPhenologicalModel2011a,wangAssessingGrapevinePhenological2020}. Meanwhile, image-recognition techniques have substantially improved automatic disease diagnosis, while large language model (LLM)-based advisory systems have further enhanced agronomic interpretation and management recommendation generation \citep{raiAdvancingSitespecificDisease2026,yanCDIPChatGLM3DualmodelApproach2025}. However, these digital tools remain largely focused on individual analytical tasks or application scenarios. Their outputs are typically isolated, lacking sustained information integration and workflow coordination, and are therefore insufficient to support continuous management throughout the crop season \citep{mccownLocatingAgriculturalDecision2002,roseDecisionSupportTools2016}.
+Several analytical technologies support different parts of this process. Weather-driven disease models characterize infection conditions and treatment timing \citep{rossiMechanisticModelSimulating2008,caffiEvaluationDynamicModel2011}; phenology models describe host development and susceptible periods \citep{parkerGeneralPhenologicalModel2011a,wangAssessingGrapevinePhenological2020}; image-recognition models provide post-symptomatic classification; and large language models (LLMs) can support natural-language interpretation and advisory interaction \citep{raiAdvancingSitespecificDisease2026,yanCDIPChatGLM3DualmodelApproach2025}. These components differ in input type, temporal resolution, execution pattern, and user role. A scheduled disease forecast, an image-classification request, and an interactive advisory exchange therefore cannot be integrated by merely displaying their outputs on the same screen. They require software mechanisms for assembling context, invoking services, storing requests and responses, presenting results, and relating management actions to subsequent analysis.
 
-Building upon these advances, research has increasingly shifted from developing individual digital tools toward organizing model services, user interaction, and operational management within unified digital platforms \citep{fountasFarmManagementInformation2015,bakirScalableEndtoendIoT2026}. Compared with studies focusing solely on analytical model performance, these platforms place greater emphasis on system architecture, data organization, deployment, operational services, and user-oriented functionality \citep{tummersObstaclesFeaturesFarm2019,bakirScalableEndtoendIoT2026}. In viticulture, vite.net improved practical vineyard disease management by integrating vineyard monitoring, model-based decision support, and bidirectional communication, whereas MISFITS-DSS implemented regional-scale downy mildew risk assessment for public plant-protection services \citep{rossiAddressingImplementationProblem2014,bregaglioPublicDecisionSupport2022}. Beyond viticulture, agricultural platforms such as Fuxi Brain further integrate Internet of Things (IoT) sensing, multimodal data fusion, model services, and intelligent advisory functions to support digital management throughout the agricultural production process \citep{chenAgriculturalAutonomousDecisionmaking2026}. These studies indicate that agricultural digital platforms are evolving from collections of analytical models into integrated service systems for production applications. The necessity of integrating individual digital tools into unified digital platforms has therefore become widely recognized in agricultural production \citep{romera2024digitalization}.
+Agricultural decision-support systems increasingly combine monitoring, modeling, communication, and farm-management functions \citep{fountasFarmManagementInformation2015,zhaiDecisionSupportSystems2020}. In viticulture, vite.net connected vineyard monitoring with model-based decision support and bidirectional communication, while MISFITS-DSS delivered regional downy mildew assessment for public plant-protection services \citep{rossiAddressingImplementationProblem2014,bregaglioPublicDecisionSupport2022}. Broader agricultural platforms integrate sensing, multimodal data, analytical services, and user interaction \citep{bakirScalableEndtoendIoT2026,chenAgriculturalAutonomousDecisionmaking2026}. These systems establish the value of integration, but they also reveal a continuing software challenge: heterogeneous analytical services must be coordinated with persistent field context, user-facing events, executable operations, treatment records, and later review. The relevant gap is therefore not the absence of integrated platforms, but the need for explicit and reproducible model-to-management orchestration.
 
-Despite the continuous development of digital tools and digital platforms, disease risk continues to evolve throughout the crop season, making improvements in individual analytical capabilities or platform functionality alone insufficient to meet practical disease-management needs \citep{mccownLocatingAgriculturalDecision2002,roseDecisionSupportTools2016}. The remaining challenge is no longer the development of additional digital tools, but the organization of existing digital capabilities into a continuous disease-management workflow spanning the entire crop season to accommodate the long-term and dynamic nature of disease occurrence in perennial fruit crops \citep{fountasFarmManagementInformation2015,romera2024digitalization,bakirScalableEndtoendIoT2026}. A unified and effective organizational unit is still lacking to organize disease-risk prediction, diagnostic analysis, advisory support, and operational records into a unified, continuous, and closed-loop disease-management workflow, thereby supporting dynamic decision making, end-to-end management, and continuous traceability in production practice \citep{mccownLocatingAgriculturalDecision2002,roseDecisionSupportTools2016,rossiSharingDecisionmakingTools2023}.
+For vineyard disease management, such orchestration requires several capabilities. The software must preserve stable field identity while retaining time-dependent environmental, crop, analytical, and operational records; construct model requests from multiple data sources; translate analytical outputs into warnings and management functions; and incorporate completed treatments into later risk interpretation. It must also support two complementary decision pathways: a proactive pathway based on weather, phenology, and disease forecasting, and a post-symptomatic pathway based on images and advisory interaction. These requirements define an agricultural computing problem in which the contribution lies in the relationships among analytical services, application logic, persistent records, and field operations rather than in any individual model alone \citep{mccownLocatingAgriculturalDecision2002,roseDecisionSupportTools2016,romera2024digitalization}.
 
-To address this challenge, we designed and deployed GrapeMaster, a crop-season-centered digital platform for vineyard disease management. The platform is organized around the complete grape crop season, from budburst to fruit maturity and harvest, which serves as the fundamental unit for management activities and multi-source data organization. Field background information, weather data, phenology simulation, disease-risk interpretation, warning notifications, plant-protection tasks, treatment feedback, symptom image recognition, LLM-assisted advisory support, and historical management records are integrated into a unified disease-management workflow. This paper presents the architecture, core implementation modules, deployment, and user-oriented disease-management workflow of GrapeMaster. It demonstrates how existing digital analytical capabilities can be organized around the crop season to establish a continuous disease-management platform for practical production and provides a reusable, extensible, crop-season-centered platform architecture for digital disease management in perennial fruit crops.
+To address this problem, we developed GrapeMaster, a model-integrated software platform for vineyard disease management. GrapeMaster combines a Flutter mobile client, a Django REST backend, relational record storage, scheduled processing, and independently deployable analytical services. The study makes four contributions: (1) an integrated computing framework that combines predictive, diagnostic, advisory, and operational functions; (2) a model-to-application mechanism through which the backend assembles inputs, invokes analytical services, persists their outputs, and translates results into user-facing information; (3) a management-feedback mechanism that transforms completed treatment records into inputs for subsequent disease-risk interpretation; and (4) a deployed mobile and backend implementation demonstrated through operational records, an end-to-end workflow replay, and bounded validation of analytical components. Crop-season identifiers are used as one database mechanism for organizing time-dependent records, but the primary contribution is the orchestration of disease-management intelligence and field action.
 
-\section{System architecture}\label{system-architecture}
+\section{Materials and methods}\label{materials-and-methods}
 
-The system architecture was developed around three design requirements. First, the platform distinguishes persistent vineyard fields from annually renewed crop-season management units to support management based on the crop season for perennial fruit production. Second, heterogeneous records, including weather, phenology, disease risk, notifications, tasks, treatment feedback, symptom images, advisory records, and messages, are organized and retrieved through direct or indirect linkage within the crop-season management context. Third, disease-risk interpretation remains connected to warning delivery, plant-protection tasks, treatment feedback, and management review, enabling disease management to be organized as a continuous and traceable disease-management workflow rather than as isolated analytical outputs. The following sections describe the platform organization and operational mechanism from four perspectives: conceptual architecture, logical architecture, service architecture, and analytical services.
+\subsection{System objectives and usage scenarios}\label{system-objectives}
 
-\subsection{Conceptual Architecture}\label{conceptual-architecture}
+GrapeMaster was designed for growers and technical advisors who need to review field conditions, anticipate disease risk, record plant-protection operations, diagnose visible symptoms, and retrieve previous management information through a mobile application. Two usage scenarios guided the software design. The proactive scenario begins with field configuration and scheduled acquisition of environmental data. Weather and phenological state are combined with cultivar susceptibility and treatment history for disease-risk analysis; the resulting information is delivered through the mobile application and retained with notifications, tasks, and applied products. The post-symptomatic scenario begins with an image or user question and connects image recognition with LLM-assisted advisory interaction.
 
-The conceptual architecture organizes the platform around the crop season (Figure~\ref{fig:crop_season_traceability_architecture}). The crop-season unit serves as the central organizational context linking persistent field information, environmental and phenological state, analytical services, management services, and historical records. Symptom-image recognition and LLM-assisted advisory support are retained as an auxiliary branch within the same seasonal context. Through this organization, environmental information, analytical outputs, management actions, feedback, and review records remain connected within a season-long management loop.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth]{../fig/figure1_new.png}
-\caption[Crop-season-centered conceptual architecture]{Crop-season-centered conceptual architecture of GrapeMaster.}
-\label{fig:crop_season_traceability_architecture}
-\end{figure}
-
-\subsection{Logical Architecture}\label{crop-season-object-and-workflow-states}
-
-The logical architecture describes how the platform organizes data objects and business processes around the crop season. Each crop season is used as the basic unit for management activities and multi-source data organization. Shared crop-season, field, task, image, and message identifiers link field information, weather data, phenology state, disease risk, notifications, plant-protection tasks, treatment feedback, symptom images, and advisory records within the crop-season management context. For one crop season \(c\), the management object was represented as:
-\begin{equation}
-T_c =
-\left(
-F_c, M_c, W_c, P_c, R_c, N_c, O_c, B_c, E_c, A_c
-\right),
-\label{eq:crop_season_traceability_object}
-\end{equation}
-where \(F_c\) is the linked field record, \(M_c\) is crop-season metadata, \(W_c\) is weather input, \(P_c\) is phenology state, \(R_c\) is disease-risk output, \(N_c\) is event-delivery records, \(O_c\) is task or field-operation records, \(B_c\) is treatment-feedback records, \(E_c\) is symptom or image records, and \(A_c\) is advisory or message records. These objects jointly define the crop-season management context. Weather, phenology, and disease risk define analytical states. Notifications and tasks define business states. Treatment feedback updates management states, and symptom images and advisory records provide post-symptom and advisory branches. The corresponding record groups and traceability functions are summarized in Table~\ref{tab:traceability_object}.
-
-The platform defines business state-transition rules around these objects. Weather and phenology updates support disease-risk interpretation, and disease-risk states trigger warnings and notifications. Notifications can be converted into plant-protection tasks, and task completion generates treatment feedback. Treatment feedback can then be used to update subsequent protection-state interpretation and disease-risk review. All state changes are retained within the same crop-season management context, forming a continuous disease-management workflow from disease-risk interpretation to task execution, feedback updating, and management review. The predefined state-transition rules are summarized in Table~\ref{tab:state_transition_rules}.
+These scenarios were translated into six software requirements (Table~\ref{tab:system_requirements}). Heterogeneous data and model results had to remain associated with the relevant field-management context; analytical services had to be callable through explicit interfaces; scheduled and user-triggered computations had to coexist; model results had to be transformed into reviewable application information; field-operation records had to be available to later analytical requests; and diagnostic and advisory functions had to remain distinguishable from regulated plant-protection decisions.
 
 \begin{table}[H]
 \centering
-\caption{Crop-season traceability object used in the GrapeMaster data architecture.}
-\label{tab:traceability_object}
+\caption{Management needs, software requirements, and implemented GrapeMaster mechanisms.}
+\label{tab:system_requirements}
 \tablefontsize
-\begin{tabular}{@{}p{0.20\linewidth} p{0.36\linewidth} p{0.34\linewidth}@{}}
+\begin{tabular}{@{}p{0.25\linewidth} p{0.34\linewidth} p{0.33\linewidth}@{}}
 \toprule
-Object element & Included records or payloads & Traceability function \\
+Management need & Software requirement & Implemented mechanism \\
 \midrule
-Season identity & Crop-season identifier, linked field identifier, crop year, cultivar, cultivation method, vine age, field coordinates, and field size & Defines the relational and temporal anchor for one vineyard management season \\
-Environmental state & Weather records, historical and forecast weather payloads, and transformed hourly or daily weather inputs & Preserves the environmental exposure used by phenology, disease-risk, and operation-suitability services \\
-Phenological state & Phenology payloads, broad phenological-stage labels, BBCH-related stage information, and stage descriptions & Links phenological-stage information to susceptibility interpretation, advisory timing, and task-related records \\
-Disease-risk state & Disease-risk payloads, request-response bodies, field-risk states, protection states, treatment windows, and action recommendations & Connects model inputs, model outputs, and user-facing disease-risk interpretation under the same seasonal anchor \\
-Operation state & Notification records, plant-protection tasks, irrigation tasks, task status, execution date, and overdue state & Stores event and field-operation records under the crop-season context \\
-Treatment feedback & Fungicide or pesticide records linked to plant-protection tasks, product information, dosage information, and application date & Stores product-level management feedback for later protection-state interpretation and risk recalculation \\
-Symptom and advisory records & Image-analysis records, advisory records, disease reports, field notes, and forum records where linked to account, field, crop season, or image identifiers & Preserves symptom-related records and advisory interaction for later management review \\
-Review archive & Shared crop-season keys, task keys, payload availability, linkage checks, explicit absence notes for symptom records when absent, and review summaries & Supports management review of retained seasonal records \\
+Maintain current field state & Combine persistent field attributes with time-dependent weather, phenology, risk, and management records & Relational field and crop-management records linked by identifiers and timestamps \\
+Anticipate infection & Assemble weather, host stage, susceptibility, disease target, and treatment history & Backend disease-model request construction and scheduled service invocation \\
+Deliver actionable information & Convert analytical output into user-facing events and work items & Risk displays, notifications, reminders, and task interfaces \\
+Account for intervention & Make completed product applications available to subsequent analysis & Task-to-product linkage and treatment-history transformation \\
+Interpret visible symptoms & Submit images and retain diagnostic output & Hosted image-recognition service and image-analysis records \\
+Support explanation and interaction & Exchange questions and diagnostic or management context with an advisory model & LLM service interface, advisory sessions, and message records \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\begin{table}[H]
-\centering
-\caption{Workflow state-transition rules used to define the crop-season management loop.}
-\label{tab:state_transition_rules}
-\tablefontsize
-\begin{tabular}{@{}p{0.25\linewidth} p{0.35\linewidth} p{0.32\linewidth}@{}}
-\toprule
-State transition & Trigger or record basis & Platform interpretation \\
-\midrule
-Field setup to crop-season setup & A field record is created and a crop-season record is attached to that field & Establishes the seasonal management object \\
-Crop-season setup to state updating & Weather and phenology payloads are generated or attached to the crop season & Provides environmental and phenological state for disease-risk interpretation \\
-State updating to disease-risk interpretation & Disease-risk request-response payloads are attached to the same crop season & Converts weather, phenology, and management inputs into date-aligned disease-risk states \\
-Disease-risk interpretation to event delivery & Warning or management notifications are generated under the retained account or crop-season context & Documents that analytical state was translated into user-facing events \\
-Event delivery to task creation & A plant-protection or irrigation task is created from or within the crop-season workflow & Converts a warning or management context into an executable operation record \\
-Task completion to treatment feedback & Completed plant-protection tasks are linked to fungicide or pesticide product records & Converts field operations into product-level management feedback \\
-Treatment feedback to renewed disease-risk interpretation & Product and execution records are available for protection-state interpretation or later risk recalculation & Allows later disease-risk states to be interpreted in light of recent management history \\
-Workflow replay & Shared crop-season and task identifiers retrieve the sequence of state updating, disease-risk interpretation, event delivery, task execution, treatment feedback, and symptom/advisory branch availability & Reconstructs the management chain for workflow audit and management review \\
-\bottomrule
-\end{tabular}
-\end{table}
+\subsection{Overall software architecture}\label{system-architecture}
 
-\subsection{Service Architecture}\label{service-architecture}
+GrapeMaster comprises a mobile application, an application backend, persistent data storage, scheduled processing, and analytical services (Figure~\ref{fig:implementation_overview}). The Flutter client provides field mapping, weather and phenology views, disease-risk timelines, notifications, tasks, product records, image upload, and advisory interaction. It communicates with the backend through HTTP APIs and persistent connections used by message-oriented functions.
 
-The service architecture divides the platform into four layers: application and presentation, backend service, analytical processing, and record management (Table~\ref{tab:architecture_layers}).
-
-The application and presentation layer provides mobile functions for field management, crop-season workspaces, weather and phenology display, risk warning, plant-protection tasks, image upload, and advisory interaction.
-
-The backend service layer manages authentication, API services, scheduled jobs, business objects, and persistent data, thereby supporting platform business logic and data storage.
-
-The analytical processing layer handles weather preprocessing, phenology simulation, disease-risk analysis, and spraying-suitability analysis, and provides unified analytical service interfaces for the platform.
-
-The record management layer manages notifications, tasks, treatment feedback, image-recognition records, advisory messages, and historical records, supporting end-to-end business records and state updates.
-
-\begin{table}[H]
-\centering
-\caption{Service architecture layers of GrapeMaster.}
-\label{tab:architecture_layers}
-\tablefontsize
-\begin{tabular}{@{}p{0.22\linewidth} p{0.38\linewidth} p{0.34\linewidth}@{}}
-\toprule
-Layer & Main components & Main responsibilities \\
-\midrule
-Application and presentation & Mobile interfaces for field management, crop-season workspace, weather and phenology display, risk warnings, plant-protection tasks, image upload, advisory support, map display, and notifications & User input, state display, warning review, task operation, symptom-image submission, and advisory interaction \\
-Backend service & API services, authentication, persistent storage, scheduled jobs, master-data tables, and business objects & API routing, access control, data persistence, scheduled updates, field and crop-season records, and business-object management \\
-Analytical processing & Weather preprocessing, phenology simulation, disease-risk analysis, spraying-suitability analysis, and analytical service interfaces & Weather transformation, phenological-stage simulation, disease-risk request construction, treatment-window generation, and disease-risk state interpretation \\
-Record management & Notification records, task records, treatment-feedback records, image-recognition records, advisory message records, historical records, and protection-state feedback & Warning delivery records, task-state records, task completion, overdue handling, fungicide-history conversion, advisory and image record storage, and protection-state or disease-risk state updating after completed operations \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\subsection{Analytical Services}\label{analytical-services}
-
-The platform connects analytical services as replaceable components within the unified architecture, and these services operate around the crop-season object (Supplementary Table S1).
-
-The phenology service receives crop-season metadata, cultivar information, and daily temperature series, and outputs date-aligned broad-stage phenology states for disease-risk interpretation, warning-window definition, and plant-protection task scheduling. This study used a Guangxi-calibrated configuration of temperature-driven grapevine phenology modelling rather than proposing a new phenology model \citep{parkerGeneralPhenologicalModel2011a,wangAssessingGrapevinePhenological2020}.
-
-The disease-risk service receives weather data, phenological stages, cultivar susceptibility, target-disease configuration, and recent treatment history, and calls a locally calibrated first seasonal infection model for subtropical vineyards (FSIM-S) to generate date-aligned disease-risk states, warning triggers, treatment windows, and protection-state interpretation (Figure~\ref{fig:disease_risk_engine_structure}). In the current platform, FSIM-S is used as a first-infection warning module for humid subtropical vineyards. Its infection-process logic is derived from published downy mildew models and calibrated with Guangxi data, with technical details summarized in Supplementary Table S1 \citep{rossiMechanisticModelSimulating2008,caffiModelPredictingPrimary2009c,caffiEvaluationDynamicModel2011,brischettoWeatherDrivenModelPredicting2021}.
-
-Image recognition and advisory services are analytical branches embedded within the same disease-management workflow centered on the crop season. The image-recognition module receives user-uploaded field images and outputs disease categories and confidence values. The advisory module combines user questions with available diagnostic information to generate management-oriented recommendations and stores advisory records. Both services follow the published CDIP-ChatGLM3 framework and are used only as auxiliary analytical services for disease management. They do not replace the disease-risk engine, expert diagnosis, pesticide labels, or regulated plant-protection decisions \citep{yanCDIPChatGLM3DualmodelApproach2025}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth]{../fig/fig03_disease_model_workflow.png}
-\caption[Platform-compatible disease-risk engine]{Platform-compatible disease-risk engine in GrapeMaster.}
-\label{fig:disease_risk_engine_structure}
-\end{figure}
-
-\section{Implementation}\label{implementation}
-
-This section describes how the logical architecture defined in Section~\ref{system-architecture} was implemented as a mobile--backend platform. Figure~\ref{fig:implementation_overview} summarizes the flow from user operations to backend storage, analytical services, feedback handling, and review under a shared crop-season context. The main implementation components and their platform roles are summarized in Table~\ref{tab:module_provenance}.
+The Django REST backend owns application identifiers and business records. It manages authentication, API routing, field and crop records, reference tables, notification and task logic, product records, analytical request-response payloads, and scheduled jobs. PostgreSQL stores relational objects, while the backend coordinates calls to configured weather, disease-model, image-recognition, and advisory services. Analytical services are separated from presentation logic: the backend or mobile client invokes them through service endpoints and translates their responses into application records and views. This separation allows a service to be recalibrated or replaced while preserving the surrounding user workflow, provided that the interface contract is maintained.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../fig/figure3_new.png}
-\caption[Mobile--backend implementation flow]{Mobile--backend implementation flow of GrapeMaster under a shared crop-season context.}
+\caption[Overall software architecture of GrapeMaster]{Overall software architecture of GrapeMaster. User operations enter through the mobile application; backend services coordinate persistent records, scheduled jobs, and analytical-service calls; completed operations update the management information available to later analysis. The crop-management identifier shown at the bottom is a data-linkage mechanism rather than a separate analytical layer.}
 \label{fig:implementation_overview}
 \end{figure}
 
-\begin{table}[H]
-\centering
-\caption[Implementation components and platform roles]{Implementation components and platform roles of the main GrapeMaster services.}
-\label{tab:module_provenance}
-\tablefontsize
-\begin{tabular}{@{}p{0.18\linewidth} p{0.23\linewidth} p{0.27\linewidth} p{0.20\linewidth}@{}}
-\toprule
-Module & Source or provenance & Platform role & Evaluation basis \\
-\midrule
-Platform workflow & Deployed mobile client, backend service, database, scheduled jobs, and notification/task services & Links crop-season records with analytical outputs, field operations, feedback, and advisory records & Operational-record export and linkage checks \\
-Phenology module & Weather-driven phenology workflow calibrated with Guangxi field observations & Supplies phenological-stage timing for disease-risk interpretation, advisory timing, and task scheduling & Offline Guangxi phenology validation \\
-FSIM-S risk engine & Team-developed downy mildew first-infection model calibrated and validated with Guangxi field data & Supplies first seasonal infection-period warning for task triggering and protection-state interpretation & Offline Guangxi downy mildew validation \\
-Grape disease recognition & Platform-compatible grape disease visual model based on the published CDIP-ChatGLM3 framework & Supplies post-symptomatic image category output and confidence information & Offline grape-image validation \\
-LLM advisory & Fine-tuned ChatGLM3-based advisory model from the CDIP-ChatGLM3 framework & Stores advisory interaction, explanation, and advisory message records & Platform message records and published advisory framework \\
-\bottomrule
-\end{tabular}
-\end{table}
+\subsection{Data organization and workflow coordination}\label{data-organization}
 
-\subsection{Application and presentation layer}\label{application-and-presentation-layer}
+The data model separates a persistent vineyard field from a crop-management record attached to that field. The field retains location, boundary, area, and other stable attributes. The crop-management record carries a UUID and links cultivar, cultivation method, vine age, and field context to time-dependent records. In the implemented codebase this object is named \texttt{CropSeason} in the backend and \texttt{Crop} in the frontend; it functions as an execution and retrieval key rather than as the conceptual contribution of the platform.
 
-The application layer receives field setup, crop-season selection, warning review, task operation, product recording, image upload, and advisory interaction through the mobile client. These operations retrieve existing records or submit new records through service APIs, with outputs routed to interfaces for field context, crop-season state, warnings, tasks, images, and advisory messages. Figure~\ref{fig:field_crop_season_entry_points} shows representative mobile entry points for login, field selection, and field-boundary editing.
+Weather, phenology, disease-risk, and model request-response records are stored against this management key. Notifications and field-operation tasks also retain field, user, or crop context as implemented by their respective objects. Fungicide and pesticide products are linked directly to plant-protection tasks through task identifiers. Image analyses, disease reports, notes, advisory sessions, and messages use account, field, crop, image, or message identifiers depending on the function. Consequently, some relationships are direct foreign-key links, whereas others are contextual associations recovered through a shared field, crop, or user context. The manuscript distinguishes these relationships and does not infer a direct notification-to-task causal link where the schema stores only shared context.
+
+The backend coordinates workflow state by retrieving the records needed for a particular operation. For a disease-model call, it assembles environmental, phenological, cultivar, disease-target, and recent treatment information. For mobile presentation, it combines stored analytical results with current notifications, tasks, and historical records. For advisory interaction, it retains the user query and returned message with the available account, image, or field context. Supplementary Figure S1 and Supplementary Tables S2 and S6 provide the extended entity and record definitions.
+
+\subsection{Environmental and phenological information}\label{weather-and-phenology-processing}
+
+Field coordinates are used by scheduled backend jobs to request historical and forecast payloads from the configured weather service. The backend transforms daily temperature series for phenology processing, hourly variables for disease-risk analysis, and short-term weather variables for spray-suitability display. Date alignment and missing-value handling are completed before analytical requests are assembled. The provider is configured outside the client; the deployed provider and endpoint version are therefore release-level dependencies rather than properties of the user interface.
+
+The phenology component receives cultivar or crop metadata and daily temperature data and returns a date-aligned broad-stage sequence. Its output supports three software functions: presentation of crop development in the mobile workspace, interpretation of host susceptibility in the disease-risk service, and timing information for management tasks. The current study used a Guangxi-calibrated temperature-driven phenology workflow rather than proposing a new phenology model \citep{parkerGeneralPhenologicalModel2011a,wangAssessingGrapevinePhenological2020}.
+
+\subsection{Disease-model integration}\label{disease-model-integration}
+
+The disease-risk service is integrated through a request-response interface (Figure~\ref{fig:disease_risk_engine_structure}). A backend job or application event initiates request construction. The request contains date-aligned weather variables, phenological stages, cultivar susceptibility, the target disease, and recent fungicide applications. The independently deployable disease service then evaluates daily infection conditions, derives field-risk and protection states, and returns date-aligned risk information, recommendations, and treatment-window information. Both request and response payloads are retained by the backend so that the analytical state presented to the user can be examined with its inputs.
+
+For the reported Guangxi configuration, the principal validated pathway was the FSIM-S downy mildew first-infection module. Its infection-process logic was derived from published downy mildew models and calibrated with Guangxi observations \citep{rossiMechanisticModelSimulating2008,caffiModelPredictingPrimary2009c,caffiEvaluationDynamicModel2011,brischettoWeatherDrivenModelPredicting2021}. The service architecture can expose additional disease pathways, but the results in this paper support only the downy mildew first-infection configuration unless separate validation is reported. Extensive equations and parameters are provided in Supplementary Table S1; the main text focuses on the software interface and use of model output.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{../fig/field_management_interfaces.png}
-\caption[Representative mobile entry points]{Representative mobile entry points in the GrapeMaster application layer.}
-\label{fig:field_crop_season_entry_points}
+\includegraphics[width=\linewidth]{../fig/fig03_disease_model_workflow.png}
+\caption[Disease-model integration in GrapeMaster]{Disease-model integration in GrapeMaster. The backend assembles weather, host stage, cultivar susceptibility, recent fungicide information, and disease target; the service returns disease risk, field risk, protection time, recommendations, and treatment windows for storage and presentation.}
+\label{fig:disease_risk_engine_structure}
 \end{figure}
 
-\subsection{Backend service and record storage}\label{backend-service-and-record-storage}
+\subsection{Field operations and treatment feedback}\label{disease-risk-service-and-treatment-feedback-workflow}
 
-The backend layer manages authentication, API routing, identifier assignment, relational storage, scheduled jobs, and reference-table lookup. It stores the main business objects required by the platform, including accounts, fields, crop seasons, weather payloads, analytical outputs, notifications, tasks, treatment feedback, image-analysis records, advisory messages, and field notes. Standardized reference tables support grape variety, cultivation method, BBCH stage, disease type, fungicide list, pesticide list, and reminder rules. The output of this layer is a set of operational records linked by account, field, crop-season, task, image, or message identifiers, supporting later retrieval under the same crop-season unit (Supplementary Figure S1 and Supplementary Tables S2 and S6).
+Disease-risk responses are transformed into application information rather than displayed as unconnected model files. Risk states and treatment windows are presented in date-aligned views, and associated warning or management events can be delivered as notifications. Users create plant-protection tasks within the same field-management context and record execution date, selected products, dosage-related information, treated area, and water volume. Notification and task records may share context without a direct causal foreign key; product records, however, are linked directly to their tasks.
 
-\subsection{Weather and phenology processing}\label{weather-and-phenology-processing}
+When a plant-protection task contains a fungicide record, the backend serializer translates the target, application date, and protection-duration information into the \texttt{applied\_fungicides} structure accepted by the disease service. The stored disease-model request is updated, and applicable task operations initiate a subsequent service call. This mechanism allows later risk interpretation to account for recent treatment history. It represents a software feedback operation, not a claim that the platform measured biological efficacy. Protection duration remains an analytical assumption influenced by product properties, host growth, rainfall, and disease pressure \citep{caffiFungicideModelsAre2018,oliverFungicideUsePatterns2023,warnekeEffectFungicideMobility2020}.
 
-Weather processing uses field coordinates and active crop-season identifiers to retrieve historical and forecast weather data from the Open-Meteo weather API (\url{https://open-meteo.com/}). Scheduled backend workflows convert daily mean temperature into phenology input, hourly weather into disease-risk input, and short-term hourly records into spraying-suitability variables. Missing values in date-aligned weather series are filled by linear interpolation before analytical use. The outputs are crop-season-linked weather payloads and transformed variables for downstream services.
+\subsection{Image-recognition and LLM advisory integration}\label{image-recognition-and-advisory-services}
 
-Phenology processing then receives crop-season metadata, cultivar information, and daily temperature series. Broad grapevine phenological states are estimated using the platform-compatible phenology workflow described in Section~\ref{analytical-services}. The outputs are phenological-state records for presentation and a daily phenological-stage sequence for disease-risk interpretation and task timing.
+The post-symptomatic workflow separates visual classification from language-based interaction (Figure~\ref{fig:image_advisory_workflow}). The mobile client submits a user-selected symptom image to a hosted recognition service. The returned disease or healthy class and confidence value are displayed and retained as image-analysis records. In the current application this branch covers several grape disease categories rather than only downy mildew.
 
-\subsection{Disease-risk service and treatment-feedback workflow}\label{disease-risk-service-and-treatment-feedback-workflow}
-
-The disease-risk service receives transformed weather variables, phenological-stage sequence, cultivar susceptibility, target-disease settings, and recent fungicide-history records through the platform risk interface. For the Guangxi configuration, this interface was connected to FSIM-S, the platform-compatible downy mildew first-infection warning module described in Section~\ref{analytical-services}. The implementation stores model request and response payloads, field-risk states, warning triggers, treatment-window information, and protection-state interpretation under the corresponding crop-season context.
-
-The risk service outputs date-aligned risk states, warning triggers, treatment-window suggestions, and task entry information. The implemented workflow converts these outputs into warning notifications and plant-protection task records. When a task is completed, the execution date and product information are stored as treatment feedback. This feedback can be used to update temporary protected or low-risk management states, reflecting the operational assumption that fungicide applications provide a limited protection window affected by product properties, application timing, host growth, rainfall, and disease pressure \citep{caffiFungicideModelsAre2018,oliverFungicideUsePatterns2023,warnekeEffectFungicideMobility2020}. After the protection period ends, disease-risk interpretation resumes using updated weather, phenology, risk input, and management history. This component implements the operational chain from risk interpretation to notification, task execution, treatment feedback, and management review.
-
-\subsection{Image-recognition and advisory services}\label{image-recognition-and-advisory-services}
-
-The image-recognition module takes user-uploaded symptom images as input. It returns disease or healthy categories with confidence information through the CDIP-ChatGLM3 dual-model framework, which combines a deep-learning image classifier with a fine-tuned ChatGLM3-based advisory model for crop disease identification and management guidance \citep{yanCDIPChatGLM3DualmodelApproach2025}. Its outputs are image-analysis records and recognition-result records for downstream presentation.
-
-The advisory module receives user questions together with available diagnostic or management context. Advisory responses are generated through the advisory component of the CDIP-ChatGLM3 framework, and the resulting advisory session and advisory message records are stored by the backend. These records provide a post-symptom branch for symptom evidence and advisory interaction (Figure~\ref{fig:image_advisory_workflow}). They do not replace the downy mildew risk engine, expert diagnosis, pesticide labels, or regulated plant-protection decisions.
+The advisory interface sends user questions and available diagnostic or management context to a separately hosted LLM service and presents the returned text as a conversational response. Advisory sessions and messages are retained for later retrieval. The integration follows the published CDIP-ChatGLM3 approach, which couples a visual disease classifier with a fine-tuned ChatGLM3-based advisory component \citep{yanCDIPChatGLM3DualmodelApproach2025}. The contribution claimed here is the software interface and workflow integration; the model checkpoint, service version, prompt or context-construction rules, and deployment configuration are version-specific release metadata. Advisory output is informational and does not replace expert diagnosis, pesticide labels, or regulated plant-protection decisions.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../fig/fig13_image_assistance_workflow.png}
-\caption[Image-recognition and advisory workflow]{Image-recognition and advisory workflow in GrapeMaster. LLM, large language model.}
+\caption[Image-recognition and LLM-assisted advisory workflow]{Post-symptomatic image-recognition and LLM-assisted advisory workflow in GrapeMaster. The visual service returns a disease class and confidence, while the advisory service supports contextual follow-up questions and management-oriented explanations. LLM, large language model.}
 \label{fig:image_advisory_workflow}
 \end{figure}
 
-\section{Platform Features and Functionalities}\label{features-and-functionalities}
+\subsection{Software implementation, deployment, and supporting evidence}\label{implementation}
 
-\subsection{Crop-season workspace and field context}\label{field-and-crop-season-workspace}
+The mobile application was implemented in Flutter. The application backend used Django 4.2 and Django REST Framework with PostgreSQL storage, scheduled background jobs, and message-oriented connections. The disease-risk component was deployed as a separate FastAPI service. Image recognition and advisory were invoked through separately hosted service endpoints. Table~\ref{tab:module_provenance} summarizes the role and evidence boundary of each integrated component.
 
-GrapeMaster provides a crop-season workspace for maintaining field context, near-term weather information, spray-suitability information, phenological-stage state, and field-level risk summaries under the selected vineyard field and crop-season unit (Figure~\ref{fig:weather_phenology_interfaces_result}). This workspace functions as the entry point for reviewing season-specific field state before warning, task, and review operations are opened. It links environmental and phenological-state information to the same seasonal management context used by subsequent disease-risk interpretation and field-operation records.
+\begin{table}[H]
+\centering
+\caption{Integrated GrapeMaster components, software roles, and evidence reported in this study.}
+\label{tab:module_provenance}
+\tablefontsize
+\begin{tabular}{@{}p{0.19\linewidth} p{0.27\linewidth} p{0.28\linewidth} p{0.18\linewidth}@{}}
+\toprule
+Component & Interface and invocation & Application role & Supporting evidence \\
+\midrule
+Weather and phenology & Scheduled backend acquisition and processing & Environmental and host-development state for display and modeling & Deployment payloads and phenology validation \\
+Disease-risk service & Backend-generated request to an independent service & Pre-symptomatic risk, protection-state, and treatment-window information & Stored request-response records and downy mildew validation \\
+Task and treatment services & Mobile/backend business APIs and relational task-product records & Operation planning, execution, and treatment feedback & Deployment records and workflow replay \\
+Image recognition & User-triggered hosted inference endpoint & Post-symptomatic class and confidence output & Image-analysis records and offline image validation \\
+LLM advisory & User-triggered hosted conversational endpoint & Contextual explanation and advisory interaction & Message records; advisory quality not independently evaluated \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Operational records exported from the deployed backend were used to demonstrate that the intended objects and connections existed in practice. Accounts were deduplicated by backend user key; accounts without both a field and crop-management record were excluded from the operational set. Field and crop records were retained when they contained valid identifiers and relationships. Weather, phenology, disease-risk, request-response, notification, task, product, image, advisory, note, report, and forum records were then counted within the retained set. A representative case containing environmental, analytical, event, task, and product records was selected to replay the proactive workflow. These procedures assessed implementation coverage and reconstructability, not usability, adoption, disease-control efficacy, pesticide reduction, or economic performance.
+
+Analytical components were evaluated independently of the deployment demonstration. Broad-stage phenology used 151 valid observations from six Guangxi site-years. Downy mildew evaluation used first-infection observations from Guangxi vineyards. Image recognition used a labeled grape disease image dataset. Exact agreement, transition-window agreement, and mean absolute stage distance were used for phenology; mean absolute error (MAE) and root mean square error (RMSE) were used for first-infection timing; and class-wise F1-score was used for image recognition. LLM advisory quality was not independently evaluated.
+
+\section{Results}\label{results}
+
+\subsection{Implemented GrapeMaster application}\label{features-and-functionalities}
+
+The implemented application provided field creation and boundary editing, crop configuration, weather and spray-suitability views, phenology and risk summaries, notifications, task and product management, image upload, and advisory interaction. Field configuration established the spatial context used by scheduled environmental requests and later records (Figure~\ref{fig:field_crop_season_entry_points}). The main workspace combined near-term weather, spray suitability, crop development, and current risk information without requiring users to open separate analytical tools (Figure~\ref{fig:weather_phenology_interfaces_result}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../fig/field_management_interfaces.png}
+\caption[Field configuration in the mobile application]{Representative mobile entry points for authentication, field selection, and vineyard-boundary editing in GrapeMaster.}
+\label{fig:field_crop_season_entry_points}
+\end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../fig/weather_phenology_interfaces.png}
-\caption[Crop-season workspace for weather and phenology state]{Crop-season workspace for weather and phenology state in GrapeMaster. (a) The weather page displays near-term field-specific weather information. (b) The spray-suitability page displays hourly weather and spray-suitability information. (c) The crop-season workspace displays field-risk and phenological-stage summaries under the selected field context.}
+\caption[Environmental and phenological information in GrapeMaster]{Environmental and phenological information in GrapeMaster. (a) Field-specific near-term weather. (b) Hourly spray-suitability information. (c) Field-risk and phenological-stage summaries in the selected management workspace.}
 \label{fig:weather_phenology_interfaces_result}
 \end{figure}
 
-\subsection{Disease-risk workflow and treatment feedback}\label{risk-display-and-notification-delivery}\label{task-execution-and-product-feedback}
+\subsection{Proactive risk-to-action-to-feedback workflow}\label{risk-display-and-notification-delivery}\label{task-execution-and-product-feedback}
 
-GrapeMaster organizes disease-risk outputs into a risk-to-feedback workflow under the selected crop-season context. Date-aligned timelines present disease-risk and field-risk states, including the change from untreated risk interpretation to protected-state updates after fungicide feedback is recorded (Figure~\ref{fig:disease_risk_timeline_result}). The platform function is to keep disease-risk interpretation connected with warning delivery, task creation, treatment feedback, and subsequent risk-state updating rather than treating risk output as a standalone display.
+The proactive workflow connected model output with field-management functions. Date-aligned views displayed disease and field-risk states and showed how recorded fungicide applications changed protection-state interpretation (Figure~\ref{fig:disease_risk_timeline_result}). Generated disease or management events were delivered through alert dialogs and retained in the notification archive (Figure~\ref{fig:alert_notification_interfaces_result}). Within the corresponding field context, users could create tasks, select fungicide or pesticide products, record task status, and calculate tank-mixing information (Figure~\ref{fig:task_management_interfaces_result}).
 
-When a disease-risk or management event is generated, GrapeMaster delivers it as a reviewable alert or management reminder and retains the event in the notification archive (Figure~\ref{fig:alert_notification_interfaces_result}). Warning or reminder events can then be converted into plant-protection tasks. Task and product records retain field-operation status, execution timing, fungicide or pesticide entries, dosage, field area, and water-volume information (Figure~\ref{fig:task_management_interfaces_result}). Completed task and product records are stored as treatment feedback and can be used for subsequent protected-state interpretation rather than remaining as isolated operation notes.
+After a product was recorded for a plant-protection task, its treatment information was available to the backend transformation described in Section~\ref{disease-risk-service-and-treatment-feedback-workflow}. The resulting workflow therefore extended from risk calculation to user-facing delivery, operation recording, and treatment-aware recalculation. The implementation supports this functional sequence, although the present schema does not establish a direct causal foreign key from a particular notification to a particular task.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../fig/disease_risk_timeline_downy_field.png}
-\caption[Disease-risk timeline and treatment-feedback update]{Disease-risk timeline and treatment-feedback update in GrapeMaster. (a) Mingyang 2024 shows date-aligned downy mildew and field-risk states. (b) A Guangxi crop-season case without fungicide feedback records shows the untreated disease-risk state sequence. (c) The same Guangxi crop-season case with fungicide feedback records shows the corresponding protected-state updates.}
+\caption[Disease-risk timeline and treatment-aware update]{Disease-risk timeline and treatment-aware update in GrapeMaster. (a) Date-aligned downy mildew and field-risk states for Mingyang in 2024. (b) Risk interpretation without fungicide feedback. (c) The corresponding protection-state update when fungicide records are included.}
 \label{fig:disease_risk_timeline_result}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../fig/alert_notification_interfaces.png}
-\caption[Warning and notification records for crop-season events]{Warning and notification records for crop-season events in GrapeMaster. (a) The disease-alert dialog displays a crop-season disease-risk event. (b) The management notice dialog provides a task-related reminder. (c) The notification list archives reviewable crop-season events.}
+\caption[Warning and notification functions]{Warning and notification functions in GrapeMaster. (a) Disease-risk alert. (b) Management reminder. (c) Notification archive.}
 \label{fig:alert_notification_interfaces_result}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../fig/task_management_interfaces.png}
-\caption[Task creation and treatment-feedback interfaces]{Task creation and treatment-feedback interfaces in GrapeMaster. (a) The task list records field operations and task status. (b) The product selection page stores fungicide or pesticide entries linked to plant-protection tasks. (c) The in-tank mixing page records sprayer capacity, product dosage, plot area, water volume, and planned date.}
+\caption[Task and treatment-recording functions]{Task and treatment-recording functions in GrapeMaster. (a) Field-operation list and status. (b) Product selection linked to a plant-protection task. (c) Tank-mixing calculation using sprayer capacity, dosage, plot area, water volume, and planned date.}
 \label{fig:task_management_interfaces_result}
 \end{figure}
 
-\subsection{Symptom recognition and advisory support}\label{symptom-image-and-advisory-functions}
+\subsection{Post-symptomatic diagnostic and advisory workflow}\label{symptom-image-and-advisory-functions}
 
-GrapeMaster provides a symptom-recognition and advisory branch for post-symptom evidence collection, auxiliary disease identification, and management-oriented advisory support (Figure~\ref{fig:ai_diagnosis_interfaces_result}). After a symptom image is uploaded, the recognition component returns a grape disease or healthy category with confidence information. In the current configuration, this branch covers multiple grape disease categories rather than only downy mildew. The advisory interface supports follow-up questions on symptom interpretation, disease prevention and control, fungicide-use options, and cultivation-management measures. Symptom images, recognition results, user questions, and advisory responses can be stored within the same management environment as field, crop-season, disease-risk, and task records.
+The post-symptomatic workflow allowed users to upload a field image, receive a disease class and confidence value, and continue to a conversational advisory interface (Figure~\ref{fig:ai_diagnosis_interfaces_result}). The mobile application displayed recognition output and retained user questions and returned advisory messages. This workflow complemented the proactive disease model: image recognition addressed visible symptoms, while the LLM supported interpretation and follow-up interaction. Advisory messages were not treated as autonomous treatment prescriptions, and their agronomic quality was not independently evaluated in this study.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../fig/ai_diagnosis_interfaces.png}
-\caption[Symptom-image and advisory-record interfaces]{Symptom-image and advisory-record interfaces in GrapeMaster. (a) The image-upload page records post-symptom visual information. (b) The advisory page links the uploaded symptom image with user questions. (c) The advisory interface stores management-oriented text responses linked to the crop-season workspace.}
+\caption[Image-recognition and advisory interfaces]{Image-recognition and advisory interfaces in GrapeMaster. (a) Symptom-image upload. (b) Advisory entry associated with the uploaded image. (c) Conversational management-oriented response.}
 \label{fig:ai_diagnosis_interfaces_result}
 \end{figure}
 
-\section{Deployment and Operational-Record Audit}\label{deployment-and-backend-record-audit}
+\subsection{Deployment demonstration}\label{deployment-and-backend-record-audit}
 
-The deployed GrapeMaster system consisted of a mobile client, a Django-based backend service, scheduled jobs, and a relational database. This section audits the operational records exported from that deployment to determine whether the implemented platform retained the objects and linkages required for crop-season-centered workflow reconstruction (Supplementary Table S5).
+The exported records spanned 2023--2026. After deduplication, 47 of 95 registered accounts contained both field-creation and crop-management records and were retained as operational accounts. These accounts contained 139 vineyard fields and 128 crop-management records. The export further contained 126 weather records, 126 phenology records, 252 disease-risk and model request--response records, 3,590 notifications, 151 plant-protection or irrigation tasks, and 234 fungicide or pesticide records. Symptom and advisory functions generated 94 field-note or disease-report records, 2,808 image-analysis records, 1,360 advisory or message records, and 27 forum records (Table~\ref{tab:backend_operational_coverage}).
 
-The backend export contained deployment-related records spanning 2023 to 2026, with field, crop-season, notification, and task records retained across consecutive crop seasons. The mappable subset of field records with crop-season linkage covered multiple vineyard regions, including several subtropical grape-production areas in Guangxi and records from other production regions (Supplementary Figure S2).
-
-All operational records used in this audit were exported from the deployed platform rather than generated from simulated data or manually reconstructed logs. The exported tables were screened to examine whether the business objects and relationships defined in the system architecture were retained in deployable form. Accounts without operational records, or without both field-creation records and crop-season management records, were excluded according to predefined screening and verification rules (Supplementary Tables S3 and S7).
-
-The cleaned operational-record export contained 95 deduplicated registered accounts, of which 47 contained both field-creation records and crop-season management records and were retained as operational accounts. Within these accounts, the platform managed 139 vineyard fields and 128 crop seasons, generating 126 weather records, 126 phenology records, 252 disease-risk and model request--response records, 3,590 notification records, 151 plant-protection or irrigation tasks, and 234 fungicide or pesticide application records. Symptom and advisory records included 94 field notes or disease reports, 2,808 image-analysis records, 1,360 advisory or message records, and 27 forum records (Table~\ref{tab:backend_operational_coverage}). Of the retained field records, 124 had valid coordinates and crop-season linkage and were aggregated into 27 regions for spatial visualization.
-
-A representative crop season containing weather, phenology, disease-risk, notification, completed plant-protection task, and fungicide product records was selected for workflow replay (Figure~\ref{fig:crop_season_replay_loop} and Supplementary Table S4). The replay showed that the selected operational records remained linked within a shared crop-season context. Weather, phenology, and disease-risk records formed a unified environmental and analytical state. Notification and plant-protection task records were retained under the same crop-season context, while fungicide product records were linked to the corresponding field operations through task identifiers. Together, these records formed a management chain covering state updating, disease-risk interpretation, event delivery, task execution, and treatment feedback. No field note or disease-incidence record was available for this case, and this absence was retained as part of the symptom and advisory branch.
-
-Overall, the operational-record audit showed that the deployed platform retained the record types and identifier linkages needed to reconstruct the core risk-to-feedback workflow. These analyses therefore assessed workflow reconstructability and record traceability rather than production efficacy, pesticide-reduction, adoption, or economic outcomes.
+The representative case contained weather, phenology, disease-risk, notification, completed plant-protection task, and fungicide-product records (Figure~\ref{fig:crop_season_replay_loop}; Supplementary Table S4). Environmental and analytical records shared a crop-management identifier, and product records were linked directly to tasks. The replay reconstructed the implemented sequence from state updating and risk interpretation to event delivery, operation recording, and treatment feedback. No field observation or disease-incidence record was available for this case. Accordingly, the replay demonstrates record-level implementation and contextual continuity, not that the warning caused the task or that the treatment improved disease outcomes.
 
 \begin{table}[H]
 \centering
@@ -370,20 +295,20 @@ Overall, the operational-record audit showed that the deployed platform retained
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.12}
 \scriptsize
-\caption{Operational-record coverage and crop-season-centered linkage in the retained GrapeMaster export.}
+\caption{Operational records retained from the deployed GrapeMaster backend.}
 \label{tab:backend_operational_coverage}
 \begin{minipage}{0.98\linewidth}
 \begin{tabular}{p{0.21\linewidth} p{0.30\linewidth} p{0.22\linewidth} p{0.18\linewidth}}
 \toprule
-Audit level & Retained records & Linkage basis & Result summary \\
+Record group & Retained records & Linkage basis & Demonstrated function \\
 \midrule
-Screened workflow set & 47 of 95 deduplicated accounts retained after screening & At least one field and one crop season & Accounts available for crop-season workflow evaluation \\
-Field-season denominator & 139 fields and 128 crop seasons & Retained account, field UUID, and crop-season UUID & Field and crop-season records established as the audit base \\
-Crop-season state records & 126 crop seasons with linked weather, phenology, disease-risk, and request-response payloads & Shared crop-season UUID & Environmental, phenological, and disease-risk states reconstructable by crop season \\
-Event and operation records & 3590 notifications and 151 plant-protection or irrigation tasks & Retained user, field, or crop-season context & Event-delivery and field-operation records retained \\
-Treatment-feedback records & 234 fungicide or pesticide records linked to 141 plant-protection tasks & Task UUID & Product records connected to completed or recorded task contexts \\
-Symptom and advisory records & 94 field note or disease report records, 2808 image-analysis records, 1360 advisory or message records, and 27 forum records & Account, field, crop-season, image, or message identifiers & Symptom/advisory records retained, with completeness varying by season \\
-Interpretation scope & No controlled production comparison in the backend export & Not applicable & No efficacy, pesticide-reduction, adoption, or economic outcome inferred \\
+Operational accounts & 47 of 95 deduplicated accounts & Account with at least one field and crop record & Implemented user workflow available for inspection \\
+Field and crop context & 139 fields and 128 crop-management records & Account, field UUID, and crop UUID & Spatial and time-dependent management context \\
+Environmental and analytical state & 126 weather, 126 phenology, and 252 risk/request--response records & Shared crop UUID & Model inputs and outputs retained for retrieval \\
+Events and operations & 3,590 notifications and 151 plant-protection or irrigation tasks & User, field, or crop context & Delivery and field-operation functions retained \\
+Treatment feedback & 234 product records linked to 141 plant-protection tasks & Task UUID & Product applications connected directly to tasks \\
+Symptom and advisory records & 94 notes/reports, 2,808 image analyses, 1,360 messages, and 27 forum records & Account, field, crop, image, or message identifiers & Diagnostic and advisory functions retained with varying contextual completeness \\
+Interpretation boundary & No controlled production comparison & Not applicable & No efficacy, adoption, pesticide-reduction, or economic outcome inferred \\
 \bottomrule
 \end{tabular}
 \par\vspace{0.25em}{\raggedright\scriptsize Abbreviation: UUID, universally unique identifier.\par}
@@ -394,23 +319,23 @@ Interpretation scope & No controlled production comparison in the backend export
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../fig/disease_feedback_loop_frame_balanced_revised_figure_package/disease_feedback_loop_frame_balanced_revised_300dpi.png}
-\caption[Record-level replay of the risk-to-feedback loop]{Record-level replay of the risk-to-feedback loop in GrapeMaster. Node labels indicate retained record counts for the selected representative crop-season case.}
+\caption[Record-level replay of the risk-to-feedback workflow]{Record-level replay of the risk-to-feedback workflow in GrapeMaster. Node labels show retained records in the representative case. Shared crop context connects environmental, analytical, notification, and task records; task identifiers directly connect applied products to field operations.}
 \label{fig:crop_season_replay_loop}
 \end{figure}
 
-\section{Evaluation of Platform-Compatible Analytical Modules}\label{evaluation-of-platform-compatible-analytical-modules}
+\subsection{Supporting performance of analytical components}\label{evaluation-of-platform-compatible-analytical-modules}
 
-The platform-compatible analytical modules were evaluated independently to characterize the readiness of the current Guangxi configuration. Unlike the deployment audit in Section~\ref{deployment-and-backend-record-audit}, this section reports module-level validation using Guangxi field observations and a grape disease image dataset (Table~\ref{tab:guangxi_field_data}). These results are not interpreted as evidence of platform deployment effectiveness or production outcomes.
+The component evaluations used Guangxi field observations and a labeled grape disease image dataset (Table~\ref{tab:guangxi_field_data}). These results characterize bounded analytical readiness and are not interpreted as evidence of complete software effectiveness or production outcomes.
 
 For the Guangxi broad-stage phenology module, the evaluation used 151 valid field observations from six Guangxi site-years. The module reached 58.0\% exact major-stage agreement and 76.0\% user-visible agreement after transition-window display, with a mean absolute stage distance of 0.45 major stages when the sparse post-harvest class was excluded from core metrics (Figure~\ref{fig:phenology_major_stage_validation_result}).
 
 For the downy mildew risk-warning module, the FSIM-S configuration produced a validation mean absolute error of 6.3 days and a validation root mean square error of 6.5 days for first-infection timing (Figure~\ref{fig:core_analytical_support_result}). This result describes the evaluated Guangxi configuration of the platform-compatible risk module rather than the effectiveness of deployed plant-protection decisions.
 
-For the grape disease image-recognition module, the evaluated model produced class-wise F1-scores from 0.926 to 0.998 across seven grape disease categories, with downy mildew reaching an F1-score of 0.986 (Figure~\ref{fig:core_analytical_support_result}). The LLM-assisted advisory component was not included in this module-evaluation section because no independent evaluation result for advisory quality was reported in this study.
+For the grape disease image-recognition module, the evaluated model produced class-wise F1-scores from 0.926 to 0.998 across seven grape disease categories, with downy mildew reaching an F1-score of 0.986 (Figure~\ref{fig:core_analytical_support_result}). The LLM-assisted advisory component was integrated into the application but was not included in component evaluation because no independent result for advisory quality was available.
 
 \begin{table}[H]
 \centering
-\caption{Datasets used for platform-compatible analytical-module evaluation.}
+\caption{Datasets used for supporting analytical-component evaluation.}
 \label{tab:guangxi_field_data}
 \tablefontsize
 \begin{tabular}{@{}p{0.24\linewidth} p{0.23\linewidth} p{0.16\linewidth} p{0.29\linewidth}@{}}
@@ -420,7 +345,7 @@ Site or dataset & Cultivar or scope & Years & Data types \\
 Mingyang, Nanning & Jufeng & 2023, 2024 & Phenology observations, downy mildew monitoring, airborne sporangia monitoring, and management records \\
 Du'an, Hechi & Maoputao Yeniang No. 2 & 2022, 2023, 2024 & Phenology observations, downy mildew monitoring, airborne sporangia monitoring, and management records \\
 Xing'an, Guilin & Wenke & 2022 & Phenology observations, downy mildew monitoring, airborne sporangia monitoring, and management records \\
-Grape disease image dataset & Multiple grape disease categories & Not based on site years & Symptom images \\
+Grape disease image dataset & Seven grape disease categories & Not site-year based & Labeled symptom images \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -428,54 +353,56 @@ Grape disease image dataset & Multiple grape disease categories & Not based on s
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../fig/phenology_major_stage_validation.png}
-\caption[Validation results for the broad-stage phenology module]{Validation results for the platform-compatible broad-stage phenology module. (a) Outcome proportions are summarized by cultivar. (b) Outcome proportions are summarized by observed major stage. (c) Mean absolute stage distance is summarized by observed major stage. BD, bud development; LD, leaf development; IE, inflorescence emergence; FL, flowering; FD, fruit development; RM, ripening of berries.}
+\caption[Validation of the broad-stage phenology component]{Validation of the broad-stage phenology component. (a) Outcome proportions by cultivar. (b) Outcome proportions by observed major stage. (c) Mean absolute stage distance by observed major stage. BD, bud development; LD, leaf development; IE, inflorescence emergence; FL, flowering; FD, fruit development; RM, ripening of berries.}
 \label{fig:phenology_major_stage_validation_result}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../fig/fsims_supporting_performance.png}
-\caption[Module-level results for disease-risk and image-recognition components]{Module-level results for disease-risk and image-recognition components. (a) The FSIM-S panel reports validation error for downy mildew first-infection timing. (b) The image-recognition panel reports class-wise F1-scores for grape disease categories, with downy mildew highlighted.}
+\caption[Supporting disease-model and image-recognition results]{Supporting analytical-component results. (a) Validation error for FSIM-S downy mildew first-infection timing. (b) Class-wise image-recognition F1-scores, with downy mildew highlighted.}
 \label{fig:core_analytical_support_result}
 \end{figure}
 
 \section{Discussion}\label{discussion}
 
-\subsection{Crop season as the organizational anchor for grapevine disease management}\label{crop-season-as-the-organizational-anchor-for-grapevine-disease-management}
+\subsection{From isolated outputs to operational disease-management intelligence}\label{operational-disease-management-intelligence}
 
-For grapevine production, vineyard fields usually remain spatially stable, whereas environmental conditions, phenological stages, disease pressure, and management activities change continuously across annual production cycles. Grapevine phenology and disease pressure are strongly structured by seasonal weather, and these temporal dynamics affect both model interpretation and management timing \citep{nogueirajuniorModellingDynamicsGrapevine2018,bregaglioPublicDecisionSupport2022}. A field-based anchor can preserve stable vineyard identity, location, and background management information, but it cannot by itself distinguish the season-specific weather exposure, crop-development state, disease pressure, treatment history, and feedback status that determine disease-management decisions in a given production year. The crop season therefore provides a more suitable organizational unit for grapevine disease-management activities.
+The principal contribution of GrapeMaster is not the co-location of several functions in one mobile application. It is the software path by which heterogeneous analytical outputs become persistent and actionable management information. Environmental and phenological processing supplies the changing context for pre-symptomatic disease analysis; the backend persists requests and responses; the application presents risk and warning information; and management services retain tasks and products. The post-symptomatic branch adds image-based evidence and conversational interpretation. Together, these functions address the fragmentation described in the Introduction by assigning each analytical service an operational role.
 
-Using the crop season as the shared organizational unit enables season-specific analytical, operational, and symptom-related records to remain associated throughout the production cycle. This role was reflected in the deployed records: 139 vineyard fields were associated with 128 crop seasons, and 126 crop seasons contained linked weather, phenology, disease-risk, and model request--response records. These records indicate that the crop-season object functioned not merely as a date label, but as the temporal management layer that organized annual analytical and management states on top of stable field records. Compared with organizing records around individual model outputs or isolated management events, it preserves the seasonal context needed for later interpretation without requiring manual reconciliation of heterogeneous records. This crop-season organization is consistent with integrative digital-agriculture perspectives that emphasize the need to connect heterogeneous data, models, and decisions within coherent production management structures \citep{romera2024digitalization,bakirScalableEndtoendIoT2026}.
+This integration is particularly relevant for disease management because an analytical result has limited value when it cannot be related to the intervention history that affects its later interpretation \citep{rossiAddressingImplementationProblem2014,rossiSharingDecisionmakingTools2023}. GrapeMaster therefore treats model execution, result delivery, and operation recording as connected software concerns. The crop-management identifier assists record retrieval, but it is the orchestration logic---not the identifier itself---that creates the integrated workflow.
 
-\subsection{From analytical outputs to executable disease-management records}\label{from-analytical-outputs-to-executable-disease-management-records}
+\subsection{Orchestrating heterogeneous analytical services}\label{orchestrating-analytical-services}
 
-Digital technologies for vineyard disease management have progressed considerably in areas such as disease-risk prediction, phenology simulation, image recognition, and advisory support \citep{bregaglioPublicDecisionSupport2022,zhaoIntegratingMachineLearning2024,chenAgriculturalAutonomousDecisionmaking2026}. However, an analytical output has limited management value if it remains separated from the actions, feedback, and records that determine whether disease risk is actually reviewed and acted upon in production. This limitation is especially important for grapevine disease management because, within a single crop season, weather conditions, host developmental stage, disease pressure, and plant-protection actions can interact with each other and update the subsequent management context \citep{rossiAddressingImplementationProblem2014,rossiSharingDecisionmakingTools2023,romeroHumidityHighTemperature2022,bregaglioPublicDecisionSupport2022}.
+The integrated services operate differently. Weather and phenology are refreshed by scheduled backend jobs; disease forecasting requires a structured, date-aligned request; image recognition is triggered by an uploaded image; and LLM advisory is interactive and message based. A common presentation layer alone cannot reconcile these patterns. GrapeMaster uses backend-owned business objects and service interfaces to coordinate them while preserving model-specific inputs and outputs.
 
-For example, a fungicide application, especially one with protective activity, can temporarily change the protection status used to interpret subsequent disease risk \citep{caffiFungicideModelsAre2018,warnekeEffectFungicideMobility2020}.
+The resulting modularity is bounded by interface quality. A disease model can be recalibrated or replaced if its request and response contract remains compatible, and a hosted image or language model can be updated without rewriting field and task management. However, reproducibility requires the deployed service version, configuration, checkpoint, and data contract to be archived. The module results reported here show that independently developed analytical components can support the platform, but they do not establish that every compatible service is valid in every region. Local calibration and validation remain necessary \citep{bregaglioPublicDecisionSupport2022}.
 
-GrapeMaster addresses this problem by converting decision-support outputs into management records that support execution, feedback, and review. In the deployed platform, disease-risk interpretation was connected to warning events, plant-protection tasks, treatment-feedback records, and management-review records rather than stored as an isolated model result. The representative workflow replay showed that disease-risk outputs, notifications, completed tasks, and fungicide-product records could be reconstructed as a connected risk-to-feedback sequence. This record conversion is the practical basis for traceability: it allows the system to examine not only what risk state was produced, but also whether the warning entered a field-operation pathway and whether subsequent treatment feedback was retained for review. In this sense, GrapeMaster extends disease-support tools from result delivery toward auditable disease-management records, consistent with recent work emphasizing implementation, integration, and shared decision-tool delivery in agricultural DSSs \citep{romera2024digitalization,rossiSharingDecisionmakingTools2023}.
+\subsection{Connecting risk interpretation with treatment feedback}\label{from-analytical-outputs-to-executable-disease-management-records}
 
-\subsection{Modular platform architecture for evolving disease-management systems}\label{modular-platform-architecture-for-evolving-disease-management-systems}
+Treatment feedback is the clearest example of model-to-management integration in GrapeMaster. A completed plant-protection task does not remain only as a note: the backend translates product and execution information into the treatment-history structure accepted by the disease service and can initiate renewed analysis. This design allows risk to be interpreted with knowledge of recent management, reflecting the temporary protection expected from fungicide application \citep{caffiFungicideModelsAre2018,warnekeEffectFungicideMobility2020}.
 
-The platform adopts a modular architecture in which phenology simulation, disease-risk prediction, image recognition, and advisory services are implemented as independent analytical services around the platform workflow. This separation between workflow infrastructure and analytical services allows individual models to be recalibrated, replaced, or extended without modifying the underlying management process. Backend records therefore support the platform-level claim of workflow-object and identifier retention, whereas analytical readiness is supported by module-specific validation results. The FSIM-S downy mildew first-infection component achieved a validation mean absolute error of 6.3 days, the broad-stage phenology workflow reached 76.0\% user-visible agreement after transition-window display, and the grape disease image-recognition service produced class-wise F1-scores of 0.926--0.998. These results do not imply that the modules are universally transferable, but they show that different analytical services can be hosted, tested, and updated as platform-compatible components rather than embedded as a single fixed model. Similar modular and scalable design principles have been emphasized in recent agricultural platform studies that integrate sensing, backend processing, analytical services, and user-oriented decision support \citep{bakirScalableEndtoendIoT2026,chenAgriculturalAutonomousDecisionmaking2026}.
+The implementation should nevertheless be interpreted carefully. Product-to-task linkage is direct, whereas a notification and a subsequently created task may be connected only by shared user, field, or crop context. The deployment replay therefore supports reconstruction of a risk-to-action-to-feedback sequence but not a causal claim that a specific warning produced a specific treatment. Adding explicit provenance fields for source event, user decision, and resulting analytical update would strengthen future versions.
 
-Such modularity also supports flexible platform deployment. The current implementation operates using public weather services, scheduled backend processing, and mobile user interaction, while remaining compatible with additional environmental sensors, spore-monitoring systems, phenology observation devices, or future analytical models. This creates a staged deployment pathway: the platform can first run with routinely available field and weather inputs, and then incorporate finer local observations when regional disease pressure, microclimate heterogeneity, or cultivar-specific phenology requires higher-resolution evidence. As analytical methods continue to evolve, this architecture allows platform capabilities to be updated while maintaining a consistent disease-management workflow and data organization. Its contribution is therefore not the claim that one calibrated model can be reused unchanged across regions, but the provision of a stable platform structure into which locally validated models, sensing inputs, and advisory components can be progressively introduced \citep{romera2024digitalization,rossiSharingDecisionmakingTools2023}.
+\subsection{Relationship to agricultural decision-support platforms}\label{relationship-to-existing-platforms}
 
-\subsection{Limitations and Future Directions}\label{limitations-and-future-directions}
+Existing vineyard DSSs demonstrate the importance of monitoring, disease-model delivery, communication, and regional warning services \citep{rossiAddressingImplementationProblem2014,bregaglioPublicDecisionSupport2022}. GrapeMaster extends this line of work through the particular combination of proactive disease modeling, field-operation records, treatment-aware recalculation, post-symptomatic image recognition, and LLM-assisted interaction in a mobile/backend implementation. The claim is not universal superiority or the first use of each technology. The distinction lies in the explicit software path across predictive, diagnostic, advisory, and operational functions.
 
-The results of this study should be interpreted as an evaluation of platform architecture, implementation, deployment, and platform-compatible analytical modules rather than as an assessment of production outcomes. Although GrapeMaster demonstrated the ability to organize a continuous disease-management workflow and operate under practical deployment conditions, its long-term effects on disease control, fungicide use efficiency, economic performance, and user adoption have not yet been evaluated \citep{rossiAddressingImplementationProblem2014,roseDecisionSupportTools2016}.
+This system-level perspective is consistent with agricultural computing research that treats integration, service boundaries, data flow, and user interaction as part of the technical contribution \citep{fountasFarmManagementInformation2015,romera2024digitalization,bakirScalableEndtoendIoT2026}. It also changes the role of component validation: phenology, disease-risk, and image-recognition metrics establish bounded analytical readiness, whereas operational records demonstrate that the intended software objects and workflows were instantiated.
 
-The analytical modules evaluated in this study represent independent services configured for the current platform rather than fixed components of the platform itself. Because the platform separates analytical services from the underlying management workflow, regional deployment will require local calibration and validation of analytical modules according to weather conditions, cultivar characteristics, disease epidemiology, and management practices \citep{bregaglioPublicDecisionSupport2022}.
+\subsection{Limitations and future work}\label{limitations-and-future-directions}
 
-Future work should therefore focus on repeated deployment across regions and crop seasons to evaluate long-term production performance, user adoption, and regional adaptability under practical production conditions.
+Several limitations remain. First, the adjacent source repositories do not by themselves preserve every deployed dependency and configuration. A reproducible release will require the weather provider, disease-service configuration, image-classification checkpoint, LLM checkpoint, prompts or context rules, and API versions to be archived together. Second, the current data model provides contextual rather than direct causal linkage for some transitions, especially notification to task and advisory interaction to subsequent field action. Third, the LLM advisory component was integrated but not independently evaluated for factual correctness, agronomic appropriateness, safety, or robustness.
+
+Fourth, the deployment export demonstrates software use and record generation but does not measure usability, sustained adoption, disease-control efficacy, pesticide reduction, or economic benefit. Fifth, regional transfer requires recalibration and validation of analytical services for local cultivars, weather, and epidemiology. Future work should therefore add explicit event-to-action provenance, automated integration and failure-recovery tests, versioned model-service packages, independent LLM evaluation, usability studies, and controlled multi-region assessment of agronomic and economic outcomes.
 
 \section{Conclusion}\label{conclusion}
 
-This study presented GrapeMaster, a crop-season-centered digital platform for vineyard disease management. By using the crop season as the organizational unit, the platform maintains weather, phenology, disease-risk interpretation, field operations, treatment feedback, and management records within a shared seasonal context, while converting decision-support outputs into executable and traceable management records that support warning, task execution, feedback, and review.
+GrapeMaster addresses the fragmentation of vineyard disease-management information by integrating analytical services with field operations in one mobile and backend software system. Its architecture connects scheduled environmental and phenological processing, pre-symptomatic disease-risk modeling, post-symptomatic image recognition, LLM-assisted advisory interaction, notifications, tasks, and treatment records through explicit application services and persistent data.
 
-The platform further adopts a modular architecture that separates workflow management from analytical services, allowing disease-risk prediction, phenology simulation, image recognition, and advisory modules to be independently evaluated, updated, and replaced without modifying the overall management process. This architecture provides an extensible organizational framework for integrating analytical services into operational disease-management workflows for perennial fruit crops.
+The central software contribution is the model-to-management orchestration mechanism. The backend constructs and retains analytical requests and responses, translates model output into user-facing management information, and transforms completed treatment records into inputs for subsequent disease-risk interpretation. Deployment records and a representative replay demonstrate that this workflow was implemented, while component evaluations provide bounded evidence for phenology, downy mildew, and image-recognition services.
 
-Overall, GrapeMaster demonstrates a platform-oriented approach to organizing continuous vineyard disease management. Future work should focus on repeated regional deployment to evaluate long-term production outcomes, including disease-control effectiveness, fungicide-use efficiency, economic performance, and user adoption.
+GrapeMaster consequently offers a reusable approach for connecting predictive, diagnostic, advisory, and operational functions in agricultural decision-support software. Further development should strengthen service reproducibility, direct action provenance, LLM validation, usability evidence, and controlled evaluation of production outcomes.
 
 \section*{CRediT authorship contribution statement}
 

@@ -52,7 +52,7 @@ This supplementary material lists implementation details used in the GrapeMaster
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../fig/grapemaster_backend_identifier_linkage.png}
-\caption{Backend identifier linkage among GrapeMaster record classes. The crop-season record is shown as the central anchor connecting account-field setup, analytical payloads, disease-risk outputs, notifications, tasks, treatment feedback, image-analysis records, advisory messages, and forum records. The figure is a schematic linkage view and does not report deployment counts or audit results.}
+\caption{Backend identifier linkage among GrapeMaster record classes. The crop-management record is shown as a data-linkage object connecting field setup with time-dependent analytical and operational records. Task identifiers directly connect field operations with product-level treatment feedback; image and advisory records use the available account, field, crop, image, or message context. The figure is a schematic linkage view and does not report deployment counts or causal relationships.}
 \label{fig:supp_backend_operational_linkage}
 \end{figure}
 
@@ -79,9 +79,9 @@ Module & Inputs and outputs & Workflow position and calibration note \\
 \midrule
 \endhead
 Phenology service & Inputs include crop-season metadata, cultivar and cultivation context, and date-aligned daily temperature or weather series. Outputs include broad BBCH-related growth-stage states, stage timelines, and daily crop-stage sequences. & Provides host-development context for susceptibility interpretation, warning-window definition, task timing, and mobile display. The implementation is a Guangxi-calibrated adaptation of temperature-driven grapevine phenology modelling; parameter thresholds and validation metrics are retained as module-level configuration. \\
-FSIM-S risk service & Inputs include transformed hourly or daily weather, crop-stage sequence, cultivar susceptibility, target-disease settings, and recent fungicide-history records. Outputs include downy mildew disease-risk states, first-infection warning triggers, treatment-window information, and protection-state interpretation. & Provides the first seasonal infection-warning and disease-risk-to-task trigger within the crop-season workflow. The evaluated configuration is locally calibrated for humid subtropical Guangxi vineyards. Field-derived sporangia pressure is used as an optional model-level calibration or sensor-enhanced pathway, not as a required live input for routine operation. \\
-Image-recognition service & Inputs include user-uploaded grape symptom images. Outputs include disease or healthy categories, confidence values, and stored image-analysis records. & Provides post-symptom diagnostic evidence within the crop-season record. Candidate visual models were evaluated with grape-focused validation metrics, including accuracy, precision, recall, and F1-score. \\
-LLM-assisted advisory service & Inputs include advisory text and available diagnostic or management context. Outputs include management-oriented advisory text and stored advisory records. & Provides auxiliary explanation and advisory documentation within the crop-season context. The service follows the CDIP-ChatGLM3 framework and is not used as a substitute for validated disease models, expert diagnosis, pesticide labels, or local regulations. \\
+FSIM-S risk service & Inputs include transformed hourly or daily weather, crop-stage sequence, cultivar susceptibility, target-disease settings, and recent fungicide-history records. Outputs include downy mildew disease-risk states, first-infection warning triggers, treatment-window information, and protection-state interpretation. & Supplies pre-symptomatic risk information to the proactive management workflow. The evaluated configuration is locally calibrated for humid subtropical Guangxi vineyards. Field-derived sporangia pressure is used as an optional model-level calibration or sensor-enhanced pathway, not as a required live input for routine operation. \\
+Image-recognition service & Inputs include user-uploaded grape symptom images. Outputs include disease or healthy categories, confidence values, and stored image-analysis records. & Supplies post-symptomatic diagnostic evidence to the mobile application. Candidate visual models were evaluated with grape-focused validation metrics, including accuracy, precision, recall, and F1-score. \\
+LLM-assisted advisory service & Inputs include advisory text and available diagnostic or management context. Outputs include management-oriented advisory text and stored advisory records. & Supplies contextual explanation and conversational advisory support after image recognition or user questioning. The service follows the CDIP-ChatGLM3 framework and is not used as a substitute for validated disease models, expert diagnosis, pesticide labels, or local regulations. \\
 \bottomrule
 \end{longtable}
 \endgroup
@@ -90,7 +90,7 @@ LLM-assisted advisory service & Inputs include advisory text and available diagn
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.12}
 \begin{longtable}{@{}L{0.23\linewidth} L{0.36\linewidth} L{0.33\linewidth}@{}}
-\caption{Database relationship rules supporting crop-season-centered traceability.}\label{tab:supp_database_relationship_rules}\\
+\caption{Database relationship rules supporting model-to-management workflow reconstruction.}\label{tab:supp_database_relationship_rules}\\
 \toprule
 Relationship rule & Required linkage & Verification purpose \\
 \midrule
@@ -100,11 +100,11 @@ Relationship rule & Required linkage & Verification purpose \\
 \midrule
 \endhead
 Account-to-field linkage & Retained account identifiers must link to at least one vineyard field record & Confirms that the account has an operational vineyard context rather than registration-only activity \\
-Field-to-crop-season linkage & Each evaluated crop-season record must be linked to a field record through field or crop-season identifiers & Separates persistent field identity from season-specific analytical and management state \\
-Crop-season-to-analytical-payload linkage & Weather, phenology, disease-risk, and model request-response payloads should share the crop-season identifier where applicable & Confirms that analytical inputs and outputs can be retrieved under the same seasonal anchor \\
-Crop-season-to-event linkage & Notifications, warning events, and task records should be associated with the retained user, field, or crop-season context & Confirms that analytical or management events can be connected to the operational season \\
+Field-to-crop linkage & Each evaluated crop-management record must be linked to a field record through field or crop identifiers & Separates persistent field identity from time-dependent analytical and management state \\
+Crop-to-analytical-payload linkage & Weather, phenology, disease-risk, and model request-response payloads should share the crop identifier where applicable & Confirms that model inputs and outputs can be retrieved under the same management context \\
+Context-to-event linkage & Notifications, warning events, and task records should be associated with the retained user, field, or crop context & Confirms contextual association without implying direct event-to-task causality \\
 Task-to-product linkage & Fungicide or pesticide product records must link to plant-protection tasks through task identifiers & Confirms that completed operations can be converted into product-level treatment feedback \\
-Crop-season-to-symptom/advisory record linkage & Image records, advisory records, field notes, and disease reports should retain available account, field, crop-season, image, or message identifiers & Confirms whether symptom-related records and advisory interactions can be interpreted together with seasonal state \\
+Symptom/advisory context linkage & Image records, advisory records, field notes, and disease reports should retain available account, field, crop, image, or message identifiers & Confirms whether symptom-related records and advisory interactions can be retrieved with relevant management information \\
 Explicit absence rule & If an expected optional record type is absent for a replay anchor, the absence is recorded rather than inferred as failure of unrelated workflow steps & Prevents overclaiming and separates missing symptom or advisory records from successful risk-task-feedback linkage \\
 \bottomrule
 \end{longtable}
@@ -177,7 +177,7 @@ Backend business service & Authentication, scheduling, and asynchronous communic
 Backend business service & Database access and persistence & PostgreSQL, \texttt{psycopg2}, normalized relational tables, JSON model payloads \\
 Disease-model service & Service interface & FastAPI, Uvicorn, Pydantic, Starlette \\
 Weather and time-series processing & Numerical and date-time processing & NumPy, Pandas, Python Dateutil, Pytz \\
-Weather and geospatial processing & Field geometry, geocoding, and weather-service access & Shapely, Fiona, GeoPandas, Geopy, Requests, HTTPX, Open-Meteo client packages, request caching, retry utilities \\
+Weather and geospatial processing & Field geometry, geocoding, and configured weather-service access & Shapely, Fiona, GeoPandas, Geopy, Requests, HTTPX, weather-service client packages, request caching, retry utilities \\
 Phenology and risk analytics & Crop-stage and risk-state calculation & Python analytical workflows, date-aligned weather transformation, cultivar and crop-season metadata \\
 Image processing and recognition & Image preprocessing and deep-learning inference & PyTorch, TorchVision, OpenCV, Pillow, Ultralytics-related components, EfficientViT-related modules, segmentation components \\
 Advisory interface & Text advisory channel & ChatGLM3-derived advisory workflow following the published CDIP-ChatGLM3 framework \\
@@ -189,7 +189,7 @@ Advisory interface & Text advisory channel & ChatGLM3-derived advisory workflow 
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.12}
 \begin{longtable}{@{}L{0.23\linewidth} L{0.31\linewidth} L{0.38\linewidth}@{}}
-\caption{Selected data-model attributes supporting the crop-season-centered workflow.}\label{tab:supp_data_model_attributes}\\
+\caption{Selected data-model attributes supporting model-to-management integration.}\label{tab:supp_data_model_attributes}\\
 \toprule
 Record group & Main attributes or stored content & Platform role \\
 \midrule
@@ -200,8 +200,8 @@ Record group & Main attributes or stored content & Platform role \\
 \endhead
 Field record & User linkage, field name, area, GeoJSON boundary, centroid coordinates, administrative region, sharing state, deletion state, notice state, and generated field-boundary preview & Persistent spatial and ownership unit for vineyard management \\
 Field geometry processing & Boundary parsing, boundary-image generation, area estimation, centroid calculation, and optional geocoding request & Converts user-defined field boundaries into location and display objects \\
-Crop-season record & Field linkage, grape cultivar, cultivation method, vine age, field coordinates, field size, and cultivar metadata & Primary seasonal anchor for weather, phenology, risk, tasks, products, images, advisory records, and summaries \\
-Master-data records & Grape variety, cultivar susceptibility, cultivation method, BBCH stage, disease type, fungicide, pesticide, and reminder rules & Controlled reference values for field, crop-season, task, risk, and advisory records \\
+Crop-management record & Field linkage, grape cultivar, cultivation method, vine age, field coordinates, field size, and cultivar metadata & Time-dependent execution and retrieval key for analytical and operational records \\
+Master-data records & Grape variety, cultivar susceptibility, cultivation method, BBCH stage, disease type, fungicide, pesticide, and reminder rules & Controlled reference values for field, crop, task, risk, and advisory records \\
 Model payload records & Weather, phenology, disease-risk, and request-response payloads stored with structured records & Preserves inputs and outputs for mobile display, recalculation, and audit \\
 \bottomrule
 \end{longtable}
@@ -222,7 +222,7 @@ Screening step & Rule & Rationale \\
 \endhead
 User-record integration & User records were integrated using available user identifier, custom-user identifier, and phone-number fields. & Avoids duplicate counting of account-level records \\
 Business-record filter & Accounts with no business records across field, crop-season, notification, task, fungicide or pesticide, advisory or message, forum, disease-report, and note tables were excluded. & Removes registration-only accounts from operational summaries \\
-Field-crop-season linkage filter & Accounts without both field records and crop-season records were excluded. & Retains records that can support crop-season-centered workflow evaluation \\
+Field-crop linkage filter & Accounts without both field records and crop-management records were excluded. & Retains records that can support implemented workflow reconstruction \\
 Target-context filter & A single account associated only with Linwei District was excluded. & Removes a non-target-region account from the Guangxi vineyard evaluation context \\
 Retained account set & Forty-seven accounts remained from 95 deduplicated accounts. & Defines the candidate account set used for operational-record coverage \\
 \bottomrule
